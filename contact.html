@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Golf Club Builders</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="index.html"><img src="logo.png" alt="Golf Club Builders logo" /></a>
+        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="simulator.html">Simulator</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section">
+        <h2>Get in Touch</h2>
+        <p>
+          As an in‑home workshop, we do not accept walk‑ins. All services are
+          by appointment only. Please call us during business hours to book
+          your appointment. For general questions you can also use the form
+          below—just note that appointments must still be confirmed by phone.
+        </p>
+        <div style="margin:1.5rem 0;">
+          <p><strong>Phone:</strong> <a href="tel:+12237339923">(223) 733‑9923</a></p>
+          <p><strong>Call Hours:</strong> Monday – Friday, 9:00 am – 5:00 pm (Eastern Time)</p>
+          <p><strong>Location:</strong> 254 Farmington Rd, Chambersburg, PA (home workshop – full address provided after booking)</p>
+          <p><strong>Service Area:</strong> Chambersburg and surrounding areas – anyone willing to drive!</p>
+        </div>
+        <h3>Send Us a Message</h3>
+        <form class="contact-form" onsubmit="alert('Thank you! We\'ll be in touch to confirm your appointment.'); return false;">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <label for="service">Service Interested In</label>
+          <select id="service" name="service">
+            <option value="">Select…</option>
+            <option value="loft-lie">Loft/Lie Adjustment</option>
+            <option value="swing-weight">Swing‑Weight Adjustment</option>
+            <option value="regrip">Grip Installation</option>
+            <option value="reshaft">Reshafting/Adapter Installation</option>
+            <option value="build">Custom Build</option>
+            <option value="simulator">Simulator Rental</option>
+            <option value="other">Other/General Question</option>
+          </select>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Tell us what you need…"></textarea>
+
+          <button type="submit" class="button">Send Message</button>
+        </form>
+        <p style="margin-top:1rem; font-size:0.9rem; color:#555;">
+          Note: We will respond as soon as possible during business hours. Your
+          appointment is not confirmed until we speak with you by phone.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      © 2025 Golf Club Builders – Appointment only. No walk‑ins please.
+    </footer>
+  </body>
+</html>
