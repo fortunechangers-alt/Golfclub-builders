@@ -93,6 +93,8 @@ main {
   padding: 3rem 1rem;
   background-color: var(--light-background);
   border-radius: 8px;
+  position: relative;
+  overflow: hidden;
 }
 
 .hero h1 {
@@ -104,6 +106,24 @@ main {
   font-size: 1.2rem;
   margin-bottom: 1.2rem;
   max-width: 700px;
+}
+
+.hero::before {
+  content: "how much wood could a woodchuck chuck";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  color: rgba(0, 0, 0, 0.05);
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero > * {
+  position: relative;
+  z-index: 1;
 }
 
 .section {
