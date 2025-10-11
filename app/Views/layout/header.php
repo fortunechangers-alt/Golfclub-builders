@@ -35,7 +35,7 @@
                 <li><a href="<?= base_url('/simulator') ?>" class="nav-link">Simulator</a></li>
                 <li><a href="<?= base_url('/blog') ?>" class="nav-link">Blog</a></li>
                 <li><a href="<?= base_url('/contact') ?>" class="nav-link">Contact</a></li>
-                <?php if (auth()->loggedIn()): ?>
+                <?php if (function_exists('auth') && auth()->loggedIn()): ?>
                     <?php 
                     $user = auth()->user();
                     $isAdmin = isset($user->is_admin) && $user->is_admin == 1;
@@ -48,7 +48,7 @@
                         <li><a href="<?= base_url('/account') ?>" class="nav-link">My Account</a></li>
                     <?php endif; ?>
                     <li><a href="<?= base_url('/logout') ?>" class="btn btn-outline">Logout</a></li>
-                <?php else: ?>
+                <?php elseif (function_exists('auth')): ?>
                     <li><a href="<?= base_url('/login') ?>" class="btn btn-outline">Login</a></li>
                 <?php endif; ?>
             </ul>
