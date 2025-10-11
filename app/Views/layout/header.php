@@ -15,13 +15,13 @@
     <link rel="stylesheet" href="<?= base_url('css/style.css') ?>">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="<?= base_url('images/favicon.ico') ?>">
+    <link rel="icon" type="image/png" href="<?= base_url('images/logo-small.png') ?>">
 </head>
 <body>
     <header class="header">
         <nav class="nav-container">
             <a href="<?= base_url('/') ?>" class="logo">
-                <span>Golf</span><span class="logo-accent">Builders</span>
+                <img src="<?= base_url('images/logo-banner.png') ?>" alt="Golf Club Builders" style="height: 60px; width: auto;">
             </a>
             
             <ul class="nav-menu">

@@ -3,7 +3,8 @@
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-section">
-                <h3>Golf Builders</h3>
+                <img src="<?= base_url('images/logo-small.png') ?>" alt="Golf Club Builders" style="width: 80px; height: auto; margin-bottom: 1rem;">
+                <h3>Golf Club Builders</h3>
                 <p>Elevating your golf game with AI-assisted club fittings and professional regripping services.</p>
                 <div class="social-links" style="margin-top: 1.5rem;">
                     <a href="#" style="color: rgba(255,255,255,0.8); margin-right: 1rem; text-decoration: none;">Facebook</a>
