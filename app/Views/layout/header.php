@@ -35,12 +35,14 @@
                 <li><a href="<?= base_url('/simulator') ?>" class="nav-link">Simulator</a></li>
                 <li><a href="<?= base_url('/blog') ?>" class="nav-link">Blog</a></li>
                 <li><a href="<?= base_url('/contact') ?>" class="nav-link">Contact</a></li>
-                <?php if (function_exists('auth') && auth()->loggedIn()): ?>
-                    <?php 
+                <?php 
+                // Temporarily disabled auth for public site
+                // Uncomment when auth is properly configured on live server
+                /*
+                if (function_exists('auth') && auth()->loggedIn()): 
                     $user = auth()->user();
                     $isAdmin = isset($user->is_admin) && $user->is_admin == 1;
-                    ?>
-                    <?php if ($isAdmin): ?>
+                    if ($isAdmin): ?>
                         <li><a href="<?= base_url('/toggle-view') ?>" class="btn btn-primary" style="margin-right: 10px;">
                             🔄 Switch to Admin View
                         </a></li>
@@ -50,7 +52,9 @@
                     <li><a href="<?= base_url('/logout') ?>" class="btn btn-outline">Logout</a></li>
                 <?php elseif (function_exists('auth')): ?>
                     <li><a href="<?= base_url('/login') ?>" class="btn btn-outline">Login</a></li>
-                <?php endif; ?>
+                <?php endif;
+                */
+                ?>
             </ul>
             
             <button class="mobile-menu-btn">
