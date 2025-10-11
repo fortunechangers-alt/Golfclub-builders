@@ -533,6 +533,10 @@ h4 { font-size: 1.5rem; }
     padding-left: 6rem;
 }
 
+.footer-column:nth-of-type(2) {
+    padding-right: 2rem;
+}
+
 .footer-title {
     font-size: 1.1rem;
     font-weight: 600;
