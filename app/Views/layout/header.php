@@ -35,8 +35,8 @@
                 <li><a href="<?= base_url('/booking') ?>" class="nav-link">Book Appointment</a></li>
                 <li><a href="<?= base_url('/about') ?>" class="nav-link">About</a></li>
                 <li><a href="<?= base_url('/contact') ?>" class="nav-link">Contact</a></li>
-                <?php if (session()->get('isLoggedIn')): ?>
-                    <?php if (session()->get('role') === 'admin'): ?>
+                <?php if (auth()->loggedIn()): ?>
+                    <?php if (auth()->user()->inGroup('superadmin', 'admin')): ?>
                         <li><a href="<?= base_url('/admin') ?>" class="nav-link">Admin</a></li>
                     <?php else: ?>
                         <li><a href="<?= base_url('/account') ?>" class="nav-link">My Account</a></li>
