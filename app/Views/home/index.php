@@ -10,8 +10,8 @@
             <h1>Precision. Performance.<br><span class="highlight" style="color: var(--gold);">Every Swing.</span></h1>
             <p>Professional club building, fitting, and simulator services. In-home workshop serving Chambersburg and surrounding areas.</p>
             <div class="hero-cta">
-                <a href="tel:7173871643" class="btn btn-primary">📞 Call (717) 387-1643</a>
-                <a href="<?= base_url('/club-builds') ?>" class="btn btn-outline">Club Builds</a>
+                <a href="<?= base_url('/fitting') ?>" class="btn btn-primary">Book Appointment</a>
+                <a href="<?= base_url('/contact') ?>" class="btn btn-outline">Contact Us</a>
             </div>
         </div>
         <div class="hero-image">
@@ -71,11 +71,6 @@
             </div>
             
             <div class="card">
-                <h4>👨‍🏫 Expert Technicians</h4>
-                <p>Our certified club fitters have decades of combined experience and are passionate about helping you improve your game.</p>
-            </div>
-            
-            <div class="card">
                 <h4>🎨 Custom Solutions</h4>
                 <p>Every golfer is unique. We provide personalized recommendations based on your swing characteristics, skill level, and goals.</p>
             </div>
@@ -83,11 +78,6 @@
             <div class="card">
                 <h4>✅ Satisfaction Guaranteed</h4>
                 <p>We're confident in our service. If you're not satisfied with your fitting, we'll make it right - guaranteed.</p>
-            </div>
-            
-            <div class="card">
-                <h4>🚀 Latest Equipment</h4>
-                <p>We use the latest shaft technology, club heads, and grips from all major manufacturers to ensure perfect compatibility.</p>
             </div>
             
             <div class="card">
@@ -121,7 +111,7 @@
             
             <div class="card" style="text-align: center;">
                 <div style="font-size: 3rem; margin-bottom: 1rem;">3️⃣</div>
-                <h3>Get Recommendations</h3>
+                <h3>Get Clarity</h3>
                 <p>Receive detailed, data-driven recommendations for clubs that will optimize your performance and consistency.</p>
             </div>
             
