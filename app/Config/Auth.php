@@ -13,7 +13,7 @@ declare(strict_types=1);
 
 namespace Config;
 
-use CodeIgniter\Config\BaseConfig;
+use CodeIgniter\Shield\Config\Auth as ShieldAuth;
 use CodeIgniter\Shield\Authentication\Actions\ActionInterface;
 use CodeIgniter\Shield\Authentication\AuthenticatorInterface;
 use CodeIgniter\Shield\Authentication\Authenticators\AccessTokens;
@@ -27,7 +27,7 @@ use CodeIgniter\Shield\Authentication\Passwords\PwnedValidator;
 use CodeIgniter\Shield\Authentication\Passwords\ValidatorInterface;
 use CodeIgniter\Shield\Models\UserModel;
 
-class Auth extends BaseConfig
+class Auth extends ShieldAuth
 {
     /**
      * ////////////////////////////////////////////////////////////////////
@@ -46,17 +46,17 @@ class Auth extends BaseConfig
      * --------------------------------------------------------------------
      */
     public array $views = [
-        'login'                       => 'Shield\login',
-        'register'                    => 'Shield\register',
-        'layout'                      => 'Shield\layout',
-        'action_email_2fa'            => 'Shield\email_2fa_show',
-        'action_email_2fa_verify'     => 'Shield\email_2fa_verify',
-        'action_email_2fa_email'      => 'Shield\Email\email_2fa_email',
-        'action_email_activate_show'  => 'Shield\email_activate_show',
-        'action_email_activate_email' => 'Shield\Email\email_activate_email',
-        'magic-link-login'            => 'Shield\magic_link_form',
-        'magic-link-message'          => 'Shield\magic_link_message',
-        'magic-link-email'            => 'Shield\Email\magic_link_email',
+        'login'                       => 'Shield/login',
+        'register'                    => 'Shield/register',
+        'layout'                      => 'Shield/layout',
+        'action_email_2fa'            => 'Shield/email_2fa_show',
+        'action_email_2fa_verify'     => 'Shield/email_2fa_verify',
+        'action_email_2fa_email'      => 'Shield/Email/email_2fa_email',
+        'action_email_activate_show'  => 'Shield/email_activate_show',
+        'action_email_activate_email' => 'Shield/Email/email_activate_email',
+        'magic-link-login'            => 'Shield/magic_link_form',
+        'magic-link-message'          => 'Shield/magic_link_message',
+        'magic-link-email'            => 'Shield/Email/magic_link_email',
     ];
 
     /**

@@ -5,6 +5,11 @@
  * is set to testing.
  */
 
+// Define CI_DEBUG constant (required by CodeIgniter)
+if (!defined('CI_DEBUG')) {
+    define('CI_DEBUG', true);
+}
+
 // Polyfill for Locale class (intl extension not available in XAMPP)
 if (!class_exists('Locale')) {
     class Locale
