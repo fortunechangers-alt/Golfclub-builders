@@ -55,7 +55,7 @@
 <section class="section section-light">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title">Why Choose Golf Builders?</h2>
+            <h2 class="section-title">Why Choose Golf Club Builders?</h2>
             <p class="section-subtitle">We combine cutting-edge technology with traditional craftsmanship</p>
         </div>
         
@@ -164,7 +164,7 @@
             
             <div class="testimonial">
                 <div class="stars">⭐⭐⭐⭐⭐</div>
-                <p class="testimonial-text">"The team at Golf Builders really knows their stuff. The fitting process was thorough and the results speak for themselves. My scores have never been better!"</p>
+                <p class="testimonial-text">"The team at Golf Club Builders really knows their stuff. The fitting process was thorough and the results speak for themselves. My scores have never been better!"</p>
                 <div class="testimonial-author">
                     <div class="testimonial-avatar">MR</div>
                     <div>

@@ -80,7 +80,7 @@
 <section class="section section-light">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title">The Golf Builders Difference</h2>
+            <h2 class="section-title">The Golf Club Builders Difference</h2>
         </div>
         
         <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
@@ -111,7 +111,7 @@
 <section class="section" style="background: linear-gradient(135deg, var(--navy-blue) 0%, #0d2a5c 100%); color: white;">
     <div class="container" style="text-align: center;">
         <h2 style="color: white; font-size: 2.5rem; margin-bottom: 1.5rem;">Ready to Get Started?</h2>
-        <p style="font-size: 1.2rem; margin-bottom: 2rem; color: rgba(255,255,255,0.9);">Book your appointment today and experience the Golf Builders difference.</p>
+        <p style="font-size: 1.2rem; margin-bottom: 2rem; color: rgba(255,255,255,0.9);">Book your appointment today and experience the Golf Club Builders difference.</p>
         <a href="<?= base_url('/booking') ?>" class="btn btn-primary" style="font-size: 1.2rem; padding: 1rem 3rem;">Book Now</a>
     </div>
 </section>

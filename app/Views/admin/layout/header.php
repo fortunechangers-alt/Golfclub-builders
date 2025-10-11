@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= isset($title) ? esc($title) . ' - Admin' : 'Admin Panel' ?> - Golf Builders</title>
+    <title><?= isset($title) ? esc($title) . ' - Admin' : 'Admin Panel' ?> - Golf Club Builders</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" href="<?= base_url('images/logo-small.webp') ?>">
+    <link rel="icon" type="image/png" href="<?= base_url('images/logo-small.png') ?>">
     
     <link rel="stylesheet" href="<?= base_url('css/style.css') ?>">
     <style>
@@ -45,8 +49,12 @@
     <div class="admin-layout">
         <aside class="admin-sidebar">
             <div style="padding: 0 1.5rem; margin-bottom: 2rem;">
-                <a href="<?= base_url('/') ?>" style="color: white; text-decoration: none;">
-                    <h2 style="color: white; margin: 0;">Golf <span style="color: var(--golf-green);">Builders</span></h2>
+                <a href="<?= base_url('/') ?>" style="color: white; text-decoration: none; display: flex; flex-direction: column; align-items: center;">
+                    <picture>
+                        <source srcset="<?= base_url('images/logo-small.webp') ?>" type="image/webp">
+                        <img src="<?= base_url('images/logo-small.png') ?>" alt="Golf Club Builders" style="width: 60px; height: auto; margin-bottom: 0.75rem;">
+                    </picture>
+                    <h2 style="color: white; margin: 0; text-align: center;">Golf Club<br><span style="color: var(--golf-green);">Builders</span></h2>
                     <p style="color: rgba(255,255,255,0.6); margin: 0.5rem 0 0 0; font-size: 0.9rem;">Admin Panel</p>
                 </a>
             </div>

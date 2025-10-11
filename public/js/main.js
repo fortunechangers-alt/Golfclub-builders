@@ -1,4 +1,4 @@
-// Golf Builders - Main JavaScript
+// Golf Club Builders - Main JavaScript
 
 document.addEventListener('DOMContentLoaded', function() {
     // Header scroll effect
@@ -45,10 +45,16 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeTimeSlots();
 });
 
+// Global variable to store available dates from backend
+let availableDates = [];
+
 // Calendar Functions
-function initializeCalendar() {
+async function initializeCalendar() {
     const calendarElement = document.querySelector('.calendar');
     if (!calendarElement) return;
+
+    // Fetch available dates from backend
+    await fetchAvailableDates();
 
     // Get current month and year
     let currentDate = new Date();
@@ -82,6 +88,25 @@ function initializeCalendar() {
             }
             renderCalendar(currentMonth, currentYear);
         });
+    }
+}
+
+// Fetch available dates from backend API
+async function fetchAvailableDates() {
+    try {
+        const response = await fetch('/api/available-dates');
+        const data = await response.json();
+        
+        if (data.status === 'success' && data.dates) {
+            availableDates = data.dates;
+            console.log('Loaded available dates from backend:', availableDates);
+        } else {
+            console.warn('No available dates returned from backend');
+            availableDates = [];
+        }
+    } catch (error) {
+        console.error('Error fetching available dates:', error);
+        availableDates = [];
     }
 }
 
@@ -122,18 +147,32 @@ function renderCalendar(month, year) {
 
     // Add days
     const today = new Date();
+    today.setHours(0, 0, 0, 0); // Reset time for accurate comparison
+    
     for (let day = 1; day <= daysInMonth; day++) {
         const dayDate = new Date(year, month, day);
         const dayElement = document.createElement('div');
         dayElement.classList.add('calendar-day');
         dayElement.textContent = day;
-        dayElement.dataset.date = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+        
+        // Format date as YYYY-MM-DD to match backend format
+        const formattedDate = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+        dayElement.dataset.date = formattedDate;
 
+        // Check if this date is in the backend's available dates list
+        const isAvailable = availableDates.includes(formattedDate);
+        
         // Check if date is in the past
-        if (dayDate < today.setHours(0, 0, 0, 0)) {
+        const isPast = dayDate < today;
+        
+        if (isPast || !isAvailable) {
+            // Gray - blocked (past date or not approved by backend)
             dayElement.classList.add('blocked');
+            dayElement.style.cursor = 'not-allowed';
         } else {
+            // Light green - available for selection
             dayElement.classList.add('available');
+            dayElement.style.cursor = 'pointer';
             dayElement.addEventListener('click', function() {
                 selectDate(this);
             });

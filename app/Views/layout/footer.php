@@ -39,15 +39,15 @@
             <div class="footer-section">
                 <h3>Contact Info</h3>
                 <ul class="footer-links">
-                    <li>📧 info@golfbuilders.com</li>
-                    <li>📞 (555) 123-4567</li>
-                    <li>📍 123 Golf Course Dr<br>&nbsp;&nbsp;&nbsp;&nbsp;Your City, ST 12345</li>
+                    <li>📧 daniel@golf-builders.com</li>
+                    <li>📞 (717) 387-1643</li>
+                    <li>📍 254 Farmington Road<br>&nbsp;&nbsp;&nbsp;&nbsp;Chambersburg, PA 17202</li>
                 </ul>
             </div>
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; <?= date('Y') ?> Golf Builders. All rights reserved. | <a href="<?= base_url('/privacy') ?>" style="color: rgba(255,255,255,0.6);">Privacy Policy</a> | <a href="<?= base_url('/terms') ?>" style="color: rgba(255,255,255,0.6);">Terms of Service</a></p>
+            <p>&copy; <?= date('Y') ?> Golf Club Builders. All rights reserved. | <a href="<?= base_url('/privacy') ?>" style="color: rgba(255,255,255,0.6);">Privacy Policy</a> | <a href="<?= base_url('/terms') ?>" style="color: rgba(255,255,255,0.6);">Terms of Service</a></p>
         </div>
     </footer>
     

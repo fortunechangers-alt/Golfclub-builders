@@ -22,6 +22,9 @@ $routes->post('/booking/create', 'Booking::create');
 $routes->get('/booking/confirmation/(:segment)', 'Booking::confirmation/$1');
 $routes->get('/booking/checkAvailability', 'Booking::checkAvailability');
 
+// API Routes
+$routes->get('/api/available-dates', 'Api\AvailableDates::index');
+
 // Shop
 $routes->get('/shop', 'Shop::index');
 $routes->get('/shop/(:segment)', 'Shop::view/$1');
@@ -57,6 +60,15 @@ $routes->group('admin', function($routes) {
     $routes->get('calendar', 'Admin\Calendar::index');
     $routes->post('calendar/block', 'Admin\Calendar::blockDate');
     $routes->post('calendar/unblock', 'Admin\Calendar::unblockDate');
+    
+    // Available Dates Manager (Simple Date Control)
+    $routes->get('available-dates-manager', 'Admin\AvailableDatesManager::index');
+    $routes->get('available-dates-manager/create', 'Admin\AvailableDatesManager::create');
+    $routes->post('available-dates-manager/store', 'Admin\AvailableDatesManager::store');
+    $routes->get('available-dates-manager/bulk-create', 'Admin\AvailableDatesManager::bulkCreate');
+    $routes->post('available-dates-manager/store-bulk', 'Admin\AvailableDatesManager::storeBulk');
+    $routes->post('available-dates-manager/toggle-status/(:num)', 'Admin\AvailableDatesManager::toggleStatus/$1');
+    $routes->post('available-dates-manager/delete/(:num)', 'Admin\AvailableDatesManager::delete/$1');
     
     // Available Time Slots Management (Soft Opening)
     $routes->get('available-slots', 'Admin\AvailableSlots::index');

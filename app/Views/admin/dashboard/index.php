@@ -72,6 +72,9 @@
     <div class="card">
         <h3 style="margin-bottom: 1.5rem;">Quick Actions</h3>
         <div style="display: flex; flex-direction: column; gap: 1rem;">
+            <a href="<?= base_url('/admin/available-dates-manager') ?>" class="btn" style="width: 100%; background: var(--golf-green); color: white; font-weight: 600;">
+                📅 Manage Available Dates
+            </a>
             <a href="<?= base_url('/admin/available-slots') ?>" class="btn" style="width: 100%; background: var(--gold); color: white; font-weight: 600;">
                 🎯 Manage Available Slots (Soft Opening)
             </a>
