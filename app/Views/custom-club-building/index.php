@@ -88,7 +88,7 @@
             </div>
             
             <!-- Cart Sidebar -->
-            <div style="display: flex; flex-direction: column; gap: 2rem;">
+            <div>
                 <div class="card" style="position: sticky; top: 140px; z-index: 10;">
                     <h3 style="margin-bottom: 1.5rem; color: var(--deep-green);">Your Cart</h3>
                     <div id="cart-items" style="margin-bottom: 2rem;">
@@ -119,7 +119,7 @@
                 </div>
                 
                 <!-- Emergency Service Notice Sidebar -->
-                <div class="card" style="background: linear-gradient(135deg, #ff6b6b, #ee5a52); color: white; border: none;">
+                <div class="card" id="emergency-card" style="position: sticky; top: 140px; margin-top: 2rem; background: linear-gradient(135deg, #ff6b6b, #ee5a52); color: white; border: none; z-index: 9;">
                     <h3 style="margin-bottom: 1rem; color: white; display: flex; align-items: center; gap: 0.5rem;">
                         🚨 Emergency Repair Service
                     </h3>
@@ -297,6 +297,30 @@ function removeFromCart(index) {
 
 // Initialize display
 updateCartDisplay();
+
+// Dynamic sticky positioning for emergency card
+function updateEmergencyCardPosition() {
+    const cartCard = document.querySelector('.card[style*="position: sticky"]');
+    const emergencyCard = document.getElementById('emergency-card');
+    
+    if (cartCard && emergencyCard) {
+        const cartHeight = cartCard.offsetHeight;
+        emergencyCard.style.top = `${140 + cartHeight + 32}px`; // 140px base + cart height + 2rem gap (32px)
+    }
+}
+
+// Update position on load and when cart changes
+updateEmergencyCardPosition();
+
+// Override updateCartDisplay to also update emergency card position
+const originalUpdateCartDisplay = updateCartDisplay;
+updateCartDisplay = function() {
+    originalUpdateCartDisplay();
+    setTimeout(updateEmergencyCardPosition, 50); // Small delay to let DOM update
+};
+
+// Update on window resize
+window.addEventListener('resize', updateEmergencyCardPosition);
 
 // No calendar functionality needed - appointments scheduled by phone after checkout
 </script>
