@@ -44,9 +44,6 @@ $routes->get('/api/available-dates', 'Api\AvailableDates::index');
 // Shop
 $routes->get('/shop', 'Shop::index');
 $routes->get('/shop/(:segment)', 'Shop::view/$1');
-$routes->get('/cart', 'Shop::cart');
-$routes->post('/cart/add', 'Shop::addToCart');
-$routes->post('/cart/remove', 'Shop::removeFromCart');
 $routes->get('/checkout', 'Shop::checkout');
 $routes->post('/checkout/process', 'Shop::processCheckout');
 
