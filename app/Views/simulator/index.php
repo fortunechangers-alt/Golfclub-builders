@@ -5,9 +5,16 @@
 
 <section class="section" style="margin-top: 120px;">
     <div class="container">
-        <div class="section-header">
-            <h1 class="section-title">Simulator</h1>
-            <p class="section-subtitle">GC3 Foresight simulator rental with professional analysis</p>
+        <div class="section-header" style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;">
+            <div style="flex: 1; min-width: 300px;">
+                <h1 class="section-title">Simulator</h1>
+                <p class="section-subtitle">GC3 Foresight simulator rental with professional analysis</p>
+            </div>
+            <div style="flex-shrink: 0;">
+                <img src="<?= base_url('images/gc3-foresight-tech.jpg') ?>" 
+                     alt="GC3 Foresight Launch Monitor Technology" 
+                     style="max-width: 200px; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+            </div>
         </div>
         
         <!-- Call to Schedule Notice -->
@@ -67,16 +74,6 @@
                         <li style="margin-bottom: 0.5rem;">✓ Multiplayer support (up to 4 players)</li>
                         <li style="margin-bottom: 0.5rem;">✓ Shot replay & analysis</li>
                     </ul>
-                    
-                    <!-- GC3 Foresight Technology Image -->
-                    <div style="margin-top: 2rem; text-align: center;">
-                        <img src="<?= base_url('images/gc3-foresight-tech.jpg') ?>" 
-                             alt="GC3 Foresight Launch Monitor Technology" 
-                             style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-                        <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #666; font-style: italic;">
-                            Professional GC3 Foresight launch monitor technology
-                        </p>
-                    </div>
                 </div>
             </div>
         </div>
