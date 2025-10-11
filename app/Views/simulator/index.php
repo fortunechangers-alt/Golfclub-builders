@@ -23,31 +23,49 @@
         
         <!-- Simulator Info -->
         <div class="card" style="margin-bottom: 3rem; background: var(--light);">
-            <h3 style="margin-bottom: 1.5rem; color: var(--deep-green);">GC3 Foresight Simulator</h3>
-            <p style="margin-bottom: 2rem; font-size: 1.1rem;">Professional-grade launch monitor providing accurate ball flight data, club analysis, and course simulation.</p>
+            <h3 style="margin-bottom: 1.5rem; color: var(--deep-green);">Professional Golf Simulator Setup</h3>
+            <p style="margin-bottom: 2rem; font-size: 1.1rem;">Complete professional-grade simulator experience with GC3 Foresight launch monitor, GSPro software, 4K projection, and premium hitting surfaces.</p>
             
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
                 <div>
-                    <h4 style="color: var(--deep-green); margin-bottom: 1rem;">What You Get</h4>
+                    <h4 style="color: var(--deep-green); margin-bottom: 1rem;">Technology & Software</h4>
                     <ul style="list-style: none; padding: 0;">
-                        <li style="margin-bottom: 0.5rem;">✓ Accurate ball flight tracking</li>
+                        <li style="margin-bottom: 0.5rem;">✓ GC3 Foresight launch monitor</li>
+                        <li style="margin-bottom: 0.5rem;">✓ GSPro course simulation software</li>
+                        <li style="margin-bottom: 0.5rem;">✓ 4K ultra-high definition projector</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Professional impact screen</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Real-time ball flight tracking</li>
                         <li style="margin-bottom: 0.5rem;">✓ Club head speed & path analysis</li>
                         <li style="margin-bottom: 0.5rem;">✓ Launch angle & spin rate data</li>
                         <li style="margin-bottom: 0.5rem;">✓ Distance & carry measurements</li>
-                        <li style="margin-bottom: 0.5rem;">✓ Course simulation (weather conditions)</li>
-                        <li style="margin-bottom: 0.5rem;">✓ Practice range & target games</li>
                     </ul>
                 </div>
                 
                 <div>
-                    <h4 style="color: var(--deep-green); margin-bottom: 1rem;">Perfect For</h4>
+                    <h4 style="color: var(--deep-green); margin-bottom: 1rem;">Hitting Experience</h4>
                     <ul style="list-style: none; padding: 0;">
-                        <li style="margin-bottom: 0.5rem;">✓ Winter practice sessions</li>
-                        <li style="margin-bottom: 0.5rem;">✓ Club fitting & testing</li>
-                        <li style="margin-bottom: 0.5rem;">✓ Swing analysis & improvement</li>
-                        <li style="margin-bottom: 0.5rem;">✓ Fun with friends & family</li>
-                        <li style="margin-bottom: 0.5rem;">✓ Weather-independent golf</li>
-                        <li style="margin-bottom: 0.5rem;">✓ Course strategy practice</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Professional True Strike hitting mats</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Realistic turf feel & feedback</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Durable, weather-resistant surface</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Proper lie angles for all clubs</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Comfortable stance & swing area</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Professional-grade construction</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Easy maintenance & cleaning</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Consistent performance over time</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 style="color: var(--deep-green); margin-bottom: 1rem;">GSPro Games & Features</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 0.5rem;">✓ 100+ world-famous golf courses</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Practice range with targets</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Closest to the pin challenges</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Long drive competitions</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Skins games & tournaments</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Weather simulation (wind, rain)</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Multiplayer support (up to 4 players)</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Shot replay & analysis</li>
                     </ul>
                     
                     <!-- GC3 Foresight Technology Image -->
@@ -59,6 +77,46 @@
                             Professional GC3 Foresight launch monitor technology
                         </p>
                     </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Professional Setup Details -->
+        <div class="card" style="margin-bottom: 3rem;">
+            <h3 style="margin-bottom: 1.5rem; color: var(--deep-green);">Professional Setup Details</h3>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <div>
+                    <h4 style="color: var(--deep-green); margin-bottom: 1rem;">4K Projection System</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 0.5rem;">✓ Ultra-high definition 4K resolution</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Bright, clear course visuals</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Large screen viewing area</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Professional color accuracy</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Smooth 60fps gameplay</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 style="color: var(--deep-green); margin-bottom: 1rem;">True Strike Hitting Mats</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 0.5rem;">✓ Professional-grade construction</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Realistic turf feel & feedback</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Durable, weather-resistant</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Proper lie angles for all clubs</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Easy maintenance & cleaning</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 style="color: var(--deep-green); margin-bottom: 1rem;">Impact Screen & Safety</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 0.5rem;">✓ Professional impact screen</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Safe ball containment</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Clear projection surface</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Durable, long-lasting material</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Easy setup & takedown</li>
+                    </ul>
                 </div>
             </div>
         </div>
