@@ -6,7 +6,7 @@
 <!-- Parallax Background Section -->
 <section class="parallax-section" style="position: relative; height: 60vh; min-height: 400px; overflow: hidden; margin-top: 120px;">
     <!-- Parallax Background Image -->
-    <div class="parallax-bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 120%; background-image: url('<?= base_url('images/golf-course-parallax.webp') ?>'); background-size: cover; background-position: center; background-attachment: fixed; will-change: transform;"></div>
+    <div class="parallax-bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 120%; background-image: url('<?= base_url('images/golf-course-parallax.webp') ?>'); background-size: cover; background-position: 60% 30%; background-attachment: fixed; will-change: transform;"></div>
     
     <!-- Overlay for better text readability -->
     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, rgba(11, 110, 79, 0.7) 0%, rgba(31, 41, 55, 0.6) 100%);"></div>
