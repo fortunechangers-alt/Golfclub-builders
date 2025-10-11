@@ -1,0 +1,357 @@
+// Golf Builders - Main JavaScript
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Header scroll effect
+    const header = document.querySelector('.header');
+    
+    if (header) {
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    }
+
+    // Mobile menu toggle
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const navMenu = document.querySelector('.nav-menu');
+    
+    if (mobileMenuBtn) {
+        mobileMenuBtn.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+        });
+    }
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+
+    // Calendar functionality
+    initializeCalendar();
+    
+    // Time slot selection
+    initializeTimeSlots();
+});
+
+// Calendar Functions
+function initializeCalendar() {
+    const calendarElement = document.querySelector('.calendar');
+    if (!calendarElement) return;
+
+    // Get current month and year
+    let currentDate = new Date();
+    let currentMonth = currentDate.getMonth();
+    let currentYear = currentDate.getFullYear();
+
+    // Render initial calendar
+    renderCalendar(currentMonth, currentYear);
+
+    // Previous/Next month navigation
+    const prevBtn = document.querySelector('.calendar-prev');
+    const nextBtn = document.querySelector('.calendar-next');
+
+    if (prevBtn) {
+        prevBtn.addEventListener('click', function() {
+            currentMonth--;
+            if (currentMonth < 0) {
+                currentMonth = 11;
+                currentYear--;
+            }
+            renderCalendar(currentMonth, currentYear);
+        });
+    }
+
+    if (nextBtn) {
+        nextBtn.addEventListener('click', function() {
+            currentMonth++;
+            if (currentMonth > 11) {
+                currentMonth = 0;
+                currentYear++;
+            }
+            renderCalendar(currentMonth, currentYear);
+        });
+    }
+}
+
+function renderCalendar(month, year) {
+    const calendarGrid = document.querySelector('.calendar-grid');
+    const calendarTitle = document.querySelector('.calendar-title');
+    
+    if (!calendarGrid || !calendarTitle) return;
+
+    // Month names
+    const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
+                       'July', 'August', 'September', 'October', 'November', 'December'];
+
+    calendarTitle.textContent = `${monthNames[month]} ${year}`;
+
+    // Clear previous calendar
+    calendarGrid.innerHTML = '';
+
+    // Day headers
+    const dayHeaders = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    dayHeaders.forEach(day => {
+        const dayHeader = document.createElement('div');
+        dayHeader.classList.add('calendar-day-header');
+        dayHeader.textContent = day;
+        calendarGrid.appendChild(dayHeader);
+    });
+
+    // Get first day of month
+    const firstDay = new Date(year, month, 1).getDay();
+    const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+    // Add blank cells for days before month starts
+    for (let i = 0; i < firstDay; i++) {
+        const blankDay = document.createElement('div');
+        blankDay.classList.add('calendar-day', 'blank');
+        calendarGrid.appendChild(blankDay);
+    }
+
+    // Add days
+    const today = new Date();
+    for (let day = 1; day <= daysInMonth; day++) {
+        const dayDate = new Date(year, month, day);
+        const dayElement = document.createElement('div');
+        dayElement.classList.add('calendar-day');
+        dayElement.textContent = day;
+        dayElement.dataset.date = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+
+        // Check if date is in the past
+        if (dayDate < today.setHours(0, 0, 0, 0)) {
+            dayElement.classList.add('blocked');
+        } else {
+            dayElement.classList.add('available');
+            dayElement.addEventListener('click', function() {
+                selectDate(this);
+            });
+        }
+
+        calendarGrid.appendChild(dayElement);
+    }
+}
+
+function selectDate(dateElement) {
+    // Check if date is blocked
+    if (dateElement.classList.contains('blocked')) return;
+
+    // Remove previous selection
+    document.querySelectorAll('.calendar-day.selected').forEach(el => {
+        el.classList.remove('selected');
+    });
+
+    // Add selection
+    dateElement.classList.add('selected');
+
+    // Get selected date
+    const selectedDate = dateElement.dataset.date;
+    
+    // Load time slots for selected date
+    loadTimeSlots(selectedDate);
+}
+
+async function loadTimeSlots(date) {
+    const timeSlotsContainer = document.querySelector('.time-slots');
+    if (!timeSlotsContainer) return;
+
+    // Show loading
+    timeSlotsContainer.innerHTML = '<p>Loading available time slots...</p>';
+
+    try {
+        // Fetch available time slots from server
+        const response = await fetch(`/api/timeslots/get?date=${date}&service_id=${getSelectedServiceId()}`);
+        const data = await response.json();
+
+        // Clear loading message
+        timeSlotsContainer.innerHTML = '';
+
+        if (data.slots && data.slots.length > 0) {
+            data.slots.forEach(slot => {
+                const slotElement = document.createElement('div');
+                slotElement.classList.add('time-slot');
+                slotElement.textContent = slot.time;
+                slotElement.dataset.time = slot.time;
+
+                if (slot.available) {
+                    slotElement.addEventListener('click', function() {
+                        selectTimeSlot(this);
+                    });
+                } else {
+                    slotElement.classList.add('booked');
+                }
+
+                timeSlotsContainer.appendChild(slotElement);
+            });
+        } else {
+            timeSlotsContainer.innerHTML = '<p>No time slots available for this date.</p>';
+        }
+    } catch (error) {
+        console.error('Error loading time slots:', error);
+        timeSlotsContainer.innerHTML = '<p>Error loading time slots. Please try again.</p>';
+    }
+}
+
+function selectTimeSlot(slotElement) {
+    // Remove previous selection
+    document.querySelectorAll('.time-slot.selected').forEach(el => {
+        el.classList.remove('selected');
+    });
+
+    // Add selection
+    slotElement.classList.add('selected');
+
+    // Enable continue button
+    const continueBtn = document.querySelector('.booking-continue-btn');
+    if (continueBtn) {
+        continueBtn.disabled = false;
+    }
+}
+
+function initializeTimeSlots() {
+    // Pre-populate time slots if date is already selected
+    const selectedDate = document.querySelector('.calendar-day.selected');
+    if (selectedDate) {
+        loadTimeSlots(selectedDate.dataset.date);
+    }
+}
+
+function getSelectedServiceId() {
+    const serviceSelect = document.querySelector('#service_id');
+    return serviceSelect ? serviceSelect.value : 1;
+}
+
+// Form Validation
+function validateBookingForm() {
+    const form = document.querySelector('.booking-form');
+    if (!form) return true;
+
+    const requiredFields = form.querySelectorAll('[required]');
+    let isValid = true;
+
+    requiredFields.forEach(field => {
+        if (!field.value.trim()) {
+            field.classList.add('error');
+            isValid = false;
+        } else {
+            field.classList.remove('error');
+        }
+    });
+
+    return isValid;
+}
+
+// Admin Dashboard Functions
+function initializeAdminDashboard() {
+    // Initialize charts if needed
+    const chartElements = document.querySelectorAll('[data-chart]');
+    if (chartElements.length > 0) {
+        // Chart initialization code here
+    }
+}
+
+// Shopping Cart Functions
+let cart = [];
+
+function addToCart(productId, productName, price) {
+    const existingItem = cart.find(item => item.id === productId);
+    
+    if (existingItem) {
+        existingItem.quantity++;
+    } else {
+        cart.push({
+            id: productId,
+            name: productName,
+            price: price,
+            quantity: 1
+        });
+    }
+
+    updateCartDisplay();
+    showNotification('Item added to cart!');
+}
+
+function removeFromCart(productId) {
+    cart = cart.filter(item => item.id !== productId);
+    updateCartDisplay();
+}
+
+function updateCartDisplay() {
+    const cartCount = document.querySelector('.cart-count');
+    const cartItems = document.querySelector('.cart-items');
+    
+    if (cartCount) {
+        const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+        cartCount.textContent = totalItems;
+    }
+
+    if (cartItems) {
+        if (cart.length === 0) {
+            cartItems.innerHTML = '<p>Your cart is empty</p>';
+        } else {
+            cartItems.innerHTML = cart.map(item => `
+                <div class="cart-item">
+                    <span>${item.name}</span>
+                    <span>$${item.price} x ${item.quantity}</span>
+                    <button onclick="removeFromCart(${item.id})">Remove</button>
+                </div>
+            `).join('');
+        }
+    }
+
+    // Save cart to localStorage
+    localStorage.setItem('cart', JSON.stringify(cart));
+}
+
+// Load cart from localStorage on page load
+if (localStorage.getItem('cart')) {
+    cart = JSON.parse(localStorage.getItem('cart'));
+    updateCartDisplay();
+}
+
+// Notification System
+function showNotification(message, type = 'success') {
+    const notification = document.createElement('div');
+    notification.classList.add('notification', `notification-${type}`);
+    notification.textContent = message;
+
+    document.body.appendChild(notification);
+
+    setTimeout(() => {
+        notification.classList.add('show');
+    }, 100);
+
+    setTimeout(() => {
+        notification.classList.remove('show');
+        setTimeout(() => {
+            notification.remove();
+        }, 300);
+    }, 3000);
+}
+
+// Image lazy loading
+const lazyImages = document.querySelectorAll('img[data-src]');
+const imageObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const img = entry.target;
+            img.src = img.dataset.src;
+            img.removeAttribute('data-src');
+            observer.unobserve(img);
+        }
+    });
+});
+
+lazyImages.forEach(img => imageObserver.observe(img));
+
