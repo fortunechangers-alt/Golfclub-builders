@@ -10,17 +10,6 @@
             <p class="section-subtitle">Select your services and add them to your cart for checkout</p>
         </div>
         
-        <!-- Emergency Service Notice -->
-        <div class="card" style="margin-bottom: 3rem; background: linear-gradient(135deg, #ff6b6b, #ee5a52); color: white; border: none;">
-            <h3 style="margin-bottom: 1rem; color: white;">🚨 Emergency Repair Service</h3>
-            <p style="margin-bottom: 1rem; color: rgba(255,255,255,0.9);">Need same-day or next-day service? Select emergency repair for +50% labor charge.</p>
-            <div style="display: flex; align-items: center; gap: 1rem;">
-                <input type="checkbox" id="emergency-service" style="transform: scale(1.2);">
-                <label for="emergency-service" style="font-weight: 600; color: white;">Emergency Service (+50% on labor)</label>
-            </div>
-            <p style="margin-top: 1rem; color: rgba(255,255,255,0.8); font-size: 0.9rem;">⚠️ Emergency service requires phone confirmation for same-day or close appointments</p>
-        </div>
-        
         <!-- Call to Schedule Notice -->
         <div class="card" style="margin-bottom: 3rem; background: linear-gradient(135deg, var(--gold), #e6c45c); border: none; color: var(--graphite);">
             <div style="display: flex; align-items: center; gap: 1rem;">
@@ -99,8 +88,8 @@
             </div>
             
             <!-- Cart Sidebar -->
-            <div>
-                <div class="card" style="position: sticky; top: 140px;">
+            <div style="display: flex; flex-direction: column; gap: 2rem;">
+                <div class="card" style="position: sticky; top: 140px; z-index: 10;">
                     <h3 style="margin-bottom: 1.5rem; color: var(--deep-green);">Your Cart</h3>
                     <div id="cart-items" style="margin-bottom: 2rem;">
                         <p style="color: #666; text-align: center; margin: 2rem 0;">Your cart is empty</p>
@@ -130,14 +119,14 @@
                 </div>
                 
                 <!-- Emergency Service Notice Sidebar -->
-                <div class="card" style="position: sticky; top: calc(140px + 2rem); margin-top: 2rem; background: linear-gradient(135deg, #ff6b6b, #ee5a52); color: white; border: none;">
+                <div class="card" style="background: linear-gradient(135deg, #ff6b6b, #ee5a52); color: white; border: none;">
                     <h3 style="margin-bottom: 1rem; color: white; display: flex; align-items: center; gap: 0.5rem;">
                         🚨 Emergency Repair Service
                     </h3>
                     <p style="margin-bottom: 1rem; color: rgba(255,255,255,0.9); font-size: 0.95rem;">Need same-day or next-day service? Select emergency repair for +50% labor charge.</p>
                     <div style="display: flex; align-items: center; gap: 1rem; background: rgba(255,255,255,0.2); padding: 1rem; border-radius: 8px;">
-                        <input type="checkbox" id="emergency-service-sidebar" style="transform: scale(1.2); cursor: pointer;">
-                        <label for="emergency-service-sidebar" style="font-weight: 600; color: white; cursor: pointer; flex: 1;">Emergency Service (+50% on labor)</label>
+                        <input type="checkbox" id="emergency-service" style="transform: scale(1.2); cursor: pointer;">
+                        <label for="emergency-service" style="font-weight: 600; color: white; cursor: pointer; flex: 1;">Emergency Service (+50% on labor)</label>
                     </div>
                     <p style="margin-top: 1rem; color: rgba(255,255,255,0.8); font-size: 0.85rem; display: flex; align-items: flex-start; gap: 0.5rem;">
                         <span>⚠️</span>
@@ -155,16 +144,8 @@ let cart = JSON.parse(localStorage.getItem('golf_cart')) || [];
 let emergencyMode = false;
 
 // Update emergency mode
-// Emergency service toggle - sync both checkboxes
 document.getElementById('emergency-service').addEventListener('change', function() {
     emergencyMode = this.checked;
-    document.getElementById('emergency-service-sidebar').checked = this.checked;
-    updateCartDisplay();
-});
-
-document.getElementById('emergency-service-sidebar').addEventListener('change', function() {
-    emergencyMode = this.checked;
-    document.getElementById('emergency-service').checked = this.checked;
     updateCartDisplay();
 });
 
