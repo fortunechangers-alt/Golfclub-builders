@@ -39,15 +39,11 @@ $routes->get('/about', 'Pages::about');
 $routes->get('/contact', 'Pages::contact');
 $routes->post('/contact/submit', 'Pages::contactSubmit');
 
-// Authentication
-$routes->get('/login', 'Auth::login');
-$routes->post('/login', 'Auth::attemptLogin');
-$routes->get('/register', 'Auth::register');
-$routes->post('/register', 'Auth::attemptRegister');
-$routes->get('/logout', 'Auth::logout');
+// Authentication - Using CodeIgniter Shield
+service('auth')->routes($routes);
 
-// Admin Panel (Auth filter temporarily disabled for testing)
-$routes->group('admin', function($routes) {
+// Admin Panel (Protected by Shield Authentication)
+$routes->group('admin', ['filter' => 'session'], function($routes) {
     $routes->get('/', 'Admin\Dashboard::index');
     $routes->get('dashboard', 'Admin\Dashboard::index');
     
