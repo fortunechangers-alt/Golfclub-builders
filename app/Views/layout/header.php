@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Golf Club Builders - AI Assisted Club Fittings and Professional Regripping Services">
-    <title><?= isset($title) ? esc($title) . ' - Golf Club Builders' : 'Golf Club Builders - AI Assisted Club Fittings' ?></title>
+    <meta name="description" content="Golf Club Builders - Precision. Performance. Every Swing. Professional club building, fitting, and simulator services in Chambersburg, PA">
+    <title><?= isset($title) ? esc($title) . ' - Golf Club Builders' : 'Golf Club Builders - Precision. Performance. Every Swing.' ?></title>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,14 +30,20 @@
             
             <ul class="nav-menu">
                 <li><a href="<?= base_url('/') ?>" class="nav-link">Home</a></li>
-                <li><a href="<?= base_url('/services') ?>" class="nav-link">Services</a></li>
-                <li><a href="<?= base_url('/shop') ?>" class="nav-link">Shop</a></li>
-                <li><a href="<?= base_url('/booking') ?>" class="nav-link">Book Appointment</a></li>
-                <li><a href="<?= base_url('/about') ?>" class="nav-link">About</a></li>
+                <li><a href="<?= base_url('/custom-club-building') ?>" class="nav-link">Club Builds</a></li>
+                <li><a href="<?= base_url('/fitting') ?>" class="nav-link">Fitting</a></li>
+                <li><a href="<?= base_url('/simulator') ?>" class="nav-link">Simulator</a></li>
+                <li><a href="<?= base_url('/blog') ?>" class="nav-link">Blog</a></li>
                 <li><a href="<?= base_url('/contact') ?>" class="nav-link">Contact</a></li>
                 <?php if (auth()->loggedIn()): ?>
-                    <?php if (auth()->user()->inGroup('superadmin', 'admin')): ?>
-                        <li><a href="<?= base_url('/admin') ?>" class="nav-link">Admin</a></li>
+                    <?php 
+                    $user = auth()->user();
+                    $isAdmin = isset($user->is_admin) && $user->is_admin == 1;
+                    ?>
+                    <?php if ($isAdmin): ?>
+                        <li><a href="<?= base_url('/toggle-view') ?>" class="btn btn-primary" style="margin-right: 10px;">
+                            🔄 Switch to Admin View
+                        </a></li>
                     <?php else: ?>
                         <li><a href="<?= base_url('/account') ?>" class="nav-link">My Account</a></li>
                     <?php endif; ?>

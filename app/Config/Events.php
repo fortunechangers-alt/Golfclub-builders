@@ -53,3 +53,14 @@ Events::on('pre_system', static function (): void {
         }
     }
 });
+
+/*
+ * --------------------------------------------------------------------
+ * Shield Authentication Events
+ * --------------------------------------------------------------------
+ * Set default view mode to 'customer' when user logs in
+ */
+Events::on('login', static function ($user): void {
+    // Set default view mode to customer for all users (including admins)
+    session()->set('view_mode', 'customer');
+});

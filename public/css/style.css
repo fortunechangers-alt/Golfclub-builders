@@ -1,13 +1,18 @@
 /* Golf Club Builders - Modern Clean Design */
 
 :root {
-    --navy-blue: #0A1F44;
-    --golf-green: #00A651;
+    --deep-green: #0B6E4F;
+    --graphite: #1F2937;
     --white: #FFFFFF;
-    --gold: #D4AF37;
-    --light-gray: #F5F7FA;
+    --gold: #C8A96A;
+    --light: #F7F9F8;
     --dark-gray: #333333;
     --shadow: rgba(0, 0, 0, 0.1);
+    
+    /* Legacy aliases for compatibility */
+    --navy-blue: var(--deep-green);
+    --golf-green: var(--deep-green);
+    --light-gray: var(--light);
 }
 
 * {

@@ -30,16 +30,17 @@
             <div class="footer-section">
                 <h3>Services</h3>
                 <ul class="footer-links">
-                    <li><a href="<?= base_url('/services/ai-club-fitting') ?>">AI Club Fitting</a></li>
-                    <li><a href="<?= base_url('/services/regripping') ?>">Professional Regripping</a></li>
-                    <li><a href="<?= base_url('/booking') ?>">Book Appointment</a></li>
+                    <li><a href="<?= base_url('/club-builds') ?>">Club Builds</a></li>
+                    <li><a href="<?= base_url('/fitting') ?>">Fitting</a></li>
+                    <li><a href="<?= base_url('/simulator') ?>">Simulator</a></li>
+                    <li><a href="<?= base_url('/blog') ?>">Blog</a></li>
                 </ul>
             </div>
             
             <div class="footer-section">
                 <h3>Contact Info</h3>
                 <ul class="footer-links">
-                    <li>📧 daniel@golf-builders.com</li>
+                    <li>📧 Daniel@Golfclub-builders.com</li>
                     <li>📞 (717) 387-1643</li>
                     <li>📍 254 Farmington Road<br>&nbsp;&nbsp;&nbsp;&nbsp;Chambersburg, PA 17202</li>
                 </ul>

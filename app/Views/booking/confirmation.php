@@ -96,7 +96,7 @@
         
         <div style="text-align: center; margin-top: 2rem; color: #666;">
             <p>Need to make changes? Contact us at:</p>
-            <p style="font-weight: 600; color: var(--navy-blue);">📞 (717) 387-1643 | 📧 daniel@golf-builders.com</p>
+            <p style="font-weight: 600; color: var(--navy-blue);">📞 (717) 387-1643 | 📧 Daniel@Golfclub-builders.com</p>
         </div>
     </div>
 </section>

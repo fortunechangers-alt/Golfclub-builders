@@ -96,8 +96,8 @@
                     </a>
                 </li>
                 <li style="margin-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1rem;">
-                    <a href="<?= base_url('/') ?>">
-                        🏠 View Site
+                    <a href="<?= base_url('/toggle-view') ?>">
+                        🔄 Switch to Customer View
                     </a>
                 </li>
                 <li>

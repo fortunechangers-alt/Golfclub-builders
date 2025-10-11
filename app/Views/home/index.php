@@ -1,12 +1,17 @@
+<!-- Policy Banner -->
+<div style="background: var(--deep-green); color: white; text-align: center; padding: 0.75rem; font-weight: 600;">
+    In-home workshop — No walk-ins. Call to book: <a href="tel:7173871643" style="color: white; text-decoration: underline;">(717) 387-1643</a>
+</div>
+
 <!-- Hero Section -->
 <section class="hero">
     <div class="hero-container">
         <div class="hero-content">
-            <h1>Perfect Your Game with <span class="highlight">AI-Powered</span> Club Fitting</h1>
-            <p>Experience the future of golf club fitting. Our advanced AI technology combined with expert craftsmanship ensures your clubs are perfectly matched to your swing.</p>
+            <h1>Precision. Performance.<br><span class="highlight" style="color: var(--gold);">Every Swing.</span></h1>
+            <p>Professional club building, fitting, and simulator services. In-home workshop serving Chambersburg and surrounding areas.</p>
             <div class="hero-cta">
-                <a href="<?= base_url('/booking') ?>" class="btn btn-primary">Book Your Fitting</a>
-                <a href="<?= base_url('/services') ?>" class="btn btn-outline">Learn More</a>
+                <a href="tel:7173871643" class="btn btn-primary">📞 Call (717) 387-1643</a>
+                <a href="<?= base_url('/club-builds') ?>" class="btn btn-outline">Club Builds</a>
             </div>
         </div>
         <div class="hero-image">
@@ -25,27 +30,27 @@
         
         <div class="services-grid">
             <div class="card service-card">
-                <div class="service-icon">🎯</div>
-                <h3>AI Club Fitting</h3>
-                <p>Revolutionary AI technology analyzes your swing in real-time, providing data-driven recommendations for optimal club selection and customization.</p>
-                <p><strong>$199</strong> | 90 minutes</p>
-                <a href="<?= base_url('/booking?service=ai-fitting') ?>" class="btn btn-primary">Book Now</a>
+                <div class="service-icon" style="background: linear-gradient(135deg, var(--deep-green), #0d2a5c);">⚙️</div>
+                <h3>Custom Club Building</h3>
+                <p>Complete custom club building service from shaft selection to final assembly. Each club meticulously crafted to your exact specifications.</p>
+                <p><strong>Starting at $24</strong> | Emergency +50%</p>
+                <a href="<?= base_url('/custom-club-building') ?>" class="btn btn-primary">Build & Order</a>
             </div>
             
             <div class="card service-card">
                 <div class="service-icon" style="background: linear-gradient(135deg, var(--gold), #e6c45c);">🏌️</div>
-                <h3>Professional Regripping</h3>
-                <p>Expert regripping services using premium grips. Improve your control and comfort with professionally installed grips tailored to your preferences.</p>
-                <p><strong>$49</strong> | 30 minutes</p>
-                <a href="<?= base_url('/booking?service=regripping') ?>" class="btn btn-primary">Book Now</a>
+                <h3>Simulator Rental</h3>
+                <p>GC3 Foresight simulator rental with professional analysis. Perfect for winter practice, club testing, and swing improvement.</p>
+                <p><strong>$40/hour</strong> | Half/Full day available</p>
+                <a href="<?= base_url('/simulator') ?>" class="btn btn-primary">Rent Simulator</a>
             </div>
             
             <div class="card service-card">
-                <div class="service-icon" style="background: linear-gradient(135deg, var(--navy-blue), #1a3a6b);">⚙️</div>
-                <h3>Custom Club Building</h3>
-                <p>Complete custom club building service from shaft selection to final assembly. Each club meticulously crafted to your exact specifications.</p>
-                <p><strong>Starting at $299</strong></p>
-                <a href="<?= base_url('/contact') ?>" class="btn btn-primary">Contact Us</a>
+                <div class="service-icon">🎯</div>
+                <h3>AI Club & Shaft Fitting</h3>
+                <p>Revolutionary AI technology analyzes your swing in real-time, providing data-driven recommendations for optimal club selection and customization.</p>
+                <p><strong>Starting at $75</strong> | 90 minutes</p>
+                <a href="<?= base_url('/ai-fitting') ?>" class="btn btn-primary">Book Fitting</a>
             </div>
         </div>
     </div>
@@ -192,4 +197,5 @@
         </div>
     </div>
 </section>
+
 

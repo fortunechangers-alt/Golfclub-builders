@@ -16,6 +16,22 @@ $routes->get('/test-block', 'TestBlockDate::index');
 $routes->get('/services', 'Services::index');
 $routes->get('/services/(:segment)', 'Services::view/$1');
 
+// New Pages
+$routes->get('/custom-club-building', 'CustomClubBuilding::index');
+$routes->get('/ai-fitting', 'AiFitting::index');
+$routes->get('/fitting', 'AiFitting::index'); // Alias for menu compatibility
+$routes->get('/simulator', 'Simulator::index');
+$routes->get('/blog', 'Blog::index');
+$routes->get('/blog/(:segment)', 'Blog::view/$1');
+
+// Cart functionality
+$routes->get('/cart', 'Cart::index');
+$routes->post('/cart/add', 'Cart::add');
+$routes->post('/cart/remove', 'Cart::remove');
+$routes->post('/cart/update', 'Cart::update');
+$routes->get('/checkout', 'Checkout::index');
+$routes->post('/checkout/process', 'Checkout::process');
+
 // Booking
 $routes->get('/booking', 'Booking::index');
 $routes->post('/booking/create', 'Booking::create');
@@ -42,8 +58,11 @@ $routes->post('/contact/submit', 'Pages::contactSubmit');
 // Authentication - Using CodeIgniter Shield
 service('auth')->routes($routes);
 
-// Admin Panel (Protected by Shield Authentication)
-$routes->group('admin', ['filter' => 'session'], function($routes) {
+// View Toggle (Admin only)
+$routes->get('/toggle-view', 'ToggleView::toggle');
+
+// Admin Panel (Protected by Shield Authentication and Admin Filter)
+$routes->group('admin', ['filter' => 'admin'], function($routes) {
     $routes->get('/', 'Admin\Dashboard::index');
     $routes->get('dashboard', 'Admin\Dashboard::index');
     

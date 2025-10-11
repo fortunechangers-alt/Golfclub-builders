@@ -1,8 +1,28 @@
 <section class="section" style="margin-top: 120px;">
     <div class="container">
         <div class="section-header">
-            <h1 class="section-title">Book Your Appointment</h1>
-            <p class="section-subtitle">Select a service, choose your preferred date and time</p>
+            <h1 class="section-title">Request an Appointment</h1>
+            <p class="section-subtitle">Submit your request and we'll confirm by phone within 24 hours</p>
+        </div>
+        
+        <!-- Request-Only Notice -->
+        <div class="card" style="margin-bottom: 2rem; background: var(--light); border-left: 4px solid var(--deep-green);">
+            <h3 style="margin-bottom: 1rem; color: var(--deep-green);">📞 Request-Only Booking</h3>
+            <p style="margin-bottom: 1rem; color: #666;">All appointments are request-only. After you submit your request, we'll call you within 24 hours to confirm availability and finalize your appointment.</p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                <div>
+                    <strong>✓ No deposit required</strong><br>
+                    <span style="color: #666; font-size: 0.9rem;">Pay when you arrive</span>
+                </div>
+                <div>
+                    <strong>✓ 24-hour confirmation</strong><br>
+                    <span style="color: #666; font-size: 0.9rem;">We'll call to confirm</span>
+                </div>
+                <div>
+                    <strong>✓ Emergency override</strong><br>
+                    <span style="color: #666; font-size: 0.9rem;">Call for same-day requests</span>
+                </div>
+            </div>
         </div>
         
         <?php if (session()->getFlashdata('success')): ?>
