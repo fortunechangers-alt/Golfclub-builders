@@ -128,6 +128,22 @@
                         <a href="<?= base_url('/checkout') ?>" class="btn btn-primary" style="width: 100%; text-align: center; display: none;" id="checkout-btn">Proceed to Checkout</a>
                     </div>
                 </div>
+                
+                <!-- Emergency Service Notice Sidebar -->
+                <div class="card" style="position: sticky; top: calc(140px + 2rem); margin-top: 2rem; background: linear-gradient(135deg, #ff6b6b, #ee5a52); color: white; border: none;">
+                    <h3 style="margin-bottom: 1rem; color: white; display: flex; align-items: center; gap: 0.5rem;">
+                        🚨 Emergency Repair Service
+                    </h3>
+                    <p style="margin-bottom: 1rem; color: rgba(255,255,255,0.9); font-size: 0.95rem;">Need same-day or next-day service? Select emergency repair for +50% labor charge.</p>
+                    <div style="display: flex; align-items: center; gap: 1rem; background: rgba(255,255,255,0.2); padding: 1rem; border-radius: 8px;">
+                        <input type="checkbox" id="emergency-service-sidebar" style="transform: scale(1.2); cursor: pointer;">
+                        <label for="emergency-service-sidebar" style="font-weight: 600; color: white; cursor: pointer; flex: 1;">Emergency Service (+50% on labor)</label>
+                    </div>
+                    <p style="margin-top: 1rem; color: rgba(255,255,255,0.8); font-size: 0.85rem; display: flex; align-items: flex-start; gap: 0.5rem;">
+                        <span>⚠️</span>
+                        <span>Emergency service requires phone confirmation for same-day or close appointments</span>
+                    </p>
+                </div>
             </div>
         </div>
     </div>
@@ -139,8 +155,16 @@ let cart = JSON.parse(localStorage.getItem('golf_cart')) || [];
 let emergencyMode = false;
 
 // Update emergency mode
+// Emergency service toggle - sync both checkboxes
 document.getElementById('emergency-service').addEventListener('change', function() {
     emergencyMode = this.checked;
+    document.getElementById('emergency-service-sidebar').checked = this.checked;
+    updateCartDisplay();
+});
+
+document.getElementById('emergency-service-sidebar').addEventListener('change', function() {
+    emergencyMode = this.checked;
+    document.getElementById('emergency-service').checked = this.checked;
     updateCartDisplay();
 });
 
