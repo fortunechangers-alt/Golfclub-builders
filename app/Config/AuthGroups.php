@@ -11,11 +11,11 @@ declare(strict_types=1);
  * the LICENSE file that was distributed with this source code.
  */
 
-namespace CodeIgniter\Shield\Config;
+namespace Config;
 
-use CodeIgniter\Config\BaseConfig;
+use CodeIgniter\Shield\Config\AuthGroups as ShieldAuthGroups;
 
-class AuthGroups extends BaseConfig
+class AuthGroups extends ShieldAuthGroups
 {
     /**
      * --------------------------------------------------------------------

@@ -30,7 +30,7 @@ class Dashboard extends BaseController
             'total_bookings' => $this->bookingModel->countAll(),
             'pending_bookings' => $this->bookingModel->where('status', 'pending')->countAllResults(),
             'today_bookings' => $this->bookingModel->where('booking_date', date('Y-m-d'))->countAllResults(),
-            'total_customers' => $this->userModel->where('role', 'customer')->countAllResults(),
+            'total_customers' => $this->userModel->countAll(), // All users for now
         ];
         
         // Get recent bookings
