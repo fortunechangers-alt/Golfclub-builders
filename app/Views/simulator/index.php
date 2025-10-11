@@ -3,12 +3,25 @@
     In-home workshop — No walk-ins. Call to book: <a href="tel:7173871643" style="color: white; text-decoration: underline;">(717) 387-1643</a>
 </div>
 
-<section class="section" style="margin-top: 120px;">
-    <div class="container">
-        <div class="section-header">
-            <h1 class="section-title">Simulator</h1>
-            <p class="section-subtitle">GC3 Foresight simulator rental with professional analysis</p>
+<!-- Parallax Background Section -->
+<section class="parallax-section" style="position: relative; height: 60vh; min-height: 400px; overflow: hidden; margin-top: 120px;">
+    <!-- Parallax Background Image -->
+    <div class="parallax-bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 120%; background-image: url('<?= base_url('images/golf-course-parallax.webp') ?>'); background-size: cover; background-position: center; background-attachment: fixed; will-change: transform;"></div>
+    
+    <!-- Overlay for better text readability -->
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, rgba(11, 110, 79, 0.7) 0%, rgba(31, 41, 55, 0.6) 100%);"></div>
+    
+    <!-- Content -->
+    <div class="container" style="position: relative; z-index: 2; height: 100%; display: flex; align-items: center; justify-content: center;">
+        <div class="section-header" style="text-align: center; color: white;">
+            <h1 class="section-title" style="color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); font-size: 3.5rem; margin-bottom: 1rem;">Simulator</h1>
+            <p class="section-subtitle" style="color: rgba(255,255,255,0.9); text-shadow: 1px 1px 2px rgba(0,0,0,0.5); font-size: 1.3rem; max-width: 600px; margin: 0 auto;">GC3 Foresight simulator rental with professional analysis</p>
         </div>
+    </div>
+</section>
+
+<section class="section" style="margin-top: 0;">
+    <div class="container">
         
         <!-- Call to Schedule Notice -->
         <div class="card" style="margin-bottom: 3rem; background: linear-gradient(135deg, var(--gold), #e6c45c); border: none; color: var(--graphite);">
@@ -282,4 +295,23 @@ document.querySelectorAll('.rental-option-btn').forEach(btn => {
         window.location.href = '<?= base_url('/cart') ?>';
     });
 });
+
+// Parallax scrolling effect
+window.addEventListener('scroll', function() {
+    const scrolled = window.pageYOffset;
+    const parallax = document.querySelector('.parallax-bg');
+    const speed = scrolled * 0.5;
+    
+    if (parallax) {
+        parallax.style.transform = `translateY(${speed}px)`;
+    }
+});
+
+// Smooth parallax on mobile devices
+if (window.innerWidth <= 768) {
+    const parallax = document.querySelector('.parallax-bg');
+    if (parallax) {
+        parallax.style.backgroundAttachment = 'scroll';
+    }
+}
 </script>
