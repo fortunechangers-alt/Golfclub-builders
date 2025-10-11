@@ -49,6 +49,16 @@
                         <li style="margin-bottom: 0.5rem;">✓ Weather-independent golf</li>
                         <li style="margin-bottom: 0.5rem;">✓ Course strategy practice</li>
                     </ul>
+                    
+                    <!-- GC3 Foresight Technology Image -->
+                    <div style="margin-top: 2rem; text-align: center;">
+                        <img src="<?= base_url('images/gc3-foresight-tech.jpg') ?>" 
+                             alt="GC3 Foresight Launch Monitor Technology" 
+                             style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                        <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #666; font-style: italic;">
+                            Professional GC3 Foresight launch monitor technology
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
