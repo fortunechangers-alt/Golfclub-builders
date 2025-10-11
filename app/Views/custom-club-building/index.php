@@ -180,6 +180,9 @@ function addToCart(serviceId, serviceName, price, unit) {
     // Save to localStorage
     localStorage.setItem('golf_cart', JSON.stringify(cart));
     
+    // Trigger cart update event
+    document.dispatchEvent(new CustomEvent('cartUpdated'));
+    
     // Update display
     updateCartDisplay();
     
@@ -267,6 +270,9 @@ function updateCartQuantity(index, change) {
     // Save to localStorage
     localStorage.setItem('golf_cart', JSON.stringify(cart));
     
+    // Trigger cart update event
+    document.dispatchEvent(new CustomEvent('cartUpdated'));
+    
     // Update display
     updateCartDisplay();
 }
@@ -276,6 +282,9 @@ function removeFromCart(index) {
     
     // Save to localStorage
     localStorage.setItem('golf_cart', JSON.stringify(cart));
+    
+    // Trigger cart update event
+    document.dispatchEvent(new CustomEvent('cartUpdated'));
     
     // Update display
     updateCartDisplay();

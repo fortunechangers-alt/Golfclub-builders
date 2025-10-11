@@ -136,6 +136,10 @@ function updateQuantity(index, newQuantity) {
     const cart = JSON.parse(localStorage.getItem('golf_cart')) || [];
     cart[index].quantity = newQuantity;
     localStorage.setItem('golf_cart', JSON.stringify(cart));
+    
+    // Trigger cart update event
+    document.dispatchEvent(new CustomEvent('cartUpdated'));
+    
     loadCart();
 }
 
@@ -143,6 +147,10 @@ function removeItem(index) {
     const cart = JSON.parse(localStorage.getItem('golf_cart')) || [];
     cart.splice(index, 1);
     localStorage.setItem('golf_cart', JSON.stringify(cart));
+    
+    // Trigger cart update event
+    document.dispatchEvent(new CustomEvent('cartUpdated'));
+    
     loadCart();
 }
 

@@ -181,6 +181,53 @@ h4 { font-size: 1.5rem; }
     border-color: white;
 }
 
+/* Cart Button Styles */
+.cart-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: var(--deep-green);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.cart-button:hover {
+    background: #0a5a42;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(11, 110, 79, 0.3);
+}
+
+.cart-icon {
+    font-size: 1.2rem;
+}
+
+.cart-count {
+    background: var(--gold);
+    color: var(--graphite);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: 700;
+    min-width: 24px;
+    transition: all 0.3s ease;
+}
+
+.cart-button:hover .cart-count {
+    background: white;
+    color: var(--deep-green);
+    transform: scale(1.1);
+}
+
 /* Hero Section */
 .hero {
     min-height: 100vh;
