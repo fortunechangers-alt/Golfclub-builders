@@ -534,7 +534,8 @@ h4 { font-size: 1.5rem; }
 }
 
 .footer-column:nth-of-type(2) {
-    padding-right: 2rem;
+    padding-right: 3rem;
+    margin-left: -1rem;
 }
 
 .footer-title {
@@ -1045,3 +1046,4 @@ textarea.form-control {
 }
 
 /* Updated Sat Oct 11 18:33:43 EDT 2025 */
+/* Force cache refresh Sat Oct 11 19:24:19 EDT 2025 */
