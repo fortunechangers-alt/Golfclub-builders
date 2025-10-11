@@ -1,25 +1,111 @@
 <?php
 
-/*
- |--------------------------------------------------------------------------
- | ERROR DISPLAY
- |--------------------------------------------------------------------------
- | Don't show ANY in production environments. Instead, let the system catch
- | it and display a generic error message.
- |
- | If you set 'display_errors' to '1', CI4's detailed error report will show.
+/**
+ * This file is loaded during the boot process when the environment
+ * is set to production.
  */
-error_reporting(E_ALL & ~E_DEPRECATED);
-// If you want to suppress more types of errors.
-// error_reporting(E_ALL & ~E_NOTICE & ~E_DEPRECATED & ~E_STRICT & ~E_USER_NOTICE & ~E_USER_DEPRECATED);
-ini_set('display_errors', '0');
 
-/*
- |--------------------------------------------------------------------------
- | DEBUG MODE
- |--------------------------------------------------------------------------
- | Debug mode is an experimental flag that can allow changes throughout
- | the system. It's not widely used currently, and may not survive
- | release of the framework.
- */
-defined('CI_DEBUG') || define('CI_DEBUG', false);
+// Polyfill for Locale class (intl extension not available in XAMPP)
+if (!class_exists('Locale')) {
+    class Locale
+    {
+        public const DEFAULT_LOCALE = 'en';
+
+        public static function getDefault(): string
+        {
+            return self::DEFAULT_LOCALE;
+        }
+
+        public static function setDefault(string $locale): bool
+        {
+            return true;
+        }
+
+        public static function acceptFromHttp(?string $header): ?string
+        {
+            return self::DEFAULT_LOCALE;
+        }
+
+        public static function canonicalize(string $locale): string
+        {
+            return str_replace('_', '-', $locale);
+        }
+
+        public static function composeLocale(array $subtags): string
+        {
+            return self::DEFAULT_LOCALE;
+        }
+
+        public static function filterMatches(string $langtag, string $locale, bool $canonicalize = false): ?bool
+        {
+            return true;
+        }
+
+        public static function getAllVariants(string $locale): array
+        {
+            return [];
+        }
+
+        public static function getDisplayLanguage(string $locale, ?string $displayLocale = null): string
+        {
+            return 'English';
+        }
+
+        public static function getDisplayName(string $locale, ?string $displayLocale = null): string
+        {
+            return 'English';
+        }
+
+        public static function getDisplayRegion(string $locale, ?string $displayLocale = null): string
+        {
+            return 'United States';
+        }
+
+        public static function getDisplayScript(string $locale, ?string $displayLocale = null): string
+        {
+            return 'Latin';
+        }
+
+        public static function getDisplayVariant(string $locale, ?string $displayLocale = null): string
+        {
+            return '';
+        }
+
+        public static function getKeywords(string $locale): array
+        {
+            return [];
+        }
+
+        public static function getPrimaryLanguage(string $locale): string
+        {
+            return 'en';
+        }
+
+        public static function getRegion(string $locale): string
+        {
+            return 'US';
+        }
+
+        public static function getScript(string $locale): string
+        {
+            return '';
+        }
+
+        public static function lookup(array $languageTag, string $locale, bool $canonicalize = false, ?string $defaultLocale = null): ?string
+        {
+            return $defaultLocale ?? self::DEFAULT_LOCALE;
+        }
+
+        public static function parseLocale(string $locale): array
+        {
+            return [
+                'language' => 'en',
+                'region' => 'US',
+            ];
+        }
+    }
+}
+
+// Error display settings
+ini_set('display_errors', '0');
+error_reporting(E_ALL & ~E_NOTICE & ~E_DEPRECATED & ~E_STRICT & ~E_USER_NOTICE & ~E_USER_DEPRECATED);

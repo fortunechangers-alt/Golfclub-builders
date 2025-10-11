@@ -1,38 +1,107 @@
 <?php
 
-/*
- * The environment testing is reserved for PHPUnit testing. It has special
- * conditions built into the framework at various places to assist with that.
- * You can’t use it for your development.
+/**
+ * This file is loaded during the boot process when the environment
+ * is set to testing.
  */
 
-/*
- |--------------------------------------------------------------------------
- | ERROR DISPLAY
- |--------------------------------------------------------------------------
- | In development, we want to show as many errors as possible to help
- | make sure they don't make it to production. And save us hours of
- | painful debugging.
- */
-error_reporting(E_ALL);
-ini_set('display_errors', '1');
+// Polyfill for Locale class (intl extension not available in XAMPP)
+if (!class_exists('Locale')) {
+    class Locale
+    {
+        public const DEFAULT_LOCALE = 'en';
 
-/*
- |--------------------------------------------------------------------------
- | DEBUG BACKTRACES
- |--------------------------------------------------------------------------
- | If true, this constant will tell the error screens to display debug
- | backtraces along with the other error information. If you would
- | prefer to not see this, set this value to false.
- */
-defined('SHOW_DEBUG_BACKTRACE') || define('SHOW_DEBUG_BACKTRACE', true);
+        public static function getDefault(): string
+        {
+            return self::DEFAULT_LOCALE;
+        }
 
-/*
- |--------------------------------------------------------------------------
- | DEBUG MODE
- |--------------------------------------------------------------------------
- | Debug mode is an experimental flag that can allow changes throughout
- | the system. It's not widely used currently, and may not survive
- | release of the framework.
- */
-defined('CI_DEBUG') || define('CI_DEBUG', true);
+        public static function setDefault(string $locale): bool
+        {
+            return true;
+        }
+
+        public static function acceptFromHttp(?string $header): ?string
+        {
+            return self::DEFAULT_LOCALE;
+        }
+
+        public static function canonicalize(string $locale): string
+        {
+            return str_replace('_', '-', $locale);
+        }
+
+        public static function composeLocale(array $subtags): string
+        {
+            return self::DEFAULT_LOCALE;
+        }
+
+        public static function filterMatches(string $langtag, string $locale, bool $canonicalize = false): ?bool
+        {
+            return true;
+        }
+
+        public static function getAllVariants(string $locale): array
+        {
+            return [];
+        }
+
+        public static function getDisplayLanguage(string $locale, ?string $displayLocale = null): string
+        {
+            return 'English';
+        }
+
+        public static function getDisplayName(string $locale, ?string $displayLocale = null): string
+        {
+            return 'English';
+        }
+
+        public static function getDisplayRegion(string $locale, ?string $displayLocale = null): string
+        {
+            return 'United States';
+        }
+
+        public static function getDisplayScript(string $locale, ?string $displayLocale = null): string
+        {
+            return 'Latin';
+        }
+
+        public static function getDisplayVariant(string $locale, ?string $displayLocale = null): string
+        {
+            return '';
+        }
+
+        public static function getKeywords(string $locale): array
+        {
+            return [];
+        }
+
+        public static function getPrimaryLanguage(string $locale): string
+        {
+            return 'en';
+        }
+
+        public static function getRegion(string $locale): string
+        {
+            return 'US';
+        }
+
+        public static function getScript(string $locale): string
+        {
+            return '';
+        }
+
+        public static function lookup(array $languageTag, string $locale, bool $canonicalize = false, ?string $defaultLocale = null): ?string
+        {
+            return $defaultLocale ?? self::DEFAULT_LOCALE;
+        }
+
+        public static function parseLocale(string $locale): array
+        {
+            return [
+                'language' => 'en',
+                'region' => 'US',
+            ];
+        }
+    }
+}
