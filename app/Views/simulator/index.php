@@ -5,16 +5,9 @@
 
 <section class="section" style="margin-top: 120px;">
     <div class="container">
-        <div class="section-header" style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;">
-            <div style="flex: 1; min-width: 300px;">
-                <h1 class="section-title">Simulator</h1>
-                <p class="section-subtitle">GC3 Foresight simulator rental with professional analysis</p>
-            </div>
-            <div style="flex-shrink: 0;">
-                <img src="<?= base_url('images/gc3-foresight-tech.jpg') ?>" 
-                     alt="GC3 Foresight Launch Monitor Technology" 
-                     style="max-width: 200px; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-            </div>
+        <div class="section-header">
+            <h1 class="section-title">Simulator</h1>
+            <p class="section-subtitle">GC3 Foresight simulator rental with professional analysis</p>
         </div>
         
         <!-- Call to Schedule Notice -->
