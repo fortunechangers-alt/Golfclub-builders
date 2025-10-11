@@ -41,7 +41,7 @@
                 </div>
                 
                 <!-- Services Column -->
-                <div class="footer-column">
+                <div class="footer-column" style="padding-right: 3rem; margin-left: -1rem;">
                     <h3 class="footer-title">Services</h3>
                     <ul class="footer-links">
                         <li><a href="<?= base_url('/custom-club-building') ?>" class="footer-link">Club Building</a></li>
