@@ -3,7 +3,10 @@
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-section">
-                <img src="<?= base_url('images/logo-small.png') ?>" alt="Golf Club Builders" style="width: 80px; height: auto; margin-bottom: 1rem;">
+                <picture>
+                    <source srcset="<?= base_url('images/logo-small.webp') ?>" type="image/webp">
+                    <img src="<?= base_url('images/logo-small.png') ?>" alt="Golf Club Builders" style="width: 80px; height: auto; margin-bottom: 1rem;">
+                </picture>
                 <h3>Golf Club Builders</h3>
                 <p>Elevating your golf game with AI-assisted club fittings and professional regripping services.</p>
                 <div class="social-links" style="margin-top: 1.5rem;">

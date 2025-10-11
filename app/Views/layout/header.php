@@ -15,13 +15,17 @@
     <link rel="stylesheet" href="<?= base_url('css/style.css') ?>">
     
     <!-- Favicon -->
+    <link rel="icon" type="image/webp" href="<?= base_url('images/logo-small.webp') ?>">
     <link rel="icon" type="image/png" href="<?= base_url('images/logo-small.png') ?>">
 </head>
 <body>
     <header class="header">
         <nav class="nav-container">
             <a href="<?= base_url('/') ?>" class="logo">
-                <img src="<?= base_url('images/logo-banner.png') ?>" alt="Golf Club Builders" style="height: 60px; width: auto;">
+                <picture>
+                    <source srcset="<?= base_url('images/logo-banner.webp') ?>" type="image/webp">
+                    <img src="<?= base_url('images/logo-banner.png') ?>" alt="Golf Club Builders" style="height: 60px; width: auto;">
+                </picture>
             </a>
             
             <ul class="nav-menu">
