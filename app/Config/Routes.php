@@ -58,6 +58,14 @@ $routes->group('admin', function($routes) {
     $routes->post('calendar/block', 'Admin\Calendar::blockDate');
     $routes->post('calendar/unblock', 'Admin\Calendar::unblockDate');
     
+    // Available Time Slots Management (Soft Opening)
+    $routes->get('available-slots', 'Admin\AvailableSlots::index');
+    $routes->get('available-slots/create', 'Admin\AvailableSlots::create');
+    $routes->post('available-slots/store', 'Admin\AvailableSlots::store');
+    $routes->get('available-slots/quick-create', 'Admin\AvailableSlots::quickCreate');
+    $routes->get('available-slots/toggle/(:num)', 'Admin\AvailableSlots::toggle/$1');
+    $routes->get('available-slots/delete/(:num)', 'Admin\AvailableSlots::delete/$1');
+    
     // Products Management
     $routes->get('products', 'Admin\Products::index');
     $routes->get('products/create', 'Admin\Products::create');

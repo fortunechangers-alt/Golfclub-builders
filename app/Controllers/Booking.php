@@ -7,6 +7,7 @@ use App\Models\ServiceModel;
 use App\Models\BookingModel;
 use App\Models\BlockedDateModel;
 use App\Models\BusinessHourModel;
+use App\Models\AvailableTimeSlotModel;
 
 class Booking extends BaseController
 {
@@ -14,6 +15,7 @@ class Booking extends BaseController
     protected $bookingModel;
     protected $blockedDateModel;
     protected $businessHourModel;
+    protected $availableSlotModel;
     
     public function __construct()
     {
@@ -21,6 +23,7 @@ class Booking extends BaseController
         $this->bookingModel = new BookingModel();
         $this->blockedDateModel = new BlockedDateModel();
         $this->businessHourModel = new BusinessHourModel();
+        $this->availableSlotModel = new AvailableTimeSlotModel();
         helper(['form', 'url']);
     }
     
@@ -28,7 +31,8 @@ class Booking extends BaseController
     {
         $data = [
             'title' => 'Book Appointment',
-            'services' => $this->serviceModel->where('is_active', 1)->findAll()
+            'services' => $this->serviceModel->where('is_active', 1)->findAll(),
+            'additionalScripts' => view('booking/booking_script')
         ];
         
         return view('layout/header', $data)
@@ -138,44 +142,37 @@ class Booking extends BaseController
             ]);
         }
         
-        // Check if date is blocked
-        $blockedDate = $this->blockedDateModel->where('date', $date)->first();
+        // SOFT OPENING MODE: Check for admin-opened available slots FIRST
+        $availableSlots = $this->availableSlotModel->getAvailableSlotsForDate($date, $serviceId);
         
-        if ($blockedDate) {
+        // If there are available slots created by admin, ONLY show those
+        if (!empty($availableSlots)) {
+            $slots = [];
+            
+            foreach ($availableSlots as $slot) {
+                // Check if slot is already booked
+                $isBooked = $slot['current_bookings'] >= $slot['max_bookings'];
+                
+                $slots[] = [
+                    'time' => date('g:i A', strtotime($slot['start_time'])),
+                    'value' => $slot['start_time'],
+                    'available' => !$isBooked && $slot['is_active']
+                ];
+            }
+            
             return $this->response->setJSON([
-                'status' => 'blocked',
-                'message' => 'This date is not available'
+                'status' => 'success',
+                'slots' => $slots,
+                'mode' => 'soft_opening' // Indicate this is controlled availability
             ]);
         }
         
-        // Get business hours for the day
-        $dayOfWeek = date('w', strtotime($date));
-        $businessHours = $this->businessHourModel->where('day_of_week', $dayOfWeek)->first();
-        
-        if (!$businessHours || !$businessHours['is_open']) {
-            return $this->response->setJSON([
-                'status' => 'closed',
-                'message' => 'We are closed on this day'
-            ]);
-        }
-        
-        // Get existing bookings for the date
-        $existingBookings = $this->bookingModel
-            ->where('booking_date', $date)
-            ->where('status !=', 'cancelled')
-            ->findAll();
-        
-        // Generate available time slots
-        $slots = $this->generateTimeSlots(
-            $businessHours['open_time'],
-            $businessHours['close_time'],
-            $service['duration'],
-            $existingBookings
-        );
-        
+        // If NO available slots exist, return empty (all times are blocked by default for soft opening)
         return $this->response->setJSON([
             'status' => 'success',
-            'slots' => $slots
+            'slots' => [],
+            'message' => 'No time slots are available for this date yet. Please check back later!',
+            'mode' => 'soft_opening'
         ]);
     }
     

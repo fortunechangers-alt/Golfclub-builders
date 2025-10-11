@@ -130,93 +130,11 @@
 </section>
 
 <script>
-// Override the renderCalendar function to add proper click handlers
-document.addEventListener('DOMContentLoaded', function() {
-    // Service selection styling
-    document.querySelectorAll('.service-option').forEach(option => {
-        const radio = option.querySelector('input[type="radio"]');
-        const card = option.querySelector('.card');
-        
-        option.addEventListener('click', function() {
-            // Remove selected class from all cards
-            document.querySelectorAll('.service-option .card').forEach(c => {
-                c.style.borderColor = 'transparent';
-            });
-            
-            // Add selected class to clicked card
-            card.style.borderColor = 'var(--golf-green)';
-            radio.checked = true;
-            
-            // Reload calendar if date is selected
-            const selectedDate = document.querySelector('.calendar-day.selected');
-            if (selectedDate && selectedDate.dataset.date) {
-                loadTimeSlots(selectedDate.dataset.date);
-            }
-        });
-        
-        if (radio.checked) {
-            card.style.borderColor = 'var(--golf-green)';
-        }
-    });
-    
-    // Make the static calendar interactive
-    attachCalendarListeners();
-});
+console.log('Booking page: Loading custom script AFTER main.js');
 
-function attachCalendarListeners() {
-    // Add click handlers to all calendar days
-    document.querySelectorAll('.calendar-day').forEach((dayElement, index) => {
-        // Skip the first 7 items (day headers)
-        if (index < 7) return;
-        
-        const dayNumber = dayElement.textContent.trim();
-        if (dayNumber && !isNaN(dayNumber)) {
-            // Get current month and year from the calendar title
-            const titleText = document.querySelector('.calendar-title').textContent;
-            const [monthName, year] = titleText.split(' ');
-            const monthMap = {
-                'January': '01', 'February': '02', 'March': '03', 'April': '04',
-                'May': '05', 'June': '06', 'July': '07', 'August': '08',
-                'September': '09', 'October': '10', 'November': '11', 'December': '12'
-            };
-            const month = monthMap[monthName];
-            const date = `${year}-${month}-${dayNumber.padStart(2, '0')}`;
-            
-            // Set data attribute
-            dayElement.dataset.date = date;
-            
-            // Add click handler if not blocked
-            if (!dayElement.classList.contains('blocked')) {
-                dayElement.style.cursor = 'pointer';
-                dayElement.addEventListener('click', function() {
-                    selectDate(this);
-                });
-            }
-        }
-    });
-}
-
-// Enhanced date selection
-function selectDate(dateElement) {
-    if (dateElement.classList.contains('blocked')) return;
-    
-    // Remove previous selection
-    document.querySelectorAll('.calendar-day.selected').forEach(el => {
-        el.classList.remove('selected');
-    });
-    
-    // Add selection
-    dateElement.classList.add('selected');
-    
-    // Set hidden input value
-    document.getElementById('booking_date').value = dateElement.dataset.date;
-    
-    // Load time slots
-    loadTimeSlots(dateElement.dataset.date);
-}
-
-// Enhanced time slot loading
-async function loadTimeSlots(date) {
+// Override loadTimeSlots for this page
+window.loadTimeSlots = async function(date) {
+    console.log('Custom loadTimeSlots called with date:', date);
     const container = document.getElementById('timeSlotsContainer');
     const serviceInput = document.querySelector('input[name="service_id"]:checked');
     
@@ -228,7 +146,7 @@ async function loadTimeSlots(date) {
     container.innerHTML = '<p>Loading available time slots...</p>';
     
     try {
-        const response = await fetch(`<?= base_url('/booking/checkAvailability') ?>?date=${date}&service_id=${serviceInput.value}`);
+        const response = await fetch('<?= base_url('/booking/checkAvailability') ?>?date=' + date + '&service_id=' + serviceInput.value);
         const data = await response.json();
         
         if (data.status === 'success') {
@@ -236,26 +154,47 @@ async function loadTimeSlots(date) {
                 const slotsHtml = data.slots.map(slot => `
                     <div class="time-slot ${slot.available ? '' : 'booked'}" 
                          data-time="${slot.value}"
-                         onclick="${slot.available ? 'selectTimeSlot(this)' : ''}">
+                         onclick="${slot.available ? 'window.selectTimeSlot(this)' : ''}">
                         ${slot.time}
                     </div>
                 `).join('');
                 
-                container.innerHTML = `<div class="time-slots">${slotsHtml}</div>`;
+                container.innerHTML = '<div class="time-slots">' + slotsHtml + '</div>';
             } else {
                 container.innerHTML = '<p style="color: #666;">No time slots available for this date.</p>';
             }
         } else {
-            container.innerHTML = `<p style="color: #dc3545;">${data.message}</p>`;
+            container.innerHTML = '<p style="color: #dc3545;">' + data.message + '</p>';
         }
     } catch (error) {
         console.error('Error loading time slots:', error);
         container.innerHTML = '<p style="color: #dc3545;">Error loading time slots. Please try again.</p>';
     }
-}
+};
+
+// Override selectDate to also update hidden input
+window.selectDate = function(dateElement) {
+    console.log('Custom selectDate called');
+    if (dateElement.classList.contains('blocked')) return;
+    
+    // Remove previous selection
+    document.querySelectorAll('.calendar-day.selected').forEach(el => {
+        el.classList.remove('selected');
+    });
+    
+    // Add selection
+    dateElement.classList.add('selected');
+    
+    // Set hidden input value
+    const selectedDate = dateElement.dataset.date;
+    document.getElementById('booking_date').value = selectedDate;
+    
+    // Load time slots
+    window.loadTimeSlots(selectedDate);
+};
 
 // Time slot selection
-function selectTimeSlot(slotElement) {
+window.selectTimeSlot = function(slotElement) {
     // Remove previous selection
     document.querySelectorAll('.time-slot.selected').forEach(el => {
         el.classList.remove('selected');
@@ -266,7 +205,36 @@ function selectTimeSlot(slotElement) {
     
     // Set hidden input value
     document.getElementById('start_time').value = slotElement.dataset.time;
-}
+};
+
+// Service selection styling
+document.querySelectorAll('.service-option').forEach(option => {
+    const radio = option.querySelector('input[type="radio"]');
+    const card = option.querySelector('.card');
+    
+    option.addEventListener('click', function() {
+        console.log('Service clicked:', radio.value);
+        // Remove selected class from all cards
+        document.querySelectorAll('.service-option .card').forEach(c => {
+            c.style.borderColor = 'transparent';
+        });
+        
+        // Add selected class to clicked card
+        card.style.borderColor = 'var(--golf-green)';
+        radio.checked = true;
+        
+        // Reload time slots if date is selected
+        const selectedDate = document.querySelector('.calendar-day.selected');
+        if (selectedDate && selectedDate.dataset.date) {
+            console.log('Service selected, reloading time slots for date:', selectedDate.dataset.date);
+            window.loadTimeSlots(selectedDate.dataset.date);
+        }
+    });
+    
+    if (radio.checked) {
+        card.style.borderColor = 'var(--golf-green)';
+    }
+});
 
 // Form validation before submit
 document.getElementById('bookingForm').addEventListener('submit', function(e) {
@@ -280,5 +248,7 @@ document.getElementById('bookingForm').addEventListener('submit', function(e) {
         return false;
     }
 });
+
+console.log('Booking page: Custom script loaded successfully');
 </script>
 
