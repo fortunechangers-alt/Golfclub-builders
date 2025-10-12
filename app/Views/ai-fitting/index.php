@@ -178,6 +178,10 @@ function addFittingToCart(serviceId, serviceName, price, duration) {
     });
     
     localStorage.setItem('golf_cart', JSON.stringify(cart));
+    
+    // Trigger cart update event
+    document.dispatchEvent(new CustomEvent('cartUpdated'));
+    
     updateCartDisplay();
     alert('Added to cart!');
 }
@@ -211,6 +215,9 @@ function addRepairToCart(serviceId, serviceName, price, unit) {
     
     // Save to localStorage
     localStorage.setItem('golf_cart', JSON.stringify(cart));
+    
+    // Trigger cart update event
+    document.dispatchEvent(new CustomEvent('cartUpdated'));
     
     // Update display
     updateCartDisplay();
@@ -282,6 +289,9 @@ function updateCartQuantity(index, change) {
     // Save to localStorage
     localStorage.setItem('golf_cart', JSON.stringify(cart));
     
+    // Trigger cart update event
+    document.dispatchEvent(new CustomEvent('cartUpdated'));
+    
     // Update display
     updateCartDisplay();
 }
@@ -291,6 +301,9 @@ function removeFromCart(index) {
     
     // Save to localStorage
     localStorage.setItem('golf_cart', JSON.stringify(cart));
+    
+    // Trigger cart update event
+    document.dispatchEvent(new CustomEvent('cartUpdated'));
     
     // Update display
     updateCartDisplay();

@@ -1,6 +1,9 @@
 // Golf Club Builders - Main JavaScript
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Update cart count on page load
+    updateCartCount();
+    
     // Header scroll effect
     const header = document.querySelector('.header');
     
@@ -393,4 +396,50 @@ const imageObserver = new IntersectionObserver((entries, observer) => {
 });
 
 lazyImages.forEach(img => imageObserver.observe(img));
+
+// Cart functionality
+function updateCartCount() {
+    const cartCountElement = document.getElementById('cart-count');
+    if (cartCountElement) {
+        const cart = JSON.parse(localStorage.getItem('golf_cart')) || [];
+        let totalItems = 0;
+        
+        cart.forEach(item => {
+            totalItems += item.quantity || 1;
+        });
+        
+        cartCountElement.textContent = totalItems;
+        
+        // Add animation when count changes
+        if (totalItems > 0) {
+            cartCountElement.style.animation = 'cartPulse 0.3s ease-in-out';
+            setTimeout(() => {
+                cartCountElement.style.animation = '';
+            }, 300);
+        }
+    }
+}
+
+// Listen for storage changes to update cart count across tabs
+window.addEventListener('storage', function(e) {
+    if (e.key === 'golf_cart') {
+        updateCartCount();
+    }
+});
+
+// Listen for custom cart update events
+document.addEventListener('cartUpdated', function() {
+    updateCartCount();
+});
+
+// Add CSS animation for cart count
+const style = document.createElement('style');
+style.textContent = `
+    @keyframes cartPulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.2); }
+        100% { transform: scale(1); }
+    }
+`;
+document.head.appendChild(style);
 

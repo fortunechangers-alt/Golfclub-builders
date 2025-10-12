@@ -10,17 +10,6 @@
             <p class="section-subtitle">Select your services and add them to your cart for checkout</p>
         </div>
         
-        <!-- Emergency Service Notice -->
-        <div class="card" style="margin-bottom: 3rem; background: linear-gradient(135deg, #ff6b6b, #ee5a52); color: white; border: none;">
-            <h3 style="margin-bottom: 1rem; color: white;">🚨 Emergency Repair Service</h3>
-            <p style="margin-bottom: 1rem; color: rgba(255,255,255,0.9);">Need same-day or next-day service? Select emergency repair for +50% labor charge.</p>
-            <div style="display: flex; align-items: center; gap: 1rem;">
-                <input type="checkbox" id="emergency-service" style="transform: scale(1.2);">
-                <label for="emergency-service" style="font-weight: 600; color: white;">Emergency Service (+50% on labor)</label>
-            </div>
-            <p style="margin-top: 1rem; color: rgba(255,255,255,0.8); font-size: 0.9rem;">⚠️ Emergency service requires phone confirmation for same-day or close appointments</p>
-        </div>
-        
         <!-- Call to Schedule Notice -->
         <div class="card" style="margin-bottom: 3rem; background: linear-gradient(135deg, var(--gold), #e6c45c); border: none; color: var(--graphite);">
             <div style="display: flex; align-items: center; gap: 1rem;">
@@ -100,7 +89,7 @@
             
             <!-- Cart Sidebar -->
             <div>
-                <div class="card" style="position: sticky; top: 140px;">
+                <div class="card" style="position: sticky; top: 140px; z-index: 10;">
                     <h3 style="margin-bottom: 1.5rem; color: var(--deep-green);">Your Cart</h3>
                     <div id="cart-items" style="margin-bottom: 2rem;">
                         <p style="color: #666; text-align: center; margin: 2rem 0;">Your cart is empty</p>
@@ -149,11 +138,15 @@
 <script>
 // Cart functionality
 let cart = JSON.parse(localStorage.getItem('golf_cart')) || [];
-let emergencyMode = false;
+let emergencyMode = localStorage.getItem('emergency_mode') === 'true' || false;
+
+// Set checkbox state from localStorage
+document.getElementById('emergency-service').checked = emergencyMode;
 
 // Update emergency mode
 document.getElementById('emergency-service').addEventListener('change', function() {
     emergencyMode = this.checked;
+    localStorage.setItem('emergency_mode', emergencyMode);
     updateCartDisplay();
 });
 
@@ -192,6 +185,9 @@ function addToCart(serviceId, serviceName, price, unit) {
     
     // Save to localStorage
     localStorage.setItem('golf_cart', JSON.stringify(cart));
+    
+    // Trigger cart update event
+    document.dispatchEvent(new CustomEvent('cartUpdated'));
     
     // Update display
     updateCartDisplay();
@@ -280,6 +276,9 @@ function updateCartQuantity(index, change) {
     // Save to localStorage
     localStorage.setItem('golf_cart', JSON.stringify(cart));
     
+    // Trigger cart update event
+    document.dispatchEvent(new CustomEvent('cartUpdated'));
+    
     // Update display
     updateCartDisplay();
 }
@@ -290,12 +289,39 @@ function removeFromCart(index) {
     // Save to localStorage
     localStorage.setItem('golf_cart', JSON.stringify(cart));
     
+    // Trigger cart update event
+    document.dispatchEvent(new CustomEvent('cartUpdated'));
+    
     // Update display
     updateCartDisplay();
 }
 
 // Initialize display
 updateCartDisplay();
+
+// Dynamic sticky positioning for emergency card
+function updateEmergencyCardPosition() {
+    const cartCard = document.querySelector('.card[style*="position: sticky"]');
+    const emergencyCard = document.getElementById('emergency-card');
+    
+    if (cartCard && emergencyCard) {
+        const cartHeight = cartCard.offsetHeight;
+        emergencyCard.style.top = `${140 + cartHeight + 32}px`; // 140px base + cart height + 2rem gap (32px)
+    }
+}
+
+// Update position on load and when cart changes
+updateEmergencyCardPosition();
+
+// Override updateCartDisplay to also update emergency card position
+const originalUpdateCartDisplay = updateCartDisplay;
+updateCartDisplay = function() {
+    originalUpdateCartDisplay();
+    setTimeout(updateEmergencyCardPosition, 50); // Small delay to let DOM update
+};
+
+// Update on window resize
+window.addEventListener('resize', updateEmergencyCardPosition);
 
 // No calendar functionality needed - appointments scheduled by phone after checkout
 </script>
