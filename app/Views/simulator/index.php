@@ -124,6 +124,66 @@
             </div>
         </div>
         
+        <!-- Rental Options -->
+        <div class="card" style="margin-bottom: 3rem;">
+            <h3 style="margin-bottom: 1.5rem; color: var(--deep-green);">Select Rental Duration</h3>
+            <p style="margin-bottom: 2rem; color: #666;">Choose your rental duration and add to cart. All rentals include setup, instruction, and cleanup.</p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <div style="text-align: center; padding: 2rem; border: 2px solid var(--light); border-radius: 12px; background: white;">
+                    <h4 style="color: var(--deep-green); margin-bottom: 1rem;">Hourly</h4>
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--deep-green); margin-bottom: 1rem;">
+                        $<?= number_format($pricing['hourly'], 2) ?>/hr
+                    </div>
+                    <p style="color: #666; margin-bottom: 1.5rem;">Perfect for quick practice sessions or testing new clubs</p>
+                    <ul style="list-style: none; padding: 0; text-align: left; margin-bottom: 2rem;">
+                        <li style="margin-bottom: 0.5rem;">✓ 1 hour of simulator time</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Basic instruction included</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Data export available</li>
+                    </ul>
+                    <div style="display: flex; align-items: center; justify-content: center; gap: 1rem; margin-bottom: 1rem;">
+                        <label style="font-weight: 600;">Hours:</label>
+                        <input type="number" id="hourly-hours" min="1" max="8" value="1" style="width: 80px; padding: 0.5rem; border: 1px solid #ddd; border-radius: 4px; text-align: center;">
+                    </div>
+                    <button class="btn btn-primary rental-option-btn" data-type="hourly" data-duration="60" style="width: 100%;">Add to Cart</button>
+                </div>
+                
+                <div style="text-align: center; padding: 2rem; border: 2px solid var(--deep-green); border-radius: 12px; background: var(--light); position: relative;">
+                    <div style="position: absolute; top: -10px; left: 50%; transform: translateX(-50%); background: var(--deep-green); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem; font-weight: 600;">
+                        POPULAR
+                    </div>
+                    <h4 style="color: var(--deep-green); margin-bottom: 1rem;">Half-Day</h4>
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--deep-green); margin-bottom: 1rem;">
+                        $<?= number_format($pricing['half_day'], 2) ?>
+                    </div>
+                    <p style="color: #666; margin-bottom: 1.5rem;"><?= $pricing['half_day_hours'] ?> hours - Great for group sessions</p>
+                    <ul style="list-style: none; padding: 0; text-align: left; margin-bottom: 2rem;">
+                        <li style="margin-bottom: 0.5rem;">✓ <?= $pricing['half_day_hours'] ?> hours of simulator time</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Full instruction & analysis</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Course selection included</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Data export & recommendations</li>
+                    </ul>
+                    <button class="btn btn-primary rental-option-btn" data-type="half-day" data-duration="240" style="width: 100%;">Add to Cart</button>
+                </div>
+                
+                <div style="text-align: center; padding: 2rem; border: 2px solid var(--light); border-radius: 12px; background: white;">
+                    <h4 style="color: var(--deep-green); margin-bottom: 1rem;">Full-Day</h4>
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--deep-green); margin-bottom: 1rem;">
+                        $<?= number_format($pricing['full_day'], 2) ?>
+                    </div>
+                    <p style="color: #666; margin-bottom: 1.5rem;"><?= $pricing['full_day_hours'] ?> hours - Ultimate golf experience</p>
+                    <ul style="list-style: none; padding: 0; text-align: left; margin-bottom: 2rem;">
+                        <li style="margin-bottom: 0.5rem;">✓ <?= $pricing['full_day_hours'] ?> hours of simulator time</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Complete swing analysis</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Multiple course options</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Detailed performance report</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Lunch break included</li>
+                    </ul>
+                    <button class="btn btn-primary rental-option-btn" data-type="full-day" data-duration="480" style="width: 100%;">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        
         <!-- Premium Hitting Mats Showcase -->
         <div class="card" style="margin-bottom: 3rem; background: var(--light);">
             <h3 style="margin-bottom: 1.5rem; color: var(--deep-green); text-align: center;">Premium Hitting Surfaces</h3>
@@ -197,66 +257,6 @@
                 <p style="font-size: 1.1rem; color: var(--deep-green); font-weight: 600; margin: 0;">
                     Both premium mats included with every simulator rental
                 </p>
-            </div>
-        </div>
-        
-        <!-- Rental Options -->
-        <div class="card" style="margin-bottom: 3rem;">
-            <h3 style="margin-bottom: 1.5rem; color: var(--deep-green);">Select Rental Duration</h3>
-            <p style="margin-bottom: 2rem; color: #666;">Choose your rental duration and add to cart. All rentals include setup, instruction, and cleanup.</p>
-            
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
-                <div style="text-align: center; padding: 2rem; border: 2px solid var(--light); border-radius: 12px; background: white;">
-                    <h4 style="color: var(--deep-green); margin-bottom: 1rem;">Hourly</h4>
-                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--deep-green); margin-bottom: 1rem;">
-                        $<?= number_format($pricing['hourly'], 2) ?>/hr
-                    </div>
-                    <p style="color: #666; margin-bottom: 1.5rem;">Perfect for quick practice sessions or testing new clubs</p>
-                    <ul style="list-style: none; padding: 0; text-align: left; margin-bottom: 2rem;">
-                        <li style="margin-bottom: 0.5rem;">✓ 1 hour of simulator time</li>
-                        <li style="margin-bottom: 0.5rem;">✓ Basic instruction included</li>
-                        <li style="margin-bottom: 0.5rem;">✓ Data export available</li>
-                    </ul>
-                    <div style="display: flex; align-items: center; justify-content: center; gap: 1rem; margin-bottom: 1rem;">
-                        <label style="font-weight: 600;">Hours:</label>
-                        <input type="number" id="hourly-hours" min="1" max="8" value="1" style="width: 80px; padding: 0.5rem; border: 1px solid #ddd; border-radius: 4px; text-align: center;">
-                    </div>
-                    <button class="btn btn-primary rental-option-btn" data-type="hourly" data-duration="60" style="width: 100%;">Add to Cart</button>
-                </div>
-                
-                <div style="text-align: center; padding: 2rem; border: 2px solid var(--deep-green); border-radius: 12px; background: var(--light); position: relative;">
-                    <div style="position: absolute; top: -10px; left: 50%; transform: translateX(-50%); background: var(--deep-green); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem; font-weight: 600;">
-                        POPULAR
-                    </div>
-                    <h4 style="color: var(--deep-green); margin-bottom: 1rem;">Half-Day</h4>
-                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--deep-green); margin-bottom: 1rem;">
-                        $<?= number_format($pricing['half_day'], 2) ?>
-                    </div>
-                    <p style="color: #666; margin-bottom: 1.5rem;"><?= $pricing['half_day_hours'] ?> hours - Great for group sessions</p>
-                    <ul style="list-style: none; padding: 0; text-align: left; margin-bottom: 2rem;">
-                        <li style="margin-bottom: 0.5rem;">✓ <?= $pricing['half_day_hours'] ?> hours of simulator time</li>
-                        <li style="margin-bottom: 0.5rem;">✓ Full instruction & analysis</li>
-                        <li style="margin-bottom: 0.5rem;">✓ Course selection included</li>
-                        <li style="margin-bottom: 0.5rem;">✓ Data export & recommendations</li>
-                    </ul>
-                    <button class="btn btn-primary rental-option-btn" data-type="half-day" data-duration="240" style="width: 100%;">Add to Cart</button>
-                </div>
-                
-                <div style="text-align: center; padding: 2rem; border: 2px solid var(--light); border-radius: 12px; background: white;">
-                    <h4 style="color: var(--deep-green); margin-bottom: 1rem;">Full-Day</h4>
-                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--deep-green); margin-bottom: 1rem;">
-                        $<?= number_format($pricing['full_day'], 2) ?>
-                    </div>
-                    <p style="color: #666; margin-bottom: 1.5rem;"><?= $pricing['full_day_hours'] ?> hours - Ultimate golf experience</p>
-                    <ul style="list-style: none; padding: 0; text-align: left; margin-bottom: 2rem;">
-                        <li style="margin-bottom: 0.5rem;">✓ <?= $pricing['full_day_hours'] ?> hours of simulator time</li>
-                        <li style="margin-bottom: 0.5rem;">✓ Complete swing analysis</li>
-                        <li style="margin-bottom: 0.5rem;">✓ Multiple course options</li>
-                        <li style="margin-bottom: 0.5rem;">✓ Detailed performance report</li>
-                        <li style="margin-bottom: 0.5rem;">✓ Lunch break included</li>
-                    </ul>
-                    <button class="btn btn-primary rental-option-btn" data-type="full-day" data-duration="480" style="width: 100%;">Add to Cart</button>
-                </div>
             </div>
         </div>
         
