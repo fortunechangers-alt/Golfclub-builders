@@ -137,10 +137,9 @@
                 <div class="stars">⭐⭐⭐⭐⭐</div>
                 <p class="testimonial-text">"The AI fitting was incredible! I gained 20 yards with my driver and my accuracy improved dramatically. Best investment I've made in my golf game."</p>
                 <div class="testimonial-author">
-                    <div class="testimonial-avatar">JM</div>
+                    <div class="testimonial-avatar">DW</div>
                     <div>
-                        <div class="testimonial-name">John Mitchell</div>
-                        <div style="color: #666; font-size: 0.9rem;">Handicap: 12</div>
+                        <div class="testimonial-name">DANIEL W.</div>
                     </div>
                 </div>
             </div>
@@ -149,10 +148,9 @@
                 <div class="stars">⭐⭐⭐⭐⭐</div>
                 <p class="testimonial-text">"Professional regripping service was quick and affordable. The new grips feel amazing and have really improved my control, especially in wet conditions."</p>
                 <div class="testimonial-author">
-                    <div class="testimonial-avatar">SP</div>
+                    <div class="testimonial-avatar">JM</div>
                     <div>
-                        <div class="testimonial-name">Sarah Peterson</div>
-                        <div style="color: #666; font-size: 0.9rem;">Handicap: 8</div>
+                        <div class="testimonial-name">Jerry Mark</div>
                     </div>
                 </div>
             </div>
@@ -161,17 +159,17 @@
                 <div class="stars">⭐⭐⭐⭐⭐</div>
                 <p class="testimonial-text">"The team at Golf Club Builders really knows their stuff. The fitting process was thorough and the results speak for themselves. My scores have never been better!"</p>
                 <div class="testimonial-author">
-                    <div class="testimonial-avatar">MR</div>
+                    <div class="testimonial-avatar">WW</div>
                     <div>
-                        <div class="testimonial-name">Mike Rodriguez</div>
-                        <div style="color: #666; font-size: 0.9rem;">Handicap: 5</div>
+                        <div class="testimonial-name">Wallace W.</div>
                     </div>
                 </div>
             </div>
         </div>
         
-        <div style="text-align: center; margin-top: 3rem;">
+        <div style="text-align: center; margin-top: 3rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
             <a href="<?= base_url('/testimonials') ?>" class="btn btn-secondary">Read More Reviews</a>
+            <button onclick="showAddReviewForm()" class="btn btn-primary">Add Your Review</button>
         </div>
     </div>
 </section>
@@ -189,3 +187,114 @@
 </section>
 
 
+
+
+<!-- Add Review Modal -->
+<div id="reviewModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 1000; display: flex; align-items: center; justify-content: center;">
+    <div style="background: white; padding: 2rem; border-radius: 12px; max-width: 500px; width: 90%; max-height: 90vh; overflow-y: auto;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+            <h3 style="margin: 0; color: var(--deep-green);">Add Your Review</h3>
+            <button onclick="hideAddReviewForm()" style="background: none; border: none; font-size: 1.5rem; cursor: pointer; color: #666;">×</button>
+        </div>
+        
+        <form id="reviewForm" onsubmit="submitReview(event)">
+            <div style="margin-bottom: 1rem;">
+                <label style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--deep-green);">Your Name *</label>
+                <input type="text" id="reviewerName" required style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 6px; font-size: 1rem;">
+            </div>
+            
+            <div style="margin-bottom: 1rem;">
+                <label style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--deep-green);">Rating *</label>
+                <div style="display: flex; gap: 0.5rem; margin-bottom: 0.5rem;">
+                    <span onclick="setRating(1)" class="star-rating" data-rating="1">⭐</span>
+                    <span onclick="setRating(2)" class="star-rating" data-rating="2">⭐</span>
+                    <span onclick="setRating(3)" class="star-rating" data-rating="3">⭐</span>
+                    <span onclick="setRating(4)" class="star-rating" data-rating="4">⭐</span>
+                    <span onclick="setRating(5)" class="star-rating" data-rating="5">⭐</span>
+                </div>
+                <input type="hidden" id="rating" required>
+            </div>
+            
+            <div style="margin-bottom: 1.5rem;">
+                <label style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--deep-green);">Your Review *</label>
+                <textarea id="reviewText" required rows="4" style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 6px; font-size: 1rem; resize: vertical;" placeholder="Tell us about your experience..."></textarea>
+            </div>
+            
+            <div style="display: flex; gap: 1rem; justify-content: flex-end;">
+                <button type="button" onclick="hideAddReviewForm()" class="btn btn-outline">Cancel</button>
+                <button type="submit" class="btn btn-primary">Submit Review</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+function showAddReviewForm() {
+    document.getElementById("reviewModal").style.display = "flex";
+    document.body.style.overflow = "hidden";
+}
+
+function hideAddReviewForm() {
+    document.getElementById("reviewModal").style.display = "none";
+    document.body.style.overflow = "auto";
+    document.getElementById("reviewForm").reset();
+    document.querySelectorAll(".star-rating").forEach(star => {
+        star.style.opacity = "0.3";
+    });
+    document.getElementById("rating").value = "";
+}
+
+function setRating(rating) {
+    document.getElementById("rating").value = rating;
+    document.querySelectorAll(".star-rating").forEach((star, index) => {
+        if (index < rating) {
+            star.style.opacity = "1";
+        } else {
+            star.style.opacity = "0.3";
+        }
+    });
+}
+
+function submitReview(event) {
+    event.preventDefault();
+    
+    const name = document.getElementById("reviewerName").value;
+    const rating = document.getElementById("rating").value;
+    const text = document.getElementById("reviewText").value;
+    
+    if (!rating) {
+        alert("Please select a rating");
+        return;
+    }
+    
+    // Here you would normally send to server
+    // For now, we will just show a success message
+    alert("Thank you for your review! We appreciate your feedback.");
+    
+    hideAddReviewForm();
+}
+
+// Close modal when clicking outside
+document.getElementById("reviewModal").addEventListener("click", function(e) {
+    if (e.target === this) {
+        hideAddReviewForm();
+    }
+});
+</script>
+
+<style>
+.star-rating {
+    cursor: pointer;
+    font-size: 1.5rem;
+    opacity: 0.3;
+    transition: opacity 0.2s ease;
+}
+
+.star-rating:hover {
+    opacity: 1;
+}
+
+#reviewModal {
+    display: none;
+}
+</style>
