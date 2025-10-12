@@ -120,10 +120,23 @@ class Cart extends BaseController
                 'total' => $totalAmount,
                 'emergency_mode' => $emergencyMode
             ];
+            
+            log_message('debug', 'Email data prepared: ' . json_encode($emailData));
 
             // Send emails
-            $customerEmailSent = $emailService->sendOrderConfirmation($emailData);
-            $ownerEmailSent = $emailService->sendOrderNotification($emailData);
+            try {
+                $customerEmailSent = $emailService->sendOrderConfirmation($emailData);
+            } catch (\Exception $emailError) {
+                log_message('error', 'Customer email failed: ' . $emailError->getMessage());
+                $customerEmailSent = false;
+            }
+            
+            try {
+                $ownerEmailSent = $emailService->sendOrderNotification($emailData);
+            } catch (\Exception $emailError) {
+                log_message('error', 'Owner email failed: ' . $emailError->getMessage());
+                $ownerEmailSent = false;
+            }
 
             return $this->response->setJSON([
                 'success' => true,
