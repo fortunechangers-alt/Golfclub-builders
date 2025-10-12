@@ -1,14 +1,22 @@
-<!-- Policy Banner -->
-<div style="background: var(--deep-green); color: white; text-align: center; padding: 0.75rem; font-weight: 600;">
-    In-home workshop — No walk-ins. Call to book: <a href="tel:7173871643" style="color: white; text-decoration: underline;">(717) 387-1643</a>
-</div>
-
-<section class="section" style="margin-top: 120px;">
-    <div class="container">
-        <div class="section-header">
-            <h1 class="section-title">Simulator</h1>
-            <p class="section-subtitle">GC3 Foresight simulator rental with professional analysis</p>
+<!-- Parallax Background Section -->
+<section class="parallax-section" style="position: relative; height: 60vh; min-height: 400px; overflow: hidden; margin-top: 120px;">
+    <!-- Parallax Background Image -->
+    <div class="parallax-bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 120%; background-image: url('<?= base_url('images/golf-course-parallax.webp') ?>'); background-size: cover; background-position: 0% 80%; background-attachment: fixed; will-change: transform;"></div>
+    
+    <!-- Overlay for better text readability -->
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, rgba(11, 110, 79, 0.7) 0%, rgba(31, 41, 55, 0.6) 100%);"></div>
+    
+    <!-- Content -->
+    <div class="container" style="position: relative; z-index: 2; height: 100%; display: flex; align-items: center; justify-content: center;">
+        <div class="section-header" style="text-align: center; color: white;">
+            <h1 class="section-title" style="color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); font-size: 3.5rem; margin-bottom: 1rem;">Simulator</h1>
+            <p class="section-subtitle" style="color: rgba(255,255,255,0.9); text-shadow: 1px 1px 2px rgba(0,0,0,0.5); font-size: 1.3rem; max-width: 600px; margin: 0 auto;">GC3 Foresight simulator rental with professional analysis</p>
         </div>
+    </div>
+</section>
+
+<section class="section" style="margin-top: 0;">
+    <div class="container">
         
         <!-- Call to Schedule Notice -->
         <div class="card" style="margin-bottom: 3rem; background: linear-gradient(135deg, var(--gold), #e6c45c); border: none; color: var(--graphite);">
@@ -23,32 +31,110 @@
         
         <!-- Simulator Info -->
         <div class="card" style="margin-bottom: 3rem; background: var(--light);">
-            <h3 style="margin-bottom: 1.5rem; color: var(--deep-green);">GC3 Foresight Simulator</h3>
-            <p style="margin-bottom: 2rem; font-size: 1.1rem;">Professional-grade launch monitor providing accurate ball flight data, club analysis, and course simulation.</p>
+            <h3 style="margin-bottom: 1.5rem; color: var(--deep-green);">Professional Golf Simulator Setup</h3>
+            <p style="margin-bottom: 2rem; font-size: 1.1rem;">Complete professional-grade simulator experience with GC3 Foresight launch monitor, GSPro software, 4K projection, and premium hitting surfaces.</p>
             
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
                 <div>
-                    <h4 style="color: var(--deep-green); margin-bottom: 1rem;">What You Get</h4>
+                    <h4 style="color: var(--deep-green); margin-bottom: 1rem;">Technology & Software</h4>
                     <ul style="list-style: none; padding: 0;">
-                        <li style="margin-bottom: 0.5rem;">✓ Accurate ball flight tracking</li>
+                        <li style="margin-bottom: 0.5rem;">✓ GC3 Foresight launch monitor</li>
+                        <li style="margin-bottom: 0.5rem;">✓ GSPro course simulation software</li>
+                        <li style="margin-bottom: 0.5rem;">✓ 4K ultra-high definition projector</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Professional impact screen</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Real-time ball flight tracking</li>
                         <li style="margin-bottom: 0.5rem;">✓ Club head speed & path analysis</li>
                         <li style="margin-bottom: 0.5rem;">✓ Launch angle & spin rate data</li>
                         <li style="margin-bottom: 0.5rem;">✓ Distance & carry measurements</li>
-                        <li style="margin-bottom: 0.5rem;">✓ Course simulation (weather conditions)</li>
-                        <li style="margin-bottom: 0.5rem;">✓ Practice range & target games</li>
                     </ul>
                 </div>
                 
                 <div>
-                    <h4 style="color: var(--deep-green); margin-bottom: 1rem;">Perfect For</h4>
+                    <h4 style="color: var(--deep-green); margin-bottom: 1rem;">Hitting Experience</h4>
                     <ul style="list-style: none; padding: 0;">
-                        <li style="margin-bottom: 0.5rem;">✓ Winter practice sessions</li>
-                        <li style="margin-bottom: 0.5rem;">✓ Club fitting & testing</li>
-                        <li style="margin-bottom: 0.5rem;">✓ Swing analysis & improvement</li>
-                        <li style="margin-bottom: 0.5rem;">✓ Fun with friends & family</li>
-                        <li style="margin-bottom: 0.5rem;">✓ Weather-independent golf</li>
-                        <li style="margin-bottom: 0.5rem;">✓ Course strategy practice</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Professional True Strike hitting mats</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Realistic turf feel & feedback</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Durable, weather-resistant surface</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Proper lie angles for all clubs</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Comfortable stance & swing area</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Professional-grade construction</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Easy maintenance & cleaning</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Consistent performance over time</li>
                     </ul>
+                </div>
+                
+                <div>
+                    <h4 style="color: var(--deep-green); margin-bottom: 1rem;">GSPro Games & Features</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 0.5rem;">✓ 100+ world-famous golf courses</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Practice range with targets</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Closest to the pin challenges</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Long drive competitions</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Skins games & tournaments</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Weather simulation (wind, rain)</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Multiplayer support (up to 4 players)</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Shot replay & analysis</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Professional Setup Details -->
+        <div class="card" style="margin-bottom: 3rem;">
+            <h3 style="margin-bottom: 1.5rem; color: var(--deep-green);">Professional Setup Details</h3>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <div>
+                    <h4 style="color: var(--deep-green); margin-bottom: 1rem;">4K Projection System</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 0.5rem;">✓ Ultra-high definition 4K resolution</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Bright, clear course visuals</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Large screen viewing area</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Professional color accuracy</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Smooth 60fps gameplay</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 style="color: var(--deep-green); margin-bottom: 1rem;">True Strike Hitting Mats</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 0.5rem;">✓ Professional-grade construction</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Realistic turf feel & feedback</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Durable, weather-resistant</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Proper lie angles for all clubs</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Easy maintenance & cleaning</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 style="color: var(--deep-green); margin-bottom: 1rem;">Impact Screen & Safety</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 0.5rem;">✓ Professional impact screen</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Safe ball containment</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Clear projection surface</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Durable, long-lasting material</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Easy setup & takedown</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Simulator Room Showcase -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+            <div style="position: relative; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.15);">
+                <img src="<?= base_url('images/True strike mat.JPG') ?>" 
+                     alt="Professional Golf Simulator Room" 
+                     style="width: 100%; height: 100%; object-fit: contain; display: block; background: #f0f0f0;">
+                <div style="position: absolute; top: 1rem; right: 1rem; background: var(--deep-green); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-weight: 700; font-size: 0.9rem;">
+                    Professional Grade
+                </div>
+            </div>
+            <div style="position: relative; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.15);">
+                <img src="<?= base_url('images/crazy kid.JPG') ?>" 
+                     alt="Golf Simulator Room Setup" 
+                     style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                <div style="position: absolute; top: 1rem; right: 1rem; background: var(--gold); color: var(--graphite); padding: 0.5rem 1rem; border-radius: 20px; font-weight: 700; font-size: 0.9rem;">
+                    Youth Friendly
                 </div>
             </div>
         </div>
@@ -221,4 +307,23 @@ document.querySelectorAll('.rental-option-btn').forEach(btn => {
         window.location.href = '<?= base_url('/cart') ?>';
     });
 });
+
+// Parallax scrolling effect
+window.addEventListener('scroll', function() {
+    const scrolled = window.pageYOffset;
+    const parallax = document.querySelector('.parallax-bg');
+    const speed = scrolled * 0.5;
+    
+    if (parallax) {
+        parallax.style.transform = `translateY(${speed}px)`;
+    }
+});
+
+// Smooth parallax on mobile devices
+if (window.innerWidth <= 768) {
+    const parallax = document.querySelector('.parallax-bg');
+    if (parallax) {
+        parallax.style.backgroundAttachment = 'scroll';
+    }
+}
 </script>
