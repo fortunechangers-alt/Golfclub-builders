@@ -127,6 +127,7 @@ class Cart extends BaseController
             ];
             
             log_message('debug', 'Email data prepared: ' . json_encode($emailData));
+            log_message('debug', 'Build details received: ' . ($buildDetails ?: 'NONE'));
 
             // Try to send emails (but don't fail if they don't work)
             $emailsSent = false;
