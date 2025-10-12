@@ -33,17 +33,15 @@ class OrderModel extends Model
 
     // Validation
     protected $validationRules = [
-        'order_number' => 'required|is_unique[orders.order_number]',
+        'order_number' => 'required',
         'customer_email' => 'required|valid_email',
         'customer_phone' => 'required',
-        'order_data' => 'required',
         'total' => 'required|decimal'
     ];
 
     protected $validationMessages = [
         'order_number' => [
-            'required' => 'Order number is required',
-            'is_unique' => 'Order number must be unique'
+            'required' => 'Order number is required'
         ],
         'customer_email' => [
             'required' => 'Customer email is required',
