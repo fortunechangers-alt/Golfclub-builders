@@ -1,7 +1,7 @@
 <!-- Parallax Background Section -->
 <section class="parallax-section" style="position: relative; height: 60vh; min-height: 400px; overflow: hidden; margin-top: 120px;">
     <!-- Parallax Background Image -->
-    <div class="parallax-bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 120%; background-image: url('<?= base_url('images/golf-course-parallax.webp') ?>'); background-size: cover; background-position: 0% 80%; background-attachment: fixed; will-change: transform;"></div>
+    <div class="parallax-bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 120%; background-image: url('<?= base_url('images/golf-course-parallax.jpg') ?>'); background-size: cover; background-position: 0% 80%; background-attachment: fixed; will-change: transform;"></div>
     
     <!-- Overlay for better text readability -->
     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, rgba(11, 110, 79, 0.7) 0%, rgba(31, 41, 55, 0.6) 100%);"></div>
@@ -124,6 +124,7 @@
             <div style="position: relative; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.15);">
                 <img src="<?= base_url('images/True strike mat.JPG') ?>" 
                      alt="Professional Golf Simulator Room" 
+                     loading="lazy"
                      style="width: 100%; height: 100%; object-fit: contain; display: block; background: #f0f0f0;">
                 <div style="position: absolute; top: 1rem; right: 1rem; background: var(--deep-green); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-weight: 700; font-size: 0.9rem;">
                     Professional Grade
@@ -132,6 +133,7 @@
             <div style="position: relative; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.15);">
                 <img src="<?= base_url('images/crazy kid.JPG') ?>" 
                      alt="Golf Simulator Room Setup" 
+                     loading="lazy"
                      style="width: 100%; height: 100%; object-fit: cover; display: block;">
                 <div style="position: absolute; top: 1rem; right: 1rem; background: var(--gold); color: var(--graphite); padding: 0.5rem 1rem; border-radius: 20px; font-weight: 700; font-size: 0.9rem;">
                     Youth Friendly

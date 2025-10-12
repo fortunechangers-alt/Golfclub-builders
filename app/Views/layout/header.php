@@ -24,7 +24,7 @@
             <a href="<?= base_url('/') ?>" class="logo">
                 <picture>
                     <source srcset="<?= base_url('images/logo-banner.webp') ?>" type="image/webp">
-                    <img src="<?= base_url('images/logo-banner.png') ?>" alt="Golf Club Builders" style="height: 60px; width: auto;">
+                    <img src="<?= base_url('images/logo-banner.png') ?>" alt="Golf Club Builders" loading="eager" style="height: 60px; width: auto;">
                 </picture>
             </a>
             

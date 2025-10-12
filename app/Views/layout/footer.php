@@ -7,7 +7,7 @@
                 <div class="footer-brand">
                     <picture>
                         <source srcset="<?= base_url('images/logo-banner.webp') ?>" type="image/webp">
-                        <img src="<?= base_url('images/logo-banner.png') ?>" alt="Golf Club Builders" class="footer-logo-img">
+                        <img src="<?= base_url('images/logo-banner.png') ?>" alt="Golf Club Builders" loading="lazy" class="footer-logo-img">
                     </picture>
                     <p class="brand-description">Professional club building, fitting, and simulator services. In-home workshop serving Chambersburg and surrounding areas.</p>
                     <div class="social-links">
