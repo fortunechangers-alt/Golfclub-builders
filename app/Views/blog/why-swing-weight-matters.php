@@ -4,7 +4,7 @@
 </div>
 
 <section class="section" style="margin-top: 120px;">
-    <div class="container" style="max-width: 800px;">
+    <div class="container" style="max-width: 900px;">
         <!-- Back to Blog -->
         <div style="margin-bottom: 2rem;">
             <a href="<?= base_url('/blog') ?>" style="color: var(--deep-green); text-decoration: none; font-weight: 600;">← Back to Blog</a>
@@ -13,141 +13,112 @@
         <!-- Article Header -->
         <header style="margin-bottom: 3rem;">
             <h1 style="color: var(--deep-green); font-size: 2.5rem; line-height: 1.2; margin-bottom: 1rem;">
-                Why Swing Weight Matters (and how your swing finally clicks when it does)
+                When the Club Found Its Weight (and He Found His Swing)
             </h1>
             <div style="color: #666; font-size: 1.1rem; margin-bottom: 2rem;">
-                <p style="margin: 0;">Published: <time>January 15, 2025</time></p>
+                <p style="margin: 0;">Published: <time>January 15, 2025</time> • 8 min read</p>
             </div>
         </header>
         
         <!-- Article Content -->
-        <article style="line-height: 1.7; color: #333;">
+        <article style="line-height: 1.8; color: #333;">
             <p style="font-size: 1.2rem; margin-bottom: 2rem; color: #555; font-style: italic;">
-                Saturday morning. A misty practice tee outside Chambersburg. A golfer named Matt pulls a 7‑iron he "trusts"… and sends three balls three different distances. He swears his swing was the same. It felt the same. But the clubhead never quite landed where his hands thought it would.
+                He kept the bucket under the bench like a secret. Late after work, lights humming over the range, Cal lined up a 7-iron the way he had a thousand times—feet squared, breath held, jaw set. The first ball started on the flag and then, like so many lately, faded weak and fell short. The next went higher but thinner, a stinging reminder in his hands. He wasn't lost, exactly. Just… untethered.
             </p>
             
             <p style="margin-bottom: 2rem;">
-                When Matt walks into our in‑home shop, he's convinced he needs a stiffer shaft. Maybe new irons. We ask him to hit five shots on our monitor, then we put his 7‑iron on the swing‑weight scale. The needle settles at C9. His pitching wedge—D4. Light mid‑irons, heavy wedge. And there it is: not a talent problem, a feel problem.
+                Truth was, Cal hadn't changed much. Two kids, long days, less practice. But something about his irons felt different—floaty on good days, jittery on bad ones, as if the head arrived a fraction early or late and he was always negotiating at impact. He blamed tempo, grip pressure, tempo again. He never blamed the clubs. His father had taught him that the club is honest; it tells you the truth. So when it lied every third swing, Cal wondered if the lie was his.
             </p>
-            
-            <h2 style="color: var(--deep-green); font-size: 1.8rem; margin: 3rem 0 1.5rem 0;">What swing weight really is</h2>
+
+            <p style="margin-bottom: 2rem;">
+                A friend insisted: "Go see the builder."
+            </p>
+
+            <h2 style="color: var(--deep-green); font-size: 2rem; margin: 3rem 0 1.5rem 0; border-bottom: 2px solid var(--light); padding-bottom: 0.5rem;">The Discovery</h2>
             
             <p style="margin-bottom: 2rem;">
-                Swing weight is not total weight. It's how heavy the club feels while swinging, the balance of head vs. handle, measured on a 14‑inch fulcrum swing‑weight scale. The scale reads in letter‑number codes from light to heavy (A0…F9); most men's stock clubs cluster around the D‑range (e.g., D1–D3), women's stock clubs around C‑range (e.g., C5–C7). Wedges often run a touch heavier for control.
+                The workbench was a shrine to small miracles—solvent and ferrules, a rack of heads winking under fluorescent light, a swing-weight scale like a quiet judge. The builder measured Cal's irons and raised an eyebrow. The 7-iron sat at D0, the 9-iron at D4, the 5-iron barely C9. Not broken. Not ideal. A set that would ask for three different tempos in three different places.
             </p>
-            
+
             <p style="margin-bottom: 2rem;">
-                On the bench, swing weight is amazingly sensitive. A tiny change at the head or grip moves the needle.
+                "Let's try something," the builder said, soft as a confession. He added two tiny squares of weight—four grams total—to the back of the 7-iron. A little rule of thumb: around +2 grams at the head ≈ +1 swing-weight point. The scale settled at D2. "Swing this."
             </p>
-            
-            <ul style="margin-bottom: 2rem; padding-left: 2rem;">
-                <li style="margin-bottom: 0.5rem;">Add ~2 g at the clubhead → +1 swing‑weight point.</li>
-                <li style="margin-bottom: 0.5rem;">Add ~5 g at the grip/butt → −1 swing‑weight point.</li>
-                <li style="margin-bottom: 0.5rem;">Change ~9 g in shaft weight → ≈1 point (direction depends on balance).</li>
-                <li style="margin-bottom: 0.5rem;">Change ½ inch of length → ≈±3 points (longer = heavier reading).</li>
-            </ul>
-            
+
             <p style="margin-bottom: 2rem;">
-                That's why "the same swing" can produce different flights across a set: your hands are timing different balances.
+                Cal did, and the sound changed. <em>Thunk</em>, not clink. The ball climbed and held a truer line. It wasn't farther. It was cleaner. The second swing started slightly on the toe—and still flew useful. His left eyebrow lifted without permission.
             </p>
-            
-            <h2 style="color: var(--deep-green); font-size: 1.8rem; margin: 3rem 0 1.5rem 0;">How we move it (and what each tweak feels like)</h2>
-            
-            <ul style="margin-bottom: 2rem; padding-left: 2rem;">
-                <li style="margin-bottom: 1rem;"><strong>At the head:</strong> lead tape, tip weights, heavier adjustable weights, or hot‑melt in metalwoods. This raises swing weight and makes the head feel more present.</li>
-                <li style="margin-bottom: 1rem;"><strong>At the butt/grip:</strong> heavier grips or counterweights (e.g., butt‑end systems) lower the measured swing weight and can steady an over‑quick transition.</li>
-                <li style="margin-bottom: 1rem;"><strong>Length:</strong> adding length makes the head feel heavier (more leverage), trimming length lightens feel a lot.</li>
-            </ul>
-            
-            <div style="background: var(--light); padding: 1.5rem; border-radius: 8px; margin: 2rem 0; border-left: 4px solid var(--deep-green);">
-                <p style="margin: 0; font-weight: 600; color: var(--deep-green);">Pro tip:</p>
-                <p style="margin: 0.5rem 0 0 0;">We'll often move the head +2 to +4 g (≈+1–2 points) to wake up head feel in middle irons, then use a small butt weight if your tempo gets "snatchy." The measured number might go down with a counterweight, but your tempo can improve—that's the result that matters.</p>
+
+            <p style="margin-bottom: 2rem;">
+                "What did you do?"
+            </p>
+
+            <p style="margin-bottom: 2rem;">
+                "Gave your hands something to follow," the builder said. "Right now your long irons feel too light—they run ahead of your body and you're chasing them with your hands. The short irons feel too heavy—you steer them. We'll meet you in the middle."
+            </p>
+
+            <div style="background: linear-gradient(135deg, #f8f9fa, #e9ecef); padding: 2rem; border-radius: 12px; margin: 2rem 0; border-left: 4px solid var(--deep-green);">
+                <h3 style="color: var(--deep-green); margin-top: 0;">Understanding Swing Weight</h3>
+                <p style="margin-bottom: 1rem;">Swing weight is not total weight. It's how heavy the club feels while swinging, the balance of head vs. handle, measured on a 14-inch fulcrum swing-weight scale.</p>
+                <ul style="margin: 0; padding-left: 1.5rem;">
+                    <li>Add ~2g at the clubhead → +1 swing-weight point</li>
+                    <li>Add ~5g at the grip/butt → −1 swing-weight point</li>
+                    <li>Change ~9g in shaft weight → ≈1 point</li>
+                    <li>Change ½ inch of length → ≈±3 points</li>
+                </ul>
             </div>
-            
-            <h2 style="color: var(--deep-green); font-size: 1.8rem; margin: 3rem 0 1.5rem 0;">"D2 or nothing" …or something better?</h2>
-            
-            <p style="margin-bottom: 2rem;">
-                Swing weight is a proxy for feel, not a law. Some builders prefer MOI matching (making each club resist the swing with the same inertia). MOI can be more scientific across the set, but swing weight remains the fastest workshop language to get you into a playable window. We use both ideas: establish your personal feel target, then keep clubs marching toward the same sensation.
-            </p>
-            
-            <h2 style="color: var(--deep-green); font-size: 1.8rem; margin: 3rem 0 1.5rem 0;">The fitting that changed Matt's week</h2>
+
+            <h2 style="color: var(--deep-green); font-size: 2rem; margin: 3rem 0 1.5rem 0; border-bottom: 2px solid var(--light); padding-bottom: 0.5rem;">The Transformation</h2>
             
             <p style="margin-bottom: 2rem;">
-                We start with the culprit: a light mid‑iron feel and a heavy wedge. We add 4 g of head weight to his 7‑iron (≈<strong>+2 swing‑weight points</strong>), and trim a whisper of length from the wedge (−3 points per ½ inch is the rule of thumb). Suddenly the 7‑iron stops floating right; the wedge stops nosediving left. His dispersion circle tightens. Ball speed doesn't skyrocket—but contact does. And contact is king.
+                They moved in small steps. A couple grams at the head here, a half-point there. Heavier grip on the wedge to steady the hands (add roughly +5 g in the grip ≈ −1 point on the scale, a neat counterbalance trick). No lectures, no jargon storm. Just hits and quiet yes or quiet no. When he tried too heavy—a clumsy D6—his transition got thick and late, like he was dragging luggage through mud. So they backed away. When it was right—D2–D3 in the mid-irons, a whisper more in the wedge—the club felt like it waited for him, then went with him.
             </p>
-            
-            <p style="margin-bottom: 2rem; font-style: italic; color: #555;">
-                He returns two days later with this grin: "My 7 and 9 are finally the same swing again."
+
+            <p style="margin-bottom: 2rem;">
+                On the walk to the car, the range lights buzzed, the grass wore that summer-night perfume men remember for years. Cal set a ball down one more time with the tuned 7-iron. His practice swing had a new metronome in it. He didn't try to make speed; he let weight make timing. The ball leapt, rose on the flag, and sat. He laughed—not loud, but from somewhere old and good.
             </p>
-            
-            <h2 style="color: var(--deep-green); font-size: 1.8rem; margin: 3rem 0 1.5rem 0;">Where most golfers land (so you know what "normal" looks like)</h2>
-            
-            <ul style="margin-bottom: 2rem; padding-left: 2rem;">
-                <li style="margin-bottom: 0.5rem;"><strong>Drivers:</strong> often D0–D3 (men) / C6–C9 (women).</li>
-                <li style="margin-bottom: 0.5rem;"><strong>Irons:</strong> commonly D0–D4 (men).</li>
-                <li style="margin-bottom: 0.5rem;"><strong>Wedges:</strong> a little heavier, often D3–D6 for control.</li>
-            </ul>
+
+            <h2 style="color: var(--deep-green); font-size: 2rem; margin: 3rem 0 1.5rem 0; border-bottom: 2px solid var(--light); padding-bottom: 0.5rem;">The Results</h2>
             
             <p style="margin-bottom: 2rem;">
-                These are typical windows, not rules; the right number is the one that makes your tempo and strike repeatable.
+                Over the next few weeks, the changes proved real. His worst swings weren't catastrophic. His best ones stopped feeling like accidents. The 5-iron that used to skid and leak right now started on line and stayed brave. The wedge that once dove left when he got handsy now held the face and clipped shots with a proper flight. Yardages got honest. And with honesty came something men don't talk about enough: relief. The relief of not explaining yourself to a game that doesn't listen.
             </p>
-            
-            <h2 style="color: var(--deep-green); font-size: 1.8rem; margin: 3rem 0 1.5rem 0;">What changes when swing weight is right</h2>
-            
-            <ul style="margin-bottom: 2rem; padding-left: 2rem;">
-                <li style="margin-bottom: 0.5rem;"><strong>Face control:</strong> you can sense the head, square it, and hold your line.</li>
-                <li style="margin-bottom: 0.5rem;"><strong>Tempo:</strong> the club stops bossing your hands; your rhythm sets the shot.</li>
-                <li style="margin-bottom: 0.5rem;"><strong>Contact:</strong> center‑face strike shows up more often, and misses are smaller.</li>
-            </ul>
-            
-            <p style="margin-bottom: 2rem; font-style: italic; color: #555;">
-                And here's the part nobody tells you: you don't always feel "lighter" or "heavier." You feel clearer. Like the club's metronome finally clicks with yours.
-            </p>
-            
-            <h2 style="color: var(--deep-green); font-size: 1.8rem; margin: 3rem 0 1.5rem 0;">The builder's checklist we use in your session</h2>
-            
-            <ol style="margin-bottom: 2rem; padding-left: 2rem;">
-                <li style="margin-bottom: 0.5rem;">Measure your current clubs on a 14‑inch fulcrum scale (we note A0–F9 codes per club).</li>
-                <li style="margin-bottom: 0.5rem;">Test your swing with a mid‑iron and a wedge on the monitor to see strike, launch, and spin.</li>
-                <li style="margin-bottom: 0.5rem;">Nudge swing weight at the head (2 g = ~1 point), or at the butt (5 g = ~−1), and re‑test.</li>
-                <li style="margin-bottom: 0.5rem;">Set a personal target feel (e.g., "my 7‑iron at D2 feels automatic") and tune the set toward it.</li>
-                <li style="margin-bottom: 0.5rem;">Lock with shaft and grip choices—shaft weight/flex and grip weight/size finish the feel picture.</li>
-            </ol>
-            
-            <hr style="border: none; border-top: 2px solid var(--light); margin: 3rem 0;">
-            
-            <h2 style="color: var(--deep-green); font-size: 1.8rem; margin: 3rem 0 1.5rem 0;">Bottom line</h2>
-            
+
             <p style="margin-bottom: 2rem;">
-                Swing weight is the language your hands use to trust a golf club. When we get it right, the ball flight looks calmer, but you feel braver—like the shot you pictured and the shot you produced finally became the same thing.
+                Swing weight didn't turn Cal into someone else. It took who he already was—the tempo he had, the strength he'd kept—and made it repeatable. There's romance in distance, sure. But there's a deeper romance in trust. When the club's weight is right, you stop bargaining with impact. You stop flinching. You just swing.
             </p>
-            
-            <div style="background: linear-gradient(135deg, var(--deep-green), #0d2a5c); color: white; padding: 2rem; border-radius: 12px; text-align: center; margin: 3rem 0;">
-                <h3 style="color: white; margin-bottom: 1rem;">Ready to feel that difference?</h3>
-                <p style="margin-bottom: 1.5rem; color: rgba(255,255,255,0.9);">Call (717) 387‑1643 and ask for a Swing‑Weight & Build Check. We'll put your best feel into every club—so Saturday morning feels like yours again.</p>
-                <a href="tel:7173871643" style="display: inline-block; background: white; color: var(--deep-green); padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 1.1rem;">
-                    📞 Call (717) 387-1643
-                </a>
+
+            <div style="background: #f8f9fa; padding: 2rem; border-radius: 12px; margin: 3rem 0; text-align: center; border: 2px solid var(--deep-green);">
+                <h3 style="color: var(--deep-green); margin-top: 0; font-size: 1.5rem;">Is Your Swing Weight Right?</h3>
+                <p style="margin-bottom: 1.5rem; font-size: 1.1rem;">If you've had that floaty-then-heavy feeling, if your mid-iron goes to two different places with the same swing, if you've been blaming grip pressure and tempo for months—maybe your swing is fine. Maybe your balance is off.</p>
+            </div>
+
+            <!-- CTA Section -->
+            <div style="background: linear-gradient(135deg, var(--deep-green), #0a4d3a); color: white; padding: 3rem; border-radius: 12px; margin: 3rem 0; text-align: center;">
+                <h2 style="color: white; margin-bottom: 1.5rem;">Ready to Find Your Perfect Balance? 🎯</h2>
+                
+                <p style="font-size: 1.1rem; margin-bottom: 2rem; color: rgba(255,255,255,0.9);">
+                    Bring your set. We'll measure where you are, move in two-gram footsteps, and let the ball tell us when it's right. You don't need a new you. You need a club that keeps its promise.
+                </p>
+                
+                <p style="font-size: 1.2rem; margin-bottom: 2.5rem; color: white; font-weight: 600;">
+                    <em>Precision. Performance. Every Swing.</em>
+                </p>
+                
+                <div style="margin-bottom: 2rem;">
+                    <a href="tel:7173871643" class="btn btn-primary" style="background: var(--gold); color: var(--deep-green); font-weight: 700; padding: 1rem 2.5rem; font-size: 1.2rem; text-decoration: none; border-radius: 6px; display: inline-block;">
+                        📞 Call (717) 387-1643
+                    </a>
+                </div>
+                
+                <p style="font-size: 1rem; color: rgba(255,255,255,0.9);">
+                    Schedule your Swing-Weight & Build Session<br>
+                    In-home, appointment-only service
+                </p>
+                
+                <p style="margin-top: 2rem; font-size: 1.1rem; color: var(--gold); font-style: italic;">
+                    So Saturday morning feels like yours again.
+                </p>
             </div>
         </article>
-        
-        <!-- Related Posts -->
-        <div style="margin-top: 4rem; padding-top: 2rem; border-top: 2px solid var(--light);">
-            <h3 style="color: var(--deep-green); margin-bottom: 1.5rem;">Related Articles</h3>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
-                <a href="<?= base_url('/blog/signs-you-need-different-shaft-flex') ?>" style="text-decoration: none; color: inherit;">
-                    <div style="padding: 1.5rem; border: 2px solid var(--light); border-radius: 8px; transition: all 0.3s ease; hover:border-color: var(--deep-green);">
-                        <h4 style="color: var(--deep-green); margin-bottom: 0.5rem;">Signs You Need a Different Shaft Flex</h4>
-                        <p style="color: #666; font-size: 0.9rem; margin: 0;">Learn the telltale signs that your shaft flex isn't matching your swing.</p>
-                    </div>
-                </a>
-                <a href="<?= base_url('/blog/flex-by-swing-speed') ?>" style="text-decoration: none; color: inherit;">
-                    <div style="padding: 1.5rem; border: 2px solid var(--light); border-radius: 8px; transition: all 0.3s ease; hover:border-color: var(--deep-green);">
-                        <h4 style="color: var(--deep-green); margin-bottom: 0.5rem;">Flex by Swing Speed</h4>
-                        <p style="color: #666; font-size: 0.9rem; margin: 0;">Understanding how swing speed relates to shaft flex selection.</p>
-                    </div>
-                </a>
-            </div>
-        </div>
     </div>
 </section>
