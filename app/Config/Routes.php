@@ -29,6 +29,7 @@ $routes->get('/cart', 'Cart::index');
 $routes->post('/cart/add', 'Cart::add');
 $routes->post('/cart/remove', 'Cart::remove');
 $routes->post('/cart/update', 'Cart::update');
+$routes->post('/cart/process-order', 'Cart::processOrder');
 $routes->get('/checkout', 'Checkout::index');
 $routes->post('/checkout/process', 'Checkout::process');
 

@@ -56,8 +56,13 @@
         <div id="checkout-form" class="card" style="display: none;">
             <h3 style="margin-bottom: 1.5rem; color: var(--deep-green);">Checkout Information</h3>
             
-            <form id="checkout" method="POST" action="<?= base_url('/checkout') ?>">
+            <form id="checkout" onsubmit="processOrder(event)">
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
+                    <div>
+                        <label for="customer_name" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--deep-green);">Full Name (Optional)</label>
+                        <input type="text" id="customer_name" name="customer_name" style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 6px; font-size: 1rem;">
+                    </div>
+                    
                     <div>
                         <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--deep-green);">Email Address *</label>
                         <input type="email" id="email" name="email" required style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 6px; font-size: 1rem;">
@@ -66,11 +71,6 @@
                     <div>
                         <label for="phone" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--deep-green);">Phone Number *</label>
                         <input type="tel" id="phone" name="phone" required style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 6px; font-size: 1rem;">
-                    </div>
-                    
-                    <div>
-                        <label for="password" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--deep-green);">Password (to create account) *</label>
-                        <input type="password" id="password" name="password" required style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 6px; font-size: 1rem;">
                     </div>
                     
                     <div>
@@ -266,4 +266,95 @@ document.getElementById('checkout').addEventListener('submit', function(e) {
     // Redirect to home
     window.location.href = '<?= base_url('/') ?>';
 });
+
+// New function to process order with email and phone
+function processOrder(event) {
+    event.preventDefault();
+    
+    const cart = JSON.parse(localStorage.getItem('golf_cart')) || [];
+    const emergencyMode = localStorage.getItem('emergency_mode') === 'true';
+    
+    if (cart.length === 0) {
+        alert('Your cart is empty!');
+        return;
+    }
+    
+    // Get form data
+    const formData = new FormData(event.target);
+    const email = formData.get('email');
+    const phone = formData.get('phone');
+    const name = formData.get('customer_name') || '';
+    
+    if (!email || !phone) {
+        alert('Please fill in all required fields (Email and Phone).');
+        return;
+    }
+    
+    // Calculate totals
+    let subtotal = 0;
+    cart.forEach(item => {
+        subtotal += item.price * item.quantity;
+    });
+    
+    let total = subtotal;
+    if (emergencyMode) {
+        total += subtotal * 0.5;
+    }
+    
+    // Prepare order data
+    const orderData = {
+        email: email,
+        phone: phone,
+        name: name,
+        order_data: JSON.stringify(cart),
+        total_amount: total,
+        emergency_mode: emergencyMode
+    };
+    
+    // Show loading
+    const submitBtn = event.target.querySelector('button[type="submit"]');
+    const originalText = submitBtn.textContent;
+    submitBtn.textContent = 'Processing...';
+    submitBtn.disabled = true;
+    
+    // Send order to server
+    fetch('<?= base_url('/cart/process-order') ?>', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: new URLSearchParams(orderData)
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            // Show success message
+            let message = `Order #${data.order_number} submitted successfully!\n\nTotal: $${total.toFixed(2)}\n\nPlease call (717) 387-1643 to schedule your appointment.`;
+            if (emergencyMode) {
+                message += '\n\n⚠️ IMPORTANT: You MUST call to confirm same-day service availability!';
+            }
+            message += '\n\nCheck your email for confirmation details.';
+            
+            alert(message);
+            
+            // Clear cart and emergency mode
+            localStorage.removeItem('golf_cart');
+            localStorage.removeItem('emergency_mode');
+            
+            // Redirect to home
+            window.location.href = '<?= base_url('/') ?>';
+        } else {
+            alert('Error: ' + data.message);
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('An error occurred while processing your order. Please try again.');
+    })
+    .finally(() => {
+        // Reset button
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+    });
+}
 </script>

@@ -3,6 +3,8 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use App\Models\OrderModel;
+use App\Libraries\EmailService;
 use CodeIgniter\HTTP\ResponseInterface;
 
 class Cart extends BaseController
@@ -48,5 +50,88 @@ class Cart extends BaseController
         // This is just a placeholder for future server-side cart handling
         
         return $this->response->setJSON(['success' => true]);
+    }
+
+    /**
+     * Process order submission
+     */
+    public function processOrder()
+    {
+        $orderModel = new OrderModel();
+        $emailService = new EmailService();
+
+        // Get order data from POST
+        $customerEmail = $this->request->getPost('email');
+        $customerPhone = $this->request->getPost('phone');
+        $customerName = $this->request->getPost('name') ?? '';
+        $orderData = $this->request->getPost('order_data');
+        $totalAmount = $this->request->getPost('total_amount');
+        $emergencyMode = $this->request->getPost('emergency_mode') === 'true';
+
+        // Validate required fields
+        if (empty($customerEmail) || empty($customerPhone) || empty($orderData) || empty($totalAmount)) {
+            return $this->response->setJSON([
+                'success' => false,
+                'message' => 'Missing required fields'
+            ]);
+        }
+
+        try {
+            // Parse order data
+            $orderItems = json_decode($orderData, true);
+            if (!$orderItems) {
+                throw new \Exception('Invalid order data');
+            }
+
+            // Prepare order data for database
+            $orderDataForDb = [
+                'customer_email' => $customerEmail,
+                'customer_phone' => $customerPhone,
+                'customer_name' => $customerName,
+                'order_data' => $orderData,
+                'total' => $totalAmount,
+                'emergency_mode' => $emergencyMode ? 1 : 0,
+                'status' => 'pending'
+            ];
+
+            // Save order to database
+            $orderId = $orderModel->insert($orderDataForDb);
+            
+            if (!$orderId) {
+                throw new \Exception('Failed to save order');
+            }
+
+            // Get the saved order with generated order number
+            $savedOrder = $orderModel->find($orderId);
+            
+            // Prepare data for emails
+            $emailData = [
+                'order_number' => $savedOrder['order_number'],
+                'customer_email' => $customerEmail,
+                'customer_phone' => $customerPhone,
+                'customer_name' => $customerName,
+                'order_items' => $orderItems,
+                'total_amount' => $totalAmount,
+                'emergency_mode' => $emergencyMode
+            ];
+
+            // Send emails
+            $customerEmailSent = $emailService->sendOrderConfirmation($emailData);
+            $ownerEmailSent = $emailService->sendOrderNotification($emailData);
+
+            return $this->response->setJSON([
+                'success' => true,
+                'order_number' => $savedOrder['order_number'],
+                'message' => 'Order submitted successfully! Check your email for confirmation.'
+            ]);
+
+        } catch (\Exception $e) {
+            log_message('error', 'Order processing failed: ' . $e->getMessage());
+            
+            return $this->response->setJSON([
+                'success' => false,
+                'message' => 'Failed to process order. Please try again.'
+            ]);
+        }
     }
 }
