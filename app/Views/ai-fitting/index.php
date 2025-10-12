@@ -137,11 +137,10 @@
                         </div>
                     </div>
                     
-                </div>
-                
-                <!-- Checkout Button (Outside sticky cart) -->
-                <div style="margin-bottom: 2rem;">
-                    <a href="<?= base_url('/cart') ?>" class="btn btn-primary" style="width: 100%; text-align: center; display: none;" id="checkout-btn">View Cart & Checkout</a>
+                    <!-- Checkout Button -->
+                    <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--light);">
+                        <a href="<?= base_url('/cart') ?>" class="btn btn-primary" style="width: 100%; text-align: center; display: none;" id="checkout-btn">View Cart & Checkout</a>
+                    </div>
                 </div>
             </div>
         </div>
