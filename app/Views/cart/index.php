@@ -5,15 +5,18 @@
             <p class="section-subtitle">Review your selected services and proceed to checkout</p>
         </div>
         
-        <!-- Emergency Service Notice (if active) -->
+        <!-- Same-Day Service Notice (if active) -->
         <div id="emergency-notice" style="display: none; margin-bottom: 2rem;">
             <div class="card" style="background: linear-gradient(135deg, #ff6b6b, #ee5a52); color: white; border: none;">
                 <div style="display: flex; align-items: start; gap: 1rem;">
                     <div style="font-size: 2.5rem;">🚨</div>
                     <div style="flex: 1;">
-                        <h3 style="margin: 0 0 0.75rem 0; color: white;">Emergency Service Selected</h3>
-                        <p style="margin: 0 0 0.5rem 0; color: rgba(255,255,255,0.9); font-size: 1rem;">You have selected emergency same-day or next-day service with a +50% labor charge.</p>
-                        <p style="margin: 0; color: white; font-weight: 700; font-size: 1.1rem;">⚠️ You MUST call <a href="tel:7173871643" style="color: white; text-decoration: underline;">(717) 387-1643</a> to confirm availability for emergency service.</p>
+                        <h3 style="margin: 0 0 0.75rem 0; color: white;">Same-Day Service Selected</h3>
+                        <p style="margin: 0 0 0.75rem 0; color: rgba(255,255,255,0.9); font-size: 1rem;">You have selected ASAP same-day or next-day service with a +50% labor charge.</p>
+                        <p style="margin: 0 0 1rem 0; color: white; font-weight: 700; font-size: 1.1rem;">⚠️ You MUST call <a href="tel:7173871643" style="color: white; text-decoration: underline;">(717) 387-1643</a> to confirm availability for same-day service.</p>
+                        <button onclick="removeSameDayService()" style="background: white; color: #ff6b6b; border: none; padding: 0.75rem 1.5rem; border-radius: 6px; font-weight: 700; cursor: pointer; font-size: 0.95rem;">
+                            Remove Same-Day Service
+                        </button>
                     </div>
                 </div>
             </div>
@@ -171,7 +174,7 @@ function loadCart() {
     if (emergencyMode) {
         totalHTML += `
             <div style="display: flex; justify-content: space-between; align-items: center; font-size: 1rem; margin-bottom: 0.5rem; color: #ff6b6b;">
-                <span style="font-weight: 600;">Emergency Service Fee (+50%):</span>
+                <span style="font-weight: 600;">Same-Day Service Fee (+50%):</span>
                 <span style="font-weight: 700;">$${emergencyFee.toFixed(2)}</span>
             </div>
         `;
@@ -219,12 +222,27 @@ function removeItem(index) {
     loadCart();
 }
 
+// Remove same-day service function
+function removeSameDayService() {
+    localStorage.setItem('emergency_mode', 'false');
+    
+    // Trigger cart update event for other pages
+    document.dispatchEvent(new CustomEvent('cartUpdated'));
+    
+    // Reload cart display
+    loadCart();
+    
+    // Show success message
+    alert('Same-Day Service removed. Your cart has been updated with standard pricing.');
+}
+
 // Handle checkout form submission
 document.getElementById('checkout').addEventListener('submit', function(e) {
     e.preventDefault();
     
     const formData = new FormData(this);
     const cart = JSON.parse(localStorage.getItem('golf_cart')) || [];
+    const emergencyMode = localStorage.getItem('emergency_mode') === 'true';
     
     // Calculate total
     let total = 0;
@@ -232,11 +250,23 @@ document.getElementById('checkout').addEventListener('submit', function(e) {
         total += item.price * item.quantity;
     });
     
-    // Show confirmation
-    alert(`Order submitted! Total: $${total.toFixed(2)}\n\nPlease call (717) 387-1643 to schedule your appointment.\n\nYou will receive a confirmation email shortly.`);
+    // Add emergency fee if applicable
+    if (emergencyMode) {
+        total += total * 0.5;
+    }
     
-    // Clear cart
+    // Show confirmation
+    let message = `Order submitted! Total: $${total.toFixed(2)}\n\nPlease call (717) 387-1643 to schedule your appointment.`;
+    if (emergencyMode) {
+        message += '\n\n⚠️ IMPORTANT: You MUST call to confirm same-day service availability!';
+    }
+    message += '\n\nYou will receive a confirmation email shortly.';
+    
+    alert(message);
+    
+    // Clear cart and emergency mode
     localStorage.removeItem('golf_cart');
+    localStorage.removeItem('emergency_mode');
     
     // Redirect to home
     window.location.href = '<?= base_url('/') ?>';
