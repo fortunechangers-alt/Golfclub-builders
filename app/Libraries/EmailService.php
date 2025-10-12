@@ -250,8 +250,16 @@ class EmailService
                 <p><strong>Customer Email:</strong> ' . $orderData['customer_email'] . '</p>
                 <p><strong>Customer Phone:</strong> ' . $orderData['customer_phone'] . '</p>
                 <p><strong>Order Date:</strong> ' . date('F j, Y \a\t g:i A') . '</p>
-                <p><strong>Total Amount:</strong> $' . number_format($orderData['total'], 2) . '</p>
+                <p><strong>Estimated Total:</strong> $' . number_format($orderData['total'], 2) . '</p>
+                ' . (!empty($orderData['preferred_date']) ? '<p><strong>Preferred Date:</strong> ' . $orderData['preferred_date'] . '</p>' : '') . '
             </div>
+            
+            ' . (!empty($orderData['build_details']) ? '
+            <div style="background: #e7f3ff; border: 1px solid #b3d9ff; padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem;">
+                <h3 style="color: #004085; margin-top: 0;">📝 Customer Build Details & Special Requests</h3>
+                <p style="margin: 0; color: #004085; white-space: pre-wrap;">' . htmlspecialchars($orderData['build_details']) . '</p>
+            </div>
+            ' : '') . '
             
             <h3 style="color: #0b6e4f;">Order Details</h3>
             <table style="width: 100%; border-collapse: collapse; margin-bottom: 2rem;">

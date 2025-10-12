@@ -79,15 +79,27 @@
                     </div>
                 </div>
                 
-                <div style="background: var(--light); padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem;">
-                    <h4 style="color: var(--deep-green); margin-bottom: 1rem;">Important Notice</h4>
-                    <p style="margin-bottom: 1rem; color: #666;">After completing your order, please call us at <strong>(717) 387-1643</strong> to schedule your appointment. Payment is due upon arrival.</p>
-                    <p style="color: #666; margin: 0;">We'll send you a confirmation email with your order details and our contact information.</p>
+                <!-- Special Requests / Build Details -->
+                <div style="margin-bottom: 2rem;">
+                    <label for="build_details" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--deep-green);">Build Details & Special Requests (Optional)</label>
+                    <textarea id="build_details" name="build_details" rows="4" placeholder="Tell us about your specific needs: shaft preferences, grip type, club specifications, timeline, or any special requests..." style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 6px; font-size: 1rem; resize: vertical;"></textarea>
+                    <p style="margin: 0.5rem 0 0 0; color: #666; font-size: 0.9rem;">This helps us prepare for your build and let you know if we currently offer what you're requesting.</p>
+                </div>
+                
+                <div style="background: linear-gradient(135deg, #fff3cd, #ffe8a1); border: 2px solid #ffc107; padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem;">
+                    <h4 style="color: #856404; margin-bottom: 1rem;">📋 Order Estimate Notice</h4>
+                    <p style="margin-bottom: 1rem; color: #856404;"><strong>This is an estimate, not a final quote.</strong> Your actual charges may increase or decrease based on:</p>
+                    <ul style="margin: 0 0 1rem 0; padding-left: 1.5rem; color: #856404;">
+                        <li>Additional services requested during your appointment</li>
+                        <li>Adjustments to specifications or quantities</li>
+                        <li>Parts, shafts, or grips selected during consultation</li>
+                    </ul>
+                    <p style="margin: 0; color: #856404;">After submitting, <strong>please call (717) 387-1643</strong> to schedule your appointment and discuss your specific needs. Payment is due upon arrival.</p>
                 </div>
                 
                 <div style="text-align: center;">
                     <button type="submit" class="btn btn-primary" style="font-size: 1.1rem; padding: 1rem 3rem;">
-                        Complete Order & Call to Schedule
+                        Submit Order Request
                     </button>
                 </div>
             </form>
@@ -300,6 +312,8 @@ function processOrder(event) {
     const email = formData.get('email');
     const phone = formData.get('phone');
     const name = formData.get('customer_name') || '';
+    const buildDetails = formData.get('build_details') || '';
+    const preferredDate = formData.get('preferred_date') || '';
     
     if (!email || !phone) {
         alert('Please fill in all required fields (Email and Phone).');
@@ -326,6 +340,8 @@ function processOrder(event) {
         email: email,
         phone: phone,
         name: name,
+        build_details: buildDetails,
+        preferred_date: preferredDate,
         order_data: JSON.stringify(cart),
         total_amount: total,
         emergency_mode: emergencyMode

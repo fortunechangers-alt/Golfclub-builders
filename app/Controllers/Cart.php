@@ -64,6 +64,8 @@ class Cart extends BaseController
         $customerEmail = $this->request->getPost('email');
         $customerPhone = $this->request->getPost('phone');
         $customerName = $this->request->getPost('name') ?? '';
+        $buildDetails = $this->request->getPost('build_details') ?? '';
+        $preferredDate = $this->request->getPost('preferred_date') ?? '';
         $orderData = $this->request->getPost('order_data');
         $totalAmount = $this->request->getPost('total_amount');
         $emergencyMode = $this->request->getPost('emergency_mode') === 'true';
@@ -116,6 +118,8 @@ class Cart extends BaseController
                 'customer_email' => $customerEmail,
                 'customer_phone' => $customerPhone,
                 'customer_name' => $customerName,
+                'build_details' => $buildDetails,
+                'preferred_date' => $preferredDate,
                 'order_items' => $orderItems,
                 'total' => $totalAmount,
                 'emergency_mode' => $emergencyMode
