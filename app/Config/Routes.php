@@ -51,6 +51,7 @@ $routes->post('/checkout/process', 'Shop::processCheckout');
 $routes->get('/about', 'Pages::about');
 $routes->get('/contact', 'Pages::contact');
 $routes->post('/contact/submit', 'Pages::contactSubmit');
+$routes->get('/testimonials', 'Testimonials::index');
 
 // Authentication - Using CodeIgniter Shield
 // Temporarily disabled due to service loading issue

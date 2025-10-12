@@ -190,8 +190,8 @@
 
 
 <!-- Add Review Modal -->
-<div id="reviewModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 1000; display: flex; align-items: center; justify-content: center;">
-    <div style="background: white; padding: 2rem; border-radius: 12px; max-width: 500px; width: 90%; max-height: 90vh; overflow-y: auto;">
+<div id="reviewModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 1000; align-items: center; justify-content: center;">
+    <div style="background: white; padding: 2rem; border-radius: 12px; max-width: 500px; width: 90%; max-height: 90vh; overflow-y: auto; margin: auto;">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
             <h3 style="margin: 0; color: var(--deep-green);">Add Your Review</h3>
             <button onclick="hideAddReviewForm()" style="background: none; border: none; font-size: 1.5rem; cursor: pointer; color: #666;">×</button>
@@ -267,8 +267,19 @@ function submitReview(event) {
         return;
     }
     
-    // Here you would normally send to server
-    // For now, we will just show a success message
+    // Save review to localStorage
+    const reviews = JSON.parse(localStorage.getItem('customerReviews') || '[]');
+    const newReview = {
+        id: Date.now(),
+        name: name,
+        rating: parseInt(rating),
+        text: text,
+        date: new Date().toISOString().split('T')[0]
+    };
+    
+    reviews.push(newReview);
+    localStorage.setItem('customerReviews', JSON.stringify(reviews));
+    
     alert("Thank you for your review! We appreciate your feedback.");
     
     hideAddReviewForm();
