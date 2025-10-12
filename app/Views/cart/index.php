@@ -98,6 +98,13 @@
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     loadCart();
+    
+    // Set minimum date to today for the preferred date picker
+    const dateInput = document.getElementById('preferred_date');
+    if (dateInput) {
+        const today = new Date().toISOString().split('T')[0];
+        dateInput.setAttribute('min', today);
+    }
 });
 
 function loadCart() {
@@ -150,12 +157,17 @@ function loadCart() {
     
     // Calculate emergency fee if applicable
     let emergencyFee = 0;
-    let total = subtotal;
+    let subtotalWithFee = subtotal;
     
     if (emergencyMode) {
         emergencyFee = subtotal * 0.5; // 50% of subtotal
-        total = subtotal + emergencyFee;
+        subtotalWithFee = subtotal + emergencyFee;
     }
+    
+    // Calculate PA sales tax (6%)
+    const PA_SALES_TAX_RATE = 0.06;
+    const salesTax = subtotalWithFee * PA_SALES_TAX_RATE;
+    const total = subtotalWithFee + salesTax;
     
     cartContent.innerHTML = cartHTML;
     
@@ -177,6 +189,10 @@ function loadCart() {
     }
     
     totalHTML += `
+            <div style="display: flex; justify-content: space-between; align-items: center; font-size: 1rem; margin-bottom: 0.5rem;">
+                <span style="font-weight: 600;">PA Sales Tax (6%):</span>
+                <span style="font-weight: 600;">$${salesTax.toFixed(2)}</span>
+            </div>
         </div>
         <div style="display: flex; justify-content: space-between; align-items: center; font-size: 1.3rem; font-weight: 700; padding-top: 1rem; border-top: 2px solid var(--deep-green);">
             <span>Total:</span>
@@ -296,10 +312,14 @@ function processOrder(event) {
         subtotal += item.price * item.quantity;
     });
     
-    let total = subtotal;
+    let subtotalWithFee = subtotal;
     if (emergencyMode) {
-        total += subtotal * 0.5;
+        subtotalWithFee += subtotal * 0.5;
     }
+    
+    // Add PA sales tax (6%)
+    const salesTax = subtotalWithFee * 0.06;
+    const total = subtotalWithFee + salesTax;
     
     // Prepare order data
     const orderData = {
