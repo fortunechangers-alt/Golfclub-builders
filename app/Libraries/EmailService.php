@@ -61,11 +61,12 @@ class EmailService
 
         $orderItems = '';
         foreach ($orderData['order_items'] as $item) {
+            $itemTotal = $item['price'] * $item['quantity'];
             $orderItems .= '<tr>
                 <td style="padding: 0.5rem; border-bottom: 1px solid #eee;">' . $item['name'] . '</td>
                 <td style="padding: 0.5rem; border-bottom: 1px solid #eee; text-align: center;">' . $item['quantity'] . '</td>
                 <td style="padding: 0.5rem; border-bottom: 1px solid #eee; text-align: right;">$' . number_format($item['price'], 2) . '</td>
-                <td style="padding: 0.5rem; border-bottom: 1px solid #eee; text-align: right;">$' . number_format($item['total'], 2) . '</td>
+                <td style="padding: 0.5rem; border-bottom: 1px solid #eee; text-align: right;">$' . number_format($itemTotal, 2) . '</td>
             </tr>';
         }
 
@@ -133,11 +134,12 @@ class EmailService
 
         $orderItems = '';
         foreach ($orderData['order_items'] as $item) {
+            $itemTotal = $item['price'] * $item['quantity'];
             $orderItems .= '<tr>
                 <td style="padding: 0.5rem; border-bottom: 1px solid #eee;">' . $item['name'] . '</td>
                 <td style="padding: 0.5rem; border-bottom: 1px solid #eee; text-align: center;">' . $item['quantity'] . '</td>
                 <td style="padding: 0.5rem; border-bottom: 1px solid #eee; text-align: right;">$' . number_format($item['price'], 2) . '</td>
-                <td style="padding: 0.5rem; border-bottom: 1px solid #eee; text-align: right;">$' . number_format($item['total'], 2) . '</td>
+                <td style="padding: 0.5rem; border-bottom: 1px solid #eee; text-align: right;">$' . number_format($itemTotal, 2) . '</td>
             </tr>';
         }
 
