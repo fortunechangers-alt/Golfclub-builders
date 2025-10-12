@@ -40,6 +40,12 @@ class Blog extends BaseController
         ];
         
         // Handle specific posts with custom views
+        if ($slug === 'players-vs-game-improvement-irons') {
+            return view('layout/header', $data)
+                 . view('blog/players-vs-game-improvement-irons', $data)
+                 . view('layout/footer', $data);
+        }
+        
         if ($slug === 'finding-the-right-shaft-flex') {
             return view('layout/header', $data)
                  . view('blog/shaft-flex-guide', $data)
@@ -61,12 +67,20 @@ class Blog extends BaseController
     {
         return [
             [
+                'slug' => 'players-vs-game-improvement-irons',
+                'title' => 'Players Irons vs Game Improvement Irons: A Personal Journey to Choosing the Right Clubs',
+                'excerpt' => 'I still remember the first time I gazed down at a shiny blade iron behind the ball. It looked beautiful – but my ego was along for the ride. What followed was a season of bruised pride and a hard lesson in choosing the right irons.',
+                'date' => '2025-10-12',
+                'read_time' => '15 min read',
+                'featured' => true
+            ],
+            [
                 'slug' => 'finding-the-right-shaft-flex',
                 'title' => 'Finding the Right Shaft Flex: A Golfer\'s Journey from Frustration to Confidence',
                 'excerpt' => 'Meet Jake, a dedicated weekend golfer who loves the game but has been stuck in a rut. Every tee shot feels like a gamble. One day he hits a low, weak fade that barely reaches the fairway; the next, a wild slice sails out of bounds.',
                 'date' => '2025-10-12',
                 'read_time' => '12 min read',
-                'featured' => true
+                'featured' => false
             ],
             [
                 'slug' => 'why-swing-weight-matters',
