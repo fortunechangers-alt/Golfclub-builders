@@ -134,8 +134,13 @@ class EmailService
         </head>
         <body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px;">
             <div style="text-align: center; margin-bottom: 2rem;">
-                <h1 style="color: #0b6e4f; margin-bottom: 0.5rem;">Golf Club Builders</h1>
+                <h1 style="color: #0b6e4f; margin-bottom: 0.5rem;">🏌️ Golf Club Builders</h1>
                 <p style="color: #666; margin: 0;">Professional Club Building & Fitting Services</p>
+            </div>
+            
+            <div style="background: linear-gradient(135deg, #0b6e4f, #0a5940); color: white; padding: 2rem; border-radius: 12px; text-align: center; margin-bottom: 2rem;">
+                <h2 style="color: white; margin: 0 0 1rem 0; font-size: 1.8rem;">🎉 Thank You for Your Order!</h2>
+                <p style="color: rgba(255,255,255,0.95); margin: 0; font-size: 1.1rem;">We\'re excited to help you improve your game! Your order has been received and we can\'t wait to get started.</p>
             </div>
             
             ' . $emergencyNotice . '
@@ -168,9 +173,14 @@ class EmailService
                 <p style="margin: 0.5rem 0 0 0; color: #856404;">Payment is due upon arrival. We do not accept online payments at this time.</p>
             </div>
             
-            <div style="text-align: center; margin-top: 2rem;">
-                <p style="color: #666; font-size: 0.9rem;">Thank you for choosing Golf Club Builders!</p>
-                <p style="color: #666; font-size: 0.9rem;">daniel@golfclub-builders.com | (717) 387-1643</p>
+            <div style="background: linear-gradient(135deg, #f8f9fa, #e9ecef); padding: 2rem; border-radius: 12px; text-align: center; margin-top: 2rem;">
+                <h3 style="color: #0b6e4f; margin: 0 0 1rem 0;">We Can\'t Wait to Work With You! 🏆</h3>
+                <p style="color: #555; margin-bottom: 1.5rem; font-size: 1.05rem;">Thank you for trusting Golf Club Builders with your equipment needs. We\'re passionate about helping golfers like you play their best golf, and we\'re honored you chose us!</p>
+                <p style="color: #666; margin: 0;">Questions? We\'re here to help!</p>
+                <p style="color: #0b6e4f; font-weight: 700; font-size: 1.1rem; margin: 0.5rem 0 0 0;">
+                    <a href="mailto:daniel@golfclub-builders.com" style="color: #0b6e4f; text-decoration: none;">daniel@golfclub-builders.com</a> | 
+                    <a href="tel:7173871643" style="color: #0b6e4f; text-decoration: none;">(717) 387-1643</a>
+                </p>
             </div>
         </body>
         </html>';
