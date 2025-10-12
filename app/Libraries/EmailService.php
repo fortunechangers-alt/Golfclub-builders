@@ -2,18 +2,19 @@
 
 namespace App\Libraries;
 
-use CodeIgniter\Email\Email;
-use CodeIgniter\Config\Services;
-
 class EmailService
 {
-    protected $email;
-    protected $config;
+    protected $apiKey;
+    protected $fromEmail;
+    protected $fromName;
 
     public function __construct()
     {
-        $this->email = Services::email();
-        $this->config = config('Email');
+        // Get SendGrid API Key from config
+        $config = config('SendGrid');
+        $this->apiKey = $config->apiKey;
+        $this->fromEmail = $config->fromEmail;
+        $this->fromName = $config->fromName;
     }
 
     /**
@@ -21,15 +22,12 @@ class EmailService
      */
     public function sendOrderConfirmation($orderData)
     {
-        $this->email->setFrom('noreply@golfclub-builders.com', 'Golf Club Builders');
-        $this->email->setTo($orderData['customer_email']);
-        $this->email->setSubject('Order Confirmation - ' . $orderData['order_number']);
+        $to = $orderData['customer_email'];
+        $toName = $orderData['customer_name'] ?? '';
+        $subject = 'Order Confirmation - ' . $orderData['order_number'];
+        $htmlContent = $this->buildCustomerEmail($orderData);
         
-        $message = $this->buildCustomerEmail($orderData);
-        $this->email->setMessage($message);
-        $this->email->setMailType('html');
-        
-        return $this->email->send();
+        return $this->sendEmail($to, $toName, $subject, $htmlContent);
     }
 
     /**
@@ -37,15 +35,72 @@ class EmailService
      */
     public function sendOrderNotification($orderData)
     {
-        $this->email->setFrom('noreply@golfclub-builders.com', 'Golf Club Builders');
-        $this->email->setTo('Daniel@Golfclub-builders.com'); // Your email
-        $this->email->setSubject('New Order Received - ' . $orderData['order_number']);
+        $to = 'daniel@golfclub-builders.com';
+        $toName = 'Daniel Willis';
+        $subject = 'New Order Received - ' . $orderData['order_number'];
+        $htmlContent = $this->buildOwnerEmail($orderData);
         
-        $message = $this->buildOwnerEmail($orderData);
-        $this->email->setMessage($message);
-        $this->email->setMailType('html');
+        return $this->sendEmail($to, $toName, $subject, $htmlContent);
+    }
+
+    /**
+     * Send email via SendGrid API using cURL
+     */
+    private function sendEmail($to, $toName, $subject, $htmlContent)
+    {
+        $data = [
+            'personalizations' => [
+                [
+                    'to' => [
+                        [
+                            'email' => $to,
+                            'name' => $toName
+                        ]
+                    ],
+                    'subject' => $subject
+                ]
+            ],
+            'from' => [
+                'email' => $this->fromEmail,
+                'name' => $this->fromName
+            ],
+            'content' => [
+                [
+                    'type' => 'text/html',
+                    'value' => $htmlContent
+                ]
+            ]
+        ];
+
+        $ch = curl_init('https://api.sendgrid.com/v3/mail/send');
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_POST, true);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
+        curl_setopt($ch, CURLOPT_HTTPHEADER, [
+            'Authorization: Bearer ' . $this->apiKey,
+            'Content-Type: application/json'
+        ]);
+
+        $response = curl_exec($ch);
+        $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+        $curlError = curl_error($ch);
+        curl_close($ch);
+
+        // Log detailed information
+        log_message('debug', 'SendGrid attempt - HTTP Code: ' . $httpCode . ', Response: ' . $response);
         
-        return $this->email->send();
+        if ($curlError) {
+            log_message('error', 'SendGrid cURL error: ' . $curlError);
+            return false;
+        }
+
+        if ($httpCode == 202) {
+            log_message('info', 'Email sent successfully via SendGrid to: ' . $to);
+            return true;
+        } else {
+            log_message('error', 'SendGrid API error: HTTP ' . $httpCode . ' - Response: ' . $response);
+            return false;
+        }
     }
 
     /**
@@ -115,7 +170,7 @@ class EmailService
             
             <div style="text-align: center; margin-top: 2rem;">
                 <p style="color: #666; font-size: 0.9rem;">Thank you for choosing Golf Club Builders!</p>
-                <p style="color: #666; font-size: 0.9rem;">Daniel@Golfclub-builders.com | (717) 387-1643</p>
+                <p style="color: #666; font-size: 0.9rem;">daniel@golfclub-builders.com | (717) 387-1643</p>
             </div>
         </body>
         </html>';

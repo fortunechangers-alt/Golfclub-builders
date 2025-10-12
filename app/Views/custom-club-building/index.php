@@ -113,7 +113,6 @@
                     </div>
                     
                     <div style="display: flex; flex-direction: column; gap: 1rem;">
-                        <a href="<?= base_url('/cart') ?>" class="btn btn-primary" style="width: 100%; text-align: center; display: none;" id="view-cart-btn">View Cart</a>
                         <a href="<?= base_url('/cart') ?>" class="btn btn-primary" style="width: 100%; text-align: center; display: none;" id="checkout-btn">View Cart & Checkout</a>
                     </div>
                 </div>
