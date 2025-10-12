@@ -197,14 +197,12 @@ function addToCart(serviceId, serviceName, price, unit) {
 function updateCartDisplay() {
     const cartItems = document.getElementById('cart-items');
     const cartTotal = document.getElementById('cart-total');
-    const viewCartBtn = document.getElementById('view-cart-btn');
     const checkoutBtn = document.getElementById('checkout-btn');
     
     if (cart.length === 0) {
         cartItems.innerHTML = '<p style="color: #666; text-align: center; margin: 2rem 0;">Your cart is empty</p>';
         cartTotal.style.display = 'none';
-        viewCartBtn.style.display = 'none';
-        checkoutBtn.style.display = 'none';
+        if (checkoutBtn) checkoutBtn.style.display = 'none';
         return;
     }
     
@@ -258,8 +256,7 @@ function updateCartDisplay() {
     
     // Show buttons
     cartTotal.style.display = 'block';
-    viewCartBtn.style.display = 'block';
-    checkoutBtn.style.display = 'block';
+    if (checkoutBtn) checkoutBtn.style.display = 'block';
 }
 
 // Cart editing functions
