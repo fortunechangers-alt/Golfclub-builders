@@ -8,17 +8,13 @@ echo "🚀 Starting deployment..."
 # Navigate to site directory
 cd /home/golfclub/public_html
 
-# Stash any local changes
-echo "📦 Saving local changes..."
-git stash
+# Force update to latest code (preserving API key)
+echo "📥 Updating to latest code..."
+git fetch origin main
+git reset --hard origin/main
 
-# Pull latest code from GitHub
-echo "📥 Pulling latest code from GitHub..."
-git pull origin main
-
-# Re-apply local changes (like API key)
-echo "🔧 Restoring local configuration..."
-git stash pop 2>/dev/null || echo "No local changes to restore"
+# Check if API key needs to be re-added
+echo "🔧 Checking configuration..."
 
 # Make sure API key is set
 if grep -q "PASTE_YOUR_SENDGRID_API_KEY_HERE" app/Config/SendGrid.php; then
