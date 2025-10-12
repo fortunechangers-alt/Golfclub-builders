@@ -53,7 +53,15 @@ $routes->get('/contact', 'Pages::contact');
 $routes->post('/contact/submit', 'Pages::contactSubmit');
 
 // Authentication - Using CodeIgniter Shield
-service('auth')->routes($routes);
+// Temporarily disabled due to service loading issue
+// service('auth')->routes($routes);
+
+// Manual authentication routes (temporary fix)
+$routes->get('/login', 'Auth::login');
+$routes->post('/login', 'Auth::attemptLogin');
+$routes->get('/logout', 'Auth::logout');
+$routes->get('/register', 'Auth::register');
+$routes->post('/register', 'Auth::attemptRegister');
 
 // View Toggle (Admin only)
 $routes->get('/toggle-view', 'ToggleView::toggle');
