@@ -133,7 +133,7 @@
                 <!-- True Strike Mat -->
                 <div style="text-align: center;">
                     <div style="position: relative; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.15); margin-bottom: 1.5rem;">
-                        <img src="<?= base_url('images/true-strike-mat.jpg') ?>" 
+                        <img src="<?= base_url('images/True strike mat.JPG') ?>" 
                              alt="True Strike Professional Hitting Mat" 
                              style="width: 100%; height: auto; display: block;">
                         <div style="position: absolute; top: 1rem; right: 1rem; background: var(--deep-green); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-weight: 700; font-size: 0.9rem;">
@@ -164,7 +164,7 @@
                 <!-- Crazy Kid Mat -->
                 <div style="text-align: center;">
                     <div style="position: relative; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.15); margin-bottom: 1.5rem;">
-                        <img src="<?= base_url('images/crazy-kid-mat.jpg') ?>" 
+                        <img src="<?= base_url('images/crazy kid.JPG') ?>" 
                              alt="Crazy Kid Youth Hitting Mat" 
                              style="width: 100%; height: auto; display: block;">
                         <div style="position: absolute; top: 1rem; right: 1rem; background: var(--gold); color: var(--graphite); padding: 0.5rem 1rem; border-radius: 20px; font-weight: 700; font-size: 0.9rem;">
