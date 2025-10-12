@@ -149,7 +149,11 @@ class EmailService
                 <h2 style="color: #0b6e4f; margin-top: 0;">Order Confirmation</h2>
                 <p><strong>Order Number:</strong> ' . $orderData['order_number'] . '</p>
                 <p><strong>Order Date:</strong> ' . date('F j, Y \a\t g:i A') . '</p>
-                <p><strong>Total Amount:</strong> $' . number_format($orderData['total'], 2) . '</p>
+                <div style="background: white; padding: 1rem; border-radius: 6px; border: 2px solid #0b6e4f; margin-top: 1rem;">
+                    <p style="margin: 0 0 0.5rem 0;"><strong style="font-size: 1.2rem; color: #0b6e4f;">Estimated Total: $' . number_format($orderData['total'], 2) . '</strong></p>
+                    <p style="margin: 0; color: #856404; font-weight: 600;">💳 Payment due upon arrival</p>
+                    <p style="margin: 0.5rem 0 0 0; color: #666; font-size: 0.9rem; font-style: italic;">This is NOT a receipt. Final charges may vary based on services performed.</p>
+                </div>
             </div>
             
             <h3 style="color: #0b6e4f;">Order Details</h3>
@@ -167,10 +171,10 @@ class EmailService
                 </tbody>
             </table>
             
-            <div style="background: #fff3cd; border: 1px solid #ffeaa7; padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem;">
-                <h3 style="color: #856404; margin-top: 0;">📞 Important: Schedule Your Appointment!</h3>
-                <p style="margin: 0 0 1rem 0; color: #856404; font-size: 1.1rem;"><strong>Please call us at (717) 387-1643 to schedule your appointment time.</strong></p>
-                <p style="margin: 0; color: #856404;">We can\'t wait to help you achieve precision, performance, and excellence with every swing! 🏌️⛳</p>
+            <div style="background: linear-gradient(135deg, #ffd700, #f4c430); border: 2px solid #d4a017; padding: 2rem; border-radius: 12px; margin-bottom: 2rem; text-align: center;">
+                <h3 style="color: #1f2937; margin-top: 0; font-size: 1.5rem;">📞 NEXT STEP: Schedule Your Appointment!</h3>
+                <p style="margin: 0 0 1.5rem 0; color: #1f2937; font-size: 1.2rem;"><strong>Please call us at <a href="tel:7173871643" style="color: #0b6e4f; text-decoration: none; font-size: 1.3rem;">(717) 387-1643</a> to book your time slot.</strong></p>
+                <p style="margin: 0; color: #374151; font-size: 1.05rem; font-style: italic;">We can\'t wait to help you achieve <strong>precision, performance, and every swing!</strong> 🏌️⛳</p>
             </div>
             
             <div style="background: #e7f3ff; border: 1px solid #b3d9ff; padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem;">
