@@ -59,6 +59,18 @@
             <div style="background: linear-gradient(135deg, #f8f9fa, #e9ecef); padding: 2rem; border-radius: 12px; margin: 2rem 0; border-left: 4px solid var(--deep-green);">
                 <h3 style="color: var(--deep-green); margin-top: 0;">Understanding Swing Weight</h3>
                 <p style="margin-bottom: 1rem;">Swing weight is not total weight. It's how heavy the club feels while swinging, the balance of head vs. handle, measured on a 14-inch fulcrum swing-weight scale.</p>
+                
+                <!-- Swing Weight Image -->
+                <div style="text-align: center; margin: 2rem 0;">
+                    <img src="<?= base_url('images/Swing weight matters.jpg') ?>" 
+                         alt="Swing Weight Matters - Professional club fitting and swing weight measurement" 
+                         style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"
+                         loading="lazy">
+                    <p style="font-size: 0.9rem; color: #666; margin-top: 0.5rem; font-style: italic;">
+                        Professional swing weight measurement in action
+                    </p>
+                </div>
+                
                 <ul style="margin: 0; padding-left: 1.5rem;">
                     <li>Add ~2g at the clubhead → +1 swing-weight point</li>
                     <li>Add ~5g at the grip/butt → −1 swing-weight point</li>

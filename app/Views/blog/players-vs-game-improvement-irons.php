@@ -42,6 +42,17 @@
 
             <h2 style="color: var(--deep-green); font-size: 2rem; margin: 3rem 0 1.5rem 0; border-bottom: 2px solid var(--light); padding-bottom: 0.5rem;">Key Design Differences</h2>
             
+            <!-- Blades vs Cavity Backs Image -->
+            <div style="text-align: center; margin: 3rem 0;">
+                <img src="<?= base_url('images/Blades vs cavitybacks.jpg') ?>" 
+                     alt="Blades vs Cavity Backs - Visual comparison of iron designs" 
+                     style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"
+                     loading="lazy">
+                <p style="font-size: 0.9rem; color: #666; margin-top: 0.5rem; font-style: italic;">
+                    Visual comparison of blade vs cavity back iron designs
+                </p>
+            </div>
+            
             <ul style="margin-bottom: 2rem; padding-left: 2rem;">
                 <li style="margin-bottom: 1rem;"><strong>Clubhead Size & Shape:</strong> Players irons have compact heads with weight concentrated behind the sweet spot. GI irons have larger heads with deep cavity-back constructions that push weight to the perimeter for stability.</li>
                 

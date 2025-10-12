@@ -32,8 +32,15 @@
                         Read Article →
                     </a>
                 </div>
-                <div style="background: rgba(255,255,255,0.1); height: 300px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 4rem;">
-                    📚
+                <div style="background: rgba(255,255,255,0.1); height: 300px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 4rem; overflow: hidden;">
+                    <?php if (isset($featured['thumbnail']) && !empty($featured['thumbnail'])): ?>
+                        <img src="<?= base_url('images/' . $featured['thumbnail']) ?>" 
+                             alt="<?= htmlspecialchars($featured['title']) ?>" 
+                             style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;"
+                             loading="lazy">
+                    <?php else: ?>
+                        📚
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
@@ -44,8 +51,15 @@
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
             <?php foreach ($posts as $post): ?>
             <div class="card" style="transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer;" onclick="window.location.href='<?= base_url('/blog/' . $post['slug']) ?>'">
-                <div style="background: var(--light); height: 200px; border-radius: 8px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; font-size: 3rem;">
-                    📖
+                <div style="background: var(--light); height: 200px; border-radius: 8px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; font-size: 3rem; overflow: hidden;">
+                    <?php if (isset($post['thumbnail']) && !empty($post['thumbnail'])): ?>
+                        <img src="<?= base_url('images/' . $post['thumbnail']) ?>" 
+                             alt="<?= htmlspecialchars($post['title']) ?>" 
+                             style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;"
+                             loading="lazy">
+                    <?php else: ?>
+                        📖
+                    <?php endif; ?>
                 </div>
                 
                 <h3 style="margin-bottom: 1rem; color: var(--deep-green); line-height: 1.3;"><?= $post['title'] ?></h3>
