@@ -167,10 +167,22 @@ class EmailService
                 </tbody>
             </table>
             
-            <div style="background: #fff3cd; border: 1px solid #ffeaa7; padding: 1rem; border-radius: 8px; margin-bottom: 2rem;">
-                <h3 style="color: #856404; margin-top: 0;">📞 Next Steps</h3>
-                <p style="margin: 0; color: #856404;"><strong>Please call (717) 387-1643 to schedule your appointment.</strong></p>
-                <p style="margin: 0.5rem 0 0 0; color: #856404;">Payment is due upon arrival. We do not accept online payments at this time.</p>
+            <div style="background: #fff3cd; border: 1px solid #ffeaa7; padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem;">
+                <h3 style="color: #856404; margin-top: 0;">📞 Important: Schedule Your Appointment!</h3>
+                <p style="margin: 0 0 1rem 0; color: #856404; font-size: 1.1rem;"><strong>Please call us at (717) 387-1643 to schedule your appointment time.</strong></p>
+                <p style="margin: 0; color: #856404;">We can\'t wait to help you achieve precision, performance, and excellence with every swing! 🏌️⛳</p>
+            </div>
+            
+            <div style="background: #e7f3ff; border: 1px solid #b3d9ff; padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem;">
+                <h3 style="color: #004085; margin-top: 0;">💳 Payment & Pricing Information</h3>
+                <p style="margin: 0 0 0.75rem 0; color: #004085;"><strong>This is NOT a receipt.</strong> The amount shown is an estimate based on your selected services.</p>
+                <p style="margin: 0 0 0.75rem 0; color: #004085;">Payment is due upon arrival at your appointment. Your final charge may increase or decrease based on:</p>
+                <ul style="margin: 0.5rem 0 0 0; padding-left: 1.5rem; color: #004085;">
+                    <li>Additional services requested during your visit</li>
+                    <li>Adjustments to quantities or specifications</li>
+                    <li>Parts or materials needed for your custom work</li>
+                </ul>
+                <p style="margin: 1rem 0 0 0; color: #004085; font-style: italic;">We\'ll discuss all work and pricing with you before proceeding to ensure you\'re completely satisfied!</p>
             </div>
             
             <div style="background: linear-gradient(135deg, #f8f9fa, #e9ecef); padding: 2rem; border-radius: 12px; text-align: center; margin-top: 2rem;">
