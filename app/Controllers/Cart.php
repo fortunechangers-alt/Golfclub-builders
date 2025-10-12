@@ -123,25 +123,22 @@ class Cart extends BaseController
             
             log_message('debug', 'Email data prepared: ' . json_encode($emailData));
 
-            // Send emails
+            // Try to send emails (but don't fail if they don't work)
+            $emailsSent = false;
             try {
                 $customerEmailSent = $emailService->sendOrderConfirmation($emailData);
-            } catch (\Exception $emailError) {
-                log_message('error', 'Customer email failed: ' . $emailError->getMessage());
-                $customerEmailSent = false;
-            }
-            
-            try {
                 $ownerEmailSent = $emailService->sendOrderNotification($emailData);
+                $emailsSent = true;
             } catch (\Exception $emailError) {
-                log_message('error', 'Owner email failed: ' . $emailError->getMessage());
-                $ownerEmailSent = false;
+                // Log but don't fail the order
+                log_message('error', 'Email sending failed (not critical): ' . $emailError->getMessage());
             }
 
             return $this->response->setJSON([
                 'success' => true,
                 'order_number' => $savedOrder['order_number'],
-                'message' => 'Order submitted successfully! Check your email for confirmation.'
+                'message' => 'Order submitted successfully! We will contact you shortly to confirm your appointment.',
+                'emails_sent' => $emailsSent
             ]);
 
         } catch (\Exception $e) {
