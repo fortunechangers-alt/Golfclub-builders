@@ -40,6 +40,12 @@ class Blog extends BaseController
         ];
         
         // Handle specific posts with custom views
+        if ($slug === 'finding-the-right-shaft-flex') {
+            return view('layout/header', $data)
+                 . view('blog/shaft-flex-guide', $data)
+                 . view('layout/footer', $data);
+        }
+        
         if ($slug === 'why-swing-weight-matters') {
             return view('layout/header', $data)
                  . view('blog/why-swing-weight-matters', $data)
@@ -55,12 +61,20 @@ class Blog extends BaseController
     {
         return [
             [
+                'slug' => 'finding-the-right-shaft-flex',
+                'title' => 'Finding the Right Shaft Flex: A Golfer\'s Journey from Frustration to Confidence',
+                'excerpt' => 'Meet Jake, a dedicated weekend golfer who loves the game but has been stuck in a rut. Every tee shot feels like a gamble. One day he hits a low, weak fade that barely reaches the fairway; the next, a wild slice sails out of bounds.',
+                'date' => '2025-10-12',
+                'read_time' => '12 min read',
+                'featured' => true
+            ],
+            [
                 'slug' => 'why-swing-weight-matters',
                 'title' => 'Why Swing Weight Matters (and how your swing finally clicks when it does)',
                 'excerpt' => 'Saturday morning. A misty practice tee outside Chambersburg. A golfer named Matt pulls a 7‑iron he "trusts"… and sends three balls three different distances.',
                 'date' => '2025-01-15',
                 'read_time' => '8 min read',
-                'featured' => true
+                'featured' => false
             ],
             [
                 'slug' => 'signs-you-need-different-shaft-flex',
