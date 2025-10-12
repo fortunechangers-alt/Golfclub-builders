@@ -117,7 +117,7 @@ class Cart extends BaseController
                 'customer_phone' => $customerPhone,
                 'customer_name' => $customerName,
                 'order_items' => $orderItems,
-                'total_amount' => $totalAmount,
+                'total' => $totalAmount,
                 'emergency_mode' => $emergencyMode
             ];
 

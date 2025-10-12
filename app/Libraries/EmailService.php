@@ -88,7 +88,7 @@ class EmailService
                 <h2 style="color: #0b6e4f; margin-top: 0;">Order Confirmation</h2>
                 <p><strong>Order Number:</strong> ' . $orderData['order_number'] . '</p>
                 <p><strong>Order Date:</strong> ' . date('F j, Y \a\t g:i A') . '</p>
-                <p><strong>Total Amount:</strong> $' . number_format($orderData['total_amount'], 2) . '</p>
+                <p><strong>Total Amount:</strong> $' . number_format($orderData['total'], 2) . '</p>
             </div>
             
             <h3 style="color: #0b6e4f;">Order Details</h3>
@@ -162,7 +162,7 @@ class EmailService
                 <p><strong>Customer Email:</strong> ' . $orderData['customer_email'] . '</p>
                 <p><strong>Customer Phone:</strong> ' . $orderData['customer_phone'] . '</p>
                 <p><strong>Order Date:</strong> ' . date('F j, Y \a\t g:i A') . '</p>
-                <p><strong>Total Amount:</strong> $' . number_format($orderData['total_amount'], 2) . '</p>
+                <p><strong>Total Amount:</strong> $' . number_format($orderData['total'], 2) . '</p>
             </div>
             
             <h3 style="color: #0b6e4f;">Order Details</h3>
