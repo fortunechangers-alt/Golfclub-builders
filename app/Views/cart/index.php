@@ -5,6 +5,31 @@
             <p class="section-subtitle">Review your selected services and proceed to checkout</p>
         </div>
         
+        <!-- Emergency Service Notice (if active) -->
+        <div id="emergency-notice" style="display: none; margin-bottom: 2rem;">
+            <div class="card" style="background: linear-gradient(135deg, #ff6b6b, #ee5a52); color: white; border: none;">
+                <div style="display: flex; align-items: start; gap: 1rem;">
+                    <div style="font-size: 2.5rem;">🚨</div>
+                    <div style="flex: 1;">
+                        <h3 style="margin: 0 0 0.75rem 0; color: white;">Emergency Service Selected</h3>
+                        <p style="margin: 0 0 0.5rem 0; color: rgba(255,255,255,0.9); font-size: 1rem;">You have selected emergency same-day or next-day service with a +50% labor charge.</p>
+                        <p style="margin: 0; color: white; font-weight: 700; font-size: 1.1rem;">⚠️ You MUST call <a href="tel:7173871643" style="color: white; text-decoration: underline;">(717) 387-1643</a> to confirm availability for emergency service.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Payment Notice -->
+        <div class="card" style="margin-bottom: 2rem; background: linear-gradient(135deg, var(--gold), #e6c45c); border: none; color: var(--graphite);">
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <div style="font-size: 2.5rem;">💳</div>
+                <div>
+                    <h3 style="margin: 0 0 0.5rem 0; color: var(--graphite);">Payment Information</h3>
+                    <p style="margin: 0; font-weight: 600;">Payment is due upon arrival. We do not accept online payments at this time.</p>
+                </div>
+            </div>
+        </div>
+
         <!-- Cart Items -->
         <div id="cart-items" class="card" style="margin-bottom: 2rem;">
             <h3 style="margin-bottom: 1.5rem; color: var(--deep-green);">Your Services</h3>
@@ -74,24 +99,34 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function loadCart() {
     const cart = JSON.parse(localStorage.getItem('golf_cart')) || [];
+    const emergencyMode = localStorage.getItem('emergency_mode') === 'true';
     const cartContent = document.getElementById('cart-content');
     const cartTotal = document.getElementById('cart-total');
     const emptyCart = document.getElementById('empty-cart');
     const checkoutForm = document.getElementById('checkout-form');
+    const emergencyNotice = document.getElementById('emergency-notice');
+    
+    // Show/hide emergency notice
+    if (emergencyMode && cart.length > 0) {
+        emergencyNotice.style.display = 'block';
+    } else {
+        emergencyNotice.style.display = 'none';
+    }
     
     if (cart.length === 0) {
         document.getElementById('cart-items').style.display = 'none';
         emptyCart.style.display = 'block';
         checkoutForm.style.display = 'none';
+        emergencyNotice.style.display = 'none';
         return;
     }
     
-    let total = 0;
+    let subtotal = 0;
     let cartHTML = '';
     
     cart.forEach((item, index) => {
         const itemTotal = item.price * item.quantity;
-        total += itemTotal;
+        subtotal += itemTotal;
         
         cartHTML += `
             <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; border-bottom: 1px solid var(--light);">
@@ -114,13 +149,43 @@ function loadCart() {
         `;
     });
     
+    // Calculate emergency fee if applicable
+    let emergencyFee = 0;
+    let total = subtotal;
+    
+    if (emergencyMode) {
+        emergencyFee = subtotal * 0.5; // 50% of subtotal
+        total = subtotal + emergencyFee;
+    }
+    
     cartContent.innerHTML = cartHTML;
-    cartTotal.innerHTML = `
-        <div style="display: flex; justify-content: space-between; align-items: center; font-size: 1.2rem; font-weight: 700;">
+    
+    let totalHTML = `
+        <div style="margin-bottom: 1rem;">
+            <div style="display: flex; justify-content: space-between; align-items: center; font-size: 1.1rem; margin-bottom: 0.5rem;">
+                <span style="font-weight: 600;">Subtotal:</span>
+                <span style="color: var(--deep-green); font-weight: 600;">$${subtotal.toFixed(2)}</span>
+            </div>
+    `;
+    
+    if (emergencyMode) {
+        totalHTML += `
+            <div style="display: flex; justify-content: space-between; align-items: center; font-size: 1rem; margin-bottom: 0.5rem; color: #ff6b6b;">
+                <span style="font-weight: 600;">Emergency Service Fee (+50%):</span>
+                <span style="font-weight: 700;">$${emergencyFee.toFixed(2)}</span>
+            </div>
+        `;
+    }
+    
+    totalHTML += `
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: center; font-size: 1.3rem; font-weight: 700; padding-top: 1rem; border-top: 2px solid var(--deep-green);">
             <span>Total:</span>
             <span style="color: var(--deep-green);">$${total.toFixed(2)}</span>
         </div>
     `;
+    
+    cartTotal.innerHTML = totalHTML;
     
     document.getElementById('cart-items').style.display = 'block';
     emptyCart.style.display = 'none';

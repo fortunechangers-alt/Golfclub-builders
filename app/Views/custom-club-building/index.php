@@ -119,18 +119,15 @@
                 </div>
                 
                 <!-- Emergency Service Notice Sidebar -->
-                <div class="card" id="emergency-card" style="position: sticky; top: 140px; margin-top: 2rem; background: linear-gradient(135deg, #ff6b6b, #ee5a52); color: white; border: none; z-index: 9;">
-                    <h3 style="margin-bottom: 1rem; color: white; display: flex; align-items: center; gap: 0.5rem;">
-                        🚨 Emergency Repair Service
-                    </h3>
-                    <p style="margin-bottom: 1rem; color: rgba(255,255,255,0.9); font-size: 0.95rem;">Need same-day or next-day service? Select emergency repair for +50% labor charge.</p>
-                    <div style="display: flex; align-items: center; gap: 1rem; background: rgba(255,255,255,0.2); padding: 1rem; border-radius: 8px;">
-                        <input type="checkbox" id="emergency-service" style="transform: scale(1.2); cursor: pointer;">
-                        <label for="emergency-service" style="font-weight: 600; color: white; cursor: pointer; flex: 1;">Emergency Service (+50% on labor)</label>
+                <div class="card" id="emergency-card" style="position: sticky; top: 140px; margin-top: 2rem; background: linear-gradient(135deg, #ff6b6b, #ee5a52); color: white; border: none; z-index: 9; padding: 1.5rem;">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 0.75rem;">
+                        <input type="checkbox" id="emergency-service" style="transform: scale(1.3); cursor: pointer; flex-shrink: 0;">
+                        <label for="emergency-service" style="font-weight: 700; color: white; cursor: pointer; flex: 1; font-size: 1rem; margin: 0;">
+                            🚨 Emergency Service (+50%)
+                        </label>
                     </div>
-                    <p style="margin-top: 1rem; color: rgba(255,255,255,0.8); font-size: 0.85rem; display: flex; align-items: flex-start; gap: 0.5rem;">
-                        <span>⚠️</span>
-                        <span>Emergency service requires phone confirmation for same-day or close appointments</span>
+                    <p style="margin: 0; color: rgba(255,255,255,0.9); font-size: 0.8rem; line-height: 1.4;">
+                        Same-day/next-day service. Call <a href="tel:7173871643" style="color: white; text-decoration: underline; font-weight: 600;">(717) 387-1643</a> to confirm.
                     </p>
                 </div>
             </div>
@@ -141,11 +138,15 @@
 <script>
 // Cart functionality
 let cart = JSON.parse(localStorage.getItem('golf_cart')) || [];
-let emergencyMode = false;
+let emergencyMode = localStorage.getItem('emergency_mode') === 'true' || false;
+
+// Set checkbox state from localStorage
+document.getElementById('emergency-service').checked = emergencyMode;
 
 // Update emergency mode
 document.getElementById('emergency-service').addEventListener('change', function() {
     emergencyMode = this.checked;
+    localStorage.setItem('emergency_mode', emergencyMode);
     updateCartDisplay();
 });
 
