@@ -176,12 +176,6 @@ class EmailService
                 </tbody>
             </table>
             
-            <div style="background: linear-gradient(135deg, #ffd700, #f4c430); border: 2px solid #d4a017; padding: 2rem; border-radius: 12px; margin-bottom: 2rem; text-align: center;">
-                <h3 style="color: #1f2937; margin-top: 0; font-size: 1.5rem;">📞 NEXT STEP: Schedule Your Appointment!</h3>
-                <p style="margin: 0 0 1.5rem 0; color: #1f2937; font-size: 1.2rem;"><strong>Please call us at <a href="tel:7173871643" style="color: #0b6e4f; text-decoration: none; font-size: 1.3rem;">(717) 387-1643</a> to book your time slot.</strong></p>
-                <p style="margin: 0; color: #374151; font-size: 1.05rem; font-style: italic;">We can\'t wait to help you achieve <strong>precision, performance, and every swing!</strong> 🏌️⛳</p>
-            </div>
-            
             <div style="background: #e7f3ff; border: 1px solid #b3d9ff; padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem;">
                 <h3 style="color: #004085; margin-top: 0;">💳 Payment & Pricing Information</h3>
                 <p style="margin: 0 0 0.75rem 0; color: #004085;"><strong>This is NOT a receipt.</strong> The amount shown is an estimate based on your selected services.</p>
