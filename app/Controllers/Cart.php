@@ -91,6 +91,7 @@ class Cart extends BaseController
                 'customer_phone' => $customerPhone,
                 'customer_name' => $customerName,
                 'order_data' => $orderData,
+                'notes' => $buildDetails . ($preferredDate ? "\n\nPreferred Date: " . $preferredDate : ''),
                 'total' => $totalAmount,
                 'emergency_mode' => $emergencyMode ? 1 : 0,
                 'status' => 'pending'
