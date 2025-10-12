@@ -137,9 +137,11 @@
                         </div>
                     </div>
                     
-                    <div style="display: flex; flex-direction: column; gap: 1rem; position: relative; z-index: 10;">
-                        <a href="<?= base_url('/cart') ?>" class="btn btn-primary" style="width: 100%; text-align: center; display: none;" id="checkout-btn">View Cart & Checkout</a>
-                    </div>
+                </div>
+                
+                <!-- Checkout Button (Outside sticky cart) -->
+                <div style="margin-bottom: 2rem;">
+                    <a href="<?= base_url('/cart') ?>" class="btn btn-primary" style="width: 100%; text-align: center; display: none;" id="checkout-btn">View Cart & Checkout</a>
                 </div>
             </div>
         </div>

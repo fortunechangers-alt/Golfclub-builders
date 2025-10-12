@@ -112,13 +112,15 @@
                         </div>
                     </div>
                     
-                    <div style="display: flex; flex-direction: column; gap: 1rem; position: relative; z-index: 10;">
-                        <a href="<?= base_url('/cart') ?>" class="btn btn-primary" style="width: 100%; text-align: center; display: none;" id="checkout-btn">View Cart & Checkout</a>
-                    </div>
+                </div>
+                
+                <!-- Checkout Button (Outside sticky cart) -->
+                <div style="margin-bottom: 2rem;">
+                    <a href="<?= base_url('/cart') ?>" class="btn btn-primary" style="width: 100%; text-align: center; display: none;" id="checkout-btn">View Cart & Checkout</a>
                 </div>
                 
                 <!-- Same-Day Service Notice Sidebar -->
-                <div class="card" id="emergency-card" style="position: sticky; top: calc(140px + 20rem); margin-top: 2rem; background: linear-gradient(135deg, #ff6b6b, #ee5a52); color: white; border: none; z-index: 5; padding: 1.5rem;">
+                <div class="card" id="emergency-card" style="position: sticky; top: 140px; margin-top: 2rem; background: linear-gradient(135deg, #ff6b6b, #ee5a52); color: white; border: none; z-index: 5; padding: 1.5rem;">
                     <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 0.75rem;">
                         <input type="checkbox" id="emergency-service" style="transform: scale(1.3); cursor: pointer; flex-shrink: 0;">
                         <label for="emergency-service" style="font-weight: 700; color: white; cursor: pointer; flex: 1; font-size: 1rem; margin: 0;">
