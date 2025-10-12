@@ -12,6 +12,10 @@ $routes->get('/', 'Home::index');
 // Test route (temporary)
 $routes->get('/test-block', 'TestBlockDate::index');
 
+// Debug routes (temporary - remove in production)
+$routes->get('/debug/test-order', 'Debug::testOrder');
+$routes->get('/debug/check-email', 'Debug::checkEmail');
+
 // Services
 $routes->get('/services', 'Services::index');
 $routes->get('/services/(:segment)', 'Services::view/$1');
