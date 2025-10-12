@@ -124,6 +124,20 @@
             </div>
         </div>
         
+        <!-- Simulator Room Showcase -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+            <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.15);">
+                <img src="<?= base_url('images/True strike mat.JPG') ?>" 
+                     alt="Professional Golf Simulator Room" 
+                     style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            </div>
+            <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.15);">
+                <img src="<?= base_url('images/crazy kid.JPG') ?>" 
+                     alt="Golf Simulator Room Setup" 
+                     style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            </div>
+        </div>
+        
         <!-- Rental Options -->
         <div class="card" style="margin-bottom: 3rem;">
             <h3 style="margin-bottom: 1.5rem; color: var(--deep-green);">Select Rental Duration</h3>
@@ -181,82 +195,6 @@
                     </ul>
                     <button class="btn btn-primary rental-option-btn" data-type="full-day" data-duration="480" style="width: 100%;">Add to Cart</button>
                 </div>
-            </div>
-        </div>
-        
-        <!-- Premium Hitting Mats Showcase -->
-        <div class="card" style="margin-bottom: 3rem; background: var(--light);">
-            <h3 style="margin-bottom: 1.5rem; color: var(--deep-green); text-align: center;">Premium Hitting Surfaces</h3>
-            <p style="text-align: center; margin-bottom: 3rem; font-size: 1.1rem; color: #666;">Experience golf like never before with our professional-grade hitting mats</p>
-            
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 3rem;">
-                <!-- True Strike Mat -->
-                <div style="text-align: center;">
-                    <div style="position: relative; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.15); margin-bottom: 1.5rem;">
-                        <img src="<?= base_url('images/True strike mat.JPG') ?>" 
-                             alt="True Strike Professional Hitting Mat" 
-                             style="width: 100%; height: auto; display: block;">
-                        <div style="position: absolute; top: 1rem; right: 1rem; background: var(--deep-green); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-weight: 700; font-size: 0.9rem;">
-                            Professional Grade
-                        </div>
-                    </div>
-                    <h4 style="color: var(--deep-green); margin-bottom: 1rem; font-size: 1.3rem;">True Strike Hitting Mat</h4>
-                    <ul style="list-style: none; padding: 0; text-align: left; max-width: 350px; margin: 0 auto;">
-                        <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
-                            <span style="position: absolute; left: 0; color: var(--gold);">✓</span>
-                            Realistic turf feel & feedback
-                        </li>
-                        <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
-                            <span style="position: absolute; left: 0; color: var(--gold);">✓</span>
-                            Professional-grade construction
-                        </li>
-                        <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
-                            <span style="position: absolute; left: 0; color: var(--gold);">✓</span>
-                            Proper lie angles for all clubs
-                        </li>
-                        <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
-                            <span style="position: absolute; left: 0; color: var(--gold);">✓</span>
-                            Durable, weather-resistant surface
-                        </li>
-                    </ul>
-                </div>
-                
-                <!-- Crazy Kid Mat -->
-                <div style="text-align: center;">
-                    <div style="position: relative; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.15); margin-bottom: 1.5rem;">
-                        <img src="<?= base_url('images/crazy kid.JPG') ?>" 
-                             alt="Crazy Kid Youth Hitting Mat" 
-                             style="width: 100%; height: auto; display: block;">
-                        <div style="position: absolute; top: 1rem; right: 1rem; background: var(--gold); color: var(--graphite); padding: 0.5rem 1rem; border-radius: 20px; font-weight: 700; font-size: 0.9rem;">
-                            Youth Friendly
-                        </div>
-                    </div>
-                    <h4 style="color: var(--deep-green); margin-bottom: 1rem; font-size: 1.3rem;">Crazy Kid Hitting Mat</h4>
-                    <ul style="list-style: none; padding: 0; text-align: left; max-width: 350px; margin: 0 auto;">
-                        <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
-                            <span style="position: absolute; left: 0; color: var(--gold);">✓</span>
-                            Perfect for young golfers
-                        </li>
-                        <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
-                            <span style="position: absolute; left: 0; color: var(--gold);">✓</span>
-                            Safe & comfortable hitting surface
-                        </li>
-                        <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
-                            <span style="position: absolute; left: 0; color: var(--gold);">✓</span>
-                            Encourages proper swing development
-                        </li>
-                        <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
-                            <span style="position: absolute; left: 0; color: var(--gold);">✓</span>
-                            Fun, engaging design for kids
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div style="text-align: center; margin-top: 3rem; padding-top: 2rem; border-top: 2px solid #ddd;">
-                <p style="font-size: 1.1rem; color: var(--deep-green); font-weight: 600; margin: 0;">
-                    Both premium mats included with every simulator rental
-                </p>
             </div>
         </div>
         
