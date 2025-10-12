@@ -177,6 +177,13 @@ class EmailService
                 </tbody>
             </table>
             
+            ' . (!empty($orderData['build_details']) ? '
+            <div style="background: #fff9e6; border: 2px solid #ffc107; padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem;">
+                <h3 style="color: #856404; margin-top: 0;">📝 Your Build Details & Special Requests</h3>
+                <p style="margin: 0; color: #856404; white-space: pre-wrap; font-style: italic;">"' . htmlspecialchars($orderData['build_details']) . '"</p>
+            </div>
+            ' : '') . '
+            
             <div style="background: #e7f3ff; border: 1px solid #b3d9ff; padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem;">
                 <h3 style="color: #004085; margin-top: 0;">💳 Payment & Pricing Information</h3>
                 <p style="margin: 0 0 0.75rem 0; color: #004085;"><strong>This is NOT a receipt.</strong> The amount shown is an estimate based on your selected services.</p>
