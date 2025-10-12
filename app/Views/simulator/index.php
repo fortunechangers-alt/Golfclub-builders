@@ -126,15 +126,21 @@
         
         <!-- Simulator Room Showcase -->
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
-            <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.15);">
+            <div style="position: relative; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.15);">
                 <img src="<?= base_url('images/True strike mat.JPG') ?>" 
                      alt="Professional Golf Simulator Room" 
-                     style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                     style="width: 100%; height: 100%; object-fit: contain; display: block; background: #f0f0f0;">
+                <div style="position: absolute; top: 1rem; right: 1rem; background: var(--deep-green); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-weight: 700; font-size: 0.9rem;">
+                    Professional Grade
+                </div>
             </div>
-            <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.15);">
+            <div style="position: relative; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.15);">
                 <img src="<?= base_url('images/crazy kid.JPG') ?>" 
                      alt="Golf Simulator Room Setup" 
                      style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                <div style="position: absolute; top: 1rem; right: 1rem; background: var(--gold); color: var(--graphite); padding: 0.5rem 1rem; border-radius: 20px; font-weight: 700; font-size: 0.9rem;">
+                    Youth Friendly
+                </div>
             </div>
         </div>
         
