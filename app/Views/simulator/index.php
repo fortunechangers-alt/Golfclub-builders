@@ -300,9 +300,6 @@ document.querySelectorAll('.rental-option-btn').forEach(btn => {
         // Save to localStorage
         localStorage.setItem('golf_cart', JSON.stringify(cart));
         
-        // Show success message
-        alert('Added to cart! Call (717) 387-1643 after checkout to schedule your appointment.');
-        
         // Redirect to cart
         window.location.href = '<?= base_url('/cart') ?>';
     });

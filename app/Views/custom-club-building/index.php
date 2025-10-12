@@ -191,9 +191,6 @@ function addToCart(serviceId, serviceName, price, unit) {
     
     // Update display
     updateCartDisplay();
-    
-    // Show success message
-    alert('Added to cart!');
 }
 
 function updateCartDisplay() {

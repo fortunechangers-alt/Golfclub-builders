@@ -183,7 +183,6 @@ function addFittingToCart(serviceId, serviceName, price, duration) {
     document.dispatchEvent(new CustomEvent('cartUpdated'));
     
     updateCartDisplay();
-    alert('Added to cart!');
 }
 
 function addRepairToCart(serviceId, serviceName, price, unit) {
@@ -221,9 +220,6 @@ function addRepairToCart(serviceId, serviceName, price, unit) {
     
     // Update display
     updateCartDisplay();
-    
-    // Show success message
-    alert('Added to cart!');
 }
 
 function updateCartDisplay() {
