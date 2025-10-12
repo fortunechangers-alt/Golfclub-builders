@@ -65,6 +65,7 @@ h4 { font-size: 1.5rem; }
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 2rem;
 }
 
 .logo {
@@ -75,6 +76,16 @@ h4 { font-size: 1.5rem; }
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    flex-shrink: 0;
+    min-width: 200px;
+}
+
+.logo img {
+    transition: all 0.3s ease;
+}
+
+.logo:hover img {
+    transform: scale(1.05);
 }
 
 .logo-accent {
@@ -86,6 +97,7 @@ h4 { font-size: 1.5rem; }
     list-style: none;
     gap: 2.5rem;
     align-items: center;
+    flex-shrink: 0;
 }
 
 .nav-link {
