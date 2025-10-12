@@ -59,22 +59,5 @@ class OrderModel extends Model
 
     // Callbacks
     protected $allowCallbacks = true;
-    protected $beforeInsert = ['generateOrderNumber'];
-    protected $afterInsert = ['sendOrderEmails'];
 
-    protected function generateOrderNumber(array $data)
-    {
-        // Generate unique order number: GC-YYYYMMDD-XXXX
-        $date = date('Ymd');
-        $random = str_pad(rand(1, 9999), 4, '0', STR_PAD_LEFT);
-        $data['data']['order_number'] = 'GC-' . $date . '-' . $random;
-        
-        return $data;
-    }
-
-    protected function sendOrderEmails(array $data)
-    {
-        // This will be handled in the controller to avoid circular dependencies
-        return $data;
-    }
 }

@@ -94,11 +94,17 @@ class Cart extends BaseController
                 'status' => 'pending'
             ];
 
+            // Generate order number manually
+            $orderNumber = 'GC-' . date('Ymd') . '-' . str_pad(rand(1, 9999), 4, '0', STR_PAD_LEFT);
+            $orderDataForDb['order_number'] = $orderNumber;
+            
             // Save order to database
             $orderId = $orderModel->insert($orderDataForDb);
             
             if (!$orderId) {
-                throw new \Exception('Failed to save order');
+                $errors = $orderModel->errors();
+                log_message('error', 'Order insert failed: ' . json_encode($errors));
+                throw new \Exception('Failed to save order: ' . implode(', ', $errors));
             }
 
             // Get the saved order with generated order number
