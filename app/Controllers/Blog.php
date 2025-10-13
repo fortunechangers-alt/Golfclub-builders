@@ -210,7 +210,8 @@ class Blog extends BaseController
                 'excerpt' => 'Rosa\'s story of choosing between her father\'s blades and modern cavity-back irons. Learn when to choose forgiveness over tradition.',
                 'date' => '2025-10-14',
                 'read_time' => '7 min read',
-                'featured' => false
+                'featured' => false,
+                'thumbnail' => 'two ladies.jpg'
             ],
             [
                 'slug' => 'do-you-need-more-club-weight',
@@ -227,7 +228,8 @@ class Blog extends BaseController
                 'excerpt' => 'A golfer\'s journey from steel to graphite. Learn the differences between shaft materials and discover which one fits your swing and comfort needs.',
                 'date' => '2025-10-16',
                 'read_time' => '9 min read',
-                'featured' => false
+                'featured' => false,
+                'thumbnail' => 'FEELS LIKE CHEETING.jpg'
             ],
             [
                 'slug' => 'loft-and-lie',
@@ -244,7 +246,8 @@ class Blog extends BaseController
                 'excerpt' => 'June\'s story of finding the right grip size and texture. Learn how proper grip fitting can eliminate hand fatigue and improve consistency.',
                 'date' => '2025-10-18',
                 'read_time' => '8 min read',
-                'featured' => false
+                'featured' => false,
+                'thumbnail' => 'Fighting the club.jpg'
             ],
             [
                 'slug' => 'set-gapping',
@@ -252,7 +255,8 @@ class Blog extends BaseController
                 'excerpt' => 'Evan\'s story of fixing his club gapping issues. Learn how proper distance gapping can transform your confidence and scoring.',
                 'date' => '2025-10-19',
                 'read_time' => '9 min read',
-                'featured' => false
+                'featured' => false,
+                'thumbnail' => 'Gapping ladder.jpg'
             ],
             [
                 'slug' => 'hybrids-vs-long-irons',
@@ -260,7 +264,8 @@ class Blog extends BaseController
                 'excerpt' => 'Ben\'s story of choosing between hybrids and long irons. Learn when to choose forgiveness over tradition for your long approach shots.',
                 'date' => '2025-10-17',
                 'read_time' => '8 min read',
-                'featured' => false
+                'featured' => false,
+                'thumbnail' => 'Hybrids vs Long Irons.jpg'
             ],
             [
                 'slug' => 'mens-vs-womens-clubs',
@@ -277,7 +282,8 @@ class Blog extends BaseController
                 'excerpt' => 'Learn how to choose the right shaft flex based on your swing speed with both driver and 6-iron measurements. Includes speed charts and practical fitting advice.',
                 'date' => '2025-10-20',
                 'read_time' => '8 min read',
-                'featured' => false
+                'featured' => false,
+                'thumbnail' => 'Flex by Swing Speed.jpg'
             ],
             [
                 'slug' => 'game-improvement-vs-players-vs-players-distance-irons',
