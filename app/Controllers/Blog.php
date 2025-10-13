@@ -235,7 +235,8 @@ class Blog extends BaseController
                 'excerpt' => 'Discover how one degree of lie angle can change your start line and why proper loft gapping is the difference between confident shots and constant guessing.',
                 'date' => '2025-10-17',
                 'read_time' => '7 min read',
-                'featured' => false
+                'featured' => false,
+                'thumbnail' => 'NORMAN.jpg'
             ],
             [
                 'slug' => 'grip-size-and-feel',
