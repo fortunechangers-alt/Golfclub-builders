@@ -267,7 +267,7 @@ class Blog extends BaseController
                 'date' => '2025-10-18',
                 'read_time' => '9 min read',
                 'featured' => true,
-                'thumbnail' => 'Fight.jpg'
+                'thumbnail' => 'girl boy.jpg'
             ],
             [
                 'slug' => 'flex-by-swing-speed',
