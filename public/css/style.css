@@ -1290,7 +1290,7 @@ textarea.form-control {
         background: #ff0000 !important;
         color: #ffffff !important;
         border-radius: 50% !important;
-        display: none !important;
+        /* display controlled by inline style from JavaScript - no !important */
         align-items: center !important;
         justify-content: center !important;
         border: 2px solid white !important;
