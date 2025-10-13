@@ -329,64 +329,8 @@ function initializeAdminDashboard() {
     }
 }
 
-// Shopping Cart Functions
-let cart = [];
-
-function addToCart(productId, productName, price) {
-    const existingItem = cart.find(item => item.id === productId);
-    
-    if (existingItem) {
-        existingItem.quantity++;
-    } else {
-        cart.push({
-            id: productId,
-            name: productName,
-            price: price,
-            quantity: 1
-        });
-    }
-
-    updateCartDisplay();
-    showNotification('Item added to cart!');
-}
-
-function removeFromCart(productId) {
-    cart = cart.filter(item => item.id !== productId);
-    updateCartDisplay();
-}
-
-function updateCartDisplay() {
-    const cartCount = document.querySelector('.cart-count');
-    const cartItems = document.querySelector('.cart-items');
-    
-    if (cartCount) {
-        const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
-        cartCount.textContent = totalItems;
-    }
-
-    if (cartItems) {
-        if (cart.length === 0) {
-            cartItems.innerHTML = '<p>Your cart is empty</p>';
-        } else {
-            cartItems.innerHTML = cart.map(item => `
-                <div class="cart-item">
-                    <span>${item.name}</span>
-                    <span>$${item.price} x ${item.quantity}</span>
-                    <button onclick="removeFromCart(${item.id})">Remove</button>
-                </div>
-            `).join('');
-        }
-    }
-
-    // Save cart to localStorage
-    localStorage.setItem('cart', JSON.stringify(cart));
-}
-
-// Load cart from localStorage on page load
-if (localStorage.getItem('cart')) {
-    cart = JSON.parse(localStorage.getItem('cart'));
-    updateCartDisplay();
-}
+// Shopping Cart Functions - Removed duplicate cart variable
+// Pages with cart functionality (like custom-club-building) declare their own cart variable
 
 // Notification System
 function showNotification(message, type = 'success') {
