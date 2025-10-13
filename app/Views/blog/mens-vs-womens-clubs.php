@@ -8,6 +8,8 @@
     </div>
     
     <div class="blog-content">
+        <img src="<?= base_url('images/girl boy.jpg') ?>" alt="Men's vs Women's Golf Clubs" style="width: 100%; max-width: 800px; height: auto; border-radius: 10px; margin-bottom: 2rem; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        
         <h2 style="color: var(--deep-green); font-size: 2rem; margin: 3rem 0 1.5rem 0; border-bottom: 2px solid var(--light); padding-bottom: 0.5rem;">Maya and Dan: When Labels Meet Reality</h2>
         
         <p>They arrived together on a windy Thursday—Maya with a canvas tote full of range tokens, Dan with the kind of grin that says, "I'm here for her, but I'm definitely going to swing something." He carried a men's Stiff driver he'd trusted since college; she held a boxed women's set her sister had sworn by. They wanted me to confirm what the labels already seemed to promise.</p>
