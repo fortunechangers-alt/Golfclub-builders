@@ -10,6 +10,8 @@
             </div>
             
             <div class="blog-content">
+        <img src="<?= base_url('images/NORMAN.jpg') ?>" alt="Loft and Lie Fitting" style="width: 100%; max-width: 800px; height: auto; border-radius: 10px; margin-bottom: 2rem; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        
         <h2 style="color: var(--deep-green); font-size: 2rem; margin: 3rem 0 1.5rem 0; border-bottom: 2px solid var(--light); padding-bottom: 0.5rem;">The Hidden Compass Inside Every Club</h2>
         
         <p>He showed me a 7‑iron with a scar on the sole—just a faint crescent where paint had given up to range mats—and he said the sentence I hear a hundred times a year: "I swear my swing is the same. Why does this keep starting left?" He was right‑handed, tidy at address, patient at the top, and the ball still walked off the line like it needed to see something on the other side of the fairway.</p>
