@@ -1262,24 +1262,33 @@ textarea.form-control {
     }
     
     .cart-icon {
-        font-size: 1.5rem !important;
+        font-size: 1.8rem !important;
         filter: none !important;
+        color: #000 !important;
     }
     
     .cart-button {
         background: transparent !important;
         box-shadow: none !important;
+        padding: 0.5rem 1rem !important;
     }
     
     .cart-count {
-        min-width: 24px !important;
-        height: 24px !important;
-        font-size: 0.85rem !important;
+        position: absolute !important;
+        top: -5px !important;
+        right: -5px !important;
+        min-width: 22px !important;
+        height: 22px !important;
+        font-size: 0.75rem !important;
         font-weight: 700 !important;
-        background: red !important;
-        color: white !important;
+        background: #ff0000 !important;
+        color: #ffffff !important;
         border-radius: 50% !important;
-        /* Display controlled by JavaScript based on count */
+        display: none !important;
+        align-items: center !important;
+        justify-content: center !important;
+        border: 2px solid white !important;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2) !important;
     }
     
     /* Mobile: Make header sticky so cart always visible */

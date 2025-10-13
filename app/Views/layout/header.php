@@ -38,7 +38,7 @@
                 <li>
                     <a href="<?= base_url('/cart') ?>" class="cart-button" id="cart-button">
                         <span class="cart-icon">🛒</span>
-                        <span class="cart-count" id="cart-count">0</span>
+                        <span class="cart-count" id="cart-count" style="display: none;"></span>
                     </a>
                 </li>
                 <?php 
