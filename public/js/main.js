@@ -1,8 +1,12 @@
 // Golf Club Builders - Main JavaScript
 
 document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM loaded, updating cart count...');
     // Update cart count on page load
     updateCartCount();
+    
+    // Also update after a short delay to ensure localStorage is ready
+    setTimeout(updateCartCount, 100);
     
     // Header scroll effect
     const header = document.querySelector('.header');
@@ -369,9 +373,13 @@ lazyImages.forEach(img => imageObserver.observe(img));
 
 // Cart functionality
 function updateCartCount() {
+    console.log('updateCartCount called');
     const cartCountElement = document.getElementById('cart-count');
+    console.log('Cart count element:', cartCountElement);
+    
     if (cartCountElement) {
         const cart = JSON.parse(localStorage.getItem('golf_cart')) || [];
+        console.log('Cart from localStorage:', cart);
         let totalItems = 0;
         
         // Get previous count for comparison
@@ -381,13 +389,17 @@ function updateCartCount() {
             totalItems += item.quantity || 1;
         });
         
+        console.log('Total items in cart:', totalItems);
+        
         // Update the number
         if (totalItems > 0) {
             cartCountElement.textContent = totalItems;
             cartCountElement.style.display = 'flex';
+            console.log('Cart badge should now show:', totalItems);
         } else {
             cartCountElement.textContent = '';
             cartCountElement.style.display = 'none';
+            console.log('Cart is empty, hiding badge');
         }
         
         // Add visual pulse when count increases
@@ -400,6 +412,8 @@ function updateCartCount() {
                 cartCountElement.classList.remove('updated');
             }, 500);
         }
+    } else {
+        console.error('Cart count element not found!');
     }
 }
 
