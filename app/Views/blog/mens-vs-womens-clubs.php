@@ -10,22 +10,27 @@
             <a href="<?= base_url('/blog') ?>" style="color: var(--deep-green); text-decoration: none; font-weight: 600;">← Back to Blog</a>
         </div>
         
-        <!-- Audio Player - Sticky -->
-        <div id="audioPlayerSticky" style="position: -webkit-sticky; position: sticky; top: 0; z-index: 1000; background: linear-gradient(135deg, var(--deep-green), #0a5a42); padding: 1rem; border-radius: 0 0 10px 10px; margin-bottom: 2rem; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
-            <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
-                <span style="font-size: 1.5rem;">🎧</span>
-                <h3 style="color: white; margin: 0; font-size: 1rem;">Listen to This Article</h3>
-            </div>
-            <audio id="blogAudio" controls preload="auto" style="width: 100%; margin-bottom: 0.5rem;">
-                <source src="<?= base_url('serve-audio.php?file=Maya and Dan.mp3') ?>" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                <button onclick="setPlaybackSpeed(1)" style="background: white; color: var(--deep-green); border: none; padding: 0.4rem 0.8rem; border-radius: 5px; cursor: pointer; font-weight: 600; font-size: 0.9rem;">1x</button>
-                <button onclick="setPlaybackSpeed(1.5)" style="background: white; color: var(--deep-green); border: none; padding: 0.4rem 0.8rem; border-radius: 5px; cursor: pointer; font-weight: 600; font-size: 0.9rem;">1.5x</button>
-                <button onclick="setPlaybackSpeed(2)" style="background: white; color: var(--deep-green); border: none; padding: 0.4rem 0.8rem; border-radius: 5px; cursor: pointer; font-weight: 600; font-size: 0.9rem;">2x</button>
+        <!-- Audio Player - Fixed at Top -->
+        <div id="audioPlayerSticky" style="position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: linear-gradient(135deg, var(--deep-green), #0a5a42); padding: 0.75rem; box-shadow: 0 4px 15px rgba(0,0,0,0.3); max-width: 100vw;">
+            <div style="max-width: 900px; margin: 0 auto;">
+                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                    <span style="font-size: 1.2rem;">🎧</span>
+                    <h3 style="color: white; margin: 0; font-size: 0.9rem;">Listen to Article</h3>
+                </div>
+                <audio id="blogAudio" controls preload="auto" style="width: 100%; margin-bottom: 0.5rem; max-width: 100%;">
+                    <source src="<?= base_url('serve-audio.php?file=Maya and Dan.mp3') ?>" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                    <button onclick="setPlaybackSpeed(1)" style="background: white; color: var(--deep-green); border: none; padding: 0.3rem 0.7rem; border-radius: 5px; cursor: pointer; font-weight: 600; font-size: 0.85rem;">1x</button>
+                    <button onclick="setPlaybackSpeed(1.5)" style="background: white; color: var(--deep-green); border: none; padding: 0.3rem 0.7rem; border-radius: 5px; cursor: pointer; font-weight: 600; font-size: 0.85rem;">1.5x</button>
+                    <button onclick="setPlaybackSpeed(2)" style="background: white; color: var(--deep-green); border: none; padding: 0.3rem 0.7rem; border-radius: 5px; cursor: pointer; font-weight: 600; font-size: 0.85rem;">2x</button>
+                </div>
             </div>
         </div>
+        
+        <!-- Spacer to prevent content from hiding under fixed player -->
+        <div style="height: 140px;"></div>
         
         <!-- Article Meta (not in audio) -->
         <div style="color: #666; font-size: 1.1rem; margin-bottom: 2rem; text-align: center;">
