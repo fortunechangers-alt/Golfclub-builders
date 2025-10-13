@@ -30,25 +30,23 @@
         let allWords = [];
         let wordElements = [];
         
-        fetch('<?= base_url('JSON/Maya and Dan.mp3.json') ?>')
+        fetch('<?= base_url('JSON/maya-dan-aligned.json') ?>')
             .then(response => response.json())
             .then(data => {
-                // Extract all words from all segments
-                data.segments.forEach(segment => {
-                    segment.words.forEach(wordObj => {
-                        if (wordObj.text.trim() !== '') { // Skip empty/space-only
-                            allWords.push({
-                                text: wordObj.text,
-                                start: wordObj.start_time,
-                                end: wordObj.end_time
-                            });
-                        }
-                    });
-                });
-                console.log('Loaded', allWords.length, 'words with timestamps');
-                
-                // Wrap blog text with spans for highlighting
-                wrapBlogTextWithSpans();
+                // Use the words array from ElevenLabs alignment
+                if (data.words && data.words.length > 0) {
+                    allWords = data.words.map(w => ({
+                        text: w.text,
+                        start: w.start,
+                        end: w.end
+                    }));
+                    console.log('Loaded', allWords.length, 'aligned words with timestamps');
+                    
+                    // Wrap blog text with spans for highlighting
+                    wrapBlogTextWithSpans();
+                } else {
+                    console.error('No words found in alignment JSON');
+                }
             })
             .catch(err => console.error('Error loading timestamps:', err));
         
