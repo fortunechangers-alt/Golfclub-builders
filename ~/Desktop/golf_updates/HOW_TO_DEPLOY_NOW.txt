@@ -1,0 +1,56 @@
+HOW TO UPDATE YOUR LIVE WEBSITE - SUPER SIMPLE INSTRUCTIONS
+================================================================
+
+STEP 1: Log into cPanel
+------------------------
+Go to: https://golfclub-builders.com:2083
+Log in with your username and password
+
+
+STEP 2: Open Terminal
+----------------------
+1. Find "Terminal" in cPanel (usually under "Advanced" section)
+2. Click it to open a black terminal window
+
+
+STEP 3: Copy and Paste These Commands
+--------------------------------------
+Copy ALL of these lines and paste them into the terminal:
+
+cd /home/golfclub/public_html
+git fetch origin main
+git reset --hard 0c3b237
+composer install --no-dev --optimize-autoloader
+chmod -R 755 app
+chmod -R 775 writable
+
+
+STEP 4: Press Enter
+--------------------
+The commands will run and update your website
+
+
+STEP 5: Check Your Website
+---------------------------
+Go to: https://golfclub-builders.com
+- Desktop should look the same
+- Mobile should now be responsive with hamburger menu
+
+
+THAT'S IT!
+----------
+
+Your mobile optimizations will be live!
+
+If you have ANY problems, just paste the error message and I'll help.
+
+
+WHAT THIS DOES:
+- Gets the latest code from GitHub
+- Installs all necessary files
+- Sets proper permissions
+- Updates your live website
+
+
+Questions? Let me know!
+
