@@ -8,6 +8,38 @@
     </div>
     
     <div class="blog-content">
+        <!-- Audio Player -->
+        <div style="background: linear-gradient(135deg, var(--deep-green), #0a5a42); padding: 1.5rem; border-radius: 10px; margin-bottom: 2rem; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                <span style="font-size: 2rem;">🎧</span>
+                <h3 style="color: white; margin: 0;">Listen to This Article</h3>
+            </div>
+            <audio id="blogAudio" controls style="width: 100%; margin-bottom: 1rem;">
+                <source src="https://thehistoricfaith.b-cdn.net/courses/All%20Q%26A's%20/Project%20software%20files/GB/Maya%20and%20Dan.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                <button onclick="setPlaybackSpeed(1)" style="background: white; color: var(--deep-green); border: none; padding: 0.5rem 1rem; border-radius: 5px; cursor: pointer; font-weight: 600;">1x</button>
+                <button onclick="setPlaybackSpeed(1.5)" style="background: white; color: var(--deep-green); border: none; padding: 0.5rem 1rem; border-radius: 5px; cursor: pointer; font-weight: 600;">1.5x</button>
+                <button onclick="setPlaybackSpeed(2)" style="background: white; color: var(--deep-green); border: none; padding: 0.5rem 1rem; border-radius: 5px; cursor: pointer; font-weight: 600;">2x</button>
+            </div>
+        </div>
+        
+        <script>
+        function setPlaybackSpeed(speed) {
+            const audio = document.getElementById('blogAudio');
+            audio.playbackRate = speed;
+            
+            // Highlight active button
+            event.target.parentElement.querySelectorAll('button').forEach(btn => {
+                btn.style.background = 'white';
+                btn.style.color = 'var(--deep-green)';
+            });
+            event.target.style.background = 'var(--gold)';
+            event.target.style.color = 'var(--graphite)';
+        }
+        </script>
+        
         <h2 style="color: var(--deep-green); font-size: 2rem; margin: 3rem 0 1.5rem 0; border-bottom: 2px solid var(--light); padding-bottom: 0.5rem;">Maya and Dan: When Labels Meet Reality</h2>
         
         <p>They arrived together on a windy Thursday—Maya with a canvas tote full of range tokens, Dan with the kind of grin that says, "I'm here for her, but I'm definitely going to swing something." He carried a men's Stiff driver he'd trusted since college; she held a boxed women's set her sister had sworn by. They wanted me to confirm what the labels already seemed to promise.</p>
