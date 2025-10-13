@@ -26,83 +26,95 @@
         </div>
         
         <script>
-        // Load and parse VTT file for synchronized highlighting
-        let vttCues = [];
+        // Load word-level timestamps from JSON (ElevenLabs format)
+        let allWords = [];
+        let wordElements = [];
         
-        fetch('<?= base_url('Subtitle/Maya and Dan Subs.vtt') ?>')
-            .then(response => response.text())
-            .then(vttText => {
-                vttCues = parseVTT(vttText);
-                console.log('Loaded', vttCues.length, 'subtitle cues');
-            });
+        fetch('<?= base_url('JSON/Maya and Dan.mp3.json') ?>')
+            .then(response => response.json())
+            .then(data => {
+                // Extract all words from all segments
+                data.segments.forEach(segment => {
+                    segment.words.forEach(wordObj => {
+                        if (wordObj.text.trim() !== '') { // Skip empty/space-only
+                            allWords.push({
+                                text: wordObj.text,
+                                start: wordObj.start_time,
+                                end: wordObj.end_time
+                            });
+                        }
+                    });
+                });
+                console.log('Loaded', allWords.length, 'words with timestamps');
+                
+                // Wrap blog text with spans for highlighting
+                wrapBlogTextWithSpans();
+            })
+            .catch(err => console.error('Error loading timestamps:', err));
         
-        function parseVTT(vttText) {
-            const cues = [];
-            const lines = vttText.split('\n');
-            let i = 0;
+        function wrapBlogTextWithSpans() {
+            const blogContent = document.querySelector('.blog-content');
+            const paragraphs = blogContent.querySelectorAll('p, h2, li');
             
-            while (i < lines.length) {
-                // Skip until we find a timestamp line
-                if (lines[i].includes('-->')) {
-                    const times = lines[i].split('-->');
-                    const start = parseTime(times[0].trim());
-                    const end = parseTime(times[1].trim());
-                    i++;
-                    
-                    // Get the text (might be on multiple lines)
-                    let text = '';
-                    while (i < lines.length && lines[i].trim() !== '') {
-                        text += lines[i].replace(/<\/?b>/g, '').trim() + ' ';
-                        i++;
-                    }
-                    
-                    if (text.trim()) {
-                        cues.push({ start, end, text: text.trim() });
-                    }
-                }
-                i++;
-            }
-            return cues;
+            paragraphs.forEach(p => {
+                const text = p.textContent;
+                const words = text.split(/(\s+)/); // Keep spaces
+                
+                p.innerHTML = '';
+                words.forEach(word => {
+                    const span = document.createElement('span');
+                    span.textContent = word;
+                    span.className = 'word-highlight';
+                    p.appendChild(span);
+                });
+            });
+            
+            wordElements = Array.from(document.querySelectorAll('.word-highlight'));
+            console.log('Wrapped', wordElements.length, 'word elements');
         }
         
-        function parseTime(timeStr) {
-            const parts = timeStr.split(':');
-            const seconds = parseFloat(parts[parts.length - 1]);
-            const minutes = parseInt(parts[parts.length - 2] || 0);
-            const hours = parseInt(parts[parts.length - 3] || 0);
-            return hours * 3600 + minutes * 60 + seconds;
-        }
-        
-        // Highlight text as audio plays - FRAME-ACCURATE (like ElevenLabs)
+        // Word-by-word highlighting with JSON timestamps - LIKE ELEVENLABS
         const audio = document.getElementById('blogAudio');
-        const blogContent = document.querySelector('.blog-content');
-        let lastCueIndex = -1;
         let isPlaying = false;
+        let lastWordIndex = -1;
         
-        // Use requestAnimationFrame for smooth 60fps updates (not timeupdate)
+        // Use requestAnimationFrame for smooth 60fps updates
         function tick() {
-            if (!isPlaying) return;
+            if (!isPlaying || allWords.length === 0 || wordElements.length === 0) {
+                if (isPlaying) requestAnimationFrame(tick);
+                return;
+            }
             
             const currentTime = audio.currentTime;
             
-            // Binary search for current cue (faster than findIndex)
-            let cueIndex = -1;
-            for (let i = 0; i < vttCues.length; i++) {
-                if (currentTime >= vttCues[i].start && currentTime < vttCues[i].end) {
-                    cueIndex = i;
+            // Find current word being spoken
+            let currentWordIndex = -1;
+            for (let i = 0; i < allWords.length; i++) {
+                if (currentTime >= allWords[i].start && currentTime <= allWords[i].end) {
+                    currentWordIndex = i;
                     break;
                 }
             }
             
-            // Only update if cue changed (reduces DOM manipulation)
-            if (cueIndex !== lastCueIndex) {
-                if (cueIndex !== -1) {
-                    console.log('Highlighting:', vttCues[cueIndex].text);
-                    highlightText(vttCues[cueIndex].text);
-                } else {
-                    console.log('No matching cue at', currentTime.toFixed(2));
+            // Update highlighting if word changed
+            if (currentWordIndex !== lastWordIndex && currentWordIndex !== -1) {
+                // Remove previous highlight
+                if (lastWordIndex !== -1 && wordElements[lastWordIndex]) {
+                    wordElements[lastWordIndex].classList.remove('active-word');
                 }
-                lastCueIndex = cueIndex;
+                
+                // Add new highlight
+                if (wordElements[currentWordIndex]) {
+                    wordElements[currentWordIndex].classList.add('active-word');
+                    // Scroll to word
+                    wordElements[currentWordIndex].scrollIntoView({ 
+                        behavior: 'smooth', 
+                        block: 'center',
+                        inline: 'nearest'
+                    });
+                }
+                
+                lastWordIndex = currentWordIndex;
             }
             
             requestAnimationFrame(tick);
@@ -119,91 +131,17 @@
         
         audio.addEventListener('ended', function() {
             isPlaying = false;
-            // Remove all highlights when done
-            if (paragraphCache) {
-                paragraphCache.forEach(item => {
-                    item.element.innerHTML = item.originalHTML;
-                });
-            }
+            // Remove all highlights
+            wordElements.forEach(el => el.classList.remove('active-word'));
+            lastWordIndex = -1;
         });
         
-        // Cache for paragraph content
-        let paragraphCache = null;
+        audio.addEventListener('seeked', function() {
+            // Reset when user seeks
+            lastWordIndex = -1;
+            wordElements.forEach(el => el.classList.remove('active-word'));
+        });
         
-        let currentParagraphIndex = 0;
-        
-        function highlightText(text) {
-            // Build cache once
-            if (!paragraphCache) {
-                paragraphCache = Array.from(blogContent.querySelectorAll('p, h2, li')).map((p, idx) => ({
-                    element: p,
-                    originalHTML: p.innerHTML,
-                    index: idx
-                }));
-            }
-            
-            // Remove all previous highlights first
-            paragraphCache.forEach(item => {
-                item.element.innerHTML = item.originalHTML;
-            });
-            
-            // Normalize text for better matching (remove punctuation)
-            const normalizedSearch = text.toLowerCase()
-                .replace(/[.,;:!?"']/g, '')
-                .replace(/\s+/g, ' ')
-                .trim();
-            
-            // Try exact phrase match first (ignore punctuation)
-            for (let i = currentParagraphIndex; i < paragraphCache.length; i++) {
-                const item = paragraphCache[i];
-                const normalizedContent = item.element.textContent.toLowerCase()
-                    .replace(/[.,;:!?"'—–]/g, '')
-                    .replace(/\s+/g, ' ');
-                
-                // Look for the phrase in this paragraph
-                if (normalizedContent.includes(normalizedSearch)) {
-                    // Escape special regex characters in the original text
-                    const words = text.split(/\s+/);
-                    const pattern = words.map(w => 
-                        w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
-                    ).join('[\\s\\-—–.,;:!?\'"]*'); // Allow punctuation between words
-                    
-                    const regex = new RegExp(pattern, 'i');
-                    item.element.innerHTML = item.element.innerHTML.replace(regex, match => 
-                        `<mark class="audio-highlight">${match}</mark>`
-                    );
-                    
-                    // Update current position and scroll
-                    currentParagraphIndex = i;
-                    item.element.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                    return; // Found it, done
-                }
-            }
-            
-            // If not found from current position, search from beginning
-            for (let i = 0; i < currentParagraphIndex; i++) {
-                const item = paragraphCache[i];
-                const normalizedContent = item.element.textContent.toLowerCase()
-                    .replace(/[.,;:!?"'—–]/g, '')
-                    .replace(/\s+/g, ' ');
-                
-                if (normalizedContent.includes(normalizedSearch)) {
-                    const words = text.split(/\s+/);
-                    const pattern = words.map(w => 
-                        w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
-                    ).join('[\\s\\-—–.,;:!?\'"]*');
-                    
-                    const regex = new RegExp(pattern, 'i');
-                    item.element.innerHTML = item.element.innerHTML.replace(regex, match => 
-                        `<mark class="audio-highlight">${match}</mark>`
-                    );
-                    
-                    currentParagraphIndex = i;
-                    item.element.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                    return;
-                }
-            }
-        }
         
         function setPlaybackSpeed(speed) {
             const audio = document.getElementById('blogAudio');
@@ -220,11 +158,16 @@
         </script>
         
         <style>
-        .audio-highlight {
-            background: linear-gradient(135deg, rgba(255, 255, 0, 0.4), rgba(255, 200, 0, 0.4));
-            padding: 2px 0;
+        .word-highlight {
+            transition: background 0.15s ease, color 0.15s ease;
+        }
+        
+        .word-highlight.active-word {
+            background: linear-gradient(135deg, rgba(255, 255, 0, 0.6), rgba(255, 200, 0, 0.6));
+            color: #000;
+            padding: 2px 4px;
             border-radius: 3px;
-            transition: background 0.3s ease;
+            font-weight: 600;
         }
         </style>
         
