@@ -1270,11 +1270,7 @@ textarea.form-control {
         height: 22px !important;
         font-size: 0.8rem !important;
         font-weight: 700 !important;
-        display: none; /* Hidden when empty */
-    }
-    
-    .cart-count:not(:empty) {
-        display: flex !important;
+        /* Display controlled by JavaScript based on count */
     }
     
     /* Mobile: Make header sticky so cart always visible */

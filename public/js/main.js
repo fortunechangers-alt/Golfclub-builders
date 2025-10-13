@@ -381,24 +381,24 @@ function updateCartCount() {
             totalItems += item.quantity || 1;
         });
         
-        cartCountElement.textContent = totalItems;
+        // Update the number
+        if (totalItems > 0) {
+            cartCountElement.textContent = totalItems;
+            cartCountElement.style.display = 'flex';
+        } else {
+            cartCountElement.textContent = '';
+            cartCountElement.style.display = 'none';
+        }
         
-        // Add visual notification when count increases
+        // Add visual pulse when count increases
         if (totalItems > previousCount && totalItems > 0) {
-            // Add 'updated' class for pulse animation
+            // Add 'updated' class for red pulse animation
             cartCountElement.classList.add('updated');
             
             // Remove class after animation completes
             setTimeout(() => {
                 cartCountElement.classList.remove('updated');
             }, 500);
-        }
-        
-        // Show or hide badge based on count
-        if (totalItems === 0) {
-            cartCountElement.style.display = 'none';
-        } else {
-            cartCountElement.style.display = 'flex';
         }
     }
 }
