@@ -26,6 +26,90 @@
         </div>
         
         <script>
+        // Load and parse VTT file for synchronized highlighting
+        let vttCues = [];
+        
+        fetch('<?= base_url('Subtitle/Maya and Dan Subs.vtt') ?>')
+            .then(response => response.text())
+            .then(vttText => {
+                vttCues = parseVTT(vttText);
+                console.log('Loaded', vttCues.length, 'subtitle cues');
+            });
+        
+        function parseVTT(vttText) {
+            const cues = [];
+            const lines = vttText.split('\n');
+            let i = 0;
+            
+            while (i < lines.length) {
+                // Skip until we find a timestamp line
+                if (lines[i].includes('-->')) {
+                    const times = lines[i].split('-->');
+                    const start = parseTime(times[0].trim());
+                    const end = parseTime(times[1].trim());
+                    i++;
+                    
+                    // Get the text (might be on multiple lines)
+                    let text = '';
+                    while (i < lines.length && lines[i].trim() !== '') {
+                        text += lines[i].replace(/<\/?b>/g, '').trim() + ' ';
+                        i++;
+                    }
+                    
+                    if (text.trim()) {
+                        cues.push({ start, end, text: text.trim() });
+                    }
+                }
+                i++;
+            }
+            return cues;
+        }
+        
+        function parseTime(timeStr) {
+            const parts = timeStr.split(':');
+            const seconds = parseFloat(parts[parts.length - 1]);
+            const minutes = parseInt(parts[parts.length - 2] || 0);
+            const hours = parseInt(parts[parts.length - 3] || 0);
+            return hours * 3600 + minutes * 60 + seconds;
+        }
+        
+        // Highlight text as audio plays
+        const audio = document.getElementById('blogAudio');
+        const blogContent = document.querySelector('.blog-content');
+        
+        audio.addEventListener('timeupdate', function() {
+            const currentTime = audio.currentTime;
+            
+            // Find matching cue
+            const activeCue = vttCues.find(cue => 
+                currentTime >= cue.start && currentTime < cue.end
+            );
+            
+            if (activeCue) {
+                highlightText(activeCue.text);
+            }
+        });
+        
+        function highlightText(text) {
+            // Find and highlight the text in the blog content
+            const paragraphs = blogContent.querySelectorAll('p');
+            
+            // Remove previous highlights
+            paragraphs.forEach(p => {
+                p.innerHTML = p.innerHTML.replace(/<mark class="audio-highlight">(.*?)<\/mark>/g, '$1');
+            });
+            
+            // Add new highlight
+            paragraphs.forEach(p => {
+                if (p.textContent.includes(text.substring(0, 30))) {
+                    const regex = new RegExp(text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi');
+                    p.innerHTML = p.innerHTML.replace(regex, match => 
+                        `<mark class="audio-highlight">${match}</mark>`
+                    );
+                }
+            });
+        }
+        
         function setPlaybackSpeed(speed) {
             const audio = document.getElementById('blogAudio');
             audio.playbackRate = speed;
@@ -39,6 +123,15 @@
             event.target.style.color = 'var(--graphite)';
         }
         </script>
+        
+        <style>
+        .audio-highlight {
+            background: linear-gradient(135deg, rgba(255, 255, 0, 0.4), rgba(255, 200, 0, 0.4));
+            padding: 2px 0;
+            border-radius: 3px;
+            transition: background 0.3s ease;
+        }
+        </style>
         
         <h2 style="color: var(--deep-green); font-size: 2rem; margin: 3rem 0 1.5rem 0; border-bottom: 2px solid var(--light); padding-bottom: 0.5rem;">Maya and Dan: When Labels Meet Reality</h2>
         
