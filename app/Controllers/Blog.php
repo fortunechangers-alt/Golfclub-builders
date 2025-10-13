@@ -218,7 +218,8 @@ class Blog extends BaseController
                 'excerpt' => 'Nate and Ellen\'s stories of finding the right club weight. Learn how total weight and swing weight affect your tempo and consistency.',
                 'date' => '2025-10-15',
                 'read_time' => '8 min read',
-                'featured' => false
+                'featured' => false,
+                'thumbnail' => 'girl boy.jpg'
             ],
             [
                 'slug' => 'graphite-vs-steel-shafts',
