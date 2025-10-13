@@ -10,8 +10,8 @@
             <a href="<?= base_url('/blog') ?>" style="color: var(--deep-green); text-decoration: none; font-weight: 600;">← Back to Blog</a>
         </div>
         
-        <!-- Audio Player - Fixed at Top -->
-        <div id="audioPlayerSticky" style="position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: linear-gradient(135deg, var(--deep-green), #0a5a42); padding: 0.75rem; box-shadow: 0 4px 15px rgba(0,0,0,0.3); max-width: 100vw;">
+        <!-- Audio Player - Fixed Below Header -->
+        <div id="audioPlayerSticky" style="position: fixed; top: 80px; left: 0; right: 0; z-index: 500; background: linear-gradient(135deg, var(--deep-green), #0a5a42); padding: 0.75rem; box-shadow: 0 4px 15px rgba(0,0,0,0.3); max-width: 100vw;">
             <div style="max-width: 900px; margin: 0 auto;">
                 <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
                     <span style="font-size: 1.2rem;">🎧</span>
