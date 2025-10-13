@@ -73,41 +73,59 @@
             return hours * 3600 + minutes * 60 + seconds;
         }
         
-        // Highlight text as audio plays
+        // Highlight text as audio plays - OPTIMIZED
         const audio = document.getElementById('blogAudio');
         const blogContent = document.querySelector('.blog-content');
+        let lastCueIndex = -1;
+        let originalHTML = blogContent.innerHTML;
         
         audio.addEventListener('timeupdate', function() {
             const currentTime = audio.currentTime;
             
-            // Find matching cue
-            const activeCue = vttCues.find(cue => 
+            // Find matching cue efficiently
+            const cueIndex = vttCues.findIndex(cue => 
                 currentTime >= cue.start && currentTime < cue.end
             );
             
-            if (activeCue) {
-                highlightText(activeCue.text);
+            // Only update if cue changed (reduces lag)
+            if (cueIndex !== lastCueIndex && cueIndex !== -1) {
+                lastCueIndex = cueIndex;
+                highlightText(vttCues[cueIndex].text);
             }
         });
         
+        // Cache for paragraph content
+        let paragraphCache = null;
+        
         function highlightText(text) {
-            // Find and highlight the text in the blog content
-            const paragraphs = blogContent.querySelectorAll('p');
+            // Build cache once
+            if (!paragraphCache) {
+                paragraphCache = Array.from(blogContent.querySelectorAll('p')).map(p => ({
+                    element: p,
+                    originalHTML: p.innerHTML
+                }));
+            }
             
-            // Remove previous highlights
-            paragraphs.forEach(p => {
-                p.innerHTML = p.innerHTML.replace(/<mark class="audio-highlight">(.*?)<\/mark>/g, '$1');
+            // Remove all previous highlights first
+            paragraphCache.forEach(item => {
+                item.element.innerHTML = item.originalHTML;
             });
             
-            // Add new highlight
-            paragraphs.forEach(p => {
-                if (p.textContent.includes(text.substring(0, 30))) {
-                    const regex = new RegExp(text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi');
-                    p.innerHTML = p.innerHTML.replace(regex, match => 
+            // Find and highlight the specific text (escape special characters)
+            const searchText = text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            
+            for (let item of paragraphCache) {
+                if (item.element.textContent.includes(text)) {
+                    const regex = new RegExp(searchText, 'i');
+                    item.element.innerHTML = item.element.innerHTML.replace(regex, match => 
                         `<mark class="audio-highlight">${match}</mark>`
                     );
+                    
+                    // Scroll to highlighted text
+                    item.element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    break; // Only highlight first match
                 }
-            });
+            }
         }
         
         function setPlaybackSpeed(speed) {
