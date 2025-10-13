@@ -97,7 +97,10 @@
             // Only update if cue changed (reduces DOM manipulation)
             if (cueIndex !== lastCueIndex) {
                 if (cueIndex !== -1) {
+                    console.log('Highlighting:', vttCues[cueIndex].text);
                     highlightText(vttCues[cueIndex].text);
+                } else {
+                    console.log('No matching cue at', currentTime.toFixed(2));
                 }
                 lastCueIndex = cueIndex;
             }
