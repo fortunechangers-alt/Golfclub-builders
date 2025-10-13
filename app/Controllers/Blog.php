@@ -48,7 +48,7 @@ class Blog extends BaseController
         
         if ($slug === 'finding-the-right-shaft-flex') {
             return view('layout/header', $data)
-                 . view('blog/shaft-flex-guide', $data)
+                 . view('blog/finding-the-right-shaft-flex', $data)
                  . view('layout/footer', $data);
         }
         
