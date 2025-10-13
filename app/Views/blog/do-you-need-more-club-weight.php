@@ -8,6 +8,8 @@
     </div>
     
     <div class="blog-content">
+        <img src="<?= base_url('images/girl boy.jpg') ?>" alt="Nate and Ellen - Club Weight Fitting Story" style="width: 100%; max-width: 800px; height: auto; border-radius: 10px; margin-bottom: 2rem; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        
         <h2 style="color: var(--deep-green); font-size: 2rem; margin: 3rem 0 1.5rem 0; border-bottom: 2px solid var(--light); padding-bottom: 0.5rem;">Nate and Ellen: Two Sides of the Weight Story</h2>
         
         <p>By the time Nate came in, his tempo had a tremor in it. Not nerves—fatigue. He'd been swinging a set that looked fast on paper: feather‑light shafts, heads shaved of every gram, grips that felt like air. "I thought lighter meant easier," he said, and then he showed me the flight: a thin that climbed and stalled, a block that held on to the right edge like a ledge, then one perfect ball that only showed up when he swung harder than he wanted to.</p>
