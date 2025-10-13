@@ -28,6 +28,11 @@
                 </picture>
             </a>
             
+            <a href="<?= base_url('/cart') ?>" class="cart-button" id="cart-button">
+                <span class="cart-icon">🛒</span>
+                <span class="cart-count" id="cart-count" style="display: none;"></span>
+            </a>
+            
             <ul class="nav-menu">
                 <li><a href="<?= base_url('/') ?>" class="nav-link">Home</a></li>
                 <li><a href="<?= base_url('/custom-club-building') ?>" class="nav-link">Club Builds</a></li>
@@ -35,12 +40,6 @@
                 <li><a href="<?= base_url('/simulator') ?>" class="nav-link">Simulator</a></li>
                 <li><a href="<?= base_url('/blog') ?>" class="nav-link">Blog</a></li>
                 <li><a href="<?= base_url('/contact') ?>" class="nav-link">Contact</a></li>
-                <li>
-                    <a href="<?= base_url('/cart') ?>" class="cart-button" id="cart-button">
-                        <span class="cart-icon">🛒</span>
-                        <span class="cart-count" id="cart-count" style="display: none;"></span>
-                    </a>
-                </li>
                 <?php 
                 // Temporarily disabled auth for public site
                 // Uncomment when auth is properly configured on live server
