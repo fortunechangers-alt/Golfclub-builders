@@ -1,0 +1,25 @@
+name: Deploy to Live Server (Simple)
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Deploy via cPanel API
+      uses: appleboy/ssh-action@v0.1.5
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.PASSWORD }}
+        script: |
+          cd /home/golfclub/public_html
+          git pull origin main
+          chmod -R 755 app
+          chmod -R 775 writable
+          echo "✅ Deployment complete!"
+          echo "🌐 Website updated: https://golfclub-builders.com"
