@@ -130,7 +130,7 @@
         function highlightText(text) {
             // Build cache once
             if (!paragraphCache) {
-                paragraphCache = Array.from(blogContent.querySelectorAll('p')).map(p => ({
+                paragraphCache = Array.from(blogContent.querySelectorAll('p, h2, li')).map(p => ({
                     element: p,
                     originalHTML: p.innerHTML
                 }));
@@ -141,19 +141,39 @@
                 item.element.innerHTML = item.originalHTML;
             });
             
-            // Find and highlight the specific text (escape special characters)
-            const searchText = text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            // Normalize text for better matching (remove punctuation)
+            const normalizedSearch = text.toLowerCase()
+                .replace(/[.,;:!?"']/g, '')
+                .replace(/\s+/g, ' ')
+                .trim();
+            
+            // Split into words for flexible matching
+            const searchWords = normalizedSearch.split(' ');
             
             for (let item of paragraphCache) {
-                if (item.element.textContent.includes(text)) {
-                    const regex = new RegExp(searchText, 'i');
-                    item.element.innerHTML = item.element.innerHTML.replace(regex, match => 
-                        `<mark class="audio-highlight">${match}</mark>`
-                    );
+                const normalizedContent = item.element.textContent.toLowerCase()
+                    .replace(/[.,;:!?"'—]/g, '')
+                    .replace(/\s+/g, ' ');
+                
+                // Check if most words from the cue are in this paragraph
+                const matchCount = searchWords.filter(word => 
+                    normalizedContent.includes(word)
+                ).length;
+                
+                if (matchCount >= searchWords.length * 0.7) { // 70% match threshold
+                    // Highlight each word individually
+                    searchWords.forEach(word => {
+                        if (word.length > 2) { // Skip very short words
+                            const regex = new RegExp(`\\b${word}\\b`, 'gi');
+                            item.element.innerHTML = item.element.innerHTML.replace(regex, match => 
+                                `<mark class="audio-highlight">${match}</mark>`
+                            );
+                        }
+                    });
                     
                     // Scroll to highlighted text
                     item.element.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                    break; // Only highlight first match
+                    break; // Only highlight first matching paragraph
                 }
             }
         }
