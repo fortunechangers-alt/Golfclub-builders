@@ -1,0 +1,8743 @@
+{
+  "language_code": null,
+  "segments": [
+    {
+      "text": "When the club found its weight and he",
+      "start_time": 0.08,
+      "end_time": 2.52,
+      "speaker": {
+        "id": "speaker_0",
+        "name": "Speaker 0"
+      },
+      "words": [
+        {
+          "text": "When",
+          "start_time": 0.08,
+          "end_time": 0.39
+        },
+        {
+          "text": " ",
+          "start_time": 0.39,
+          "end_time": 0.39
+        },
+        {
+          "text": "the",
+          "start_time": 0.39,
+          "end_time": 0.52
+        },
+        {
+          "text": " ",
+          "start_time": 0.52,
+          "end_time": 0.56
+        },
+        {
+          "text": "club",
+          "start_time": 0.56,
+          "end_time": 0.86
+        },
+        {
+          "text": " ",
+          "start_time": 0.86,
+          "end_time": 0.9
+        },
+        {
+          "text": "found",
+          "start_time": 0.9,
+          "end_time": 1.1
+        },
+        {
+          "text": " ",
+          "start_time": 1.1,
+          "end_time": 1.14
+        },
+        {
+          "text": "its",
+          "start_time": 1.14,
+          "end_time": 1.3
+        },
+        {
+          "text": " ",
+          "start_time": 1.3,
+          "end_time": 1.34
+        },
+        {
+          "text": "weight",
+          "start_time": 1.34,
+          "end_time": 2.08
+        },
+        {
+          "text": " ",
+          "start_time": 2.08,
+          "end_time": 2.12
+        },
+        {
+          "text": "and",
+          "start_time": 2.12,
+          "end_time": 2.29
+        },
+        {
+          "text": " ",
+          "start_time": 2.29,
+          "end_time": 2.34
+        },
+        {
+          "text": "he",
+          "start_time": 2.34,
+          "end_time": 2.52
+        }
+      ]
+    },
+    {
+      "text": "found his swing,",
+      "start_time": 2.56,
+      "end_time": 4.0,
+      "speaker": {
+        "id": "speaker_0",
+        "name": "Speaker 0"
+      },
+      "words": [
+        {
+          "text": "found",
+          "start_time": 2.56,
+          "end_time": 2.8
+        },
+        {
+          "text": " ",
+          "start_time": 2.8,
+          "end_time": 2.86
+        },
+        {
+          "text": "his",
+          "start_time": 2.86,
+          "end_time": 3.01
+        },
+        {
+          "text": " ",
+          "start_time": 3.01,
+          "end_time": 3.08
+        },
+        {
+          "text": "swing,",
+          "start_time": 3.08,
+          "end_time": 4.0
+        }
+      ]
+    },
+    {
+      "text": "He kept the bucket under the bench like a",
+      "start_time": 4.04,
+      "end_time": 5.93,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "He",
+          "start_time": 4.04,
+          "end_time": 4.14
+        },
+        {
+          "text": " ",
+          "start_time": 4.14,
+          "end_time": 4.18
+        },
+        {
+          "text": "kept",
+          "start_time": 4.18,
+          "end_time": 4.32
+        },
+        {
+          "text": " ",
+          "start_time": 4.32,
+          "end_time": 4.36
+        },
+        {
+          "text": "the",
+          "start_time": 4.36,
+          "end_time": 4.5
+        },
+        {
+          "text": " ",
+          "start_time": 4.5,
+          "end_time": 4.52
+        },
+        {
+          "text": "bucket",
+          "start_time": 4.52,
+          "end_time": 4.82
+        },
+        {
+          "text": " ",
+          "start_time": 4.82,
+          "end_time": 4.88
+        },
+        {
+          "text": "under",
+          "start_time": 4.88,
+          "end_time": 5.1
+        },
+        {
+          "text": " ",
+          "start_time": 5.1,
+          "end_time": 5.14
+        },
+        {
+          "text": "the",
+          "start_time": 5.14,
+          "end_time": 5.28
+        },
+        {
+          "text": " ",
+          "start_time": 5.28,
+          "end_time": 5.32
+        },
+        {
+          "text": "bench",
+          "start_time": 5.32,
+          "end_time": 5.62
+        },
+        {
+          "text": " ",
+          "start_time": 5.62,
+          "end_time": 5.68
+        },
+        {
+          "text": "like",
+          "start_time": 5.68,
+          "end_time": 5.81
+        },
+        {
+          "text": " ",
+          "start_time": 5.81,
+          "end_time": 5.92
+        },
+        {
+          "text": "a",
+          "start_time": 5.92,
+          "end_time": 5.93
+        }
+      ]
+    },
+    {
+      "text": "secret. Late after work, lights humming",
+      "start_time": 5.98,
+      "end_time": 9.07,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "secret.",
+          "start_time": 5.98,
+          "end_time": 7.18
+        },
+        {
+          "text": " ",
+          "start_time": 7.18,
+          "end_time": 7.22
+        },
+        {
+          "text": "Late",
+          "start_time": 7.22,
+          "end_time": 7.38
+        },
+        {
+          "text": " ",
+          "start_time": 7.38,
+          "end_time": 7.479
+        },
+        {
+          "text": "after",
+          "start_time": 7.48,
+          "end_time": 7.729
+        },
+        {
+          "text": " ",
+          "start_time": 7.729,
+          "end_time": 7.76
+        },
+        {
+          "text": "work,",
+          "start_time": 7.76,
+          "end_time": 8.49
+        },
+        {
+          "text": " ",
+          "start_time": 8.49,
+          "end_time": 8.54
+        },
+        {
+          "text": "lights",
+          "start_time": 8.54,
+          "end_time": 8.79
+        },
+        {
+          "text": " ",
+          "start_time": 8.79,
+          "end_time": 8.799
+        },
+        {
+          "text": "humming",
+          "start_time": 8.8,
+          "end_time": 9.07
+        }
+      ]
+    },
+    {
+      "text": "over the range, Cal lined up a seven iron",
+      "start_time": 9.14,
+      "end_time": 11.38,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "over",
+          "start_time": 9.14,
+          "end_time": 9.33
+        },
+        {
+          "text": " ",
+          "start_time": 9.33,
+          "end_time": 9.34
+        },
+        {
+          "text": "the",
+          "start_time": 9.34,
+          "end_time": 9.44
+        },
+        {
+          "text": " ",
+          "start_time": 9.44,
+          "end_time": 9.479
+        },
+        {
+          "text": "range,",
+          "start_time": 9.48,
+          "end_time": 9.82
+        },
+        {
+          "text": " ",
+          "start_time": 9.82,
+          "end_time": 9.84
+        },
+        {
+          "text": "Cal",
+          "start_time": 9.84,
+          "end_time": 10.16
+        },
+        {
+          "text": " ",
+          "start_time": 10.16,
+          "end_time": 10.18
+        },
+        {
+          "text": "lined",
+          "start_time": 10.18,
+          "end_time": 10.5
+        },
+        {
+          "text": " ",
+          "start_time": 10.5,
+          "end_time": 10.54
+        },
+        {
+          "text": "up",
+          "start_time": 10.54,
+          "end_time": 10.62
+        },
+        {
+          "text": " ",
+          "start_time": 10.62,
+          "end_time": 10.64
+        },
+        {
+          "text": "a",
+          "start_time": 10.64,
+          "end_time": 10.72
+        },
+        {
+          "text": " ",
+          "start_time": 10.72,
+          "end_time": 10.76
+        },
+        {
+          "text": "seven",
+          "start_time": 10.76,
+          "end_time": 11.02
+        },
+        {
+          "text": " ",
+          "start_time": 11.02,
+          "end_time": 11.12
+        },
+        {
+          "text": "iron",
+          "start_time": 11.12,
+          "end_time": 11.38
+        }
+      ]
+    },
+    {
+      "text": "the way he had a thousand times, feet",
+      "start_time": 11.42,
+      "end_time": 13.52,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "the",
+          "start_time": 11.42,
+          "end_time": 11.5
+        },
+        {
+          "text": " ",
+          "start_time": 11.5,
+          "end_time": 11.56
+        },
+        {
+          "text": "way",
+          "start_time": 11.56,
+          "end_time": 11.68
+        },
+        {
+          "text": " ",
+          "start_time": 11.68,
+          "end_time": 11.719
+        },
+        {
+          "text": "he",
+          "start_time": 11.72,
+          "end_time": 11.8
+        },
+        {
+          "text": " ",
+          "start_time": 11.8,
+          "end_time": 11.86
+        },
+        {
+          "text": "had",
+          "start_time": 11.86,
+          "end_time": 11.98
+        },
+        {
+          "text": " ",
+          "start_time": 11.98,
+          "end_time": 12.0
+        },
+        {
+          "text": "a",
+          "start_time": 12.0,
+          "end_time": 12.08
+        },
+        {
+          "text": " ",
+          "start_time": 12.08,
+          "end_time": 12.12
+        },
+        {
+          "text": "thousand",
+          "start_time": 12.12,
+          "end_time": 12.46
+        },
+        {
+          "text": " ",
+          "start_time": 12.46,
+          "end_time": 12.54
+        },
+        {
+          "text": "times,",
+          "start_time": 12.54,
+          "end_time": 12.86
+        },
+        {
+          "text": " ",
+          "start_time": 12.86,
+          "end_time": 13.32
+        },
+        {
+          "text": "feet",
+          "start_time": 13.32,
+          "end_time": 13.52
+        }
+      ]
+    },
+    {
+      "text": "squared, breath held, jaw set. The first",
+      "start_time": 13.58,
+      "end_time": 16.46,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "squared,",
+          "start_time": 13.58,
+          "end_time": 14.14
+        },
+        {
+          "text": " ",
+          "start_time": 14.14,
+          "end_time": 14.18
+        },
+        {
+          "text": "breath",
+          "start_time": 14.18,
+          "end_time": 14.38
+        },
+        {
+          "text": " ",
+          "start_time": 14.38,
+          "end_time": 14.46
+        },
+        {
+          "text": "held,",
+          "start_time": 14.46,
+          "end_time": 14.9
+        },
+        {
+          "text": " ",
+          "start_time": 14.9,
+          "end_time": 14.98
+        },
+        {
+          "text": "jaw",
+          "start_time": 14.98,
+          "end_time": 15.24
+        },
+        {
+          "text": " ",
+          "start_time": 15.24,
+          "end_time": 15.36
+        },
+        {
+          "text": "set.",
+          "start_time": 15.36,
+          "end_time": 16.079
+        },
+        {
+          "text": " ",
+          "start_time": 16.079,
+          "end_time": 16.1
+        },
+        {
+          "text": "The",
+          "start_time": 16.1,
+          "end_time": 16.18
+        },
+        {
+          "text": " ",
+          "start_time": 16.18,
+          "end_time": 16.239
+        },
+        {
+          "text": "first",
+          "start_time": 16.239,
+          "end_time": 16.46
+        }
+      ]
+    },
+    {
+      "text": "ball started on the flag, and then,",
+      "start_time": 16.5,
+      "end_time": 18.32,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "ball",
+          "start_time": 16.5,
+          "end_time": 16.7
+        },
+        {
+          "text": " ",
+          "start_time": 16.7,
+          "end_time": 16.86
+        },
+        {
+          "text": "started",
+          "start_time": 16.86,
+          "end_time": 17.18
+        },
+        {
+          "text": " ",
+          "start_time": 17.18,
+          "end_time": 17.24
+        },
+        {
+          "text": "on",
+          "start_time": 17.24,
+          "end_time": 17.34
+        },
+        {
+          "text": " ",
+          "start_time": 17.34,
+          "end_time": 17.38
+        },
+        {
+          "text": "the",
+          "start_time": 17.38,
+          "end_time": 17.46
+        },
+        {
+          "text": " ",
+          "start_time": 17.46,
+          "end_time": 17.52
+        },
+        {
+          "text": "flag,",
+          "start_time": 17.52,
+          "end_time": 17.98
+        },
+        {
+          "text": " ",
+          "start_time": 17.98,
+          "end_time": 18.0
+        },
+        {
+          "text": "and",
+          "start_time": 18.0,
+          "end_time": 18.08
+        },
+        {
+          "text": " ",
+          "start_time": 18.08,
+          "end_time": 18.12
+        },
+        {
+          "text": "then,",
+          "start_time": 18.12,
+          "end_time": 18.32
+        }
+      ]
+    },
+    {
+      "text": "[laughs] like so many lately, faded weak",
+      "start_time": 18.36,
+      "end_time": 20.6,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "[laughs]",
+          "start_time": 18.36,
+          "end_time": 18.82
+        },
+        {
+          "text": " ",
+          "start_time": 18.82,
+          "end_time": 18.84
+        },
+        {
+          "text": "like",
+          "start_time": 18.84,
+          "end_time": 19.0
+        },
+        {
+          "text": " ",
+          "start_time": 19.0,
+          "end_time": 19.06
+        },
+        {
+          "text": "so",
+          "start_time": 19.06,
+          "end_time": 19.1
+        },
+        {
+          "text": " ",
+          "start_time": 19.1,
+          "end_time": 19.2
+        },
+        {
+          "text": "many",
+          "start_time": 19.24,
+          "end_time": 19.42
+        },
+        {
+          "text": " ",
+          "start_time": 19.42,
+          "end_time": 19.44
+        },
+        {
+          "text": "lately,",
+          "start_time": 19.44,
+          "end_time": 19.88
+        },
+        {
+          "text": " ",
+          "start_time": 19.88,
+          "end_time": 19.959
+        },
+        {
+          "text": "faded",
+          "start_time": 19.96,
+          "end_time": 20.28
+        },
+        {
+          "text": " ",
+          "start_time": 20.28,
+          "end_time": 20.34
+        },
+        {
+          "text": "weak",
+          "start_time": 20.34,
+          "end_time": 20.6
+        }
+      ]
+    },
+    {
+      "text": "and fell short. The next went higher but",
+      "start_time": 20.68,
+      "end_time": 23.46,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "and",
+          "start_time": 20.68,
+          "end_time": 20.78
+        },
+        {
+          "text": " ",
+          "start_time": 20.78,
+          "end_time": 20.88
+        },
+        {
+          "text": "fell",
+          "start_time": 20.88,
+          "end_time": 21.12
+        },
+        {
+          "text": " ",
+          "start_time": 21.12,
+          "end_time": 21.14
+        },
+        {
+          "text": "short.",
+          "start_time": 21.14,
+          "end_time": 22.16
+        },
+        {
+          "text": " ",
+          "start_time": 22.16,
+          "end_time": 22.18
+        },
+        {
+          "text": "The",
+          "start_time": 22.18,
+          "end_time": 22.25
+        },
+        {
+          "text": " ",
+          "start_time": 22.25,
+          "end_time": 22.32
+        },
+        {
+          "text": "next",
+          "start_time": 22.32,
+          "end_time": 22.58
+        },
+        {
+          "text": " ",
+          "start_time": 22.58,
+          "end_time": 22.64
+        },
+        {
+          "text": "went",
+          "start_time": 22.64,
+          "end_time": 22.82
+        },
+        {
+          "text": " ",
+          "start_time": 22.82,
+          "end_time": 22.86
+        },
+        {
+          "text": "higher",
+          "start_time": 22.86,
+          "end_time": 23.22
+        },
+        {
+          "text": " ",
+          "start_time": 23.22,
+          "end_time": 23.32
+        },
+        {
+          "text": "but",
+          "start_time": 23.32,
+          "end_time": 23.46
+        }
+      ]
+    },
+    {
+      "text": "thinner, a stinging reminder in his hands.",
+      "start_time": 23.48,
+      "end_time": 26.16,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "thinner,",
+          "start_time": 23.48,
+          "end_time": 23.82
+        },
+        {
+          "text": " ",
+          "start_time": 23.82,
+          "end_time": 23.86
+        },
+        {
+          "text": "a",
+          "start_time": 23.86,
+          "end_time": 23.88
+        },
+        {
+          "text": " ",
+          "start_time": 23.88,
+          "end_time": 24.04
+        },
+        {
+          "text": "stinging",
+          "start_time": 24.04,
+          "end_time": 24.3
+        },
+        {
+          "text": " ",
+          "start_time": 24.3,
+          "end_time": 24.38
+        },
+        {
+          "text": "reminder",
+          "start_time": 24.38,
+          "end_time": 24.86
+        },
+        {
+          "text": " ",
+          "start_time": 24.86,
+          "end_time": 24.9
+        },
+        {
+          "text": "in",
+          "start_time": 24.9,
+          "end_time": 24.98
+        },
+        {
+          "text": " ",
+          "start_time": 24.98,
+          "end_time": 25.0
+        },
+        {
+          "text": "his",
+          "start_time": 25.0,
+          "end_time": 25.14
+        },
+        {
+          "text": " ",
+          "start_time": 25.14,
+          "end_time": 25.18
+        },
+        {
+          "text": "hands.",
+          "start_time": 25.18,
+          "end_time": 26.16
+        }
+      ]
+    },
+    {
+      "text": "He wasn't lost exactly, just",
+      "start_time": 26.2,
+      "end_time": 27.82,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "He",
+          "start_time": 26.2,
+          "end_time": 26.28
+        },
+        {
+          "text": " ",
+          "start_time": 26.28,
+          "end_time": 26.32
+        },
+        {
+          "text": "wasn't",
+          "start_time": 26.32,
+          "end_time": 26.56
+        },
+        {
+          "text": " ",
+          "start_time": 26.56,
+          "end_time": 26.62
+        },
+        {
+          "text": "lost",
+          "start_time": 26.62,
+          "end_time": 26.9
+        },
+        {
+          "text": " ",
+          "start_time": 26.9,
+          "end_time": 26.96
+        },
+        {
+          "text": "exactly,",
+          "start_time": 26.96,
+          "end_time": 27.46
+        },
+        {
+          "text": " ",
+          "start_time": 27.46,
+          "end_time": 27.52
+        },
+        {
+          "text": "just",
+          "start_time": 27.52,
+          "end_time": 27.82
+        }
+      ]
+    },
+    {
+      "text": "untethered. Truth was, Cal hadn't changed",
+      "start_time": 28.72,
+      "end_time": 32.18,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "untethered.",
+          "start_time": 28.72,
+          "end_time": 30.26
+        },
+        {
+          "text": " ",
+          "start_time": 30.26,
+          "end_time": 30.32
+        },
+        {
+          "text": "Truth",
+          "start_time": 30.32,
+          "end_time": 30.6
+        },
+        {
+          "text": " ",
+          "start_time": 30.6,
+          "end_time": 30.66
+        },
+        {
+          "text": "was,",
+          "start_time": 30.66,
+          "end_time": 31.09
+        },
+        {
+          "text": " ",
+          "start_time": 31.09,
+          "end_time": 31.12
+        },
+        {
+          "text": "Cal",
+          "start_time": 31.12,
+          "end_time": 31.36
+        },
+        {
+          "text": " ",
+          "start_time": 31.36,
+          "end_time": 31.5
+        },
+        {
+          "text": "hadn't",
+          "start_time": 31.5,
+          "end_time": 31.76
+        },
+        {
+          "text": " ",
+          "start_time": 31.76,
+          "end_time": 31.82
+        },
+        {
+          "text": "changed",
+          "start_time": 31.82,
+          "end_time": 32.18
+        }
+      ]
+    },
+    {
+      "text": "much. Two kids, long days, less practice.",
+      "start_time": 32.24,
+      "end_time": 35.53,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "much.",
+          "start_time": 32.24,
+          "end_time": 32.6
+        },
+        {
+          "text": " ",
+          "start_time": 32.6,
+          "end_time": 32.659
+        },
+        {
+          "text": "Two",
+          "start_time": 32.659,
+          "end_time": 32.84
+        },
+        {
+          "text": " ",
+          "start_time": 32.84,
+          "end_time": 32.9
+        },
+        {
+          "text": "kids,",
+          "start_time": 32.9,
+          "end_time": 33.34
+        },
+        {
+          "text": " ",
+          "start_time": 33.34,
+          "end_time": 33.42
+        },
+        {
+          "text": "long",
+          "start_time": 33.42,
+          "end_time": 33.69
+        },
+        {
+          "text": " ",
+          "start_time": 33.69,
+          "end_time": 33.78
+        },
+        {
+          "text": "days,",
+          "start_time": 33.78,
+          "end_time": 34.21
+        },
+        {
+          "text": " ",
+          "start_time": 34.21,
+          "end_time": 34.26
+        },
+        {
+          "text": "less",
+          "start_time": 34.26,
+          "end_time": 34.5
+        },
+        {
+          "text": " ",
+          "start_time": 34.5,
+          "end_time": 34.54
+        },
+        {
+          "text": "practice.",
+          "start_time": 34.54,
+          "end_time": 35.53
+        }
+      ]
+    },
+    {
+      "text": "But something about his irons felt",
+      "start_time": 35.54,
+      "end_time": 37.88,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "But",
+          "start_time": 35.54,
+          "end_time": 35.71
+        },
+        {
+          "text": " ",
+          "start_time": 35.71,
+          "end_time": 35.78
+        },
+        {
+          "text": "something",
+          "start_time": 35.78,
+          "end_time": 36.17
+        },
+        {
+          "text": " ",
+          "start_time": 36.17,
+          "end_time": 36.28
+        },
+        {
+          "text": "about",
+          "start_time": 36.28,
+          "end_time": 36.51
+        },
+        {
+          "text": " ",
+          "start_time": 36.51,
+          "end_time": 36.54
+        },
+        {
+          "text": "his",
+          "start_time": 36.54,
+          "end_time": 36.8
+        },
+        {
+          "text": " ",
+          "start_time": 36.8,
+          "end_time": 36.94
+        },
+        {
+          "text": "irons",
+          "start_time": 36.94,
+          "end_time": 37.54
+        },
+        {
+          "text": " ",
+          "start_time": 37.54,
+          "end_time": 37.58
+        },
+        {
+          "text": "felt",
+          "start_time": 37.58,
+          "end_time": 37.88
+        }
+      ]
+    },
+    {
+      "text": "different, floaty on good days, jittery on",
+      "start_time": 37.9,
+      "end_time": 40.86,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "different,",
+          "start_time": 37.9,
+          "end_time": 38.57
+        },
+        {
+          "text": " ",
+          "start_time": 38.57,
+          "end_time": 38.62
+        },
+        {
+          "text": "floaty",
+          "start_time": 38.62,
+          "end_time": 39.08
+        },
+        {
+          "text": " ",
+          "start_time": 39.08,
+          "end_time": 39.14
+        },
+        {
+          "text": "on",
+          "start_time": 39.2,
+          "end_time": 39.38
+        },
+        {
+          "text": " ",
+          "start_time": 39.38,
+          "end_time": 39.42
+        },
+        {
+          "text": "good",
+          "start_time": 39.42,
+          "end_time": 39.7
+        },
+        {
+          "text": " ",
+          "start_time": 39.7,
+          "end_time": 39.71
+        },
+        {
+          "text": "days,",
+          "start_time": 39.71,
+          "end_time": 40.14
+        },
+        {
+          "text": " ",
+          "start_time": 40.14,
+          "end_time": 40.18
+        },
+        {
+          "text": "jittery",
+          "start_time": 40.18,
+          "end_time": 40.58
+        },
+        {
+          "text": " ",
+          "start_time": 40.58,
+          "end_time": 40.66
+        },
+        {
+          "text": "on",
+          "start_time": 40.66,
+          "end_time": 40.86
+        }
+      ]
+    },
+    {
+      "text": "bad ones, as if the head arrived a",
+      "start_time": 40.88,
+      "end_time": 43.5,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "bad",
+          "start_time": 40.88,
+          "end_time": 41.2
+        },
+        {
+          "text": " ",
+          "start_time": 41.2,
+          "end_time": 41.3
+        },
+        {
+          "text": "ones,",
+          "start_time": 41.3,
+          "end_time": 42.06
+        },
+        {
+          "text": " ",
+          "start_time": 42.06,
+          "end_time": 42.12
+        },
+        {
+          "text": "as",
+          "start_time": 42.12,
+          "end_time": 42.22
+        },
+        {
+          "text": " ",
+          "start_time": 42.22,
+          "end_time": 42.28
+        },
+        {
+          "text": "if",
+          "start_time": 42.28,
+          "end_time": 42.41
+        },
+        {
+          "text": " ",
+          "start_time": 42.41,
+          "end_time": 42.44
+        },
+        {
+          "text": "the",
+          "start_time": 42.44,
+          "end_time": 42.52
+        },
+        {
+          "text": " ",
+          "start_time": 42.52,
+          "end_time": 42.56
+        },
+        {
+          "text": "head",
+          "start_time": 42.56,
+          "end_time": 42.86
+        },
+        {
+          "text": " ",
+          "start_time": 42.86,
+          "end_time": 42.92
+        },
+        {
+          "text": "arrived",
+          "start_time": 42.92,
+          "end_time": 43.39
+        },
+        {
+          "text": " ",
+          "start_time": 43.39,
+          "end_time": 43.4
+        },
+        {
+          "text": "a",
+          "start_time": 43.4,
+          "end_time": 43.5
+        }
+      ]
+    },
+    {
+      "text": "fraction early or late and he was always",
+      "start_time": 43.54,
+      "end_time": 46.089,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "fraction",
+          "start_time": 43.54,
+          "end_time": 44.02
+        },
+        {
+          "text": " ",
+          "start_time": 44.02,
+          "end_time": 44.12
+        },
+        {
+          "text": "early",
+          "start_time": 44.12,
+          "end_time": 44.47
+        },
+        {
+          "text": " ",
+          "start_time": 44.47,
+          "end_time": 44.52
+        },
+        {
+          "text": "or",
+          "start_time": 44.52,
+          "end_time": 44.66
+        },
+        {
+          "text": " ",
+          "start_time": 44.66,
+          "end_time": 44.72
+        },
+        {
+          "text": "late",
+          "start_time": 44.72,
+          "end_time": 45.26
+        },
+        {
+          "text": " ",
+          "start_time": 45.26,
+          "end_time": 45.3
+        },
+        {
+          "text": "and",
+          "start_time": 45.3,
+          "end_time": 45.39
+        },
+        {
+          "text": " ",
+          "start_time": 45.39,
+          "end_time": 45.42
+        },
+        {
+          "text": "he",
+          "start_time": 45.42,
+          "end_time": 45.52
+        },
+        {
+          "text": " ",
+          "start_time": 45.52,
+          "end_time": 45.58
+        },
+        {
+          "text": "was",
+          "start_time": 45.58,
+          "end_time": 45.69
+        },
+        {
+          "text": " ",
+          "start_time": 45.69,
+          "end_time": 45.78
+        },
+        {
+          "text": "always",
+          "start_time": 45.78,
+          "end_time": 46.089
+        }
+      ]
+    },
+    {
+      "text": "negotiating at impact. He blamed tempo,",
+      "start_time": 46.12,
+      "end_time": 49.46,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "negotiating",
+          "start_time": 46.12,
+          "end_time": 46.91
+        },
+        {
+          "text": " ",
+          "start_time": 46.91,
+          "end_time": 46.96
+        },
+        {
+          "text": "at",
+          "start_time": 46.96,
+          "end_time": 47.06
+        },
+        {
+          "text": " ",
+          "start_time": 47.06,
+          "end_time": 47.16
+        },
+        {
+          "text": "impact.",
+          "start_time": 47.16,
+          "end_time": 48.269
+        },
+        {
+          "text": " ",
+          "start_time": 48.269,
+          "end_time": 48.3
+        },
+        {
+          "text": "He",
+          "start_time": 48.3,
+          "end_time": 48.46
+        },
+        {
+          "text": " ",
+          "start_time": 48.46,
+          "end_time": 48.48
+        },
+        {
+          "text": "blamed",
+          "start_time": 48.48,
+          "end_time": 48.86
+        },
+        {
+          "text": " ",
+          "start_time": 48.86,
+          "end_time": 48.9
+        },
+        {
+          "text": "tempo,",
+          "start_time": 48.9,
+          "end_time": 49.46
+        }
+      ]
+    },
+    {
+      "text": "grip pressure, tempo again. He never",
+      "start_time": 50.0,
+      "end_time": 52.82,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "grip",
+          "start_time": 50.0,
+          "end_time": 50.28
+        },
+        {
+          "text": " ",
+          "start_time": 50.28,
+          "end_time": 50.36
+        },
+        {
+          "text": "pressure,",
+          "start_time": 50.36,
+          "end_time": 51.04
+        },
+        {
+          "text": " ",
+          "start_time": 51.04,
+          "end_time": 51.06
+        },
+        {
+          "text": "tempo",
+          "start_time": 51.06,
+          "end_time": 51.56
+        },
+        {
+          "text": " ",
+          "start_time": 51.56,
+          "end_time": 51.68
+        },
+        {
+          "text": "again.",
+          "start_time": 51.68,
+          "end_time": 52.36
+        },
+        {
+          "text": " ",
+          "start_time": 52.36,
+          "end_time": 52.42
+        },
+        {
+          "text": "He",
+          "start_time": 52.42,
+          "end_time": 52.52
+        },
+        {
+          "text": " ",
+          "start_time": 52.52,
+          "end_time": 52.58
+        },
+        {
+          "text": "never",
+          "start_time": 52.58,
+          "end_time": 52.82
+        }
+      ]
+    },
+    {
+      "text": "blamed the clubs. His father had taught",
+      "start_time": 52.96,
+      "end_time": 55.82,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "blamed",
+          "start_time": 52.96,
+          "end_time": 53.36
+        },
+        {
+          "text": " ",
+          "start_time": 53.36,
+          "end_time": 53.4
+        },
+        {
+          "text": "the",
+          "start_time": 53.4,
+          "end_time": 53.52
+        },
+        {
+          "text": " ",
+          "start_time": 53.52,
+          "end_time": 53.58
+        },
+        {
+          "text": "clubs.",
+          "start_time": 53.58,
+          "end_time": 54.66
+        },
+        {
+          "text": " ",
+          "start_time": 54.66,
+          "end_time": 54.7
+        },
+        {
+          "text": "His",
+          "start_time": 54.7,
+          "end_time": 54.88
+        },
+        {
+          "text": " ",
+          "start_time": 54.88,
+          "end_time": 54.94
+        },
+        {
+          "text": "father",
+          "start_time": 54.94,
+          "end_time": 55.34
+        },
+        {
+          "text": " ",
+          "start_time": 55.34,
+          "end_time": 55.38
+        },
+        {
+          "text": "had",
+          "start_time": 55.38,
+          "end_time": 55.5
+        },
+        {
+          "text": " ",
+          "start_time": 55.5,
+          "end_time": 55.56
+        },
+        {
+          "text": "taught",
+          "start_time": 55.56,
+          "end_time": 55.82
+        }
+      ]
+    },
+    {
+      "text": "him that the club is honest. It tells you",
+      "start_time": 55.86,
+      "end_time": 58.32,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "him",
+          "start_time": 55.86,
+          "end_time": 56.02
+        },
+        {
+          "text": " ",
+          "start_time": 56.02,
+          "end_time": 56.04
+        },
+        {
+          "text": "that",
+          "start_time": 56.04,
+          "end_time": 56.22
+        },
+        {
+          "text": " ",
+          "start_time": 56.22,
+          "end_time": 56.28
+        },
+        {
+          "text": "the",
+          "start_time": 56.28,
+          "end_time": 56.36
+        },
+        {
+          "text": " ",
+          "start_time": 56.36,
+          "end_time": 56.42
+        },
+        {
+          "text": "club",
+          "start_time": 56.42,
+          "end_time": 56.68
+        },
+        {
+          "text": " ",
+          "start_time": 56.68,
+          "end_time": 56.72
+        },
+        {
+          "text": "is",
+          "start_time": 56.72,
+          "end_time": 56.82
+        },
+        {
+          "text": " ",
+          "start_time": 56.82,
+          "end_time": 56.86
+        },
+        {
+          "text": "honest.",
+          "start_time": 56.86,
+          "end_time": 57.68
+        },
+        {
+          "text": " ",
+          "start_time": 57.68,
+          "end_time": 57.72
+        },
+        {
+          "text": "It",
+          "start_time": 57.72,
+          "end_time": 57.84
+        },
+        {
+          "text": " ",
+          "start_time": 57.84,
+          "end_time": 57.94
+        },
+        {
+          "text": "tells",
+          "start_time": 57.94,
+          "end_time": 58.18
+        },
+        {
+          "text": " ",
+          "start_time": 58.18,
+          "end_time": 58.22
+        },
+        {
+          "text": "you",
+          "start_time": 58.22,
+          "end_time": 58.32
+        }
+      ]
+    },
+    {
+      "text": "the truth.",
+      "start_time": 58.34,
+      "end_time": 58.94,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "the",
+          "start_time": 58.34,
+          "end_time": 58.48
+        },
+        {
+          "text": " ",
+          "start_time": 58.48,
+          "end_time": 58.52
+        },
+        {
+          "text": "truth.",
+          "start_time": 58.52,
+          "end_time": 58.94
+        }
+      ]
+    },
+    {
+      "text": "So when it lied every third swing, Cal",
+      "start_time": 59.72,
+      "end_time": 62.16,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "So",
+          "start_time": 59.72,
+          "end_time": 59.84
+        },
+        {
+          "text": " ",
+          "start_time": 59.84,
+          "end_time": 59.88
+        },
+        {
+          "text": "when",
+          "start_time": 59.88,
+          "end_time": 60.0
+        },
+        {
+          "text": " ",
+          "start_time": 60.0,
+          "end_time": 60.04
+        },
+        {
+          "text": "it",
+          "start_time": 60.04,
+          "end_time": 60.16
+        },
+        {
+          "text": " ",
+          "start_time": 60.16,
+          "end_time": 60.24
+        },
+        {
+          "text": "lied",
+          "start_time": 60.24,
+          "end_time": 60.62
+        },
+        {
+          "text": " ",
+          "start_time": 60.62,
+          "end_time": 60.68
+        },
+        {
+          "text": "every",
+          "start_time": 60.68,
+          "end_time": 60.96
+        },
+        {
+          "text": " ",
+          "start_time": 60.96,
+          "end_time": 61.02
+        },
+        {
+          "text": "third",
+          "start_time": 61.02,
+          "end_time": 61.3
+        },
+        {
+          "text": " ",
+          "start_time": 61.3,
+          "end_time": 61.42
+        },
+        {
+          "text": "swing,",
+          "start_time": 61.42,
+          "end_time": 61.86
+        },
+        {
+          "text": " ",
+          "start_time": 61.86,
+          "end_time": 61.9
+        },
+        {
+          "text": "Cal",
+          "start_time": 61.9,
+          "end_time": 62.16
+        }
+      ]
+    },
+    {
+      "text": "wondered if the lie was his. A friend",
+      "start_time": 62.3,
+      "end_time": 64.66,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "wondered",
+          "start_time": 62.3,
+          "end_time": 62.66
+        },
+        {
+          "text": " ",
+          "start_time": 62.66,
+          "end_time": 62.74
+        },
+        {
+          "text": "if",
+          "start_time": 62.74,
+          "end_time": 62.85
+        },
+        {
+          "text": " ",
+          "start_time": 62.85,
+          "end_time": 62.88
+        },
+        {
+          "text": "the",
+          "start_time": 62.88,
+          "end_time": 62.98
+        },
+        {
+          "text": " ",
+          "start_time": 62.98,
+          "end_time": 63.02
+        },
+        {
+          "text": "lie",
+          "start_time": 63.02,
+          "end_time": 63.38
+        },
+        {
+          "text": " ",
+          "start_time": 63.38,
+          "end_time": 63.44
+        },
+        {
+          "text": "was",
+          "start_time": 63.44,
+          "end_time": 63.58
+        },
+        {
+          "text": " ",
+          "start_time": 63.58,
+          "end_time": 63.64
+        },
+        {
+          "text": "his.",
+          "start_time": 63.64,
+          "end_time": 64.129
+        },
+        {
+          "text": " ",
+          "start_time": 64.129,
+          "end_time": 64.18
+        },
+        {
+          "text": "A",
+          "start_time": 64.18,
+          "end_time": 64.19
+        },
+        {
+          "text": " ",
+          "start_time": 64.19,
+          "end_time": 64.3
+        },
+        {
+          "text": "friend",
+          "start_time": 64.3,
+          "end_time": 64.66
+        }
+      ]
+    },
+    {
+      "text": "insisted, \"Go see the builder.\" The",
+      "start_time": 64.72,
+      "end_time": 68.98,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "insisted,",
+          "start_time": 64.72,
+          "end_time": 65.34
+        },
+        {
+          "text": " ",
+          "start_time": 65.34,
+          "end_time": 65.349
+        },
+        {
+          "text": "\"Go",
+          "start_time": 65.349,
+          "end_time": 65.62
+        },
+        {
+          "text": " ",
+          "start_time": 65.62,
+          "end_time": 65.66
+        },
+        {
+          "text": "see",
+          "start_time": 65.66,
+          "end_time": 65.84
+        },
+        {
+          "text": " ",
+          "start_time": 65.84,
+          "end_time": 65.88
+        },
+        {
+          "text": "the",
+          "start_time": 65.88,
+          "end_time": 66.02
+        },
+        {
+          "text": " ",
+          "start_time": 66.02,
+          "end_time": 66.06
+        },
+        {
+          "text": "builder.\"",
+          "start_time": 66.06,
+          "end_time": 68.8
+        },
+        {
+          "text": " ",
+          "start_time": 68.8,
+          "end_time": 68.84
+        },
+        {
+          "text": "The",
+          "start_time": 68.84,
+          "end_time": 68.98
+        }
+      ]
+    },
+    {
+      "text": "discovery.",
+      "start_time": 69.04,
+      "end_time": 69.82,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "discovery.",
+          "start_time": 69.04,
+          "end_time": 69.82
+        }
+      ]
+    },
+    {
+      "text": "The workbench was a shrine to small",
+      "start_time": 71.58,
+      "end_time": 73.64,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "The",
+          "start_time": 71.58,
+          "end_time": 71.7
+        },
+        {
+          "text": " ",
+          "start_time": 71.7,
+          "end_time": 71.74
+        },
+        {
+          "text": "workbench",
+          "start_time": 71.74,
+          "end_time": 72.22
+        },
+        {
+          "text": " ",
+          "start_time": 72.22,
+          "end_time": 72.28
+        },
+        {
+          "text": "was",
+          "start_time": 72.28,
+          "end_time": 72.4
+        },
+        {
+          "text": " ",
+          "start_time": 72.4,
+          "end_time": 72.46
+        },
+        {
+          "text": "a",
+          "start_time": 72.46,
+          "end_time": 72.56
+        },
+        {
+          "text": " ",
+          "start_time": 72.56,
+          "end_time": 72.62
+        },
+        {
+          "text": "shrine",
+          "start_time": 72.62,
+          "end_time": 73.14
+        },
+        {
+          "text": " ",
+          "start_time": 73.14,
+          "end_time": 73.16
+        },
+        {
+          "text": "to",
+          "start_time": 73.16,
+          "end_time": 73.22
+        },
+        {
+          "text": " ",
+          "start_time": 73.22,
+          "end_time": 73.32
+        },
+        {
+          "text": "small",
+          "start_time": 73.32,
+          "end_time": 73.64
+        }
+      ]
+    },
+    {
+      "text": "miracles, solvent and ferules, a rack of",
+      "start_time": 73.7,
+      "end_time": 76.24,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "miracles,",
+          "start_time": 73.7,
+          "end_time": 74.46
+        },
+        {
+          "text": " ",
+          "start_time": 74.46,
+          "end_time": 74.54
+        },
+        {
+          "text": "solvent",
+          "start_time": 74.54,
+          "end_time": 74.98
+        },
+        {
+          "text": " ",
+          "start_time": 74.98,
+          "end_time": 75.02
+        },
+        {
+          "text": "and",
+          "start_time": 75.02,
+          "end_time": 75.17
+        },
+        {
+          "text": " ",
+          "start_time": 75.17,
+          "end_time": 75.24
+        },
+        {
+          "text": "ferules,",
+          "start_time": 75.24,
+          "end_time": 75.74
+        },
+        {
+          "text": " ",
+          "start_time": 75.74,
+          "end_time": 75.78
+        },
+        {
+          "text": "a",
+          "start_time": 75.78,
+          "end_time": 75.86
+        },
+        {
+          "text": " ",
+          "start_time": 75.86,
+          "end_time": 75.92
+        },
+        {
+          "text": "rack",
+          "start_time": 75.92,
+          "end_time": 76.14
+        },
+        {
+          "text": " ",
+          "start_time": 76.14,
+          "end_time": 76.16
+        },
+        {
+          "text": "of",
+          "start_time": 76.16,
+          "end_time": 76.24
+        }
+      ]
+    },
+    {
+      "text": "heads winking under fluorescent light, a",
+      "start_time": 76.28,
+      "end_time": 79.1,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "heads",
+          "start_time": 76.28,
+          "end_time": 76.68
+        },
+        {
+          "text": " ",
+          "start_time": 76.68,
+          "end_time": 76.72
+        },
+        {
+          "text": "winking",
+          "start_time": 76.72,
+          "end_time": 77.04
+        },
+        {
+          "text": " ",
+          "start_time": 77.04,
+          "end_time": 77.1
+        },
+        {
+          "text": "under",
+          "start_time": 77.1,
+          "end_time": 77.36
+        },
+        {
+          "text": " ",
+          "start_time": 77.36,
+          "end_time": 77.44
+        },
+        {
+          "text": "fluorescent",
+          "start_time": 77.44,
+          "end_time": 77.94
+        },
+        {
+          "text": " ",
+          "start_time": 77.94,
+          "end_time": 78.039
+        },
+        {
+          "text": "light,",
+          "start_time": 78.04,
+          "end_time": 78.98
+        },
+        {
+          "text": " ",
+          "start_time": 78.98,
+          "end_time": 79.04
+        },
+        {
+          "text": "a",
+          "start_time": 79.04,
+          "end_time": 79.1
+        }
+      ]
+    },
+    {
+      "text": "swing weight scale like a quiet judge. The",
+      "start_time": 79.18,
+      "end_time": 81.98,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "swing",
+          "start_time": 79.18,
+          "end_time": 79.42
+        },
+        {
+          "text": " ",
+          "start_time": 79.42,
+          "end_time": 79.48
+        },
+        {
+          "text": "weight",
+          "start_time": 79.48,
+          "end_time": 79.72
+        },
+        {
+          "text": " ",
+          "start_time": 79.72,
+          "end_time": 79.76
+        },
+        {
+          "text": "scale",
+          "start_time": 79.76,
+          "end_time": 80.16
+        },
+        {
+          "text": " ",
+          "start_time": 80.16,
+          "end_time": 80.2
+        },
+        {
+          "text": "like",
+          "start_time": 80.2,
+          "end_time": 80.36
+        },
+        {
+          "text": " ",
+          "start_time": 80.36,
+          "end_time": 80.44
+        },
+        {
+          "text": "a",
+          "start_time": 80.44,
+          "end_time": 80.46
+        },
+        {
+          "text": " ",
+          "start_time": 80.46,
+          "end_time": 80.56
+        },
+        {
+          "text": "quiet",
+          "start_time": 80.56,
+          "end_time": 80.94
+        },
+        {
+          "text": " ",
+          "start_time": 80.94,
+          "end_time": 81.06
+        },
+        {
+          "text": "judge.",
+          "start_time": 81.06,
+          "end_time": 81.84
+        },
+        {
+          "text": " ",
+          "start_time": 81.84,
+          "end_time": 81.86
+        },
+        {
+          "text": "The",
+          "start_time": 81.86,
+          "end_time": 81.98
+        }
+      ]
+    },
+    {
+      "text": "builder measured Cal's irons and raised",
+      "start_time": 82.02,
+      "end_time": 84.48,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "builder",
+          "start_time": 82.02,
+          "end_time": 82.4
+        },
+        {
+          "text": " ",
+          "start_time": 82.4,
+          "end_time": 82.42
+        },
+        {
+          "text": "measured",
+          "start_time": 82.42,
+          "end_time": 82.82
+        },
+        {
+          "text": " ",
+          "start_time": 82.82,
+          "end_time": 82.9
+        },
+        {
+          "text": "Cal's",
+          "start_time": 82.9,
+          "end_time": 83.32
+        },
+        {
+          "text": " ",
+          "start_time": 83.32,
+          "end_time": 83.52
+        },
+        {
+          "text": "irons",
+          "start_time": 83.52,
+          "end_time": 83.96
+        },
+        {
+          "text": " ",
+          "start_time": 83.96,
+          "end_time": 84.0
+        },
+        {
+          "text": "and",
+          "start_time": 84.0,
+          "end_time": 84.09
+        },
+        {
+          "text": " ",
+          "start_time": 84.09,
+          "end_time": 84.179
+        },
+        {
+          "text": "raised",
+          "start_time": 84.18,
+          "end_time": 84.48
+        }
+      ]
+    },
+    {
+      "text": "an eyebrow. The seven iron sat at D zero,",
+      "start_time": 84.5,
+      "end_time": 88.28,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "an",
+          "start_time": 84.5,
+          "end_time": 84.6
+        },
+        {
+          "text": " ",
+          "start_time": 84.6,
+          "end_time": 84.66
+        },
+        {
+          "text": "eyebrow.",
+          "start_time": 84.66,
+          "end_time": 85.8
+        },
+        {
+          "text": " ",
+          "start_time": 85.8,
+          "end_time": 85.82
+        },
+        {
+          "text": "The",
+          "start_time": 85.82,
+          "end_time": 85.94
+        },
+        {
+          "text": " ",
+          "start_time": 85.94,
+          "end_time": 86.02
+        },
+        {
+          "text": "seven",
+          "start_time": 86.02,
+          "end_time": 86.32
+        },
+        {
+          "text": " ",
+          "start_time": 86.32,
+          "end_time": 86.48
+        },
+        {
+          "text": "iron",
+          "start_time": 86.48,
+          "end_time": 86.76
+        },
+        {
+          "text": " ",
+          "start_time": 86.76,
+          "end_time": 86.88
+        },
+        {
+          "text": "sat",
+          "start_time": 86.88,
+          "end_time": 87.12
+        },
+        {
+          "text": " ",
+          "start_time": 87.12,
+          "end_time": 87.16
+        },
+        {
+          "text": "at",
+          "start_time": 87.16,
+          "end_time": 87.3
+        },
+        {
+          "text": " ",
+          "start_time": 87.3,
+          "end_time": 87.399
+        },
+        {
+          "text": "D",
+          "start_time": 87.4,
+          "end_time": 87.62
+        },
+        {
+          "text": " ",
+          "start_time": 87.62,
+          "end_time": 87.72
+        },
+        {
+          "text": "zero,",
+          "start_time": 87.72,
+          "end_time": 88.28
+        }
+      ]
+    },
+    {
+      "text": "the nine iron at D four, the five iron",
+      "start_time": 88.3,
+      "end_time": 91.9,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "the",
+          "start_time": 88.3,
+          "end_time": 88.42
+        },
+        {
+          "text": " ",
+          "start_time": 88.42,
+          "end_time": 88.5
+        },
+        {
+          "text": "nine",
+          "start_time": 88.5,
+          "end_time": 88.839
+        },
+        {
+          "text": " ",
+          "start_time": 88.84,
+          "end_time": 89.0
+        },
+        {
+          "text": "iron",
+          "start_time": 89.0,
+          "end_time": 89.3
+        },
+        {
+          "text": " ",
+          "start_time": 89.3,
+          "end_time": 89.34
+        },
+        {
+          "text": "at",
+          "start_time": 89.34,
+          "end_time": 89.4
+        },
+        {
+          "text": " ",
+          "start_time": 89.4,
+          "end_time": 89.52
+        },
+        {
+          "text": "D",
+          "start_time": 89.58,
+          "end_time": 89.7
+        },
+        {
+          "text": " ",
+          "start_time": 89.7,
+          "end_time": 89.82
+        },
+        {
+          "text": "four,",
+          "start_time": 89.82,
+          "end_time": 90.42
+        },
+        {
+          "text": " ",
+          "start_time": 90.42,
+          "end_time": 90.48
+        },
+        {
+          "text": "the",
+          "start_time": 90.48,
+          "end_time": 90.62
+        },
+        {
+          "text": " ",
+          "start_time": 90.62,
+          "end_time": 90.66
+        },
+        {
+          "text": "five",
+          "start_time": 90.66,
+          "end_time": 91.08
+        },
+        {
+          "text": " ",
+          "start_time": 91.08,
+          "end_time": 91.2
+        },
+        {
+          "text": "iron",
+          "start_time": 91.2,
+          "end_time": 91.9
+        }
+      ]
+    },
+    {
+      "text": "barely C nine. Not broken, not",
+      "start_time": 91.94,
+      "end_time": 94.94,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "barely",
+          "start_time": 91.94,
+          "end_time": 92.48
+        },
+        {
+          "text": " ",
+          "start_time": 92.48,
+          "end_time": 92.54
+        },
+        {
+          "text": "C",
+          "start_time": 92.54,
+          "end_time": 92.86
+        },
+        {
+          "text": " ",
+          "start_time": 92.86,
+          "end_time": 92.92
+        },
+        {
+          "text": "nine.",
+          "start_time": 92.92,
+          "end_time": 93.82
+        },
+        {
+          "text": " ",
+          "start_time": 93.82,
+          "end_time": 93.86
+        },
+        {
+          "text": "Not",
+          "start_time": 93.86,
+          "end_time": 94.09
+        },
+        {
+          "text": " ",
+          "start_time": 94.09,
+          "end_time": 94.1
+        },
+        {
+          "text": "broken,",
+          "start_time": 94.1,
+          "end_time": 94.68
+        },
+        {
+          "text": " ",
+          "start_time": 94.68,
+          "end_time": 94.72
+        },
+        {
+          "text": "not",
+          "start_time": 94.72,
+          "end_time": 94.94
+        }
+      ]
+    },
+    {
+      "text": "ideal. A set that would ask for three",
+      "start_time": 95.04,
+      "end_time": 98.02,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "ideal.",
+          "start_time": 95.04,
+          "end_time": 96.12
+        },
+        {
+          "text": " ",
+          "start_time": 96.12,
+          "end_time": 96.13
+        },
+        {
+          "text": "A",
+          "start_time": 96.13,
+          "end_time": 96.24
+        },
+        {
+          "text": " ",
+          "start_time": 96.24,
+          "end_time": 96.34
+        },
+        {
+          "text": "set",
+          "start_time": 96.34,
+          "end_time": 96.6
+        },
+        {
+          "text": " ",
+          "start_time": 96.6,
+          "end_time": 96.64
+        },
+        {
+          "text": "that",
+          "start_time": 96.64,
+          "end_time": 96.77
+        },
+        {
+          "text": " ",
+          "start_time": 96.77,
+          "end_time": 96.8
+        },
+        {
+          "text": "would",
+          "start_time": 96.8,
+          "end_time": 96.93
+        },
+        {
+          "text": " ",
+          "start_time": 96.93,
+          "end_time": 97.04
+        },
+        {
+          "text": "ask",
+          "start_time": 97.04,
+          "end_time": 97.3
+        },
+        {
+          "text": " ",
+          "start_time": 97.3,
+          "end_time": 97.34
+        },
+        {
+          "text": "for",
+          "start_time": 97.34,
+          "end_time": 97.56
+        },
+        {
+          "text": " ",
+          "start_time": 97.56,
+          "end_time": 97.6
+        },
+        {
+          "text": "three",
+          "start_time": 97.6,
+          "end_time": 98.02
+        }
+      ]
+    },
+    {
+      "text": "different tempos in three different",
+      "start_time": 98.04,
+      "end_time": 100.12,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "different",
+          "start_time": 98.04,
+          "end_time": 98.56
+        },
+        {
+          "text": " ",
+          "start_time": 98.56,
+          "end_time": 98.62
+        },
+        {
+          "text": "tempos",
+          "start_time": 98.62,
+          "end_time": 99.2
+        },
+        {
+          "text": " ",
+          "start_time": 99.2,
+          "end_time": 99.24
+        },
+        {
+          "text": "in",
+          "start_time": 99.24,
+          "end_time": 99.4
+        },
+        {
+          "text": " ",
+          "start_time": 99.4,
+          "end_time": 99.46
+        },
+        {
+          "text": "three",
+          "start_time": 99.46,
+          "end_time": 99.7
+        },
+        {
+          "text": " ",
+          "start_time": 99.7,
+          "end_time": 99.78
+        },
+        {
+          "text": "different",
+          "start_time": 99.78,
+          "end_time": 100.12
+        }
+      ]
+    },
+    {
+      "text": "places. \"Let's try something,\" the builder",
+      "start_time": 100.14,
+      "end_time": 103.62,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "places.",
+          "start_time": 100.14,
+          "end_time": 101.9
+        },
+        {
+          "text": " ",
+          "start_time": 101.9,
+          "end_time": 101.91
+        },
+        {
+          "text": "\"Let's",
+          "start_time": 101.91,
+          "end_time": 102.2
+        },
+        {
+          "text": " ",
+          "start_time": 102.2,
+          "end_time": 102.26
+        },
+        {
+          "text": "try",
+          "start_time": 102.26,
+          "end_time": 102.6
+        },
+        {
+          "text": " ",
+          "start_time": 102.6,
+          "end_time": 102.66
+        },
+        {
+          "text": "something,\"",
+          "start_time": 102.66,
+          "end_time": 103.06
+        },
+        {
+          "text": " ",
+          "start_time": 103.06,
+          "end_time": 103.1
+        },
+        {
+          "text": "the",
+          "start_time": 103.1,
+          "end_time": 103.2
+        },
+        {
+          "text": " ",
+          "start_time": 103.2,
+          "end_time": 103.24
+        },
+        {
+          "text": "builder",
+          "start_time": 103.24,
+          "end_time": 103.62
+        }
+      ]
+    },
+    {
+      "text": "said, soft as a confession. He added two",
+      "start_time": 103.68,
+      "end_time": 107.02,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "said,",
+          "start_time": 103.68,
+          "end_time": 104.38
+        },
+        {
+          "text": " ",
+          "start_time": 104.38,
+          "end_time": 104.5
+        },
+        {
+          "text": "soft",
+          "start_time": 104.5,
+          "end_time": 104.86
+        },
+        {
+          "text": " ",
+          "start_time": 104.86,
+          "end_time": 104.88
+        },
+        {
+          "text": "as",
+          "start_time": 104.88,
+          "end_time": 105.0
+        },
+        {
+          "text": " ",
+          "start_time": 105.0,
+          "end_time": 105.06
+        },
+        {
+          "text": "a",
+          "start_time": 105.06,
+          "end_time": 105.12
+        },
+        {
+          "text": " ",
+          "start_time": 105.12,
+          "end_time": 105.2
+        },
+        {
+          "text": "confession.",
+          "start_time": 105.2,
+          "end_time": 106.3
+        },
+        {
+          "text": " ",
+          "start_time": 106.3,
+          "end_time": 106.36
+        },
+        {
+          "text": "He",
+          "start_time": 106.36,
+          "end_time": 106.46
+        },
+        {
+          "text": " ",
+          "start_time": 106.46,
+          "end_time": 106.52
+        },
+        {
+          "text": "added",
+          "start_time": 106.52,
+          "end_time": 106.8
+        },
+        {
+          "text": " ",
+          "start_time": 106.8,
+          "end_time": 106.86
+        },
+        {
+          "text": "two",
+          "start_time": 106.86,
+          "end_time": 107.02
+        }
+      ]
+    },
+    {
+      "text": "tiny squares of weight, four grams total,",
+      "start_time": 107.14,
+      "end_time": 110.05,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "tiny",
+          "start_time": 107.14,
+          "end_time": 107.48
+        },
+        {
+          "text": " ",
+          "start_time": 107.48,
+          "end_time": 107.62
+        },
+        {
+          "text": "squares",
+          "start_time": 107.62,
+          "end_time": 108.0
+        },
+        {
+          "text": " ",
+          "start_time": 108.0,
+          "end_time": 108.04
+        },
+        {
+          "text": "of",
+          "start_time": 108.04,
+          "end_time": 108.12
+        },
+        {
+          "text": " ",
+          "start_time": 108.12,
+          "end_time": 108.18
+        },
+        {
+          "text": "weight,",
+          "start_time": 108.18,
+          "end_time": 108.62
+        },
+        {
+          "text": " ",
+          "start_time": 108.62,
+          "end_time": 108.68
+        },
+        {
+          "text": "four",
+          "start_time": 108.68,
+          "end_time": 108.96
+        },
+        {
+          "text": " ",
+          "start_time": 108.96,
+          "end_time": 109.0
+        },
+        {
+          "text": "grams",
+          "start_time": 109.0,
+          "end_time": 109.4
+        },
+        {
+          "text": " ",
+          "start_time": 109.4,
+          "end_time": 109.52
+        },
+        {
+          "text": "total,",
+          "start_time": 109.52,
+          "end_time": 110.05
+        }
+      ]
+    },
+    {
+      "text": "to the back of the seven iron. A little",
+      "start_time": 110.06,
+      "end_time": 112.86,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "to",
+          "start_time": 110.06,
+          "end_time": 110.2
+        },
+        {
+          "text": " ",
+          "start_time": 110.2,
+          "end_time": 110.21
+        },
+        {
+          "text": "the",
+          "start_time": 110.21,
+          "end_time": 110.38
+        },
+        {
+          "text": " ",
+          "start_time": 110.38,
+          "end_time": 110.399
+        },
+        {
+          "text": "back",
+          "start_time": 110.4,
+          "end_time": 110.64
+        },
+        {
+          "text": " ",
+          "start_time": 110.64,
+          "end_time": 110.68
+        },
+        {
+          "text": "of",
+          "start_time": 110.68,
+          "end_time": 110.76
+        },
+        {
+          "text": " ",
+          "start_time": 110.76,
+          "end_time": 110.8
+        },
+        {
+          "text": "the",
+          "start_time": 110.8,
+          "end_time": 110.9
+        },
+        {
+          "text": " ",
+          "start_time": 110.9,
+          "end_time": 110.96
+        },
+        {
+          "text": "seven",
+          "start_time": 110.96,
+          "end_time": 111.26
+        },
+        {
+          "text": " ",
+          "start_time": 111.26,
+          "end_time": 111.4
+        },
+        {
+          "text": "iron.",
+          "start_time": 111.4,
+          "end_time": 112.4
+        },
+        {
+          "text": " ",
+          "start_time": 112.4,
+          "end_time": 112.48
+        },
+        {
+          "text": "A",
+          "start_time": 112.48,
+          "end_time": 112.52
+        },
+        {
+          "text": " ",
+          "start_time": 112.52,
+          "end_time": 112.56
+        },
+        {
+          "text": "little",
+          "start_time": 112.56,
+          "end_time": 112.86
+        }
+      ]
+    },
+    {
+      "text": "rule of thumb, round plus two grams at the",
+      "start_time": 112.9,
+      "end_time": 115.4,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "rule",
+          "start_time": 112.9,
+          "end_time": 113.14
+        },
+        {
+          "text": " ",
+          "start_time": 113.14,
+          "end_time": 113.18
+        },
+        {
+          "text": "of",
+          "start_time": 113.18,
+          "end_time": 113.22
+        },
+        {
+          "text": " ",
+          "start_time": 113.22,
+          "end_time": 113.34
+        },
+        {
+          "text": "thumb,",
+          "start_time": 113.34,
+          "end_time": 113.72
+        },
+        {
+          "text": " ",
+          "start_time": 113.72,
+          "end_time": 113.76
+        },
+        {
+          "text": "round",
+          "start_time": 113.76,
+          "end_time": 114.0
+        },
+        {
+          "text": " ",
+          "start_time": 114.0,
+          "end_time": 114.04
+        },
+        {
+          "text": "plus",
+          "start_time": 114.04,
+          "end_time": 114.38
+        },
+        {
+          "text": " ",
+          "start_time": 114.38,
+          "end_time": 114.44
+        },
+        {
+          "text": "two",
+          "start_time": 114.44,
+          "end_time": 114.7
+        },
+        {
+          "text": " ",
+          "start_time": 114.7,
+          "end_time": 114.74
+        },
+        {
+          "text": "grams",
+          "start_time": 114.74,
+          "end_time": 115.14
+        },
+        {
+          "text": " ",
+          "start_time": 115.14,
+          "end_time": 115.18
+        },
+        {
+          "text": "at",
+          "start_time": 115.18,
+          "end_time": 115.29
+        },
+        {
+          "text": " ",
+          "start_time": 115.29,
+          "end_time": 115.32
+        },
+        {
+          "text": "the",
+          "start_time": 115.32,
+          "end_time": 115.4
+        }
+      ]
+    },
+    {
+      "text": "head, approximately plus one swing weight",
+      "start_time": 115.48,
+      "end_time": 118.86,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "head,",
+          "start_time": 115.48,
+          "end_time": 115.78
+        },
+        {
+          "text": " ",
+          "start_time": 115.78,
+          "end_time": 115.82
+        },
+        {
+          "text": "approximately",
+          "start_time": 115.82,
+          "end_time": 117.22
+        },
+        {
+          "text": " ",
+          "start_time": 117.22,
+          "end_time": 117.26
+        },
+        {
+          "text": "plus",
+          "start_time": 117.26,
+          "end_time": 117.73
+        },
+        {
+          "text": " ",
+          "start_time": 117.73,
+          "end_time": 117.84
+        },
+        {
+          "text": "one",
+          "start_time": 117.84,
+          "end_time": 118.0
+        },
+        {
+          "text": " ",
+          "start_time": 118.0,
+          "end_time": 118.2
+        },
+        {
+          "text": "swing",
+          "start_time": 118.2,
+          "end_time": 118.56
+        },
+        {
+          "text": " ",
+          "start_time": 118.56,
+          "end_time": 118.6
+        },
+        {
+          "text": "weight",
+          "start_time": 118.6,
+          "end_time": 118.86
+        }
+      ]
+    },
+    {
+      "text": "point. The scales settled at D2.",
+      "start_time": 118.9,
+      "end_time": 121.81,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "point.",
+          "start_time": 118.9,
+          "end_time": 119.74
+        },
+        {
+          "text": " ",
+          "start_time": 119.74,
+          "end_time": 119.75
+        },
+        {
+          "text": "The",
+          "start_time": 119.75,
+          "end_time": 119.86
+        },
+        {
+          "text": " ",
+          "start_time": 119.92,
+          "end_time": 120.0
+        },
+        {
+          "text": "scales",
+          "start_time": 120.0,
+          "end_time": 120.4
+        },
+        {
+          "text": " ",
+          "start_time": 120.4,
+          "end_time": 120.42
+        },
+        {
+          "text": "settled",
+          "start_time": 120.42,
+          "end_time": 120.84
+        },
+        {
+          "text": " ",
+          "start_time": 120.84,
+          "end_time": 120.88
+        },
+        {
+          "text": "at",
+          "start_time": 120.88,
+          "end_time": 121.1
+        },
+        {
+          "text": " ",
+          "start_time": 121.1,
+          "end_time": 121.14
+        },
+        {
+          "text": "D2.",
+          "start_time": 121.14,
+          "end_time": 121.81
+        }
+      ]
+    },
+    {
+      "text": "Swing this. Cal did, and the sound",
+      "start_time": 123.14,
+      "end_time": 126.38,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "Swing",
+          "start_time": 123.14,
+          "end_time": 123.5
+        },
+        {
+          "text": " ",
+          "start_time": 123.5,
+          "end_time": 123.62
+        },
+        {
+          "text": "this.",
+          "start_time": 123.62,
+          "end_time": 125.1
+        },
+        {
+          "text": " ",
+          "start_time": 125.1,
+          "end_time": 125.16
+        },
+        {
+          "text": "Cal",
+          "start_time": 125.16,
+          "end_time": 125.42
+        },
+        {
+          "text": " ",
+          "start_time": 125.42,
+          "end_time": 125.52
+        },
+        {
+          "text": "did,",
+          "start_time": 125.52,
+          "end_time": 125.76
+        },
+        {
+          "text": " ",
+          "start_time": 125.76,
+          "end_time": 125.78
+        },
+        {
+          "text": "and",
+          "start_time": 125.78,
+          "end_time": 125.87
+        },
+        {
+          "text": " ",
+          "start_time": 125.87,
+          "end_time": 125.9
+        },
+        {
+          "text": "the",
+          "start_time": 125.9,
+          "end_time": 125.98
+        },
+        {
+          "text": " ",
+          "start_time": 125.98,
+          "end_time": 126.04
+        },
+        {
+          "text": "sound",
+          "start_time": 126.04,
+          "end_time": 126.38
+        }
+      ]
+    },
+    {
+      "text": "changed. Thunk, not clink. The ball",
+      "start_time": 126.44,
+      "end_time": 129.82,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "changed.",
+          "start_time": 126.44,
+          "end_time": 127.46
+        },
+        {
+          "text": " ",
+          "start_time": 127.46,
+          "end_time": 127.48
+        },
+        {
+          "text": "Thunk,",
+          "start_time": 127.48,
+          "end_time": 128.12
+        },
+        {
+          "text": " ",
+          "start_time": 128.12,
+          "end_time": 128.16
+        },
+        {
+          "text": "not",
+          "start_time": 128.16,
+          "end_time": 128.4
+        },
+        {
+          "text": " ",
+          "start_time": 128.4,
+          "end_time": 128.44
+        },
+        {
+          "text": "clink.",
+          "start_time": 128.44,
+          "end_time": 129.32
+        },
+        {
+          "text": " ",
+          "start_time": 129.32,
+          "end_time": 129.359
+        },
+        {
+          "text": "The",
+          "start_time": 129.36,
+          "end_time": 129.46
+        },
+        {
+          "text": " ",
+          "start_time": 129.46,
+          "end_time": 129.479
+        },
+        {
+          "text": "ball",
+          "start_time": 129.479,
+          "end_time": 129.82
+        }
+      ]
+    },
+    {
+      "text": "climbed and held a truer line. It wasn't",
+      "start_time": 129.88,
+      "end_time": 132.6,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "climbed",
+          "start_time": 129.88,
+          "end_time": 130.41
+        },
+        {
+          "text": " ",
+          "start_time": 130.41,
+          "end_time": 130.44
+        },
+        {
+          "text": "and",
+          "start_time": 130.44,
+          "end_time": 130.57
+        },
+        {
+          "text": " ",
+          "start_time": 130.57,
+          "end_time": 130.62
+        },
+        {
+          "text": "held",
+          "start_time": 130.62,
+          "end_time": 130.919
+        },
+        {
+          "text": " ",
+          "start_time": 130.919,
+          "end_time": 130.979
+        },
+        {
+          "text": "a",
+          "start_time": 130.979,
+          "end_time": 131.06
+        },
+        {
+          "text": " ",
+          "start_time": 131.06,
+          "end_time": 131.12
+        },
+        {
+          "text": "truer",
+          "start_time": 131.12,
+          "end_time": 131.56
+        },
+        {
+          "text": " ",
+          "start_time": 131.56,
+          "end_time": 131.58
+        },
+        {
+          "text": "line.",
+          "start_time": 131.58,
+          "end_time": 132.12
+        },
+        {
+          "text": " ",
+          "start_time": 132.12,
+          "end_time": 132.18
+        },
+        {
+          "text": "It",
+          "start_time": 132.18,
+          "end_time": 132.26
+        },
+        {
+          "text": " ",
+          "start_time": 132.26,
+          "end_time": 132.299
+        },
+        {
+          "text": "wasn't",
+          "start_time": 132.3,
+          "end_time": 132.6
+        }
+      ]
+    },
+    {
+      "text": "farther, it was cleaner. The second swing",
+      "start_time": 132.66,
+      "end_time": 135.64,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "farther,",
+          "start_time": 132.66,
+          "end_time": 133.06
+        },
+        {
+          "text": " ",
+          "start_time": 133.06,
+          "end_time": 133.12
+        },
+        {
+          "text": "it",
+          "start_time": 133.12,
+          "end_time": 133.2
+        },
+        {
+          "text": " ",
+          "start_time": 133.2,
+          "end_time": 133.239
+        },
+        {
+          "text": "was",
+          "start_time": 133.24,
+          "end_time": 133.41
+        },
+        {
+          "text": " ",
+          "start_time": 133.41,
+          "end_time": 133.46
+        },
+        {
+          "text": "cleaner.",
+          "start_time": 133.46,
+          "end_time": 134.7
+        },
+        {
+          "text": " ",
+          "start_time": 134.7,
+          "end_time": 134.709
+        },
+        {
+          "text": "The",
+          "start_time": 134.709,
+          "end_time": 134.84
+        },
+        {
+          "text": " ",
+          "start_time": 134.84,
+          "end_time": 134.92
+        },
+        {
+          "text": "second",
+          "start_time": 134.92,
+          "end_time": 135.26
+        },
+        {
+          "text": " ",
+          "start_time": 135.26,
+          "end_time": 135.34
+        },
+        {
+          "text": "swing",
+          "start_time": 135.34,
+          "end_time": 135.64
+        }
+      ]
+    },
+    {
+      "text": "started slightly on the toe and still flew",
+      "start_time": 135.74,
+      "end_time": 138.36,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "started",
+          "start_time": 135.74,
+          "end_time": 136.1
+        },
+        {
+          "text": " ",
+          "start_time": 136.1,
+          "end_time": 136.16
+        },
+        {
+          "text": "slightly",
+          "start_time": 136.16,
+          "end_time": 136.54
+        },
+        {
+          "text": " ",
+          "start_time": 136.54,
+          "end_time": 136.6
+        },
+        {
+          "text": "on",
+          "start_time": 136.6,
+          "end_time": 136.71
+        },
+        {
+          "text": " ",
+          "start_time": 136.71,
+          "end_time": 136.74
+        },
+        {
+          "text": "the",
+          "start_time": 136.74,
+          "end_time": 136.84
+        },
+        {
+          "text": " ",
+          "start_time": 136.84,
+          "end_time": 136.9
+        },
+        {
+          "text": "toe",
+          "start_time": 136.9,
+          "end_time": 137.22
+        },
+        {
+          "text": " ",
+          "start_time": 137.22,
+          "end_time": 137.28
+        },
+        {
+          "text": "and",
+          "start_time": 137.28,
+          "end_time": 137.489
+        },
+        {
+          "text": " ",
+          "start_time": 137.489,
+          "end_time": 137.579
+        },
+        {
+          "text": "still",
+          "start_time": 137.58,
+          "end_time": 137.9
+        },
+        {
+          "text": " ",
+          "start_time": 137.9,
+          "end_time": 137.96
+        },
+        {
+          "text": "flew",
+          "start_time": 137.96,
+          "end_time": 138.36
+        }
+      ]
+    },
+    {
+      "text": "useful. His left eyebrow lifted without",
+      "start_time": 138.4,
+      "end_time": 141.41,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "useful.",
+          "start_time": 138.4,
+          "end_time": 139.269
+        },
+        {
+          "text": " ",
+          "start_time": 139.269,
+          "end_time": 139.299
+        },
+        {
+          "text": "His",
+          "start_time": 139.3,
+          "end_time": 139.48
+        },
+        {
+          "text": " ",
+          "start_time": 139.48,
+          "end_time": 139.54
+        },
+        {
+          "text": "left",
+          "start_time": 139.54,
+          "end_time": 139.76
+        },
+        {
+          "text": " ",
+          "start_time": 139.76,
+          "end_time": 139.88
+        },
+        {
+          "text": "eyebrow",
+          "start_time": 139.88,
+          "end_time": 140.38
+        },
+        {
+          "text": " ",
+          "start_time": 140.42,
+          "end_time": 140.43
+        },
+        {
+          "text": "lifted",
+          "start_time": 140.43,
+          "end_time": 140.92
+        },
+        {
+          "text": " ",
+          "start_time": 140.92,
+          "end_time": 140.96
+        },
+        {
+          "text": "without",
+          "start_time": 140.96,
+          "end_time": 141.41
+        }
+      ]
+    },
+    {
+      "text": "permission. \"What did you do?\" \"Gave your",
+      "start_time": 141.41,
+      "end_time": 145.769,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "permission.",
+          "start_time": 141.41,
+          "end_time": 143.32
+        },
+        {
+          "text": " ",
+          "start_time": 143.32,
+          "end_time": 143.329
+        },
+        {
+          "text": "\"What",
+          "start_time": 143.329,
+          "end_time": 143.58
+        },
+        {
+          "text": " ",
+          "start_time": 143.58,
+          "end_time": 143.62
+        },
+        {
+          "text": "did",
+          "start_time": 143.62,
+          "end_time": 143.82
+        },
+        {
+          "text": " ",
+          "start_time": 143.82,
+          "end_time": 143.88
+        },
+        {
+          "text": "you",
+          "start_time": 143.88,
+          "end_time": 144.06
+        },
+        {
+          "text": " ",
+          "start_time": 144.06,
+          "end_time": 144.1
+        },
+        {
+          "text": "do?\"",
+          "start_time": 144.1,
+          "end_time": 145.29
+        },
+        {
+          "text": " ",
+          "start_time": 145.29,
+          "end_time": 145.29
+        },
+        {
+          "text": "\"Gave",
+          "start_time": 145.29,
+          "end_time": 145.56
+        },
+        {
+          "text": " ",
+          "start_time": 145.56,
+          "end_time": 145.62
+        },
+        {
+          "text": "your",
+          "start_time": 145.62,
+          "end_time": 145.769
+        }
+      ]
+    },
+    {
+      "text": "hands something to follow,\" the builder",
+      "start_time": 145.769,
+      "end_time": 147.66,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "hands",
+          "start_time": 145.769,
+          "end_time": 146.14
+        },
+        {
+          "text": " ",
+          "start_time": 146.14,
+          "end_time": 146.2
+        },
+        {
+          "text": "something",
+          "start_time": 146.2,
+          "end_time": 146.489
+        },
+        {
+          "text": " ",
+          "start_time": 146.489,
+          "end_time": 146.54
+        },
+        {
+          "text": "to",
+          "start_time": 146.54,
+          "end_time": 146.68
+        },
+        {
+          "text": " ",
+          "start_time": 146.68,
+          "end_time": 146.72
+        },
+        {
+          "text": "follow,\"",
+          "start_time": 146.72,
+          "end_time": 147.15
+        },
+        {
+          "text": " ",
+          "start_time": 147.15,
+          "end_time": 147.16
+        },
+        {
+          "text": "the",
+          "start_time": 147.16,
+          "end_time": 147.26
+        },
+        {
+          "text": " ",
+          "start_time": 147.26,
+          "end_time": 147.28
+        },
+        {
+          "text": "builder",
+          "start_time": 147.28,
+          "end_time": 147.66
+        }
+      ]
+    },
+    {
+      "text": "said. \"Right now your long irons feel too",
+      "start_time": 147.7,
+      "end_time": 150.72,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "said.",
+          "start_time": 147.7,
+          "end_time": 147.94
+        },
+        {
+          "text": " ",
+          "start_time": 147.94,
+          "end_time": 147.96
+        },
+        {
+          "text": "\"Right",
+          "start_time": 147.96,
+          "end_time": 148.24
+        },
+        {
+          "text": " ",
+          "start_time": 148.24,
+          "end_time": 148.3
+        },
+        {
+          "text": "now",
+          "start_time": 148.3,
+          "end_time": 148.58
+        },
+        {
+          "text": " ",
+          "start_time": 148.58,
+          "end_time": 148.64
+        },
+        {
+          "text": "your",
+          "start_time": 148.64,
+          "end_time": 148.82
+        },
+        {
+          "text": " ",
+          "start_time": 148.82,
+          "end_time": 148.88
+        },
+        {
+          "text": "long",
+          "start_time": 148.88,
+          "end_time": 149.22
+        },
+        {
+          "text": " ",
+          "start_time": 149.22,
+          "end_time": 149.54
+        },
+        {
+          "text": "irons",
+          "start_time": 149.54,
+          "end_time": 150.09
+        },
+        {
+          "text": " ",
+          "start_time": 150.09,
+          "end_time": 150.12
+        },
+        {
+          "text": "feel",
+          "start_time": 150.12,
+          "end_time": 150.38
+        },
+        {
+          "text": " ",
+          "start_time": 150.44,
+          "end_time": 150.45
+        },
+        {
+          "text": "too",
+          "start_time": 150.45,
+          "end_time": 150.72
+        }
+      ]
+    },
+    {
+      "text": "light. They run ahead of your body and",
+      "start_time": 150.78,
+      "end_time": 153.04,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "light.",
+          "start_time": 150.78,
+          "end_time": 151.4
+        },
+        {
+          "text": " ",
+          "start_time": 151.4,
+          "end_time": 151.41
+        },
+        {
+          "text": "They",
+          "start_time": 151.41,
+          "end_time": 151.62
+        },
+        {
+          "text": " ",
+          "start_time": 151.62,
+          "end_time": 151.68
+        },
+        {
+          "text": "run",
+          "start_time": 151.68,
+          "end_time": 151.82
+        },
+        {
+          "text": " ",
+          "start_time": 151.82,
+          "end_time": 151.88
+        },
+        {
+          "text": "ahead",
+          "start_time": 151.88,
+          "end_time": 152.12
+        },
+        {
+          "text": " ",
+          "start_time": 152.12,
+          "end_time": 152.16
+        },
+        {
+          "text": "of",
+          "start_time": 152.16,
+          "end_time": 152.22
+        },
+        {
+          "text": " ",
+          "start_time": 152.22,
+          "end_time": 152.28
+        },
+        {
+          "text": "your",
+          "start_time": 152.28,
+          "end_time": 152.46
+        },
+        {
+          "text": " ",
+          "start_time": 152.46,
+          "end_time": 152.48
+        },
+        {
+          "text": "body",
+          "start_time": 152.48,
+          "end_time": 152.88
+        },
+        {
+          "text": " ",
+          "start_time": 152.88,
+          "end_time": 152.96
+        },
+        {
+          "text": "and",
+          "start_time": 152.96,
+          "end_time": 153.04
+        }
+      ]
+    },
+    {
+      "text": "you're chasing them with your hands. The",
+      "start_time": 153.08,
+      "end_time": 154.72,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "you're",
+          "start_time": 153.08,
+          "end_time": 153.2
+        },
+        {
+          "text": " ",
+          "start_time": 153.2,
+          "end_time": 153.24
+        },
+        {
+          "text": "chasing",
+          "start_time": 153.24,
+          "end_time": 153.58
+        },
+        {
+          "text": " ",
+          "start_time": 153.58,
+          "end_time": 153.6
+        },
+        {
+          "text": "them",
+          "start_time": 153.6,
+          "end_time": 153.75
+        },
+        {
+          "text": " ",
+          "start_time": 153.75,
+          "end_time": 153.8
+        },
+        {
+          "text": "with",
+          "start_time": 153.8,
+          "end_time": 153.94
+        },
+        {
+          "text": " ",
+          "start_time": 153.94,
+          "end_time": 153.98
+        },
+        {
+          "text": "your",
+          "start_time": 153.98,
+          "end_time": 154.1
+        },
+        {
+          "text": " ",
+          "start_time": 154.1,
+          "end_time": 154.16
+        },
+        {
+          "text": "hands.",
+          "start_time": 154.16,
+          "end_time": 154.57
+        },
+        {
+          "text": " ",
+          "start_time": 154.57,
+          "end_time": 154.6
+        },
+        {
+          "text": "The",
+          "start_time": 154.6,
+          "end_time": 154.72
+        }
+      ]
+    },
+    {
+      "text": "short irons feel too heavy. You steer",
+      "start_time": 154.76,
+      "end_time": 157.3,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "short",
+          "start_time": 154.76,
+          "end_time": 155.02
+        },
+        {
+          "text": " ",
+          "start_time": 155.02,
+          "end_time": 155.16
+        },
+        {
+          "text": "irons",
+          "start_time": 155.16,
+          "end_time": 155.54
+        },
+        {
+          "text": " ",
+          "start_time": 155.54,
+          "end_time": 155.579
+        },
+        {
+          "text": "feel",
+          "start_time": 155.58,
+          "end_time": 155.86
+        },
+        {
+          "text": " ",
+          "start_time": 155.86,
+          "end_time": 155.92
+        },
+        {
+          "text": "too",
+          "start_time": 155.92,
+          "end_time": 156.12
+        },
+        {
+          "text": " ",
+          "start_time": 156.12,
+          "end_time": 156.16
+        },
+        {
+          "text": "heavy.",
+          "start_time": 156.16,
+          "end_time": 156.64
+        },
+        {
+          "text": " ",
+          "start_time": 156.64,
+          "end_time": 156.68
+        },
+        {
+          "text": "You",
+          "start_time": 156.68,
+          "end_time": 156.82
+        },
+        {
+          "text": " ",
+          "start_time": 156.82,
+          "end_time": 156.959
+        },
+        {
+          "text": "steer",
+          "start_time": 156.96,
+          "end_time": 157.3
+        }
+      ]
+    },
+    {
+      "text": "them. We'll meet you in the middle.\"",
+      "start_time": 157.36,
+      "end_time": 159.9,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "them.",
+          "start_time": 157.36,
+          "end_time": 157.81
+        },
+        {
+          "text": " ",
+          "start_time": 157.81,
+          "end_time": 157.84
+        },
+        {
+          "text": "We'll",
+          "start_time": 157.84,
+          "end_time": 158.049
+        },
+        {
+          "text": " ",
+          "start_time": 158.049,
+          "end_time": 158.1
+        },
+        {
+          "text": "meet",
+          "start_time": 158.1,
+          "end_time": 158.35
+        },
+        {
+          "text": " ",
+          "start_time": 158.35,
+          "end_time": 158.4
+        },
+        {
+          "text": "you",
+          "start_time": 158.4,
+          "end_time": 158.52
+        },
+        {
+          "text": " ",
+          "start_time": 158.52,
+          "end_time": 158.58
+        },
+        {
+          "text": "in",
+          "start_time": 158.58,
+          "end_time": 158.66
+        },
+        {
+          "text": " ",
+          "start_time": 158.66,
+          "end_time": 158.68
+        },
+        {
+          "text": "the",
+          "start_time": 158.68,
+          "end_time": 158.78
+        },
+        {
+          "text": " ",
+          "start_time": 158.78,
+          "end_time": 158.84
+        },
+        {
+          "text": "middle.\"",
+          "start_time": 158.84,
+          "end_time": 159.9
+        }
+      ]
+    },
+    {
+      "text": "Understanding swing weight. Swing weight",
+      "start_time": 161.2,
+      "end_time": 164.82,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "Understanding",
+          "start_time": 161.2,
+          "end_time": 161.9
+        },
+        {
+          "text": " ",
+          "start_time": 161.9,
+          "end_time": 162.02
+        },
+        {
+          "text": "swing",
+          "start_time": 162.02,
+          "end_time": 162.3
+        },
+        {
+          "text": " ",
+          "start_time": 162.3,
+          "end_time": 162.38
+        },
+        {
+          "text": "weight.",
+          "start_time": 162.38,
+          "end_time": 164.26
+        },
+        {
+          "text": " ",
+          "start_time": 164.26,
+          "end_time": 164.34
+        },
+        {
+          "text": "Swing",
+          "start_time": 164.34,
+          "end_time": 164.56
+        },
+        {
+          "text": " ",
+          "start_time": 164.56,
+          "end_time": 164.64
+        },
+        {
+          "text": "weight",
+          "start_time": 164.64,
+          "end_time": 164.82
+        }
+      ]
+    },
+    {
+      "text": "is not total weight. It's how heavy the",
+      "start_time": 164.86,
+      "end_time": 167.32,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "is",
+          "start_time": 164.86,
+          "end_time": 164.98
+        },
+        {
+          "text": " ",
+          "start_time": 164.98,
+          "end_time": 165.019
+        },
+        {
+          "text": "not",
+          "start_time": 165.02,
+          "end_time": 165.29
+        },
+        {
+          "text": " ",
+          "start_time": 165.29,
+          "end_time": 165.32
+        },
+        {
+          "text": "total",
+          "start_time": 165.32,
+          "end_time": 165.6
+        },
+        {
+          "text": " ",
+          "start_time": 165.6,
+          "end_time": 165.7
+        },
+        {
+          "text": "weight.",
+          "start_time": 165.7,
+          "end_time": 166.58
+        },
+        {
+          "text": " ",
+          "start_time": 166.58,
+          "end_time": 166.6
+        },
+        {
+          "text": "It's",
+          "start_time": 166.6,
+          "end_time": 166.64
+        },
+        {
+          "text": " ",
+          "start_time": 166.64,
+          "end_time": 166.66
+        },
+        {
+          "text": "how",
+          "start_time": 166.66,
+          "end_time": 166.89
+        },
+        {
+          "text": " ",
+          "start_time": 166.89,
+          "end_time": 166.92
+        },
+        {
+          "text": "heavy",
+          "start_time": 166.92,
+          "end_time": 167.18
+        },
+        {
+          "text": " ",
+          "start_time": 167.18,
+          "end_time": 167.22
+        },
+        {
+          "text": "the",
+          "start_time": 167.22,
+          "end_time": 167.32
+        }
+      ]
+    },
+    {
+      "text": "club feels while swinging. The balance of",
+      "start_time": 167.36,
+      "end_time": 169.54,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "club",
+          "start_time": 167.36,
+          "end_time": 167.68
+        },
+        {
+          "text": " ",
+          "start_time": 167.68,
+          "end_time": 167.72
+        },
+        {
+          "text": "feels",
+          "start_time": 167.72,
+          "end_time": 168.12
+        },
+        {
+          "text": " ",
+          "start_time": 168.12,
+          "end_time": 168.16
+        },
+        {
+          "text": "while",
+          "start_time": 168.16,
+          "end_time": 168.38
+        },
+        {
+          "text": " ",
+          "start_time": 168.38,
+          "end_time": 168.42
+        },
+        {
+          "text": "swinging.",
+          "start_time": 168.42,
+          "end_time": 168.89
+        },
+        {
+          "text": " ",
+          "start_time": 168.89,
+          "end_time": 168.92
+        },
+        {
+          "text": "The",
+          "start_time": 168.92,
+          "end_time": 169.02
+        },
+        {
+          "text": " ",
+          "start_time": 169.02,
+          "end_time": 169.06
+        },
+        {
+          "text": "balance",
+          "start_time": 169.06,
+          "end_time": 169.42
+        },
+        {
+          "text": " ",
+          "start_time": 169.42,
+          "end_time": 169.46
+        },
+        {
+          "text": "of",
+          "start_time": 169.46,
+          "end_time": 169.54
+        }
+      ]
+    },
+    {
+      "text": "head versus handle measured on a 14-inch",
+      "start_time": 169.58,
+      "end_time": 172.44,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "head",
+          "start_time": 169.58,
+          "end_time": 169.86
+        },
+        {
+          "text": " ",
+          "start_time": 169.86,
+          "end_time": 170.04
+        },
+        {
+          "text": "versus",
+          "start_time": 170.1,
+          "end_time": 170.42
+        },
+        {
+          "text": " ",
+          "start_time": 170.42,
+          "end_time": 170.46
+        },
+        {
+          "text": "handle",
+          "start_time": 170.46,
+          "end_time": 170.92
+        },
+        {
+          "text": " ",
+          "start_time": 170.92,
+          "end_time": 171.1
+        },
+        {
+          "text": "measured",
+          "start_time": 171.1,
+          "end_time": 171.46
+        },
+        {
+          "text": " ",
+          "start_time": 171.46,
+          "end_time": 171.52
+        },
+        {
+          "text": "on",
+          "start_time": 171.52,
+          "end_time": 171.64
+        },
+        {
+          "text": " ",
+          "start_time": 171.64,
+          "end_time": 171.66
+        },
+        {
+          "text": "a",
+          "start_time": 171.66,
+          "end_time": 171.78
+        },
+        {
+          "text": " ",
+          "start_time": 171.78,
+          "end_time": 171.8
+        },
+        {
+          "text": "14-inch",
+          "start_time": 171.8,
+          "end_time": 172.44
+        }
+      ]
+    },
+    {
+      "text": "fulcrum swing weight scale.",
+      "start_time": 172.56,
+      "end_time": 174.62,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "fulcrum",
+          "start_time": 172.56,
+          "end_time": 173.0
+        },
+        {
+          "text": " ",
+          "start_time": 173.0,
+          "end_time": 173.5
+        },
+        {
+          "text": "swing",
+          "start_time": 173.5,
+          "end_time": 173.76
+        },
+        {
+          "text": " ",
+          "start_time": 173.76,
+          "end_time": 173.82
+        },
+        {
+          "text": "weight",
+          "start_time": 173.82,
+          "end_time": 174.04
+        },
+        {
+          "text": " ",
+          "start_time": 174.04,
+          "end_time": 174.14
+        },
+        {
+          "text": "scale.",
+          "start_time": 174.14,
+          "end_time": 174.62
+        }
+      ]
+    },
+    {
+      "text": "Professional swing weight measurement in",
+      "start_time": 175.44,
+      "end_time": 178.02,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "Professional",
+          "start_time": 175.44,
+          "end_time": 176.18
+        },
+        {
+          "text": " ",
+          "start_time": 176.18,
+          "end_time": 176.34
+        },
+        {
+          "text": "swing",
+          "start_time": 176.34,
+          "end_time": 176.64
+        },
+        {
+          "text": " ",
+          "start_time": 176.64,
+          "end_time": 176.72
+        },
+        {
+          "text": "weight",
+          "start_time": 176.72,
+          "end_time": 176.96
+        },
+        {
+          "text": " ",
+          "start_time": 176.96,
+          "end_time": 177.12
+        },
+        {
+          "text": "measurement",
+          "start_time": 177.12,
+          "end_time": 177.7
+        },
+        {
+          "text": " ",
+          "start_time": 177.7,
+          "end_time": 177.94
+        },
+        {
+          "text": "in",
+          "start_time": 177.94,
+          "end_time": 178.02
+        }
+      ]
+    },
+    {
+      "text": "action. Add approximately two grams at the",
+      "start_time": 178.14,
+      "end_time": 181.08,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "action.",
+          "start_time": 178.14,
+          "end_time": 178.9
+        },
+        {
+          "text": " ",
+          "start_time": 178.9,
+          "end_time": 178.98
+        },
+        {
+          "text": "Add",
+          "start_time": 178.98,
+          "end_time": 179.14
+        },
+        {
+          "text": " ",
+          "start_time": 179.14,
+          "end_time": 179.18
+        },
+        {
+          "text": "approximately",
+          "start_time": 179.18,
+          "end_time": 179.96
+        },
+        {
+          "text": " ",
+          "start_time": 179.96,
+          "end_time": 180.12
+        },
+        {
+          "text": "two",
+          "start_time": 180.16,
+          "end_time": 180.28
+        },
+        {
+          "text": " ",
+          "start_time": 180.28,
+          "end_time": 180.4
+        },
+        {
+          "text": "grams",
+          "start_time": 180.4,
+          "end_time": 180.8
+        },
+        {
+          "text": " ",
+          "start_time": 180.8,
+          "end_time": 180.84
+        },
+        {
+          "text": "at",
+          "start_time": 180.84,
+          "end_time": 180.94
+        },
+        {
+          "text": " ",
+          "start_time": 180.94,
+          "end_time": 180.98
+        },
+        {
+          "text": "the",
+          "start_time": 180.98,
+          "end_time": 181.08
+        }
+      ]
+    },
+    {
+      "text": "club head plus one swing weight point.",
+      "start_time": 181.12,
+      "end_time": 184.24,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "club",
+          "start_time": 181.12,
+          "end_time": 181.36
+        },
+        {
+          "text": " ",
+          "start_time": 181.36,
+          "end_time": 181.42
+        },
+        {
+          "text": "head",
+          "start_time": 181.42,
+          "end_time": 181.68
+        },
+        {
+          "text": " ",
+          "start_time": 181.68,
+          "end_time": 181.94
+        },
+        {
+          "text": "plus",
+          "start_time": 181.94,
+          "end_time": 182.26
+        },
+        {
+          "text": " ",
+          "start_time": 182.26,
+          "end_time": 182.359
+        },
+        {
+          "text": "one",
+          "start_time": 182.36,
+          "end_time": 182.56
+        },
+        {
+          "text": " ",
+          "start_time": 182.56,
+          "end_time": 182.64
+        },
+        {
+          "text": "swing",
+          "start_time": 182.64,
+          "end_time": 182.94
+        },
+        {
+          "text": " ",
+          "start_time": 182.94,
+          "end_time": 182.98
+        },
+        {
+          "text": "weight",
+          "start_time": 182.98,
+          "end_time": 183.18
+        },
+        {
+          "text": " ",
+          "start_time": 183.18,
+          "end_time": 183.3
+        },
+        {
+          "text": "point.",
+          "start_time": 183.3,
+          "end_time": 184.24
+        }
+      ]
+    },
+    {
+      "text": "Add approximately five grams at the grip",
+      "start_time": 184.34,
+      "end_time": 187.12,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "Add",
+          "start_time": 184.34,
+          "end_time": 184.44
+        },
+        {
+          "text": " ",
+          "start_time": 184.44,
+          "end_time": 184.5
+        },
+        {
+          "text": "approximately",
+          "start_time": 184.5,
+          "end_time": 185.34
+        },
+        {
+          "text": " ",
+          "start_time": 185.34,
+          "end_time": 185.46
+        },
+        {
+          "text": "five",
+          "start_time": 185.46,
+          "end_time": 185.88
+        },
+        {
+          "text": " ",
+          "start_time": 185.88,
+          "end_time": 185.94
+        },
+        {
+          "text": "grams",
+          "start_time": 185.94,
+          "end_time": 186.4
+        },
+        {
+          "text": " ",
+          "start_time": 186.4,
+          "end_time": 186.46
+        },
+        {
+          "text": "at",
+          "start_time": 186.46,
+          "end_time": 186.549
+        },
+        {
+          "text": " ",
+          "start_time": 186.549,
+          "end_time": 186.6
+        },
+        {
+          "text": "the",
+          "start_time": 186.6,
+          "end_time": 186.7
+        },
+        {
+          "text": " ",
+          "start_time": 186.7,
+          "end_time": 186.74
+        },
+        {
+          "text": "grip",
+          "start_time": 186.74,
+          "end_time": 187.12
+        }
+      ]
+    },
+    {
+      "text": "butt minus one swing weight point.",
+      "start_time": 187.14,
+      "end_time": 189.66,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "butt",
+          "start_time": 187.14,
+          "end_time": 187.74
+        },
+        {
+          "text": " ",
+          "start_time": 187.74,
+          "end_time": 187.8
+        },
+        {
+          "text": "minus",
+          "start_time": 187.8,
+          "end_time": 188.15
+        },
+        {
+          "text": " ",
+          "start_time": 188.15,
+          "end_time": 188.34
+        },
+        {
+          "text": "one",
+          "start_time": 188.34,
+          "end_time": 188.44
+        },
+        {
+          "text": " ",
+          "start_time": 188.44,
+          "end_time": 188.6
+        },
+        {
+          "text": "swing",
+          "start_time": 188.6,
+          "end_time": 188.86
+        },
+        {
+          "text": " ",
+          "start_time": 188.86,
+          "end_time": 188.96
+        },
+        {
+          "text": "weight",
+          "start_time": 188.96,
+          "end_time": 189.22
+        },
+        {
+          "text": " ",
+          "start_time": 189.22,
+          "end_time": 189.26
+        },
+        {
+          "text": "point.",
+          "start_time": 189.26,
+          "end_time": 189.66
+        }
+      ]
+    },
+    {
+      "text": "Change approximately nine grams in shaft",
+      "start_time": 190.4,
+      "end_time": 193.34,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "Change",
+          "start_time": 190.4,
+          "end_time": 190.74
+        },
+        {
+          "text": " ",
+          "start_time": 190.74,
+          "end_time": 190.8
+        },
+        {
+          "text": "approximately",
+          "start_time": 190.8,
+          "end_time": 191.68
+        },
+        {
+          "text": " ",
+          "start_time": 191.68,
+          "end_time": 191.74
+        },
+        {
+          "text": "nine",
+          "start_time": 191.74,
+          "end_time": 192.14
+        },
+        {
+          "text": " ",
+          "start_time": 192.14,
+          "end_time": 192.26
+        },
+        {
+          "text": "grams",
+          "start_time": 192.26,
+          "end_time": 192.74
+        },
+        {
+          "text": " ",
+          "start_time": 192.74,
+          "end_time": 192.78
+        },
+        {
+          "text": "in",
+          "start_time": 192.78,
+          "end_time": 192.92
+        },
+        {
+          "text": " ",
+          "start_time": 192.92,
+          "end_time": 193.0
+        },
+        {
+          "text": "shaft",
+          "start_time": 193.0,
+          "end_time": 193.34
+        }
+      ]
+    },
+    {
+      "text": "weight, approximately one point. Change",
+      "start_time": 193.44,
+      "end_time": 197.04,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "weight,",
+          "start_time": 193.44,
+          "end_time": 193.84
+        },
+        {
+          "text": " ",
+          "start_time": 193.84,
+          "end_time": 193.9
+        },
+        {
+          "text": "approximately",
+          "start_time": 193.9,
+          "end_time": 195.06
+        },
+        {
+          "text": " ",
+          "start_time": 195.06,
+          "end_time": 195.2
+        },
+        {
+          "text": "one",
+          "start_time": 195.2,
+          "end_time": 195.44
+        },
+        {
+          "text": " ",
+          "start_time": 195.44,
+          "end_time": 195.5
+        },
+        {
+          "text": "point.",
+          "start_time": 195.5,
+          "end_time": 196.66
+        },
+        {
+          "text": " ",
+          "start_time": 196.66,
+          "end_time": 196.72
+        },
+        {
+          "text": "Change",
+          "start_time": 196.72,
+          "end_time": 197.04
+        }
+      ]
+    },
+    {
+      "text": "one-half inch in length approximately plus",
+      "start_time": 197.2,
+      "end_time": 200.14,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "one-half",
+          "start_time": 197.2,
+          "end_time": 197.64
+        },
+        {
+          "text": " ",
+          "start_time": 197.64,
+          "end_time": 197.72
+        },
+        {
+          "text": "inch",
+          "start_time": 197.72,
+          "end_time": 197.88
+        },
+        {
+          "text": " ",
+          "start_time": 197.88,
+          "end_time": 197.9
+        },
+        {
+          "text": "in",
+          "start_time": 197.9,
+          "end_time": 197.91
+        },
+        {
+          "text": " ",
+          "start_time": 197.91,
+          "end_time": 198.08
+        },
+        {
+          "text": "length",
+          "start_time": 198.08,
+          "end_time": 198.76
+        },
+        {
+          "text": " ",
+          "start_time": 198.76,
+          "end_time": 198.82
+        },
+        {
+          "text": "approximately",
+          "start_time": 198.82,
+          "end_time": 199.88
+        },
+        {
+          "text": " ",
+          "start_time": 199.88,
+          "end_time": 199.92
+        },
+        {
+          "text": "plus",
+          "start_time": 199.92,
+          "end_time": 200.14
+        }
+      ]
+    },
+    {
+      "text": "or minus three points. The",
+      "start_time": 200.18,
+      "end_time": 203.82,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "or",
+          "start_time": 200.18,
+          "end_time": 200.26
+        },
+        {
+          "text": " ",
+          "start_time": 200.26,
+          "end_time": 200.32
+        },
+        {
+          "text": "minus",
+          "start_time": 200.38,
+          "end_time": 200.78
+        },
+        {
+          "text": " ",
+          "start_time": 200.78,
+          "end_time": 200.88
+        },
+        {
+          "text": "three",
+          "start_time": 200.88,
+          "end_time": 201.1
+        },
+        {
+          "text": " ",
+          "start_time": 201.1,
+          "end_time": 201.239
+        },
+        {
+          "text": "points.",
+          "start_time": 201.24,
+          "end_time": 203.7
+        },
+        {
+          "text": " ",
+          "start_time": 203.7,
+          "end_time": 203.72
+        },
+        {
+          "text": "The",
+          "start_time": 203.72,
+          "end_time": 203.82
+        }
+      ]
+    },
+    {
+      "text": "transformation. They moved in small steps,",
+      "start_time": 203.94,
+      "end_time": 208.46,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "transformation.",
+          "start_time": 203.94,
+          "end_time": 206.68
+        },
+        {
+          "text": " ",
+          "start_time": 206.68,
+          "end_time": 206.72
+        },
+        {
+          "text": "They",
+          "start_time": 206.72,
+          "end_time": 206.84
+        },
+        {
+          "text": " ",
+          "start_time": 206.84,
+          "end_time": 206.88
+        },
+        {
+          "text": "moved",
+          "start_time": 206.88,
+          "end_time": 207.109
+        },
+        {
+          "text": " ",
+          "start_time": 207.109,
+          "end_time": 207.14
+        },
+        {
+          "text": "in",
+          "start_time": 207.14,
+          "end_time": 207.22
+        },
+        {
+          "text": " ",
+          "start_time": 207.22,
+          "end_time": 207.28
+        },
+        {
+          "text": "small",
+          "start_time": 207.28,
+          "end_time": 207.48
+        },
+        {
+          "text": " ",
+          "start_time": 207.48,
+          "end_time": 207.6
+        },
+        {
+          "text": "steps,",
+          "start_time": 207.6,
+          "end_time": 208.46
+        }
+      ]
+    },
+    {
+      "text": "a couple grams at the head here, a half",
+      "start_time": 208.48,
+      "end_time": 210.31,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "a",
+          "start_time": 208.48,
+          "end_time": 208.5
+        },
+        {
+          "text": " ",
+          "start_time": 208.5,
+          "end_time": 208.52
+        },
+        {
+          "text": "couple",
+          "start_time": 208.52,
+          "end_time": 208.7
+        },
+        {
+          "text": " ",
+          "start_time": 208.7,
+          "end_time": 208.76
+        },
+        {
+          "text": "grams",
+          "start_time": 208.76,
+          "end_time": 209.1
+        },
+        {
+          "text": " ",
+          "start_time": 209.1,
+          "end_time": 209.12
+        },
+        {
+          "text": "at",
+          "start_time": 209.12,
+          "end_time": 209.2
+        },
+        {
+          "text": " ",
+          "start_time": 209.2,
+          "end_time": 209.24
+        },
+        {
+          "text": "the",
+          "start_time": 209.24,
+          "end_time": 209.3
+        },
+        {
+          "text": " ",
+          "start_time": 209.3,
+          "end_time": 209.34
+        },
+        {
+          "text": "head",
+          "start_time": 209.34,
+          "end_time": 209.54
+        },
+        {
+          "text": " ",
+          "start_time": 209.54,
+          "end_time": 209.6
+        },
+        {
+          "text": "here,",
+          "start_time": 209.6,
+          "end_time": 209.82
+        },
+        {
+          "text": " ",
+          "start_time": 209.82,
+          "end_time": 209.859
+        },
+        {
+          "text": "a",
+          "start_time": 209.86,
+          "end_time": 210.14
+        },
+        {
+          "text": " ",
+          "start_time": 210.14,
+          "end_time": 210.18
+        },
+        {
+          "text": "half",
+          "start_time": 210.18,
+          "end_time": 210.31
+        }
+      ]
+    },
+    {
+      "text": "point there. Heavier grip on the wedge to",
+      "start_time": 210.4,
+      "end_time": 212.66,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "point",
+          "start_time": 210.4,
+          "end_time": 210.62
+        },
+        {
+          "text": " ",
+          "start_time": 210.62,
+          "end_time": 210.68
+        },
+        {
+          "text": "there.",
+          "start_time": 210.68,
+          "end_time": 211.35
+        },
+        {
+          "text": " ",
+          "start_time": 211.35,
+          "end_time": 211.35
+        },
+        {
+          "text": "Heavier",
+          "start_time": 211.35,
+          "end_time": 211.72
+        },
+        {
+          "text": " ",
+          "start_time": 211.72,
+          "end_time": 211.74
+        },
+        {
+          "text": "grip",
+          "start_time": 211.74,
+          "end_time": 211.94
+        },
+        {
+          "text": " ",
+          "start_time": 211.94,
+          "end_time": 211.98
+        },
+        {
+          "text": "on",
+          "start_time": 211.98,
+          "end_time": 212.07
+        },
+        {
+          "text": " ",
+          "start_time": 212.07,
+          "end_time": 212.08
+        },
+        {
+          "text": "the",
+          "start_time": 212.08,
+          "end_time": 212.16
+        },
+        {
+          "text": " ",
+          "start_time": 212.16,
+          "end_time": 212.2
+        },
+        {
+          "text": "wedge",
+          "start_time": 212.2,
+          "end_time": 212.52
+        },
+        {
+          "text": " ",
+          "start_time": 212.52,
+          "end_time": 212.56
+        },
+        {
+          "text": "to",
+          "start_time": 212.56,
+          "end_time": 212.66
+        }
+      ]
+    },
+    {
+      "text": "steady the hands. Add roughly plus five",
+      "start_time": 212.76,
+      "end_time": 215.28,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "steady",
+          "start_time": 212.76,
+          "end_time": 212.97
+        },
+        {
+          "text": " ",
+          "start_time": 212.97,
+          "end_time": 213.04
+        },
+        {
+          "text": "the",
+          "start_time": 213.04,
+          "end_time": 213.08
+        },
+        {
+          "text": " ",
+          "start_time": 213.08,
+          "end_time": 213.14
+        },
+        {
+          "text": "hands.",
+          "start_time": 213.14,
+          "end_time": 214.08
+        },
+        {
+          "text": " ",
+          "start_time": 214.08,
+          "end_time": 214.16
+        },
+        {
+          "text": "Add",
+          "start_time": 214.16,
+          "end_time": 214.32
+        },
+        {
+          "text": " ",
+          "start_time": 214.32,
+          "end_time": 214.38
+        },
+        {
+          "text": "roughly",
+          "start_time": 214.38,
+          "end_time": 214.72
+        },
+        {
+          "text": " ",
+          "start_time": 214.72,
+          "end_time": 214.76
+        },
+        {
+          "text": "plus",
+          "start_time": 214.76,
+          "end_time": 215.02
+        },
+        {
+          "text": " ",
+          "start_time": 215.02,
+          "end_time": 215.06
+        },
+        {
+          "text": "five",
+          "start_time": 215.06,
+          "end_time": 215.28
+        }
+      ]
+    },
+    {
+      "text": "grams in the grip, approximately minus one",
+      "start_time": 215.36,
+      "end_time": 217.84,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "grams",
+          "start_time": 215.36,
+          "end_time": 215.68
+        },
+        {
+          "text": " ",
+          "start_time": 215.68,
+          "end_time": 215.72
+        },
+        {
+          "text": "in",
+          "start_time": 215.72,
+          "end_time": 215.79
+        },
+        {
+          "text": " ",
+          "start_time": 215.79,
+          "end_time": 215.82
+        },
+        {
+          "text": "the",
+          "start_time": 215.82,
+          "end_time": 215.9
+        },
+        {
+          "text": " ",
+          "start_time": 215.9,
+          "end_time": 215.94
+        },
+        {
+          "text": "grip,",
+          "start_time": 215.94,
+          "end_time": 216.25
+        },
+        {
+          "text": " ",
+          "start_time": 216.25,
+          "end_time": 216.28
+        },
+        {
+          "text": "approximately",
+          "start_time": 216.28,
+          "end_time": 217.28
+        },
+        {
+          "text": " ",
+          "start_time": 217.28,
+          "end_time": 217.32
+        },
+        {
+          "text": "minus",
+          "start_time": 217.32,
+          "end_time": 217.66
+        },
+        {
+          "text": " ",
+          "start_time": 217.66,
+          "end_time": 217.76
+        },
+        {
+          "text": "one",
+          "start_time": 217.76,
+          "end_time": 217.84
+        }
+      ]
+    },
+    {
+      "text": "point on the scale. A neat counterbalance",
+      "start_time": 217.98,
+      "end_time": 220.41,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "point",
+          "start_time": 217.98,
+          "end_time": 218.34
+        },
+        {
+          "text": " ",
+          "start_time": 218.34,
+          "end_time": 218.38
+        },
+        {
+          "text": "on",
+          "start_time": 218.38,
+          "end_time": 218.48
+        },
+        {
+          "text": " ",
+          "start_time": 218.48,
+          "end_time": 218.52
+        },
+        {
+          "text": "the",
+          "start_time": 218.52,
+          "end_time": 218.62
+        },
+        {
+          "text": " ",
+          "start_time": 218.62,
+          "end_time": 218.66
+        },
+        {
+          "text": "scale.",
+          "start_time": 218.66,
+          "end_time": 219.13
+        },
+        {
+          "text": " ",
+          "start_time": 219.13,
+          "end_time": 219.18
+        },
+        {
+          "text": "A",
+          "start_time": 219.18,
+          "end_time": 219.2
+        },
+        {
+          "text": " ",
+          "start_time": 219.2,
+          "end_time": 219.34
+        },
+        {
+          "text": "neat",
+          "start_time": 219.34,
+          "end_time": 219.62
+        },
+        {
+          "text": " ",
+          "start_time": 219.62,
+          "end_time": 219.66
+        },
+        {
+          "text": "counterbalance",
+          "start_time": 219.66,
+          "end_time": 220.41
+        }
+      ]
+    },
+    {
+      "text": "trick. No lectures, no jargon storm, just",
+      "start_time": 220.5,
+      "end_time": 224.22,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "trick.",
+          "start_time": 220.5,
+          "end_time": 221.94
+        },
+        {
+          "text": " ",
+          "start_time": 221.94,
+          "end_time": 221.98
+        },
+        {
+          "text": "No",
+          "start_time": 221.98,
+          "end_time": 222.14
+        },
+        {
+          "text": " ",
+          "start_time": 222.14,
+          "end_time": 222.18
+        },
+        {
+          "text": "lectures,",
+          "start_time": 222.18,
+          "end_time": 222.64
+        },
+        {
+          "text": " ",
+          "start_time": 222.64,
+          "end_time": 222.68
+        },
+        {
+          "text": "no",
+          "start_time": 222.68,
+          "end_time": 222.86
+        },
+        {
+          "text": " ",
+          "start_time": 222.86,
+          "end_time": 222.9
+        },
+        {
+          "text": "jargon",
+          "start_time": 222.9,
+          "end_time": 223.28
+        },
+        {
+          "text": " ",
+          "start_time": 223.28,
+          "end_time": 223.42
+        },
+        {
+          "text": "storm,",
+          "start_time": 223.42,
+          "end_time": 223.98
+        },
+        {
+          "text": " ",
+          "start_time": 223.98,
+          "end_time": 224.08
+        },
+        {
+          "text": "just",
+          "start_time": 224.08,
+          "end_time": 224.22
+        }
+      ]
+    },
+    {
+      "text": "hits and quiet yes or quiet no. When he",
+      "start_time": 224.28,
+      "end_time": 227.08,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "hits",
+          "start_time": 224.28,
+          "end_time": 224.48
+        },
+        {
+          "text": " ",
+          "start_time": 224.48,
+          "end_time": 224.5
+        },
+        {
+          "text": "and",
+          "start_time": 224.5,
+          "end_time": 224.65
+        },
+        {
+          "text": " ",
+          "start_time": 224.65,
+          "end_time": 224.7
+        },
+        {
+          "text": "quiet",
+          "start_time": 224.7,
+          "end_time": 225.04
+        },
+        {
+          "text": " ",
+          "start_time": 225.04,
+          "end_time": 225.2
+        },
+        {
+          "text": "yes",
+          "start_time": 225.2,
+          "end_time": 225.42
+        },
+        {
+          "text": " ",
+          "start_time": 225.42,
+          "end_time": 225.48
+        },
+        {
+          "text": "or",
+          "start_time": 225.48,
+          "end_time": 225.6
+        },
+        {
+          "text": " ",
+          "start_time": 225.6,
+          "end_time": 225.66
+        },
+        {
+          "text": "quiet",
+          "start_time": 225.66,
+          "end_time": 226.04
+        },
+        {
+          "text": " ",
+          "start_time": 226.04,
+          "end_time": 226.06
+        },
+        {
+          "text": "no.",
+          "start_time": 226.06,
+          "end_time": 226.79
+        },
+        {
+          "text": " ",
+          "start_time": 226.79,
+          "end_time": 226.82
+        },
+        {
+          "text": "When",
+          "start_time": 226.82,
+          "end_time": 226.93
+        },
+        {
+          "text": " ",
+          "start_time": 226.93,
+          "end_time": 226.96
+        },
+        {
+          "text": "he",
+          "start_time": 226.96,
+          "end_time": 227.08
+        }
+      ]
+    },
+    {
+      "text": "tried too heavy, a clumsy D6, his",
+      "start_time": 227.12,
+      "end_time": 230.39,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "tried",
+          "start_time": 227.12,
+          "end_time": 227.51
+        },
+        {
+          "text": " ",
+          "start_time": 227.51,
+          "end_time": 227.56
+        },
+        {
+          "text": "too",
+          "start_time": 227.56,
+          "end_time": 227.78
+        },
+        {
+          "text": " ",
+          "start_time": 227.78,
+          "end_time": 227.9
+        },
+        {
+          "text": "heavy,",
+          "start_time": 227.9,
+          "end_time": 228.32
+        },
+        {
+          "text": " ",
+          "start_time": 228.32,
+          "end_time": 228.359
+        },
+        {
+          "text": "a",
+          "start_time": 228.36,
+          "end_time": 228.46
+        },
+        {
+          "text": " ",
+          "start_time": 228.46,
+          "end_time": 228.5
+        },
+        {
+          "text": "clumsy",
+          "start_time": 228.5,
+          "end_time": 229.04
+        },
+        {
+          "text": " ",
+          "start_time": 229.04,
+          "end_time": 229.079
+        },
+        {
+          "text": "D6,",
+          "start_time": 229.08,
+          "end_time": 230.16
+        },
+        {
+          "text": " ",
+          "start_time": 230.16,
+          "end_time": 230.22
+        },
+        {
+          "text": "his",
+          "start_time": 230.22,
+          "end_time": 230.39
+        }
+      ]
+    },
+    {
+      "text": "transition got thick and late, like he was",
+      "start_time": 230.42,
+      "end_time": 233.44,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "transition",
+          "start_time": 230.42,
+          "end_time": 231.06
+        },
+        {
+          "text": " ",
+          "start_time": 231.06,
+          "end_time": 231.1
+        },
+        {
+          "text": "got",
+          "start_time": 231.1,
+          "end_time": 231.3
+        },
+        {
+          "text": " ",
+          "start_time": 231.3,
+          "end_time": 231.44
+        },
+        {
+          "text": "thick",
+          "start_time": 231.44,
+          "end_time": 231.76
+        },
+        {
+          "text": " ",
+          "start_time": 231.76,
+          "end_time": 231.9
+        },
+        {
+          "text": "and",
+          "start_time": 231.9,
+          "end_time": 232.0
+        },
+        {
+          "text": " ",
+          "start_time": 232.0,
+          "end_time": 232.06
+        },
+        {
+          "text": "late,",
+          "start_time": 232.06,
+          "end_time": 232.92
+        },
+        {
+          "text": " ",
+          "start_time": 232.92,
+          "end_time": 232.98
+        },
+        {
+          "text": "like",
+          "start_time": 232.98,
+          "end_time": 233.12
+        },
+        {
+          "text": " ",
+          "start_time": 233.12,
+          "end_time": 233.16
+        },
+        {
+          "text": "he",
+          "start_time": 233.16,
+          "end_time": 233.26
+        },
+        {
+          "text": " ",
+          "start_time": 233.26,
+          "end_time": 233.299
+        },
+        {
+          "text": "was",
+          "start_time": 233.3,
+          "end_time": 233.44
+        }
+      ]
+    },
+    {
+      "text": "dragging luggage through mud.",
+      "start_time": 233.48,
+      "end_time": 235.42,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "dragging",
+          "start_time": 233.48,
+          "end_time": 233.94
+        },
+        {
+          "text": " ",
+          "start_time": 233.94,
+          "end_time": 234.0
+        },
+        {
+          "text": "luggage",
+          "start_time": 234.0,
+          "end_time": 234.44
+        },
+        {
+          "text": " ",
+          "start_time": 234.44,
+          "end_time": 234.48
+        },
+        {
+          "text": "through",
+          "start_time": 234.48,
+          "end_time": 234.82
+        },
+        {
+          "text": " ",
+          "start_time": 234.82,
+          "end_time": 234.96
+        },
+        {
+          "text": "mud.",
+          "start_time": 234.96,
+          "end_time": 235.42
+        }
+      ]
+    },
+    {
+      "text": "So they backed away. When it was right, D2",
+      "start_time": 236.46,
+      "end_time": 240.5,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "So",
+          "start_time": 236.46,
+          "end_time": 236.58
+        },
+        {
+          "text": " ",
+          "start_time": 236.58,
+          "end_time": 236.68
+        },
+        {
+          "text": "they",
+          "start_time": 236.68,
+          "end_time": 236.8
+        },
+        {
+          "text": " ",
+          "start_time": 236.8,
+          "end_time": 236.96
+        },
+        {
+          "text": "backed",
+          "start_time": 236.96,
+          "end_time": 237.28
+        },
+        {
+          "text": " ",
+          "start_time": 237.28,
+          "end_time": 237.36
+        },
+        {
+          "text": "away.",
+          "start_time": 237.36,
+          "end_time": 238.5
+        },
+        {
+          "text": " ",
+          "start_time": 238.5,
+          "end_time": 238.54
+        },
+        {
+          "text": "When",
+          "start_time": 238.54,
+          "end_time": 238.65
+        },
+        {
+          "text": " ",
+          "start_time": 238.65,
+          "end_time": 238.7
+        },
+        {
+          "text": "it",
+          "start_time": 238.7,
+          "end_time": 238.8
+        },
+        {
+          "text": " ",
+          "start_time": 238.8,
+          "end_time": 238.84
+        },
+        {
+          "text": "was",
+          "start_time": 238.84,
+          "end_time": 239.02
+        },
+        {
+          "text": " ",
+          "start_time": 239.02,
+          "end_time": 239.08
+        },
+        {
+          "text": "right,",
+          "start_time": 239.08,
+          "end_time": 239.8
+        },
+        {
+          "text": " ",
+          "start_time": 239.8,
+          "end_time": 239.94
+        },
+        {
+          "text": "D2",
+          "start_time": 239.94,
+          "end_time": 240.5
+        }
+      ]
+    },
+    {
+      "text": "to D3 in the mid-irons, a",
+      "start_time": 240.54,
+      "end_time": 243.2,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "to",
+          "start_time": 240.54,
+          "end_time": 240.64
+        },
+        {
+          "text": " ",
+          "start_time": 240.64,
+          "end_time": 240.72
+        },
+        {
+          "text": "D3",
+          "start_time": 240.72,
+          "end_time": 241.26
+        },
+        {
+          "text": " ",
+          "start_time": 241.26,
+          "end_time": 241.3
+        },
+        {
+          "text": "in",
+          "start_time": 241.3,
+          "end_time": 241.38
+        },
+        {
+          "text": " ",
+          "start_time": 241.38,
+          "end_time": 241.42
+        },
+        {
+          "text": "the",
+          "start_time": 241.42,
+          "end_time": 241.46
+        },
+        {
+          "text": " ",
+          "start_time": 241.46,
+          "end_time": 241.56
+        },
+        {
+          "text": "mid-irons,",
+          "start_time": 241.56,
+          "end_time": 243.08
+        },
+        {
+          "text": " ",
+          "start_time": 243.08,
+          "end_time": 243.12
+        },
+        {
+          "text": "a",
+          "start_time": 243.12,
+          "end_time": 243.2
+        }
+      ]
+    },
+    {
+      "text": "whisper more in the wedge. The club felt",
+      "start_time": 243.3,
+      "end_time": 246.02,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "whisper",
+          "start_time": 243.3,
+          "end_time": 243.7
+        },
+        {
+          "text": " ",
+          "start_time": 243.7,
+          "end_time": 243.8
+        },
+        {
+          "text": "more",
+          "start_time": 243.8,
+          "end_time": 244.26
+        },
+        {
+          "text": " ",
+          "start_time": 244.26,
+          "end_time": 244.299
+        },
+        {
+          "text": "in",
+          "start_time": 244.3,
+          "end_time": 244.42
+        },
+        {
+          "text": " ",
+          "start_time": 244.42,
+          "end_time": 244.46
+        },
+        {
+          "text": "the",
+          "start_time": 244.46,
+          "end_time": 244.52
+        },
+        {
+          "text": " ",
+          "start_time": 244.52,
+          "end_time": 244.62
+        },
+        {
+          "text": "wedge.",
+          "start_time": 244.62,
+          "end_time": 245.14
+        },
+        {
+          "text": " ",
+          "start_time": 245.14,
+          "end_time": 245.16
+        },
+        {
+          "text": "The",
+          "start_time": 245.16,
+          "end_time": 245.3
+        },
+        {
+          "text": " ",
+          "start_time": 245.3,
+          "end_time": 245.36
+        },
+        {
+          "text": "club",
+          "start_time": 245.36,
+          "end_time": 245.64
+        },
+        {
+          "text": " ",
+          "start_time": 245.64,
+          "end_time": 245.74
+        },
+        {
+          "text": "felt",
+          "start_time": 245.74,
+          "end_time": 246.02
+        }
+      ]
+    },
+    {
+      "text": "like it waited for him than went with him.",
+      "start_time": 246.06,
+      "end_time": 249.9,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "like",
+          "start_time": 246.06,
+          "end_time": 246.28
+        },
+        {
+          "text": " ",
+          "start_time": 246.28,
+          "end_time": 246.34
+        },
+        {
+          "text": "it",
+          "start_time": 246.34,
+          "end_time": 246.4
+        },
+        {
+          "text": " ",
+          "start_time": 246.4,
+          "end_time": 246.54
+        },
+        {
+          "text": "waited",
+          "start_time": 246.54,
+          "end_time": 246.88
+        },
+        {
+          "text": " ",
+          "start_time": 246.88,
+          "end_time": 246.96
+        },
+        {
+          "text": "for",
+          "start_time": 246.96,
+          "end_time": 247.1
+        },
+        {
+          "text": " ",
+          "start_time": 247.1,
+          "end_time": 247.22
+        },
+        {
+          "text": "him",
+          "start_time": 247.22,
+          "end_time": 247.56
+        },
+        {
+          "text": " ",
+          "start_time": 247.56,
+          "end_time": 247.76
+        },
+        {
+          "text": "than",
+          "start_time": 247.76,
+          "end_time": 247.98
+        },
+        {
+          "text": " ",
+          "start_time": 247.98,
+          "end_time": 248.04
+        },
+        {
+          "text": "went",
+          "start_time": 248.04,
+          "end_time": 248.22
+        },
+        {
+          "text": " ",
+          "start_time": 248.22,
+          "end_time": 248.34
+        },
+        {
+          "text": "with",
+          "start_time": 248.34,
+          "end_time": 248.5
+        },
+        {
+          "text": " ",
+          "start_time": 248.5,
+          "end_time": 248.54
+        },
+        {
+          "text": "him.",
+          "start_time": 248.54,
+          "end_time": 249.9
+        }
+      ]
+    },
+    {
+      "text": "On the walk to the car, the range lights",
+      "start_time": 250.0,
+      "end_time": 252.329,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "On",
+          "start_time": 250.0,
+          "end_time": 250.1
+        },
+        {
+          "text": " ",
+          "start_time": 250.1,
+          "end_time": 250.16
+        },
+        {
+          "text": "the",
+          "start_time": 250.16,
+          "end_time": 250.22
+        },
+        {
+          "text": " ",
+          "start_time": 250.22,
+          "end_time": 250.3
+        },
+        {
+          "text": "walk",
+          "start_time": 250.3,
+          "end_time": 250.52
+        },
+        {
+          "text": " ",
+          "start_time": 250.52,
+          "end_time": 250.58
+        },
+        {
+          "text": "to",
+          "start_time": 250.58,
+          "end_time": 250.66
+        },
+        {
+          "text": " ",
+          "start_time": 250.66,
+          "end_time": 250.7
+        },
+        {
+          "text": "the",
+          "start_time": 250.7,
+          "end_time": 250.76
+        },
+        {
+          "text": " ",
+          "start_time": 250.76,
+          "end_time": 250.88
+        },
+        {
+          "text": "car,",
+          "start_time": 250.88,
+          "end_time": 251.42
+        },
+        {
+          "text": " ",
+          "start_time": 251.42,
+          "end_time": 251.48
+        },
+        {
+          "text": "the",
+          "start_time": 251.48,
+          "end_time": 251.58
+        },
+        {
+          "text": " ",
+          "start_time": 251.58,
+          "end_time": 251.62
+        },
+        {
+          "text": "range",
+          "start_time": 251.62,
+          "end_time": 251.98
+        },
+        {
+          "text": " ",
+          "start_time": 251.98,
+          "end_time": 252.0
+        },
+        {
+          "text": "lights",
+          "start_time": 252.0,
+          "end_time": 252.329
+        }
+      ]
+    },
+    {
+      "text": "buzzed. The grass wore that summer night",
+      "start_time": 252.52,
+      "end_time": 255.02,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "buzzed.",
+          "start_time": 252.52,
+          "end_time": 253.04
+        },
+        {
+          "text": " ",
+          "start_time": 253.04,
+          "end_time": 253.1
+        },
+        {
+          "text": "The",
+          "start_time": 253.1,
+          "end_time": 253.22
+        },
+        {
+          "text": " ",
+          "start_time": 253.22,
+          "end_time": 253.26
+        },
+        {
+          "text": "grass",
+          "start_time": 253.26,
+          "end_time": 253.76
+        },
+        {
+          "text": " ",
+          "start_time": 253.76,
+          "end_time": 253.88
+        },
+        {
+          "text": "wore",
+          "start_time": 253.88,
+          "end_time": 254.08
+        },
+        {
+          "text": " ",
+          "start_time": 254.08,
+          "end_time": 254.16
+        },
+        {
+          "text": "that",
+          "start_time": 254.16,
+          "end_time": 254.34
+        },
+        {
+          "text": " ",
+          "start_time": 254.34,
+          "end_time": 254.44
+        },
+        {
+          "text": "summer",
+          "start_time": 254.44,
+          "end_time": 254.68
+        },
+        {
+          "text": " ",
+          "start_time": 254.68,
+          "end_time": 254.78
+        },
+        {
+          "text": "night",
+          "start_time": 254.78,
+          "end_time": 255.02
+        }
+      ]
+    },
+    {
+      "text": "perfume men remember for years.",
+      "start_time": 255.14,
+      "end_time": 258.55,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "perfume",
+          "start_time": 255.14,
+          "end_time": 255.8
+        },
+        {
+          "text": " ",
+          "start_time": 255.8,
+          "end_time": 255.86
+        },
+        {
+          "text": "men",
+          "start_time": 255.86,
+          "end_time": 256.12
+        },
+        {
+          "text": " ",
+          "start_time": 256.12,
+          "end_time": 256.18
+        },
+        {
+          "text": "remember",
+          "start_time": 256.18,
+          "end_time": 257.579
+        },
+        {
+          "text": " ",
+          "start_time": 257.579,
+          "end_time": 257.68
+        },
+        {
+          "text": "for",
+          "start_time": 257.68,
+          "end_time": 257.92
+        },
+        {
+          "text": " ",
+          "start_time": 257.92,
+          "end_time": 258.019
+        },
+        {
+          "text": "years.",
+          "start_time": 258.019,
+          "end_time": 258.55
+        }
+      ]
+    },
+    {
+      "text": "Cal set a ball down one more time with the",
+      "start_time": 259.36,
+      "end_time": 262.18,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "Cal",
+          "start_time": 259.36,
+          "end_time": 259.66
+        },
+        {
+          "text": " ",
+          "start_time": 259.66,
+          "end_time": 259.72
+        },
+        {
+          "text": "set",
+          "start_time": 259.72,
+          "end_time": 259.909
+        },
+        {
+          "text": " ",
+          "start_time": 259.909,
+          "end_time": 259.94
+        },
+        {
+          "text": "a",
+          "start_time": 259.94,
+          "end_time": 260.04
+        },
+        {
+          "text": " ",
+          "start_time": 260.04,
+          "end_time": 260.06
+        },
+        {
+          "text": "ball",
+          "start_time": 260.06,
+          "end_time": 260.38
+        },
+        {
+          "text": " ",
+          "start_time": 260.38,
+          "end_time": 260.42
+        },
+        {
+          "text": "down",
+          "start_time": 260.42,
+          "end_time": 260.75
+        },
+        {
+          "text": " ",
+          "start_time": 260.75,
+          "end_time": 260.82
+        },
+        {
+          "text": "one",
+          "start_time": 260.82,
+          "end_time": 261.0
+        },
+        {
+          "text": " ",
+          "start_time": 261.0,
+          "end_time": 261.019
+        },
+        {
+          "text": "more",
+          "start_time": 261.019,
+          "end_time": 261.24
+        },
+        {
+          "text": " ",
+          "start_time": 261.24,
+          "end_time": 261.279
+        },
+        {
+          "text": "time",
+          "start_time": 261.279,
+          "end_time": 261.82
+        },
+        {
+          "text": " ",
+          "start_time": 261.82,
+          "end_time": 261.839
+        },
+        {
+          "text": "with",
+          "start_time": 261.839,
+          "end_time": 262.0
+        },
+        {
+          "text": " ",
+          "start_time": 262.0,
+          "end_time": 262.019
+        },
+        {
+          "text": "the",
+          "start_time": 262.019,
+          "end_time": 262.18
+        }
+      ]
+    },
+    {
+      "text": "tuned seven iron. His practiced swing had",
+      "start_time": 262.22,
+      "end_time": 265.54,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "tuned",
+          "start_time": 262.22,
+          "end_time": 262.72
+        },
+        {
+          "text": " ",
+          "start_time": 262.72,
+          "end_time": 262.8
+        },
+        {
+          "text": "seven",
+          "start_time": 262.8,
+          "end_time": 263.12
+        },
+        {
+          "text": " ",
+          "start_time": 263.12,
+          "end_time": 263.26
+        },
+        {
+          "text": "iron.",
+          "start_time": 263.26,
+          "end_time": 264.08
+        },
+        {
+          "text": " ",
+          "start_time": 264.08,
+          "end_time": 264.12
+        },
+        {
+          "text": "His",
+          "start_time": 264.12,
+          "end_time": 264.26
+        },
+        {
+          "text": " ",
+          "start_time": 264.26,
+          "end_time": 264.36
+        },
+        {
+          "text": "practiced",
+          "start_time": 264.36,
+          "end_time": 264.85
+        },
+        {
+          "text": " ",
+          "start_time": 264.85,
+          "end_time": 264.96
+        },
+        {
+          "text": "swing",
+          "start_time": 264.96,
+          "end_time": 265.38
+        },
+        {
+          "text": " ",
+          "start_time": 265.38,
+          "end_time": 265.44
+        },
+        {
+          "text": "had",
+          "start_time": 265.44,
+          "end_time": 265.54
+        }
+      ]
+    },
+    {
+      "text": "a new metronome in it. He didn't try to",
+      "start_time": 265.6,
+      "end_time": 268.48,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "a",
+          "start_time": 265.6,
+          "end_time": 265.66
+        },
+        {
+          "text": " ",
+          "start_time": 265.66,
+          "end_time": 265.72
+        },
+        {
+          "text": "new",
+          "start_time": 265.72,
+          "end_time": 265.94
+        },
+        {
+          "text": " ",
+          "start_time": 265.94,
+          "end_time": 266.0
+        },
+        {
+          "text": "metronome",
+          "start_time": 266.0,
+          "end_time": 266.74
+        },
+        {
+          "text": " ",
+          "start_time": 266.74,
+          "end_time": 266.82
+        },
+        {
+          "text": "in",
+          "start_time": 266.82,
+          "end_time": 266.9
+        },
+        {
+          "text": " ",
+          "start_time": 266.9,
+          "end_time": 266.96
+        },
+        {
+          "text": "it.",
+          "start_time": 266.96,
+          "end_time": 267.64
+        },
+        {
+          "text": " ",
+          "start_time": 267.64,
+          "end_time": 267.7
+        },
+        {
+          "text": "He",
+          "start_time": 267.7,
+          "end_time": 267.82
+        },
+        {
+          "text": " ",
+          "start_time": 267.82,
+          "end_time": 267.86
+        },
+        {
+          "text": "didn't",
+          "start_time": 267.86,
+          "end_time": 268.1
+        },
+        {
+          "text": " ",
+          "start_time": 268.1,
+          "end_time": 268.16
+        },
+        {
+          "text": "try",
+          "start_time": 268.16,
+          "end_time": 268.38
+        },
+        {
+          "text": " ",
+          "start_time": 268.38,
+          "end_time": 268.4
+        },
+        {
+          "text": "to",
+          "start_time": 268.4,
+          "end_time": 268.48
+        }
+      ]
+    },
+    {
+      "text": "make speed. He let weight make timing. The",
+      "start_time": 268.54,
+      "end_time": 271.54,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "make",
+          "start_time": 268.54,
+          "end_time": 268.72
+        },
+        {
+          "text": " ",
+          "start_time": 268.72,
+          "end_time": 268.84
+        },
+        {
+          "text": "speed.",
+          "start_time": 268.84,
+          "end_time": 269.26
+        },
+        {
+          "text": " ",
+          "start_time": 269.26,
+          "end_time": 269.28
+        },
+        {
+          "text": "He",
+          "start_time": 269.28,
+          "end_time": 269.36
+        },
+        {
+          "text": " ",
+          "start_time": 269.36,
+          "end_time": 269.48
+        },
+        {
+          "text": "let",
+          "start_time": 269.48,
+          "end_time": 269.68
+        },
+        {
+          "text": " ",
+          "start_time": 269.68,
+          "end_time": 269.78
+        },
+        {
+          "text": "weight",
+          "start_time": 269.78,
+          "end_time": 270.12
+        },
+        {
+          "text": " ",
+          "start_time": 270.12,
+          "end_time": 270.22
+        },
+        {
+          "text": "make",
+          "start_time": 270.22,
+          "end_time": 270.46
+        },
+        {
+          "text": " ",
+          "start_time": 270.46,
+          "end_time": 270.58
+        },
+        {
+          "text": "timing.",
+          "start_time": 270.58,
+          "end_time": 271.14
+        },
+        {
+          "text": " ",
+          "start_time": 271.14,
+          "end_time": 271.34
+        },
+        {
+          "text": "The",
+          "start_time": 271.4,
+          "end_time": 271.54
+        }
+      ]
+    },
+    {
+      "text": "ball leapt, rose on the flag and sat. He",
+      "start_time": 271.56,
+      "end_time": 275.06,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "ball",
+          "start_time": 271.56,
+          "end_time": 272.0
+        },
+        {
+          "text": " ",
+          "start_time": 272.0,
+          "end_time": 272.02
+        },
+        {
+          "text": "leapt,",
+          "start_time": 272.02,
+          "end_time": 272.52
+        },
+        {
+          "text": " ",
+          "start_time": 272.52,
+          "end_time": 272.54
+        },
+        {
+          "text": "rose",
+          "start_time": 272.54,
+          "end_time": 272.9
+        },
+        {
+          "text": " ",
+          "start_time": 272.9,
+          "end_time": 272.979
+        },
+        {
+          "text": "on",
+          "start_time": 272.98,
+          "end_time": 273.1
+        },
+        {
+          "text": " ",
+          "start_time": 273.1,
+          "end_time": 273.14
+        },
+        {
+          "text": "the",
+          "start_time": 273.14,
+          "end_time": 273.24
+        },
+        {
+          "text": " ",
+          "start_time": 273.24,
+          "end_time": 273.28
+        },
+        {
+          "text": "flag",
+          "start_time": 273.28,
+          "end_time": 273.66
+        },
+        {
+          "text": " ",
+          "start_time": 273.66,
+          "end_time": 273.7
+        },
+        {
+          "text": "and",
+          "start_time": 273.7,
+          "end_time": 273.86
+        },
+        {
+          "text": " ",
+          "start_time": 273.86,
+          "end_time": 273.96
+        },
+        {
+          "text": "sat.",
+          "start_time": 273.96,
+          "end_time": 274.92
+        },
+        {
+          "text": " ",
+          "start_time": 274.92,
+          "end_time": 274.96
+        },
+        {
+          "text": "He",
+          "start_time": 274.96,
+          "end_time": 275.06
+        }
+      ]
+    },
+    {
+      "text": "laughed, not loud, but from somewhere old",
+      "start_time": 275.2,
+      "end_time": 278.38,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "laughed,",
+          "start_time": 275.2,
+          "end_time": 275.78
+        },
+        {
+          "text": " ",
+          "start_time": 275.78,
+          "end_time": 275.84
+        },
+        {
+          "text": "not",
+          "start_time": 275.84,
+          "end_time": 276.08
+        },
+        {
+          "text": " ",
+          "start_time": 276.08,
+          "end_time": 276.14
+        },
+        {
+          "text": "loud,",
+          "start_time": 276.14,
+          "end_time": 276.54
+        },
+        {
+          "text": " ",
+          "start_time": 276.54,
+          "end_time": 276.58
+        },
+        {
+          "text": "but",
+          "start_time": 276.58,
+          "end_time": 276.9
+        },
+        {
+          "text": " ",
+          "start_time": 276.9,
+          "end_time": 276.98
+        },
+        {
+          "text": "from",
+          "start_time": 276.98,
+          "end_time": 277.19
+        },
+        {
+          "text": " ",
+          "start_time": 277.19,
+          "end_time": 277.26
+        },
+        {
+          "text": "somewhere",
+          "start_time": 277.26,
+          "end_time": 277.7
+        },
+        {
+          "text": " ",
+          "start_time": 277.7,
+          "end_time": 277.96
+        },
+        {
+          "text": "old",
+          "start_time": 277.96,
+          "end_time": 278.38
+        }
+      ]
+    },
+    {
+      "text": "and good.",
+      "start_time": 278.42,
+      "end_time": 279.8,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "and",
+          "start_time": 278.42,
+          "end_time": 278.56
+        },
+        {
+          "text": " ",
+          "start_time": 278.56,
+          "end_time": 278.7
+        },
+        {
+          "text": "good.",
+          "start_time": 278.7,
+          "end_time": 279.8
+        }
+      ]
+    },
+    {
+      "text": "The results.",
+      "start_time": 281.16,
+      "end_time": 282.16,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "The",
+          "start_time": 281.16,
+          "end_time": 281.28
+        },
+        {
+          "text": " ",
+          "start_time": 281.28,
+          "end_time": 281.38
+        },
+        {
+          "text": "results.",
+          "start_time": 281.38,
+          "end_time": 282.16
+        }
+      ]
+    },
+    {
+      "text": "Over the next few weeks, the changes",
+      "start_time": 284.0,
+      "end_time": 285.76,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "Over",
+          "start_time": 284.0,
+          "end_time": 284.2
+        },
+        {
+          "text": " ",
+          "start_time": 284.2,
+          "end_time": 284.22
+        },
+        {
+          "text": "the",
+          "start_time": 284.22,
+          "end_time": 284.28
+        },
+        {
+          "text": " ",
+          "start_time": 284.28,
+          "end_time": 284.32
+        },
+        {
+          "text": "next",
+          "start_time": 284.32,
+          "end_time": 284.52
+        },
+        {
+          "text": " ",
+          "start_time": 284.52,
+          "end_time": 284.56
+        },
+        {
+          "text": "few",
+          "start_time": 284.56,
+          "end_time": 284.72
+        },
+        {
+          "text": " ",
+          "start_time": 284.72,
+          "end_time": 284.78
+        },
+        {
+          "text": "weeks,",
+          "start_time": 284.78,
+          "end_time": 285.16
+        },
+        {
+          "text": " ",
+          "start_time": 285.16,
+          "end_time": 285.18
+        },
+        {
+          "text": "the",
+          "start_time": 285.18,
+          "end_time": 285.34
+        },
+        {
+          "text": " ",
+          "start_time": 285.34,
+          "end_time": 285.38
+        },
+        {
+          "text": "changes",
+          "start_time": 285.38,
+          "end_time": 285.76
+        }
+      ]
+    },
+    {
+      "text": "proved real. His worst swings weren't",
+      "start_time": 285.88,
+      "end_time": 287.88,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "proved",
+          "start_time": 285.88,
+          "end_time": 286.25
+        },
+        {
+          "text": " ",
+          "start_time": 286.25,
+          "end_time": 286.34
+        },
+        {
+          "text": "real.",
+          "start_time": 286.34,
+          "end_time": 286.74
+        },
+        {
+          "text": " ",
+          "start_time": 286.74,
+          "end_time": 286.78
+        },
+        {
+          "text": "His",
+          "start_time": 286.78,
+          "end_time": 286.96
+        },
+        {
+          "text": " ",
+          "start_time": 286.96,
+          "end_time": 287.02
+        },
+        {
+          "text": "worst",
+          "start_time": 287.02,
+          "end_time": 287.2
+        },
+        {
+          "text": " ",
+          "start_time": 287.2,
+          "end_time": 287.26
+        },
+        {
+          "text": "swings",
+          "start_time": 287.26,
+          "end_time": 287.6
+        },
+        {
+          "text": " ",
+          "start_time": 287.6,
+          "end_time": 287.66
+        },
+        {
+          "text": "weren't",
+          "start_time": 287.66,
+          "end_time": 287.88
+        }
+      ]
+    },
+    {
+      "text": "catastrophic. His best ones stopped",
+      "start_time": 287.94,
+      "end_time": 290.32,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "catastrophic.",
+          "start_time": 287.94,
+          "end_time": 289.08
+        },
+        {
+          "text": " ",
+          "start_time": 289.08,
+          "end_time": 289.12
+        },
+        {
+          "text": "His",
+          "start_time": 289.12,
+          "end_time": 289.28
+        },
+        {
+          "text": " ",
+          "start_time": 289.28,
+          "end_time": 289.32
+        },
+        {
+          "text": "best",
+          "start_time": 289.32,
+          "end_time": 289.56
+        },
+        {
+          "text": " ",
+          "start_time": 289.56,
+          "end_time": 289.66
+        },
+        {
+          "text": "ones",
+          "start_time": 289.66,
+          "end_time": 289.96
+        },
+        {
+          "text": " ",
+          "start_time": 289.96,
+          "end_time": 290.06
+        },
+        {
+          "text": "stopped",
+          "start_time": 290.06,
+          "end_time": 290.32
+        }
+      ]
+    },
+    {
+      "text": "feeling like accidents. The five iron that",
+      "start_time": 290.38,
+      "end_time": 293.21,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "feeling",
+          "start_time": 290.38,
+          "end_time": 290.7
+        },
+        {
+          "text": " ",
+          "start_time": 290.7,
+          "end_time": 290.74
+        },
+        {
+          "text": "like",
+          "start_time": 290.74,
+          "end_time": 290.94
+        },
+        {
+          "text": " ",
+          "start_time": 290.94,
+          "end_time": 291.06
+        },
+        {
+          "text": "accidents.",
+          "start_time": 291.06,
+          "end_time": 291.94
+        },
+        {
+          "text": " ",
+          "start_time": 292.0,
+          "end_time": 292.04
+        },
+        {
+          "text": "The",
+          "start_time": 292.04,
+          "end_time": 292.14
+        },
+        {
+          "text": " ",
+          "start_time": 292.14,
+          "end_time": 292.18
+        },
+        {
+          "text": "five",
+          "start_time": 292.18,
+          "end_time": 292.54
+        },
+        {
+          "text": " ",
+          "start_time": 292.54,
+          "end_time": 292.66
+        },
+        {
+          "text": "iron",
+          "start_time": 292.66,
+          "end_time": 293.02
+        },
+        {
+          "text": " ",
+          "start_time": 293.02,
+          "end_time": 293.03
+        },
+        {
+          "text": "that",
+          "start_time": 293.03,
+          "end_time": 293.21
+        }
+      ]
+    },
+    {
+      "text": "used to skid and leak right now started",
+      "start_time": 293.28,
+      "end_time": 295.68,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "used",
+          "start_time": 293.28,
+          "end_time": 293.4
+        },
+        {
+          "text": " ",
+          "start_time": 293.4,
+          "end_time": 293.44
+        },
+        {
+          "text": "to",
+          "start_time": 293.44,
+          "end_time": 293.56
+        },
+        {
+          "text": " ",
+          "start_time": 293.56,
+          "end_time": 293.64
+        },
+        {
+          "text": "skid",
+          "start_time": 293.64,
+          "end_time": 293.94
+        },
+        {
+          "text": " ",
+          "start_time": 293.94,
+          "end_time": 293.96
+        },
+        {
+          "text": "and",
+          "start_time": 293.96,
+          "end_time": 294.02
+        },
+        {
+          "text": " ",
+          "start_time": 294.02,
+          "end_time": 294.12
+        },
+        {
+          "text": "leak",
+          "start_time": 294.12,
+          "end_time": 294.46
+        },
+        {
+          "text": " ",
+          "start_time": 294.46,
+          "end_time": 294.52
+        },
+        {
+          "text": "right",
+          "start_time": 294.52,
+          "end_time": 294.82
+        },
+        {
+          "text": " ",
+          "start_time": 294.82,
+          "end_time": 294.88
+        },
+        {
+          "text": "now",
+          "start_time": 294.88,
+          "end_time": 295.22
+        },
+        {
+          "text": " ",
+          "start_time": 295.22,
+          "end_time": 295.34
+        },
+        {
+          "text": "started",
+          "start_time": 295.34,
+          "end_time": 295.68
+        }
+      ]
+    },
+    {
+      "text": "online and stayed brave. The wedge that",
+      "start_time": 295.76,
+      "end_time": 298.67,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "online",
+          "start_time": 295.76,
+          "end_time": 296.36
+        },
+        {
+          "text": " ",
+          "start_time": 296.36,
+          "end_time": 296.4
+        },
+        {
+          "text": "and",
+          "start_time": 296.4,
+          "end_time": 296.52
+        },
+        {
+          "text": " ",
+          "start_time": 296.52,
+          "end_time": 296.64
+        },
+        {
+          "text": "stayed",
+          "start_time": 296.64,
+          "end_time": 296.94
+        },
+        {
+          "text": " ",
+          "start_time": 296.94,
+          "end_time": 296.98
+        },
+        {
+          "text": "brave.",
+          "start_time": 296.98,
+          "end_time": 297.85
+        },
+        {
+          "text": " ",
+          "start_time": 297.85,
+          "end_time": 297.88
+        },
+        {
+          "text": "The",
+          "start_time": 297.88,
+          "end_time": 298.0
+        },
+        {
+          "text": " ",
+          "start_time": 298.0,
+          "end_time": 298.04
+        },
+        {
+          "text": "wedge",
+          "start_time": 298.04,
+          "end_time": 298.44
+        },
+        {
+          "text": " ",
+          "start_time": 298.44,
+          "end_time": 298.48
+        },
+        {
+          "text": "that",
+          "start_time": 298.48,
+          "end_time": 298.67
+        }
+      ]
+    },
+    {
+      "text": "once dove left when he got handsy now held",
+      "start_time": 298.72,
+      "end_time": 301.56,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "once",
+          "start_time": 298.72,
+          "end_time": 299.06
+        },
+        {
+          "text": " ",
+          "start_time": 299.06,
+          "end_time": 299.08
+        },
+        {
+          "text": "dove",
+          "start_time": 299.08,
+          "end_time": 299.44
+        },
+        {
+          "text": " ",
+          "start_time": 299.44,
+          "end_time": 299.52
+        },
+        {
+          "text": "left",
+          "start_time": 299.52,
+          "end_time": 299.84
+        },
+        {
+          "text": " ",
+          "start_time": 299.84,
+          "end_time": 299.88
+        },
+        {
+          "text": "when",
+          "start_time": 299.88,
+          "end_time": 300.03
+        },
+        {
+          "text": " ",
+          "start_time": 300.03,
+          "end_time": 300.06
+        },
+        {
+          "text": "he",
+          "start_time": 300.06,
+          "end_time": 300.16
+        },
+        {
+          "text": " ",
+          "start_time": 300.16,
+          "end_time": 300.2
+        },
+        {
+          "text": "got",
+          "start_time": 300.2,
+          "end_time": 300.43
+        },
+        {
+          "text": " ",
+          "start_time": 300.43,
+          "end_time": 300.48
+        },
+        {
+          "text": "handsy",
+          "start_time": 300.48,
+          "end_time": 300.94
+        },
+        {
+          "text": " ",
+          "start_time": 300.94,
+          "end_time": 301.02
+        },
+        {
+          "text": "now",
+          "start_time": 301.02,
+          "end_time": 301.27
+        },
+        {
+          "text": " ",
+          "start_time": 301.27,
+          "end_time": 301.3
+        },
+        {
+          "text": "held",
+          "start_time": 301.3,
+          "end_time": 301.56
+        }
+      ]
+    },
+    {
+      "text": "the face and clipped shots with a proper",
+      "start_time": 301.58,
+      "end_time": 303.94,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "the",
+          "start_time": 301.58,
+          "end_time": 301.64
+        },
+        {
+          "text": " ",
+          "start_time": 301.7,
+          "end_time": 301.74
+        },
+        {
+          "text": "face",
+          "start_time": 301.74,
+          "end_time": 302.14
+        },
+        {
+          "text": " ",
+          "start_time": 302.14,
+          "end_time": 302.18
+        },
+        {
+          "text": "and",
+          "start_time": 302.18,
+          "end_time": 302.28
+        },
+        {
+          "text": " ",
+          "start_time": 302.28,
+          "end_time": 302.44
+        },
+        {
+          "text": "clipped",
+          "start_time": 302.44,
+          "end_time": 302.76
+        },
+        {
+          "text": " ",
+          "start_time": 302.76,
+          "end_time": 302.78
+        },
+        {
+          "text": "shots",
+          "start_time": 302.78,
+          "end_time": 303.21
+        },
+        {
+          "text": " ",
+          "start_time": 303.21,
+          "end_time": 303.32
+        },
+        {
+          "text": "with",
+          "start_time": 303.32,
+          "end_time": 303.44
+        },
+        {
+          "text": " ",
+          "start_time": 303.44,
+          "end_time": 303.5
+        },
+        {
+          "text": "a",
+          "start_time": 303.5,
+          "end_time": 303.58
+        },
+        {
+          "text": " ",
+          "start_time": 303.58,
+          "end_time": 303.62
+        },
+        {
+          "text": "proper",
+          "start_time": 303.62,
+          "end_time": 303.94
+        }
+      ]
+    },
+    {
+      "text": "flight. Yardages got honest, and with",
+      "start_time": 304.06,
+      "end_time": 307.76,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "flight.",
+          "start_time": 304.06,
+          "end_time": 305.26
+        },
+        {
+          "text": " ",
+          "start_time": 305.26,
+          "end_time": 305.34
+        },
+        {
+          "text": "Yardages",
+          "start_time": 305.34,
+          "end_time": 306.08
+        },
+        {
+          "text": " ",
+          "start_time": 306.08,
+          "end_time": 306.14
+        },
+        {
+          "text": "got",
+          "start_time": 306.14,
+          "end_time": 306.36
+        },
+        {
+          "text": " ",
+          "start_time": 306.36,
+          "end_time": 306.5
+        },
+        {
+          "text": "honest,",
+          "start_time": 306.5,
+          "end_time": 307.42
+        },
+        {
+          "text": " ",
+          "start_time": 307.42,
+          "end_time": 307.44
+        },
+        {
+          "text": "and",
+          "start_time": 307.44,
+          "end_time": 307.58
+        },
+        {
+          "text": " ",
+          "start_time": 307.58,
+          "end_time": 307.62
+        },
+        {
+          "text": "with",
+          "start_time": 307.62,
+          "end_time": 307.76
+        }
+      ]
+    },
+    {
+      "text": "honesty came something men don't talk",
+      "start_time": 307.86,
+      "end_time": 310.06,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "honesty",
+          "start_time": 307.86,
+          "end_time": 308.34
+        },
+        {
+          "text": " ",
+          "start_time": 308.34,
+          "end_time": 308.46
+        },
+        {
+          "text": "came",
+          "start_time": 308.46,
+          "end_time": 308.68
+        },
+        {
+          "text": " ",
+          "start_time": 308.68,
+          "end_time": 308.8
+        },
+        {
+          "text": "something",
+          "start_time": 308.8,
+          "end_time": 309.16
+        },
+        {
+          "text": " ",
+          "start_time": 309.16,
+          "end_time": 309.22
+        },
+        {
+          "text": "men",
+          "start_time": 309.22,
+          "end_time": 309.42
+        },
+        {
+          "text": " ",
+          "start_time": 309.42,
+          "end_time": 309.52
+        },
+        {
+          "text": "don't",
+          "start_time": 309.52,
+          "end_time": 309.79
+        },
+        {
+          "text": " ",
+          "start_time": 309.79,
+          "end_time": 309.82
+        },
+        {
+          "text": "talk",
+          "start_time": 309.82,
+          "end_time": 310.06
+        }
+      ]
+    },
+    {
+      "text": "about enough, relief. The relief of not",
+      "start_time": 310.18,
+      "end_time": 314.14,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "about",
+          "start_time": 310.18,
+          "end_time": 310.43
+        },
+        {
+          "text": " ",
+          "start_time": 310.43,
+          "end_time": 310.48
+        },
+        {
+          "text": "enough,",
+          "start_time": 310.48,
+          "end_time": 311.42
+        },
+        {
+          "text": " ",
+          "start_time": 311.42,
+          "end_time": 311.6
+        },
+        {
+          "text": "relief.",
+          "start_time": 311.6,
+          "end_time": 313.1
+        },
+        {
+          "text": " ",
+          "start_time": 313.1,
+          "end_time": 313.11
+        },
+        {
+          "text": "The",
+          "start_time": 313.11,
+          "end_time": 313.24
+        },
+        {
+          "text": " ",
+          "start_time": 313.24,
+          "end_time": 313.28
+        },
+        {
+          "text": "relief",
+          "start_time": 313.28,
+          "end_time": 313.72
+        },
+        {
+          "text": " ",
+          "start_time": 313.72,
+          "end_time": 313.78
+        },
+        {
+          "text": "of",
+          "start_time": 313.78,
+          "end_time": 313.88
+        },
+        {
+          "text": " ",
+          "start_time": 313.88,
+          "end_time": 313.89
+        },
+        {
+          "text": "not",
+          "start_time": 313.89,
+          "end_time": 314.14
+        }
+      ]
+    },
+    {
+      "text": "explaining yourself to a game that doesn't",
+      "start_time": 314.2,
+      "end_time": 316.73,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "explaining",
+          "start_time": 314.2,
+          "end_time": 314.83
+        },
+        {
+          "text": " ",
+          "start_time": 314.83,
+          "end_time": 314.86
+        },
+        {
+          "text": "yourself",
+          "start_time": 314.86,
+          "end_time": 315.36
+        },
+        {
+          "text": " ",
+          "start_time": 315.36,
+          "end_time": 315.4
+        },
+        {
+          "text": "to",
+          "start_time": 315.4,
+          "end_time": 315.5
+        },
+        {
+          "text": " ",
+          "start_time": 315.5,
+          "end_time": 315.54
+        },
+        {
+          "text": "a",
+          "start_time": 315.54,
+          "end_time": 315.66
+        },
+        {
+          "text": " ",
+          "start_time": 315.66,
+          "end_time": 315.7
+        },
+        {
+          "text": "game",
+          "start_time": 315.7,
+          "end_time": 316.12
+        },
+        {
+          "text": " ",
+          "start_time": 316.12,
+          "end_time": 316.18
+        },
+        {
+          "text": "that",
+          "start_time": 316.18,
+          "end_time": 316.34
+        },
+        {
+          "text": " ",
+          "start_time": 316.34,
+          "end_time": 316.36
+        },
+        {
+          "text": "doesn't",
+          "start_time": 316.36,
+          "end_time": 316.73
+        }
+      ]
+    },
+    {
+      "text": "listen. Swing weight didn't turn Cal into",
+      "start_time": 316.78,
+      "end_time": 320.05,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "listen.",
+          "start_time": 316.78,
+          "end_time": 317.51
+        },
+        {
+          "text": " ",
+          "start_time": 317.51,
+          "end_time": 317.58
+        },
+        {
+          "text": "Swing",
+          "start_time": 317.58,
+          "end_time": 317.86
+        },
+        {
+          "text": " ",
+          "start_time": 317.86,
+          "end_time": 317.96
+        },
+        {
+          "text": "weight",
+          "start_time": 317.96,
+          "end_time": 318.56
+        },
+        {
+          "text": " ",
+          "start_time": 318.56,
+          "end_time": 318.6
+        },
+        {
+          "text": "didn't",
+          "start_time": 318.6,
+          "end_time": 318.969
+        },
+        {
+          "text": " ",
+          "start_time": 318.969,
+          "end_time": 319.0
+        },
+        {
+          "text": "turn",
+          "start_time": 319.0,
+          "end_time": 319.34
+        },
+        {
+          "text": " ",
+          "start_time": 319.34,
+          "end_time": 319.38
+        },
+        {
+          "text": "Cal",
+          "start_time": 319.38,
+          "end_time": 319.76
+        },
+        {
+          "text": " ",
+          "start_time": 319.76,
+          "end_time": 319.82
+        },
+        {
+          "text": "into",
+          "start_time": 319.82,
+          "end_time": 320.05
+        }
+      ]
+    },
+    {
+      "text": "someone else. It took who he already was,",
+      "start_time": 320.1,
+      "end_time": 323.58,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "someone",
+          "start_time": 320.1,
+          "end_time": 320.52
+        },
+        {
+          "text": " ",
+          "start_time": 320.52,
+          "end_time": 320.62
+        },
+        {
+          "text": "else.",
+          "start_time": 320.62,
+          "end_time": 321.43
+        },
+        {
+          "text": " ",
+          "start_time": 321.43,
+          "end_time": 321.5
+        },
+        {
+          "text": "It",
+          "start_time": 321.5,
+          "end_time": 321.65
+        },
+        {
+          "text": " ",
+          "start_time": 321.65,
+          "end_time": 321.68
+        },
+        {
+          "text": "took",
+          "start_time": 321.68,
+          "end_time": 321.84
+        },
+        {
+          "text": " ",
+          "start_time": 321.9,
+          "end_time": 321.92
+        },
+        {
+          "text": "who",
+          "start_time": 321.92,
+          "end_time": 322.08
+        },
+        {
+          "text": " ",
+          "start_time": 322.08,
+          "end_time": 322.1
+        },
+        {
+          "text": "he",
+          "start_time": 322.1,
+          "end_time": 322.28
+        },
+        {
+          "text": " ",
+          "start_time": 322.28,
+          "end_time": 322.38
+        },
+        {
+          "text": "already",
+          "start_time": 322.38,
+          "end_time": 322.9
+        },
+        {
+          "text": " ",
+          "start_time": 322.9,
+          "end_time": 322.94
+        },
+        {
+          "text": "was,",
+          "start_time": 322.94,
+          "end_time": 323.58
+        }
+      ]
+    },
+    {
+      "text": "the tempo he had, the strength he'd kept,",
+      "start_time": 323.59,
+      "end_time": 327.1,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "the",
+          "start_time": 323.59,
+          "end_time": 323.76
+        },
+        {
+          "text": " ",
+          "start_time": 323.76,
+          "end_time": 323.82
+        },
+        {
+          "text": "tempo",
+          "start_time": 323.82,
+          "end_time": 324.2
+        },
+        {
+          "text": " ",
+          "start_time": 324.2,
+          "end_time": 324.26
+        },
+        {
+          "text": "he",
+          "start_time": 324.26,
+          "end_time": 324.46
+        },
+        {
+          "text": " ",
+          "start_time": 324.46,
+          "end_time": 324.66
+        },
+        {
+          "text": "had,",
+          "start_time": 324.66,
+          "end_time": 325.11
+        },
+        {
+          "text": " ",
+          "start_time": 325.11,
+          "end_time": 325.16
+        },
+        {
+          "text": "the",
+          "start_time": 325.16,
+          "end_time": 325.28
+        },
+        {
+          "text": " ",
+          "start_time": 325.28,
+          "end_time": 325.4
+        },
+        {
+          "text": "strength",
+          "start_time": 325.4,
+          "end_time": 325.78
+        },
+        {
+          "text": " ",
+          "start_time": 325.78,
+          "end_time": 325.8
+        },
+        {
+          "text": "he'd",
+          "start_time": 325.8,
+          "end_time": 326.08
+        },
+        {
+          "text": " ",
+          "start_time": 326.08,
+          "end_time": 326.14
+        },
+        {
+          "text": "kept,",
+          "start_time": 326.14,
+          "end_time": 327.1
+        }
+      ]
+    },
+    {
+      "text": "and made it repeatable. There's romance",
+      "start_time": 327.14,
+      "end_time": 330.08,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "and",
+          "start_time": 327.14,
+          "end_time": 327.27
+        },
+        {
+          "text": " ",
+          "start_time": 327.27,
+          "end_time": 327.3
+        },
+        {
+          "text": "made",
+          "start_time": 327.3,
+          "end_time": 327.48
+        },
+        {
+          "text": " ",
+          "start_time": 327.48,
+          "end_time": 327.52
+        },
+        {
+          "text": "it",
+          "start_time": 327.52,
+          "end_time": 327.64
+        },
+        {
+          "text": " ",
+          "start_time": 327.64,
+          "end_time": 327.68
+        },
+        {
+          "text": "repeatable.",
+          "start_time": 327.68,
+          "end_time": 329.2
+        },
+        {
+          "text": " ",
+          "start_time": 329.2,
+          "end_time": 329.24
+        },
+        {
+          "text": "There's",
+          "start_time": 329.24,
+          "end_time": 329.469
+        },
+        {
+          "text": " ",
+          "start_time": 329.469,
+          "end_time": 329.52
+        },
+        {
+          "text": "romance",
+          "start_time": 329.52,
+          "end_time": 330.08
+        }
+      ]
+    },
+    {
+      "text": "in distance, sure, but",
+      "start_time": 330.12,
+      "end_time": 331.35,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "in",
+          "start_time": 330.12,
+          "end_time": 330.28
+        },
+        {
+          "text": " ",
+          "start_time": 330.28,
+          "end_time": 330.3
+        },
+        {
+          "text": "distance,",
+          "start_time": 330.3,
+          "end_time": 330.82
+        },
+        {
+          "text": " ",
+          "start_time": 330.82,
+          "end_time": 330.86
+        },
+        {
+          "text": "sure,",
+          "start_time": 330.86,
+          "end_time": 331.23
+        },
+        {
+          "text": " ",
+          "start_time": 331.23,
+          "end_time": 331.24
+        },
+        {
+          "text": "but",
+          "start_time": 331.24,
+          "end_time": 331.35
+        }
+      ]
+    },
+    {
+      "text": "there's a deeper romance in trust. When",
+      "start_time": 332.08,
+      "end_time": 335.36,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "there's",
+          "start_time": 332.08,
+          "end_time": 332.32
+        },
+        {
+          "text": " ",
+          "start_time": 332.32,
+          "end_time": 332.38
+        },
+        {
+          "text": "a",
+          "start_time": 332.38,
+          "end_time": 332.4
+        },
+        {
+          "text": " ",
+          "start_time": 332.4,
+          "end_time": 332.54
+        },
+        {
+          "text": "deeper",
+          "start_time": 332.54,
+          "end_time": 332.92
+        },
+        {
+          "text": " ",
+          "start_time": 332.92,
+          "end_time": 333.0
+        },
+        {
+          "text": "romance",
+          "start_time": 333.0,
+          "end_time": 333.7
+        },
+        {
+          "text": " ",
+          "start_time": 333.7,
+          "end_time": 333.84
+        },
+        {
+          "text": "in",
+          "start_time": 333.84,
+          "end_time": 333.94
+        },
+        {
+          "text": " ",
+          "start_time": 333.94,
+          "end_time": 334.04
+        },
+        {
+          "text": "trust.",
+          "start_time": 334.04,
+          "end_time": 335.18
+        },
+        {
+          "text": " ",
+          "start_time": 335.18,
+          "end_time": 335.22
+        },
+        {
+          "text": "When",
+          "start_time": 335.22,
+          "end_time": 335.36
+        }
+      ]
+    },
+    {
+      "text": "the club's weight is right, you stop",
+      "start_time": 335.42,
+      "end_time": 338.14,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "the",
+          "start_time": 335.42,
+          "end_time": 335.5
+        },
+        {
+          "text": " ",
+          "start_time": 335.5,
+          "end_time": 335.56
+        },
+        {
+          "text": "club's",
+          "start_time": 335.56,
+          "end_time": 335.9
+        },
+        {
+          "text": " ",
+          "start_time": 335.9,
+          "end_time": 336.0
+        },
+        {
+          "text": "weight",
+          "start_time": 336.0,
+          "end_time": 336.24
+        },
+        {
+          "text": " ",
+          "start_time": 336.24,
+          "end_time": 336.28
+        },
+        {
+          "text": "is",
+          "start_time": 336.28,
+          "end_time": 336.44
+        },
+        {
+          "text": " ",
+          "start_time": 336.44,
+          "end_time": 336.5
+        },
+        {
+          "text": "right,",
+          "start_time": 336.5,
+          "end_time": 337.32
+        },
+        {
+          "text": " ",
+          "start_time": 337.32,
+          "end_time": 337.48
+        },
+        {
+          "text": "you",
+          "start_time": 337.48,
+          "end_time": 337.58
+        },
+        {
+          "text": " ",
+          "start_time": 337.58,
+          "end_time": 337.76
+        },
+        {
+          "text": "stop",
+          "start_time": 337.76,
+          "end_time": 338.14
+        }
+      ]
+    },
+    {
+      "text": "bargaining with impact. You stop",
+      "start_time": 338.2,
+      "end_time": 340.24,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "bargaining",
+          "start_time": 338.2,
+          "end_time": 338.78
+        },
+        {
+          "text": " ",
+          "start_time": 338.78,
+          "end_time": 338.82
+        },
+        {
+          "text": "with",
+          "start_time": 338.82,
+          "end_time": 338.96
+        },
+        {
+          "text": " ",
+          "start_time": 338.96,
+          "end_time": 339.06
+        },
+        {
+          "text": "impact.",
+          "start_time": 339.06,
+          "end_time": 339.66
+        },
+        {
+          "text": " ",
+          "start_time": 339.66,
+          "end_time": 339.7
+        },
+        {
+          "text": "You",
+          "start_time": 339.7,
+          "end_time": 339.78
+        },
+        {
+          "text": " ",
+          "start_time": 339.78,
+          "end_time": 339.92
+        },
+        {
+          "text": "stop",
+          "start_time": 339.92,
+          "end_time": 340.24
+        }
+      ]
+    },
+    {
+      "text": "flinching. You just swing",
+      "start_time": 340.32,
+      "end_time": 342.64,
+      "speaker": {
+        "id": "speaker_1",
+        "name": "Speaker 1"
+      },
+      "words": [
+        {
+          "text": "flinching.",
+          "start_time": 340.32,
+          "end_time": 341.14
+        },
+        {
+          "text": " ",
+          "start_time": 341.14,
+          "end_time": 341.18
+        },
+        {
+          "text": "You",
+          "start_time": 341.18,
+          "end_time": 341.26
+        },
+        {
+          "text": " ",
+          "start_time": 341.26,
+          "end_time": 341.36
+        },
+        {
+          "text": "just",
+          "start_time": 341.36,
+          "end_time": 341.58
+        },
+        {
+          "text": " ",
+          "start_time": 341.58,
+          "end_time": 341.7
+        },
+        {
+          "text": "swing",
+          "start_time": 341.7,
+          "end_time": 342.64
+        }
+      ]
+    }
+  ]
+}
