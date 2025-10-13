@@ -73,24 +73,54 @@
             return hours * 3600 + minutes * 60 + seconds;
         }
         
-        // Highlight text as audio plays - OPTIMIZED
+        // Highlight text as audio plays - FRAME-ACCURATE (like ElevenLabs)
         const audio = document.getElementById('blogAudio');
         const blogContent = document.querySelector('.blog-content');
         let lastCueIndex = -1;
-        let originalHTML = blogContent.innerHTML;
+        let isPlaying = false;
         
-        audio.addEventListener('timeupdate', function() {
+        // Use requestAnimationFrame for smooth 60fps updates (not timeupdate)
+        function tick() {
+            if (!isPlaying) return;
+            
             const currentTime = audio.currentTime;
             
-            // Find matching cue efficiently
-            const cueIndex = vttCues.findIndex(cue => 
-                currentTime >= cue.start && currentTime < cue.end
-            );
+            // Binary search for current cue (faster than findIndex)
+            let cueIndex = -1;
+            for (let i = 0; i < vttCues.length; i++) {
+                if (currentTime >= vttCues[i].start && currentTime < vttCues[i].end) {
+                    cueIndex = i;
+                    break;
+                }
+            }
             
-            // Only update if cue changed (reduces lag)
-            if (cueIndex !== lastCueIndex && cueIndex !== -1) {
+            // Only update if cue changed (reduces DOM manipulation)
+            if (cueIndex !== lastCueIndex) {
+                if (cueIndex !== -1) {
+                    highlightText(vttCues[cueIndex].text);
+                }
                 lastCueIndex = cueIndex;
-                highlightText(vttCues[cueIndex].text);
+            }
+            
+            requestAnimationFrame(tick);
+        }
+        
+        audio.addEventListener('play', function() {
+            isPlaying = true;
+            requestAnimationFrame(tick);
+        });
+        
+        audio.addEventListener('pause', function() {
+            isPlaying = false;
+        });
+        
+        audio.addEventListener('ended', function() {
+            isPlaying = false;
+            // Remove all highlights when done
+            if (paragraphCache) {
+                paragraphCache.forEach(item => {
+                    item.element.innerHTML = item.originalHTML;
+                });
             }
         });
         
