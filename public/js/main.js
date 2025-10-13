@@ -17,23 +17,40 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Mobile menu toggle
+    // Mobile menu toggle - with better error handling
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const navMenu = document.querySelector('.nav-menu');
     
     if (mobileMenuBtn && navMenu) {
-        mobileMenuBtn.addEventListener('click', function() {
+        // Remove any existing listeners first
+        const newMenuBtn = mobileMenuBtn.cloneNode(true);
+        mobileMenuBtn.parentNode.replaceChild(newMenuBtn, mobileMenuBtn);
+        
+        newMenuBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            console.log('Mobile menu clicked');
             navMenu.classList.toggle('active');
-            mobileMenuBtn.classList.toggle('active');
+            newMenuBtn.classList.toggle('active');
         });
         
         // Close mobile menu when clicking a link
-        navMenu.querySelectorAll('.nav-link').forEach(link => {
+        navMenu.querySelectorAll('.nav-link, .cart-button').forEach(link => {
             link.addEventListener('click', function() {
                 navMenu.classList.remove('active');
-                mobileMenuBtn.classList.remove('active');
+                newMenuBtn.classList.remove('active');
             });
         });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!navMenu.contains(e.target) && !newMenuBtn.contains(e.target)) {
+                navMenu.classList.remove('active');
+                newMenuBtn.classList.remove('active');
+            }
+        });
+    } else {
+        console.warn('Mobile menu elements not found', {mobileMenuBtn, navMenu});
     }
 
     // Smooth scroll for anchor links
@@ -530,4 +547,5 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
 
