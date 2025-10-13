@@ -15,9 +15,10 @@
                 <h3 style="color: white; margin: 0;">Listen to This Article</h3>
             </div>
             <audio id="blogAudio" controls style="width: 100%; margin-bottom: 1rem;">
-                <source src="https://thehistoricfaith.b-cdn.net/courses/All%20Q%26A's%20/Project%20software%20files/GB/Maya%20and%20Dan.mp3" type="audio/mpeg">
+                <source src="<?= base_url('audio/maya-and-dan.mp3') ?>" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
+            <p style="color: rgba(255,255,255,0.8); font-size: 0.9rem; margin: 0;">Note: Upload maya-and-dan.mp3 to public/audio/ folder to enable playback</p>
             <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
                 <button onclick="setPlaybackSpeed(1)" style="background: white; color: var(--deep-green); border: none; padding: 0.5rem 1rem; border-radius: 5px; cursor: pointer; font-weight: 600;">1x</button>
                 <button onclick="setPlaybackSpeed(1.5)" style="background: white; color: var(--deep-green); border: none; padding: 0.5rem 1rem; border-radius: 5px; cursor: pointer; font-weight: 600;">1.5x</button>
