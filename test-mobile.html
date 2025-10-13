@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Test</title>
+    <link rel="stylesheet" href="public/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <a href="/" class="logo">
+                <img src="public/images/logo-banner.png" alt="Logo" style="height: 80px;">
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="/" class="nav-link">Home</a></li>
+                <li><a href="/custom-club-building" class="nav-link">Club Builds</a></li>
+                <li><a href="/fitting" class="nav-link">Fitting</a></li>
+                <li>
+                    <a href="/cart" class="cart-button" id="cart-button">
+                        <span class="cart-icon">🛒</span>
+                        <span class="cart-count" id="cart-count">3</span>
+                    </a>
+                </li>
+            </ul>
+            
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+    
+    <main>
+        <div style="margin-top: 120px; padding: 2rem;">
+            <h1>Mobile Menu Test</h1>
+            <p>Resize browser to mobile width (< 768px) and test:</p>
+            <ul>
+                <li>Click hamburger menu - should open</li>
+                <li>Cart icon should show with number</li>
+                <li>Menu should close when clicking outside</li>
+            </ul>
+        </div>
+    </main>
+    
+    <script src="public/js/main.js"></script>
+</body>
+</html>

@@ -440,89 +440,23 @@ function updateCartCount() {
         cartCountElement.textContent = totalItems;
         
         // Add visual notification when count increases
-        if (totalItems > previousCount) {
-            // Add 'updated' class for red pulse animation
+        if (totalItems > previousCount && totalItems > 0) {
+            // Add 'updated' class for pulse animation
             cartCountElement.classList.add('updated');
             
             // Remove class after animation completes
             setTimeout(() => {
                 cartCountElement.classList.remove('updated');
             }, 500);
-            
-            // Show quick notification on mobile
-            if (window.innerWidth <= 768) {
-                showMobileCartNotification(totalItems);
-            }
         }
         
         // Show or hide badge based on count
         if (totalItems === 0) {
-            cartCountElement.style.opacity = '0.5';
+            cartCountElement.style.display = 'none';
         } else {
-            cartCountElement.style.opacity = '1';
+            cartCountElement.style.display = 'flex';
         }
     }
-}
-
-// Show mobile cart notification
-function showMobileCartNotification(count) {
-    // Create temporary notification
-    const notification = document.createElement('div');
-    notification.style.cssText = `
-        position: fixed;
-        top: 80px;
-        right: 20px;
-        background: var(--deep-green);
-        color: white;
-        padding: 12px 20px;
-        border-radius: 25px;
-        font-weight: 600;
-        font-size: 14px;
-        z-index: 9999;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-        animation: slideInRight 0.3s ease-out;
-    `;
-    notification.textContent = `🛒 ${count} item${count !== 1 ? 's' : ''} in cart`;
-    
-    document.body.appendChild(notification);
-    
-    // Remove after 2 seconds
-    setTimeout(() => {
-        notification.style.animation = 'slideOutRight 0.3s ease-out';
-        setTimeout(() => {
-            notification.remove();
-        }, 300);
-    }, 2000);
-}
-
-// Add notification animations
-if (!document.getElementById('cart-notification-styles')) {
-    const style = document.createElement('style');
-    style.id = 'cart-notification-styles';
-    style.textContent = `
-        @keyframes slideInRight {
-            from {
-                transform: translateX(100%);
-                opacity: 0;
-            }
-            to {
-                transform: translateX(0);
-                opacity: 1;
-            }
-        }
-        
-        @keyframes slideOutRight {
-            from {
-                transform: translateX(0);
-                opacity: 1;
-            }
-            to {
-                transform: translateX(100%);
-                opacity: 0;
-            }
-        }
-    `;
-    document.head.appendChild(style);
 }
 
 // Listen for storage changes to update cart count across tabs
