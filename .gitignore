@@ -1,6 +1,10 @@
 # Golf Club Builders - Git Ignore File
 # This prevents sensitive config files from being overwritten
 
+# Dependencies
+vendor/
+node_modules/
+
 # Environment files
 .env
 .env.local
