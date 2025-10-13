@@ -127,12 +127,15 @@
         // Cache for paragraph content
         let paragraphCache = null;
         
+        let currentParagraphIndex = 0;
+        
         function highlightText(text) {
             // Build cache once
             if (!paragraphCache) {
-                paragraphCache = Array.from(blogContent.querySelectorAll('p, h2, li')).map(p => ({
+                paragraphCache = Array.from(blogContent.querySelectorAll('p, h2, li')).map((p, idx) => ({
                     element: p,
-                    originalHTML: p.innerHTML
+                    originalHTML: p.innerHTML,
+                    index: idx
                 }));
             }
             
@@ -147,33 +150,54 @@
                 .replace(/\s+/g, ' ')
                 .trim();
             
-            // Split into words for flexible matching
-            const searchWords = normalizedSearch.split(' ');
-            
-            for (let item of paragraphCache) {
+            // Try exact phrase match first (ignore punctuation)
+            for (let i = currentParagraphIndex; i < paragraphCache.length; i++) {
+                const item = paragraphCache[i];
                 const normalizedContent = item.element.textContent.toLowerCase()
-                    .replace(/[.,;:!?"'—]/g, '')
+                    .replace(/[.,;:!?"'—–]/g, '')
                     .replace(/\s+/g, ' ');
                 
-                // Check if most words from the cue are in this paragraph
-                const matchCount = searchWords.filter(word => 
-                    normalizedContent.includes(word)
-                ).length;
-                
-                if (matchCount >= searchWords.length * 0.7) { // 70% match threshold
-                    // Highlight each word individually
-                    searchWords.forEach(word => {
-                        if (word.length > 2) { // Skip very short words
-                            const regex = new RegExp(`\\b${word}\\b`, 'gi');
-                            item.element.innerHTML = item.element.innerHTML.replace(regex, match => 
-                                `<mark class="audio-highlight">${match}</mark>`
-                            );
-                        }
-                    });
+                // Look for the phrase in this paragraph
+                if (normalizedContent.includes(normalizedSearch)) {
+                    // Escape special regex characters in the original text
+                    const words = text.split(/\s+/);
+                    const pattern = words.map(w => 
+                        w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+                    ).join('[\\s\\-—–.,;:!?\'"]*'); // Allow punctuation between words
                     
-                    // Scroll to highlighted text
+                    const regex = new RegExp(pattern, 'i');
+                    item.element.innerHTML = item.element.innerHTML.replace(regex, match => 
+                        `<mark class="audio-highlight">${match}</mark>`
+                    );
+                    
+                    // Update current position and scroll
+                    currentParagraphIndex = i;
                     item.element.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                    break; // Only highlight first matching paragraph
+                    return; // Found it, done
+                }
+            }
+            
+            // If not found from current position, search from beginning
+            for (let i = 0; i < currentParagraphIndex; i++) {
+                const item = paragraphCache[i];
+                const normalizedContent = item.element.textContent.toLowerCase()
+                    .replace(/[.,;:!?"'—–]/g, '')
+                    .replace(/\s+/g, ' ');
+                
+                if (normalizedContent.includes(normalizedSearch)) {
+                    const words = text.split(/\s+/);
+                    const pattern = words.map(w => 
+                        w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+                    ).join('[\\s\\-—–.,;:!?\'"]*');
+                    
+                    const regex = new RegExp(pattern, 'i');
+                    item.element.innerHTML = item.element.innerHTML.replace(regex, match => 
+                        `<mark class="audio-highlight">${match}</mark>`
+                    );
+                    
+                    currentParagraphIndex = i;
+                    item.element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    return;
                 }
             }
         }
