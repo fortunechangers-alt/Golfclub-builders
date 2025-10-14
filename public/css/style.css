@@ -1833,9 +1833,9 @@ textarea.form-control {
         font-size: 1rem;
     }
     
-    /* Policy Banner - no extra margin needed, body padding handles header offset */
+    /* Policy Banner - small breathing room from header */
     .policy-banner {
-        margin-top: 0 !important;
+        margin-top: 8px !important;
     }
     
     /* Hero section */
