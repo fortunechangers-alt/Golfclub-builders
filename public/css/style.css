@@ -1835,8 +1835,7 @@ textarea.form-control {
     
     /* Policy Banner - tight to header on mobile (no gap) */
     .policy-banner {
-        margin-top: 64px !important;
-        padding-top: 0 !important;
+        margin-top: 56px !important;
     }
     
     /* Hero section */
