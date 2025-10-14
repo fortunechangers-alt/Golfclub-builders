@@ -51,7 +51,10 @@ These are ACTUAL issues found in blog posts that caused highlighting to drift:
 
 ### Special Characters in Filenames ❌
 - **Wrong:** `file=Loft & Lie.mp3` → **Right:** `file=Loft %26 Lie.mp3` (URL-encode ampersand)
+- **Wrong:** `file=Players‑Distance.mp3` → **Right:** `file=Players%E2%80%91Distance.mp3` (URL-encode unicode dash)
 - Ampersands (&) must be encoded as `%26` in URLs
+- Unicode non-breaking hyphens (‑) must be encoded as `%E2%80%91` in URLs
+- Regular hyphens (-) don't need encoding
 
 **GOLDEN RULE:** Extract the transcript FIRST. Copy it word-for-word. Don't fix "errors" - match exactly!
 
