@@ -141,63 +141,76 @@
             </div>
         </div>
         
+        <!-- Capacity Notice -->
+        <div class="card" style="margin-bottom: 2rem; background: var(--light); border-left: 4px solid var(--gold);">
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <div style="font-size: 2rem;">👥</div>
+                <div>
+                    <h4 style="margin: 0 0 0.5rem 0; color: var(--deep-green);">Group Friendly</h4>
+                    <p style="margin: 0; color: #666;">Comfortably accommodates up to 6 guests, with space for 8 maximum</p>
+                </div>
+            </div>
+        </div>
+        
         <!-- Rental Options -->
         <div class="card" style="margin-bottom: 3rem;">
-            <h3 style="margin-bottom: 1.5rem; color: var(--deep-green);">Select Rental Duration</h3>
-            <p style="margin-bottom: 2rem; color: #666;">Choose your rental duration and add to cart. All rentals include setup, instruction, and cleanup.</p>
+            <h3 style="margin-bottom: 1rem; color: var(--deep-green);">Simulator Rental Pricing</h3>
+            <p style="margin-bottom: 2rem; color: #666;">Choose your preferred time and duration. All rentals include setup, instruction, and cleanup.</p>
             
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
-                <div style="text-align: center; padding: 2rem; border: 2px solid var(--light); border-radius: 12px; background: white;">
-                    <h4 style="color: var(--deep-green); margin-bottom: 1rem;">Hourly</h4>
-                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--deep-green); margin-bottom: 1rem;">
-                        $<?= number_format($pricing['hourly'], 2) ?>/hr
-                    </div>
-                    <p style="color: #666; margin-bottom: 1.5rem;">Perfect for quick practice sessions or testing new clubs</p>
-                    <ul style="list-style: none; padding: 0; text-align: left; margin-bottom: 2rem;">
-                        <li style="margin-bottom: 0.5rem;">✓ 1 hour of simulator time</li>
-                        <li style="margin-bottom: 0.5rem;">✓ Basic instruction included</li>
-                        <li style="margin-bottom: 0.5rem;">✓ Data export available</li>
+            <!-- Pricing Table -->
+            <div style="overflow-x: auto; margin-bottom: 2rem;">
+                <table style="width: 100%; border-collapse: collapse; min-width: 600px;">
+                    <thead>
+                        <tr style="background: var(--deep-green); color: white;">
+                            <th style="padding: 1rem; text-align: left; border: 1px solid #ddd;">Time Slot</th>
+                            <th style="padding: 1rem; text-align: center; border: 1px solid #ddd;">Hourly</th>
+                            <th style="padding: 1rem; text-align: center; border: 1px solid #ddd;">4 Hours</th>
+                            <th style="padding: 1rem; text-align: center; border: 1px solid #ddd;">8 Hours</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="background: #f8f9fa;">
+                            <td style="padding: 1rem; border: 1px solid #ddd;"><strong>Weekday Daytime</strong><br><span style="font-size: 0.9rem; color: #666;">9am-5pm Mon-Fri</span></td>
+                            <td style="padding: 1rem; text-align: center; border: 1px solid #ddd; font-weight: 700; color: var(--deep-green);">$20/hr</td>
+                            <td style="padding: 1rem; text-align: center; border: 1px solid #ddd; font-weight: 700; color: var(--deep-green);">$75</td>
+                            <td style="padding: 1rem; text-align: center; border: 1px solid #ddd; font-weight: 700; color: var(--deep-green);">$140</td>
+                        </tr>
+                        <tr style="background: white;">
+                            <td style="padding: 1rem; border: 1px solid #ddd;"><strong>Weekday Evening</strong><br><span style="font-size: 0.9rem; color: #666;">5pm-close Mon-Fri</span></td>
+                            <td style="padding: 1rem; text-align: center; border: 1px solid #ddd; font-weight: 700;">$40/hr</td>
+                            <td style="padding: 1rem; text-align: center; border: 1px solid #ddd; font-weight: 700;">$140</td>
+                            <td style="padding: 1rem; text-align: center; border: 1px solid #ddd; font-weight: 700;">$250</td>
+                        </tr>
+                        <tr style="background: #fff9e6;">
+                            <td style="padding: 1rem; border: 1px solid #ddd;"><strong>Weekend</strong><br><span style="font-size: 0.9rem; color: #666;">All day Sat-Sun</span></td>
+                            <td style="padding: 1rem; text-align: center; border: 1px solid #ddd; font-weight: 700; color: var(--gold);">$50/hr</td>
+                            <td style="padding: 1rem; text-align: center; border: 1px solid #ddd; font-weight: 700; color: var(--gold);">$175</td>
+                            <td style="padding: 1rem; text-align: center; border: 1px solid #ddd; font-weight: 700; color: var(--gold);">$300</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div style="background: var(--light); padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem;">
+                <h4 style="color: var(--deep-green); margin-bottom: 1rem;">What's Included:</h4>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="margin-bottom: 0.5rem;">✓ GC3 Foresight launch monitor</li>
+                        <li style="margin-bottom: 0.5rem;">✓ GSPro course software</li>
+                        <li style="margin-bottom: 0.5rem;">✓ 100+ world-class courses</li>
                     </ul>
-                    <div style="display: flex; align-items: center; justify-content: center; gap: 1rem; margin-bottom: 1rem;">
-                        <label style="font-weight: 600;">Hours:</label>
-                        <input type="number" id="hourly-hours" min="1" max="8" value="1" style="width: 80px; padding: 0.5rem; border: 1px solid #ddd; border-radius: 4px; text-align: center;">
-                    </div>
-                    <button class="btn btn-primary rental-option-btn" data-type="hourly" data-duration="60" style="width: 100%;">Add to Cart</button>
-                </div>
-                
-                <div style="text-align: center; padding: 2rem; border: 2px solid var(--deep-green); border-radius: 12px; background: var(--light); position: relative;">
-                    <div style="position: absolute; top: -10px; left: 50%; transform: translateX(-50%); background: var(--deep-green); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem; font-weight: 600;">
-                        POPULAR
-                    </div>
-                    <h4 style="color: var(--deep-green); margin-bottom: 1rem;">Half-Day</h4>
-                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--deep-green); margin-bottom: 1rem;">
-                        $<?= number_format($pricing['half_day'], 2) ?>
-                    </div>
-                    <p style="color: #666; margin-bottom: 1.5rem;"><?= $pricing['half_day_hours'] ?> hours - Great for group sessions</p>
-                    <ul style="list-style: none; padding: 0; text-align: left; margin-bottom: 2rem;">
-                        <li style="margin-bottom: 0.5rem;">✓ <?= $pricing['half_day_hours'] ?> hours of simulator time</li>
-                        <li style="margin-bottom: 0.5rem;">✓ Full instruction & analysis</li>
-                        <li style="margin-bottom: 0.5rem;">✓ Course selection included</li>
-                        <li style="margin-bottom: 0.5rem;">✓ Data export & recommendations</li>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="margin-bottom: 0.5rem;">✓ Professional instruction</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Swing analysis & data</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Performance tracking</li>
                     </ul>
-                    <button class="btn btn-primary rental-option-btn" data-type="half-day" data-duration="240" style="width: 100%;">Add to Cart</button>
                 </div>
-                
-                <div style="text-align: center; padding: 2rem; border: 2px solid var(--light); border-radius: 12px; background: white;">
-                    <h4 style="color: var(--deep-green); margin-bottom: 1rem;">Full-Day</h4>
-                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--deep-green); margin-bottom: 1rem;">
-                        $<?= number_format($pricing['full_day'], 2) ?>
-                    </div>
-                    <p style="color: #666; margin-bottom: 1.5rem;"><?= $pricing['full_day_hours'] ?> hours - Ultimate golf experience</p>
-                    <ul style="list-style: none; padding: 0; text-align: left; margin-bottom: 2rem;">
-                        <li style="margin-bottom: 0.5rem;">✓ <?= $pricing['full_day_hours'] ?> hours of simulator time</li>
-                        <li style="margin-bottom: 0.5rem;">✓ Complete swing analysis</li>
-                        <li style="margin-bottom: 0.5rem;">✓ Multiple course options</li>
-                        <li style="margin-bottom: 0.5rem;">✓ Detailed performance report</li>
-                        <li style="margin-bottom: 0.5rem;">✓ Lunch break included</li>
-                    </ul>
-                    <button class="btn btn-primary rental-option-btn" data-type="full-day" data-duration="480" style="width: 100%;">Add to Cart</button>
-                </div>
+            </div>
+            
+            <div style="text-align: center; padding: 2rem; background: linear-gradient(135deg, var(--deep-green), #0a5a42); color: white; border-radius: 12px;">
+                <h4 style="color: white; margin-bottom: 1rem;">Ready to Book?</h4>
+                <p style="margin-bottom: 1.5rem; color: rgba(255,255,255,0.9);">Call us to schedule your simulator session and discuss which time slot works best for you.</p>
+                <a href="tel:7173871643" style="background: var(--gold); color: var(--graphite); padding: 1rem 2rem; border-radius: 6px; text-decoration: none; font-weight: 700; display: inline-block;">📞 Call (717) 387-1643</a>
             </div>
         </div>
         

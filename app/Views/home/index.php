@@ -33,15 +33,15 @@
                 <div class="service-icon" style="background: linear-gradient(135deg, var(--deep-green), #0d2a5c);">⚙️</div>
                 <h3>Custom Club Building</h3>
                 <p>Complete custom club building service from shaft selection to final assembly. Each club meticulously crafted to your exact specifications.</p>
-                <p><strong>Starting at $24</strong> | Emergency +50%</p>
+                <p><strong>Starting at $21.99</strong> | Emergency +50%</p>
                 <a href="<?= base_url('/custom-club-building') ?>" class="btn btn-primary">Build & Order</a>
             </div>
             
             <div class="card service-card">
                 <div class="service-icon" style="background: linear-gradient(135deg, var(--gold), #e6c45c);">🏌️</div>
                 <h3>Simulator Rental</h3>
-                <p>GC3 Foresight simulator rental with professional analysis. Perfect for winter practice, club testing, and swing improvement.</p>
-                <p><strong>$40/hour</strong> | Half/Full day available</p>
+                <p>GC3 Foresight simulator rental with professional analysis. Accommodates up to 8 guests (6 comfortably). Perfect for winter practice, club testing, and swing improvement.</p>
+                <p><strong>From $20/hour</strong> | Half/Full day rates available</p>
                 <a href="<?= base_url('/simulator') ?>" class="btn btn-primary">Rent Simulator</a>
             </div>
             

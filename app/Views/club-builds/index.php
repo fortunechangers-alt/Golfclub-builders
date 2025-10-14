@@ -153,18 +153,18 @@
                         <tbody>
                             <tr>
                                 <td style="padding: 1rem; border-bottom: 1px solid #eee;">Grip installation (labour only)</td>
-                                <td style="padding: 1rem; text-align: center; border-bottom: 1px solid #eee;">$4.00/club</td>
-                                <td style="padding: 1rem; text-align: center; border-bottom: 1px solid #eee;">$6.00/club</td>
+                                <td style="padding: 1rem; text-align: center; border-bottom: 1px solid #eee;">$3.99/club</td>
+                                <td style="padding: 1rem; text-align: center; border-bottom: 1px solid #eee;">$5.99/club</td>
                             </tr>
                             <tr>
                                 <td style="padding: 1rem; border-bottom: 1px solid #eee;">Grip installation (with grip purchase)</td>
-                                <td style="padding: 1rem; text-align: center; border-bottom: 1px solid #eee;">$4.00 + grip</td>
-                                <td style="padding: 1rem; text-align: center; border-bottom: 1px solid #eee;">$6.00 + grip</td>
+                                <td style="padding: 1rem; text-align: center; border-bottom: 1px solid #eee;">$3.99 + grip</td>
+                                <td style="padding: 1rem; text-align: center; border-bottom: 1px solid #eee;">$5.99 + grip</td>
                             </tr>
                             <tr>
                                 <td style="padding: 1rem;">Save & reinstall old grip</td>
-                                <td style="padding: 1rem; text-align: center;">$9.00</td>
-                                <td style="padding: 1rem; text-align: center;">$13.50</td>
+                                <td style="padding: 1rem; text-align: center;">$7.99</td>
+                                <td style="padding: 1rem; text-align: center;">$11.99</td>
                             </tr>
                         </tbody>
                     </table>
@@ -211,13 +211,13 @@ function updatePrices() {
     const multiplier = isRush ? rushMultiplier : 1;
     
     // Update displayed prices
-    document.getElementById('iron-price').textContent = (24.00 * multiplier).toFixed(2);
-    document.getElementById('metalwood-price').textContent = (28.00 * multiplier).toFixed(2);
-    document.getElementById('adapter-price').textContent = (24.00 * multiplier).toFixed(2);
+    document.getElementById('iron-price').textContent = (21.99 * multiplier).toFixed(2);
+    document.getElementById('metalwood-price').textContent = (24.99 * multiplier).toFixed(2);
+    document.getElementById('adapter-price').textContent = (17.99 * multiplier).toFixed(2);
     document.getElementById('polish-price').textContent = (20.00 * multiplier).toFixed(2);
-    document.getElementById('grip-bring-price').textContent = (4.00 * multiplier).toFixed(2);
-    document.getElementById('grip-with-price').textContent = (4.00 * multiplier).toFixed(2);
-    document.getElementById('grip-save-price').textContent = (9.00 * multiplier).toFixed(2);
+    document.getElementById('grip-bring-price').textContent = (3.99 * multiplier).toFixed(2);
+    document.getElementById('grip-with-price').textContent = (3.99 * multiplier).toFixed(2);
+    document.getElementById('grip-save-price').textContent = (7.99 * multiplier).toFixed(2);
     
     calculateTotal();
 }
@@ -234,9 +234,9 @@ function calculateTotal() {
     const gripWithCount = parseInt(document.getElementById('grip-with-count').value) || 0;
     const gripSaveCount = parseInt(document.getElementById('grip-save-count').value) || 0;
     
-    const total = (ironCount * 24.00 + metalwoodCount * 28.00 + adapterCount * 24.00 + 
-                  polishCount * 20.00 + gripBringCount * 4.00 + gripWithCount * 4.00 + 
-                  gripSaveCount * 9.00) * multiplier;
+    const total = (ironCount * 21.99 + metalwoodCount * 24.99 + adapterCount * 17.99 + 
+                  polishCount * 20.00 + gripBringCount * 3.99 + gripWithCount * 3.99 + 
+                  gripSaveCount * 7.99) * multiplier;
     
     document.getElementById('total-cost').textContent = '$' + total.toFixed(2);
 }
