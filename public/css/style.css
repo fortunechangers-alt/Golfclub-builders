@@ -365,8 +365,8 @@ html {
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
 }
 
-/* Hero Video Animation */
-.hero-video-container {
+/* Hero Animation with Image Sequence */
+.hero-animation-container {
     position: relative;
     width: 100%;
     height: 100%;
@@ -375,7 +375,7 @@ html {
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
 }
 
-#heroVideo {
+#heroAnimation {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1986,12 +1986,12 @@ textarea.form-control {
         margin-bottom: 0.5rem !important;
     }
     
-    /* Hero Video - extra small screens */
-    .hero-video-container {
+    /* Hero Animation - extra small screens */
+    .hero-animation-container {
         min-height: 250px;
     }
     
-    #heroVideo {
+    #heroAnimation {
         min-height: 250px;
     }
 }
