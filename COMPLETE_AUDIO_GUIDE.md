@@ -617,13 +617,24 @@ When seeking: HTTP 206 Partial Content
 
 Last Updated: October 14, 2025
 
-**Five blog posts now have perfectly aligned audio players:**
+**16 blog posts now have perfectly aligned audio players:**
 1. ✅ Players Irons vs Game Improvement Irons
 2. ✅ Men's vs Women's Clubs (Maya and Dan)
-3. ✅ When the Club Found Its Weight
-4. ✅ The Golfer Who Found Trust in His Shaft (version 2)
-5. ✅ Eli's Journey: When Numbers Meet Feel
-6. ✅ Daniel's Search for the Perfect Middle Path
+3. ✅ Finding the Right Shaft Flex
+4. ✅ When the Club Found Its Weight
+5. ✅ The Golfer Who Found Trust in His Shaft (version 2)
+6. ✅ Eli's Journey: When Numbers Meet Feel
+7. ✅ Daniel's Search for the Perfect Middle Path
+8. ✅ Blade versus cavity back
+9. ✅ Do You Need More Club Weight?
+10. ✅ Graphite versus steel shafts
+11. ✅ Loft and Lie
+12. ✅ Grip Size & Feel
+13. ✅ Set Gapping
+14. ✅ Hybrids vs Long Irons
+15. ✅ Flex by Swing Speed
+16. ✅ Game Improvement vs Players vs Players-Distance Irons
 
 **All use identical working code with text matched perfectly to transcripts.**
+**Last 10+ posts worked perfectly on FIRST TRY using the Audio Player Guide!**
 
