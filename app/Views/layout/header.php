@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
     <!-- Main CSS -->
-    <link rel="stylesheet" href="<?= base_url('css/style.min.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('css/style.min.css?v=2.1') ?>">
     
     <!-- Favicon -->
     <link rel="icon" type="image/webp" href="<?= base_url('images/logo-small.webp') ?>">
