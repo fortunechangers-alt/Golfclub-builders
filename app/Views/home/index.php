@@ -14,8 +14,13 @@
                 <a href="<?= base_url('/contact') ?>" class="btn btn-outline">Contact Us</a>
             </div>
         </div>
-        <div class="hero-image">
-            <img src="<?= base_url('images/hero-golf.jpg') ?>" alt="Golf Club Fitting" onerror="this.src='https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?w=800&q=80'">
+        <div class="hero-video-container">
+            <video id="heroVideo" muted playsinline preload="auto">
+                <source src="<?= base_url('video/Hero Video.mp4') ?>" type="video/mp4">
+            </video>
+            <audio id="ballDropSound" preload="auto">
+                <source src="<?= base_url('video/Hero Video.mp4') ?>" type="audio/mp4">
+            </audio>
         </div>
     </div>
 </section>
@@ -51,7 +56,7 @@
             
             <div class="card service-card">
                 <div class="service-icon" style="display: flex; align-items: center; justify-content: center; overflow: hidden;">
-                    <img src="<?= base_url('images/AI CLUB AND SHAFT FITTING.png') ?>" alt="AI Club & Shaft Fitting" style="width: 100%; height: 100%; object-fit: cover;">
+                    <img src="<?= base_url('images/AI CLUB AND SHAFT FITTING.png') ?>" alt="AI Club & Shaft Fitting" style="width: 100%; height: 100%; object-fit: contain;">
                 </div>
                 <h3>AI Club & Shaft Fitting</h3>
                 <p>Revolutionary AI technology analyzes your swing in real-time, providing data-driven recommendations for optimal club selection and customization.</p>

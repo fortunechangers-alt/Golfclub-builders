@@ -365,6 +365,24 @@ html {
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
 }
 
+/* Hero Video Animation */
+.hero-video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+#heroVideo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+}
+
 /* Sections */
 .section {
     padding: 6rem 2rem;
@@ -1966,5 +1984,14 @@ textarea.form-control {
     label[style*="display: block"] {
         font-size: 0.95rem !important;
         margin-bottom: 0.5rem !important;
+    }
+    
+    /* Hero Video - extra small screens */
+    .hero-video-container {
+        min-height: 250px;
+    }
+    
+    #heroVideo {
+        min-height: 250px;
     }
 }
