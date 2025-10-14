@@ -328,21 +328,41 @@ The blog post text MUST match the audio transcript exactly, or highlighting will
 **Text differences that break alignment:**
 - ❌ "muscle-back" in blog vs "muscle back" in audio
 - ❌ "mid profile" (two words) in blog vs "mid-profile" (hyphenated) in audio
+- ❌ "game-improvement" in blog vs "game improvement" (two words) in audio
 - ❌ "vs." in blog vs "versus" in audio  
 - ❌ Bullet lists in blog vs continuous paragraphs in audio
 - ❌ "I'm" in blog vs "I am" in audio
 - ❌ "ninety seven" in blog vs "97" in audio
+- ❌ "thinish" in blog vs "thin-ish" in audio
+- ❌ Missing commas in blog that are in audio ("steps and" vs "steps, and")
+- ❌ Audio may have stuttered/doubled words (e.g., "didn didn't") - keep them!
 
 **CRITICAL:** 
-- Hyphenated words count as ONE word in audio. Match hyphens EXACTLY!
+- Hyphenated words: Check the JSON transcript! Don't assume.
+  - "mid-profile" (1 word) vs "game improvement" (2 words) - both are valid!
 - Bullet lists are usually spoken as continuous sentences. Convert them to paragraphs!
+- Listen for ALL commas - they affect word boundaries!
+- AI voice may stutter - if it says "didn didn't", you MUST include both words!
 
-**Tips:**
-- Use the transcript from the JSON file
-- Match capitalization doesn't matter (we normalize)
-- Punctuation should match what's spoken
-- Numbers vs words: match exactly what's in the audio ("97" or "ninety seven")
-- Hyphens matter: "mid-profile" (1 word) ≠ "mid profile" (2 words)
+**MANDATORY: Extract transcript FIRST:**
+```python
+import json
+data = json.load(open('public/JSON/YOUR_FILE.mp3.json'))
+transcript = ' '.join([seg['text'] for seg in data['segments']])
+print(transcript)
+```
+
+**Then match EXACTLY:**
+- Use the transcript word-for-word
+- Capitalization doesn't matter (we normalize)
+- **Punctuation DOES matter** - match every comma, period, quote
+- Numbers vs words: match exactly ("97" or "ninety seven")
+- **Hyphens: NEVER assume!** Check the transcript:
+  - "mid-profile" (1 word) ≠ "mid profile" (2 words)
+  - "swing-weight" (1 word) ≠ "swing weight" (2 words)
+  - "game improvement" (2 words) even though you'd normally hyphenate it!
+- Keep stuttered/doubled words if in audio
+- Convert bullet lists to continuous paragraphs
 
 ---
 

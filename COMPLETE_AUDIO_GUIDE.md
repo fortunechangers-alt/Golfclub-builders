@@ -19,6 +19,40 @@
 
 ---
 
+## MOST COMMON MISTAKES (Learn from Real Examples)
+
+These are ACTUAL issues found in blog posts that caused highlighting to drift:
+
+### Hyphen Assumptions ❌
+- **Wrong:** Assumed "game-improvement" was hyphenated → **Right:** Audio said "game improvement" (2 words)
+- **Wrong:** Wrote "swing-weight" → **Right:** Audio said "swing weight" (2 words)
+- **Wrong:** Wrote "mid profile" → **Right:** Audio said "mid-profile" (1 word)
+
+**Lesson:** NEVER assume! Extract transcript and check EVERY compound word.
+
+### Missing Commas ❌
+- **Wrong:** "steps and stopped" → **Right:** "steps, and stopped"
+- **Wrong:** "hands and made" → **Right:** "hands, and made"
+- **Wrong:** "face tape then" → **Right:** "face tape, then"
+
+**Lesson:** Commas affect word boundaries. Listen carefully or extract transcript!
+
+### Bullet Lists ❌
+- **Wrong:** Kept `<ul><li>` bullet points → **Right:** Converted to continuous paragraphs
+- Audio doesn't say "bullet one, bullet two" - it speaks continuously
+
+### AI Voice Quirks ❌
+- **Wrong:** Corrected "didn didn't" to "didn't" → **Right:** Kept "didn didn't" (stuttered in audio)
+- **Wrong:** Removed ellipsis from title → **Right:** Script filters it automatically
+
+### Numbers ❌
+- **Wrong:** "ninety seven" → **Right:** "97" (audio said the number)
+- **Wrong:** "ten" → **Right:** "10" (audio said the number)
+
+**GOLDEN RULE:** Extract the transcript FIRST. Copy it word-for-word. Don't fix "errors" - match exactly!
+
+---
+
 ## THE 6 CRITICAL SUCCESS FACTORS
 
 ### 1. Blog Text MUST Match Audio Transcript EXACTLY
@@ -29,6 +63,7 @@ This is the #1 cause of failures. Every word, punctuation, and character must ma
 - Em-dashes (—) in blog but periods/commas in audio
 - "muscle-back" in blog but "muscle back" in audio  
 - **"mid profile" (two words) in blog but "mid-profile" (hyphenated, ONE word) in audio**
+- **"game-improvement" (hyphenated) in blog but "game improvement" (two words) in audio**
 - "vs." in blog but "versus" in audio
 - "(L/A/M/R/S/X/TX)" as block but spoken as "L, A, M, R, S, X, TX"
 - "I'm" in blog but "I am" in audio
@@ -36,11 +71,20 @@ This is the #1 cause of failures. Every word, punctuation, and character must ma
 - "ten" in blog but "10" in audio
 - **"ninety seven" in blog but "97" (number) in audio**
 - **Ellipsis (...) at start of audio** - Automatically filtered out by script
+- **"thinish" in blog but "thin-ish" (hyphenated) in audio**
+- **Missing commas:** "steps and stopped" in blog but "steps, and stopped" in audio
+- **Doubled words in audio:** Sometimes AI voice stutters (e.g., "didn didn't") - keep it to match!
 
 **CRITICAL:** 
-- Hyphenated words in audio count as ONE word. If audio says "mid-profile", blog must say "mid-profile" (not "mid profile").
+- Hyphenated words in audio count as ONE word. Check EVERY compound word!
+  - Audio "mid-profile" → Blog "mid-profile" ✅
+  - Audio "game improvement" → Blog "game improvement" ✅ (NO hyphen!)
+  - Audio "thin-ish" → Blog "thin-ish" ✅
+  - You MUST check the JSON - don't assume hyphens!
 - Lists in audio are usually spoken as continuous sentences, NOT bullet points. Convert to paragraphs.
 - Ellipsis (...) is automatically filtered out - don't worry about it in titles.
+- **Listen for ALL commas** - "steps and stopped" vs "steps, and stopped" makes a difference!
+- **AI voice may stutter/repeat words** - If audio says "didn didn't", keep both words in blog!
 
 **Solution:** Extract transcript from JSON, rewrite blog to match exactly.
 
@@ -171,8 +215,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 1. Listen to full audio file
 2. Note exact order words are spoken
-3. Check if title is spoken (how: colon? comma? period?)
+3. Check if title is spoken (how: colon? comma? period? ellipsis?)
 4. Note words spoken differently than written
+5. **Listen for stutters/doubled words** - AI voice may repeat words
+6. **Note ALL comma placements** - they matter for word alignment
 
 ### PHASE 2: Extract JSON Transcript
 
@@ -194,24 +240,45 @@ document.addEventListener('DOMContentLoaded', function() {
 
 ### PHASE 3: Rewrite Blog Text
 
-**Use the transcript as your guide. Rewrite blog to match EXACTLY.**
+**THE GOLDEN RULE: Extract the EXACT transcript from JSON first, then copy it word-for-word.**
 
-1. Update h1 title (exact punctuation/caps)
+**Use this Python script to extract the transcript:**
+```python
+import json
+with open('public/JSON/YOUR_FILE.mp3.json') as f:
+    data = json.load(f)
+    transcript = ' '.join([seg['text'] for seg in data['segments']])
+    print(transcript)
+```
+
+**Then match EXACTLY:**
+
+1. Update h1 title (exact punctuation/caps from audio)
 2. Remove ALL em-dashes (—) → use periods/commas
-3. Remove special Unicode dashes (‑) → use regular or spaces
-4. **Match hyphenation EXACTLY** - If audio says "mid-profile" keep hyphen, if "mid profile" remove it
-5. **Numbers vs words** - If audio says "97" use the number, if "ninety seven" spell it out
-6. Replace abbreviations:
+3. Remove special Unicode dashes (‑) → use regular hyphens only
+4. **Match hyphenation EXACTLY** - ALWAYS check JSON first, never assume:
+   - ✅ "mid-profile" (hyphenated)
+   - ✅ "game improvement" (NOT hyphenated!)
+   - ✅ "swing weight" (NOT hyphenated!)
+   - ✅ "thin-ish" (hyphenated)
+   - Each audio file is different - CHECK THE TRANSCRIPT!
+5. **Numbers vs words** - Match exactly: "97" or "ninety seven"
+6. **Match ALL comma placements:**
+   - "steps and stopped" vs "steps, and stopped"
+   - "hands and made" vs "hands, and made"
+   - Commas affect word boundaries - critical for alignment!
+7. **Keep stuttered/doubled words** - If audio says "didn didn't", keep both!
+8. Replace abbreviations as spoken:
    - "Dr." → "Doctor"
    - "vs." → "versus"
-   - Check if spoken with or without hyphen
-7. Handle contractions to match audio
-8. **Convert bullet lists to continuous paragraphs** - Audio doesn't say "bullet one, bullet two"
-9. Special formatting:
+9. Handle contractions to match audio ("want" vs "wanna", "I'm" vs "I am")
+10. **Convert ALL bullet lists to continuous paragraphs** - Audio speaks them as sentences
+11. Convert headings to paragraphs if they're spoken inline (not as separate headings)
+12. Special formatting:
    - "(L/A/M/R/S/X/TX)" → "L-A-M-R, S-X-T-X" (as spoken)
    - Remove unspoken parentheses
-10. NO duplicate titles/headings
-11. Compare word count with JSON
+13. NO duplicate titles/headings
+14. Compare word count with JSON (should be within 10 words)
 
 ### PHASE 4: Add Audio Player & Script
 
@@ -499,25 +566,57 @@ When seeking: HTTP 206 Partial Content
 
 **Use this file as the COMPLETE reference:** `players-vs-game-improvement-irons.php`
 
-**Process:**
-1. Extract transcript from JSON (Python script above)
-2. Copy players-irons file
-3. Change 4 things (audio filename, JSON filename, selector if needed, blog text)
-4. Blog text MUST match transcript word-for-word
-5. Test with checklist
+**MANDATORY PROCESS - Follow EXACTLY:**
+
+1. **FIRST: Extract transcript from JSON**
+   ```python
+   import json
+   data = json.load(open('public/JSON/YOUR_FILE.mp3.json'))
+   transcript = ' '.join([seg['text'] for seg in data['segments']])
+   print(transcript)
+   ```
+
+2. **Copy working file as template**
+3. **Change ONLY these things:**
+   - Audio filename
+   - JSON filename
+   - Blog text (rewrite to match transcript EXACTLY)
+   
+4. **Blog text rewrite checklist:**
+   - ✅ Copy transcript word-for-word
+   - ✅ Check EVERY hyphen (mid-profile vs game improvement vs swing weight)
+   - ✅ Match ALL commas exactly
+   - ✅ Keep stuttered words (didn didn't)
+   - ✅ Convert bullet lists to paragraphs
+   - ✅ Use numbers or words exactly as spoken
+   - ✅ Match contractions (wanna vs want to)
+   
+5. **Test with checklist**
 
 **DO NOT:**
-- Guess at text matching
-- Use DOMContentLoaded
-- Place script outside content area
-- Skip extracting the transcript
-- Change working script logic
+- ❌ Guess at hyphens or assume standard grammar
+- ❌ Skip extracting the full transcript
+- ❌ Keep bullet lists if audio speaks continuously
+- ❌ Remove "errors" like doubled words - they're in the audio!
+- ❌ Use DOMContentLoaded
+- ❌ Change working script logic
+- ❌ Assume commas - check every single one
+
+**REALITY CHECK:** Every audio file is unique. "swing-weight" is hyphenated in one blog, "swing weight" is two words in another. ALWAYS check the JSON transcript first!
 
 **The system is proven and works. Follow it exactly.**
 
 ---
 
-Last Updated: October 2025
+Last Updated: October 14, 2025
 
-**Both blog posts now use identical working code with text matched to transcripts.**
+**Five blog posts now have perfectly aligned audio players:**
+1. ✅ Players Irons vs Game Improvement Irons
+2. ✅ Men's vs Women's Clubs (Maya and Dan)
+3. ✅ When the Club Found Its Weight
+4. ✅ The Golfer Who Found Trust in His Shaft (version 2)
+5. ✅ Eli's Journey: When Numbers Meet Feel
+6. ✅ Daniel's Search for the Perfect Middle Path
+
+**All use identical working code with text matched perfectly to transcripts.**
 
