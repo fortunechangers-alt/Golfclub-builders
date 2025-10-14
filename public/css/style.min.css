@@ -853,13 +853,46 @@ html {
         justify-content: center;
     }
     
-    /* Get in Touch section mobile improvements */
+    /* Center all footer sections on mobile */
+    .footer-column,
     .footer-contact {
         text-align: center !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin-left: 0 !important;
     }
     
-    .footer-contact .footer-title {
+    .footer-title {
         text-align: center;
+    }
+    
+    .footer-title::after {
+        left: 50% !important;
+        transform: translateX(-50%);
+    }
+    
+    /* Center Quick Links and Services lists */
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-links li {
+        text-align: center;
+    }
+    
+    .footer-link {
+        display: inline-block;
+        padding-left: 0 !important;
+    }
+    
+    .footer-link::before {
+        display: none !important;
+    }
+    
+    .footer-link:hover {
+        padding-left: 0 !important;
     }
     
     .contact-info {
