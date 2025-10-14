@@ -18,7 +18,7 @@
                 <h3 style="color: white; margin: 0; font-size: 1.1rem; font-weight: 600; letter-spacing: 0.5px;">Listen to Article</h3>
             </div>
             <audio id="blogAudio" controls preload="auto" style="width: 100%; margin-bottom: 0.75rem; border-radius: 8px;">
-                <source src="<?= base_url('serve-audio.php?file=Loft & Lie.mp3') ?>" type="audio/mpeg">
+                <source src="<?= base_url('serve-audio.php?file=Loft %26 Lie.mp3') ?>" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
             <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
@@ -70,7 +70,7 @@
             let allWords = [];
             let wordElements = [];
             
-            fetch('<?= base_url('JSON/Loft & Lie.mp3.json') ?>')
+            fetch('<?= base_url('JSON/Loft %26 Lie.mp3.json') ?>')
                 .then(response => response.json())
                 .then(data => {
                     // This JSON has segments with words inside
