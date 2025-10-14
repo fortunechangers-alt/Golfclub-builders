@@ -16,10 +16,10 @@
         </div>
         <div class="hero-video-container">
             <video id="heroVideo" muted playsinline preload="auto">
-                <source src="<?= base_url('video/Hero Video.mp4') ?>" type="video/mp4">
+                <source src="<?= base_url('video/hero-ball.mp4') ?>" type="video/mp4">
             </video>
             <audio id="ballDropSound" preload="auto">
-                <source src="<?= base_url('video/Hero Video.mp4') ?>" type="audio/mp4">
+                <source src="<?= base_url('audio/ball-drop-sound_A01.mp3') ?>" type="audio/mpeg">
             </audio>
         </div>
     </div>
