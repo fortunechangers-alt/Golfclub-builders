@@ -78,9 +78,9 @@ fetch('<?= base_url('JSON/YOUR_JSON_FILE.mp3.json') ?>')
         }
         
         if (allWordsFromSegments.length > 0) {
-            // Filter out spaces and newlines, convert start_time/end_time to start/end
+            // Filter out spaces, newlines, and ellipsis, convert start_time/end_time to start/end
             allWords = allWordsFromSegments
-                .filter(w => w.text && w.text.trim().length > 0 && w.text !== ' ' && w.text !== '\n')
+                .filter(w => w.text && w.text.trim().length > 0 && w.text !== ' ' && w.text !== '\n' && w.text !== '...')
                 .map(w => ({
                     text: w.text,
                     start: w.start_time || w.start,
@@ -111,7 +111,7 @@ function wrapBlogTextWithSpans() {
         // - Inside a button
         // - Contains buttons or phone links
         // - Is a link (Back to Blog)
-        // - Has italic font style (image captions)
+        // - Contains images
         if (element.querySelector('.word-highlight') || 
             audioPlayer.contains(element) ||
             element.closest('a') ||
@@ -119,13 +119,13 @@ function wrapBlogTextWithSpans() {
             element.closest('button') ||
             element.querySelector('button') ||
             element.querySelector('a[href*="tel:"]') ||
-            element.style.fontStyle === 'italic' && element.style.fontSize === '0.9rem') {
+            element.querySelector('img')) {
             return;
         }
         
         const text = element.textContent;
-        // Remove the bullet/dot separator (•) that's not spoken
-        const cleanText = text.replace(/•/g, '');
+        // Remove bullet characters that might be in the text
+        const cleanText = text.replace(/[•·]/g, '').replace(/^\d+\.\s*/gm, '');
         const words = cleanText.split(/\s+/); // Split on spaces but don't keep them
         
         element.innerHTML = '';
@@ -327,15 +327,22 @@ The blog post text MUST match the audio transcript exactly, or highlighting will
 
 **Text differences that break alignment:**
 - ❌ "muscle-back" in blog vs "muscle back" in audio
+- ❌ "mid profile" (two words) in blog vs "mid-profile" (hyphenated) in audio
 - ❌ "vs." in blog vs "versus" in audio  
-- ❌ Extra bullets (•) or punctuation not spoken
+- ❌ Bullet lists in blog vs continuous paragraphs in audio
 - ❌ "I'm" in blog vs "I am" in audio
+- ❌ "ninety seven" in blog vs "97" in audio
+
+**CRITICAL:** 
+- Hyphenated words count as ONE word in audio. Match hyphens EXACTLY!
+- Bullet lists are usually spoken as continuous sentences. Convert them to paragraphs!
 
 **Tips:**
 - Use the transcript from the JSON file
 - Match capitalization doesn't matter (we normalize)
 - Punctuation should match what's spoken
-- Numbers should be written as spoken ("fifteen" not "15")
+- Numbers vs words: match exactly what's in the audio ("97" or "ninety seven")
+- Hyphens matter: "mid-profile" (1 word) ≠ "mid profile" (2 words)
 
 ---
 

@@ -81,9 +81,9 @@
                     }
                     
                     if (allWordsFromSegments.length > 0) {
-                        // Filter out spaces and newlines, convert start_time/end_time to start/end
+                        // Filter out spaces, newlines, and ellipsis, convert start_time/end_time to start/end
                         allWords = allWordsFromSegments
-                            .filter(w => w.text && w.text.trim().length > 0 && w.text !== ' ' && w.text !== '\n')
+                            .filter(w => w.text && w.text.trim().length > 0 && w.text !== ' ' && w.text !== '\n' && w.text !== '...')
                             .map(w => ({
                                 text: w.text,
                                 start: w.start_time || w.start,
@@ -130,8 +130,8 @@
                     }
                     
                     const text = element.textContent;
-                    // Remove the bullet/dot separator (•) that's not spoken
-                    const cleanText = text.replace(/•/g, '');
+                    // Remove bullet characters that might be in the text
+                    const cleanText = text.replace(/[•·]/g, '').replace(/^\d+\.\s*/gm, '');
                     const words = cleanText.split(/\s+/); // Split on spaces but don't keep them
                     
                     element.innerHTML = '';

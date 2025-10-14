@@ -28,11 +28,19 @@ This is the #1 cause of failures. Every word, punctuation, and character must ma
 **What BREAKS alignment:**
 - Em-dashes (—) in blog but periods/commas in audio
 - "muscle-back" in blog but "muscle back" in audio  
+- **"mid profile" (two words) in blog but "mid-profile" (hyphenated, ONE word) in audio**
 - "vs." in blog but "versus" in audio
 - "(L/A/M/R/S/X/TX)" as block but spoken as "L, A, M, R, S, X, TX"
 - "I'm" in blog but "I am" in audio
 - Special Unicode dashes (‑) instead of regular
 - "ten" in blog but "10" in audio
+- **"ninety seven" in blog but "97" (number) in audio**
+- **Ellipsis (...) at start of audio** - Automatically filtered out by script
+
+**CRITICAL:** 
+- Hyphenated words in audio count as ONE word. If audio says "mid-profile", blog must say "mid-profile" (not "mid profile").
+- Lists in audio are usually spoken as continuous sentences, NOT bullet points. Convert to paragraphs.
+- Ellipsis (...) is automatically filtered out - don't worry about it in titles.
 
 **Solution:** Extract transcript from JSON, rewrite blog to match exactly.
 
@@ -191,16 +199,19 @@ document.addEventListener('DOMContentLoaded', function() {
 1. Update h1 title (exact punctuation/caps)
 2. Remove ALL em-dashes (—) → use periods/commas
 3. Remove special Unicode dashes (‑) → use regular or spaces
-4. Replace abbreviations:
+4. **Match hyphenation EXACTLY** - If audio says "mid-profile" keep hyphen, if "mid profile" remove it
+5. **Numbers vs words** - If audio says "97" use the number, if "ninety seven" spell it out
+6. Replace abbreviations:
    - "Dr." → "Doctor"
    - "vs." → "versus"
-   - "7-iron" → "7 iron"
-5. Handle contractions to match audio
-6. Special formatting:
+   - Check if spoken with or without hyphen
+7. Handle contractions to match audio
+8. **Convert bullet lists to continuous paragraphs** - Audio doesn't say "bullet one, bullet two"
+9. Special formatting:
    - "(L/A/M/R/S/X/TX)" → "L-A-M-R, S-X-T-X" (as spoken)
    - Remove unspoken parentheses
-7. NO duplicate titles/headings
-8. Compare word count with JSON
+10. NO duplicate titles/headings
+11. Compare word count with JSON
 
 ### PHASE 4: Add Audio Player & Script
 

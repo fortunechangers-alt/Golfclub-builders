@@ -86,15 +86,15 @@
                     }
                     
                     if (allWordsFromSegments.length > 0) {
-                        // Filter out spaces and newlines, convert start_time/end_time to start/end
+                        // Filter out spaces, newlines, and ellipsis, convert start_time/end_time to start/end
                         allWords = allWordsFromSegments
-                            .filter(w => w.text && w.text.trim().length > 0 && w.text !== ' ' && w.text !== '\n')
+                            .filter(w => w.text && w.text.trim().length > 0 && w.text !== ' ' && w.text !== '\n' && w.text !== '...')
                             .map(w => ({
                                 text: w.text,
                                 start: w.start_time || w.start,
                                 end: w.end_time || w.end
                             }));
-                        console.log('Loaded', allWords.length, 'aligned words (filtered out spaces)');
+                        console.log('Loaded', allWords.length, 'aligned words (filtered out spaces and ellipsis)');
                         
                         // Wrap blog text with spans for highlighting
                         wrapBlogTextWithSpans();
@@ -124,7 +124,7 @@
                     // - Is a link
                     // - Inside CTA section
                     // - Inside info boxes
-                    // - Has image captions (italic + smaller font)
+                    // - Contains images (not the caption, just skip images themselves)
                     // - Contains metadata (time elements)
                     if (element.querySelector('.word-highlight') || 
                         audioPlayer.contains(element) ||
@@ -136,13 +136,14 @@
                         element.closest('div[style*="background: linear-gradient"]') ||
                         element.closest('div[style*="background: #f8f9fa"]') ||
                         element.querySelector('img') ||
-                        element.querySelector('time') ||
-                        (element.style.fontStyle === 'italic' && element.style.fontSize === '0.9rem')) {
+                        element.querySelector('time')) {
                         return;
                     }
                     
                     const text = element.textContent;
-                    const words = text.split(/\s+/);
+                    // Remove bullet characters and ellipsis that might be in the text
+                    const cleanText = text.replace(/[•·]/g, '').replace(/^\d+\.\s*/gm, '').replace(/\.\.\./g, '');
+                    const words = cleanText.split(/\s+/);
                     
                     element.innerHTML = '';
                     words.forEach((word, index) => {
