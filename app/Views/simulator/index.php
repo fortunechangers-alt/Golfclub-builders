@@ -209,8 +209,55 @@
             
             <div style="text-align: center; padding: 2rem; background: linear-gradient(135deg, var(--deep-green), #0a5a42); color: white; border-radius: 12px;">
                 <h4 style="color: white; margin-bottom: 1rem;">Ready to Book?</h4>
-                <p style="margin-bottom: 1.5rem; color: rgba(255,255,255,0.9);">Call us to schedule your simulator session and discuss which time slot works best for you.</p>
+                <p style="margin-bottom: 1.5rem; color: rgba(255,255,255,0.9);">Select your rental below and add to cart, then call us to schedule your specific time slot.</p>
                 <a href="tel:7173871643" style="background: var(--gold); color: var(--graphite); padding: 1rem 2rem; border-radius: 6px; text-decoration: none; font-weight: 700; display: inline-block;">📞 Call (717) 387-1643</a>
+            </div>
+        </div>
+        
+        <!-- Quick Booking Options -->
+        <div class="card" style="margin-bottom: 3rem;">
+            <h3 style="margin-bottom: 1.5rem; color: var(--deep-green);">Quick Booking</h3>
+            <p style="margin-bottom: 2rem; color: #666;">Add rental to cart, then call to schedule your preferred time slot. Final pricing will be confirmed based on day/time selected.</p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                <div style="text-align: center; padding: 2rem; border: 2px solid var(--light); border-radius: 12px; background: white;">
+                    <h4 style="color: var(--deep-green); margin-bottom: 1rem;">Hourly</h4>
+                    <div style="font-size: 2rem; font-weight: 700; color: var(--deep-green); margin-bottom: 0.5rem;">
+                        $20-$50/hr
+                    </div>
+                    <p style="color: #666; font-size: 0.9rem; margin-bottom: 1.5rem;">Based on day/time</p>
+                    <div style="display: flex; align-items: center; justify-content: center; gap: 1rem; margin-bottom: 1rem;">
+                        <label style="font-weight: 600;">Hours:</label>
+                        <input type="number" id="hourly-hours" min="1" max="8" value="1" style="width: 80px; padding: 0.5rem; border: 1px solid #ddd; border-radius: 4px; text-align: center;">
+                    </div>
+                    <button class="btn btn-primary rental-option-btn" data-type="hourly" data-duration="60" style="width: 100%;">Add to Cart</button>
+                </div>
+                
+                <div style="text-align: center; padding: 2rem; border: 2px solid var(--deep-green); border-radius: 12px; background: var(--light);">
+                    <h4 style="color: var(--deep-green); margin-bottom: 1rem;">4 Hours</h4>
+                    <div style="font-size: 2rem; font-weight: 700; color: var(--deep-green); margin-bottom: 0.5rem;">
+                        $75-$175
+                    </div>
+                    <p style="color: #666; font-size: 0.9rem; margin-bottom: 1.5rem;">Based on day/time</p>
+                    <ul style="list-style: none; padding: 0; text-align: left; margin-bottom: 1.5rem;">
+                        <li style="margin-bottom: 0.5rem;">✓ Perfect for groups</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Full analysis included</li>
+                    </ul>
+                    <button class="btn btn-primary rental-option-btn" data-type="half-day" data-duration="240" style="width: 100%;">Add to Cart</button>
+                </div>
+                
+                <div style="text-align: center; padding: 2rem; border: 2px solid var(--light); border-radius: 12px; background: white;">
+                    <h4 style="color: var(--deep-green); margin-bottom: 1rem;">8 Hours</h4>
+                    <div style="font-size: 2rem; font-weight: 700; color: var(--deep-green); margin-bottom: 0.5rem;">
+                        $140-$300
+                    </div>
+                    <p style="color: #666; font-size: 0.9rem; margin-bottom: 1.5rem;">Based on day/time</p>
+                    <ul style="list-style: none; padding: 0; text-align: left; margin-bottom: 1.5rem;">
+                        <li style="margin-bottom: 0.5rem;">✓ Ultimate experience</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Full day access</li>
+                    </ul>
+                    <button class="btn btn-primary rental-option-btn" data-type="full-day" data-duration="480" style="width: 100%;">Add to Cart</button>
+                </div>
             </div>
         </div>
         

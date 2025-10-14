@@ -23,7 +23,7 @@
                         <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Iron Shaft Installation</label>
                         <div style="display: flex; gap: 0.5rem; align-items: center;">
                             <input type="number" id="iron-count" min="0" value="0" style="width: 80px; padding: 0.5rem; border: 1px solid #ddd; border-radius: 4px;">
-                            <span>clubs × $<span id="iron-price">24.00</span></span>
+                            <span>clubs × $<span id="iron-price">21.99</span></span>
                         </div>
                     </div>
                     
@@ -31,7 +31,7 @@
                         <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Metalwood/Hybrid Installation</label>
                         <div style="display: flex; gap: 0.5rem; align-items: center;">
                             <input type="number" id="metalwood-count" min="0" value="0" style="width: 80px; padding: 0.5rem; border: 1px solid #ddd; border-radius: 4px;">
-                            <span>clubs × $<span id="metalwood-price">28.00</span></span>
+                            <span>clubs × $<span id="metalwood-price">24.99</span></span>
                         </div>
                     </div>
                     
@@ -39,7 +39,7 @@
                         <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Shaft Adapter Installation</label>
                         <div style="display: flex; gap: 0.5rem; align-items: center;">
                             <input type="number" id="adapter-count" min="0" value="0" style="width: 80px; padding: 0.5rem; border: 1px solid #ddd; border-radius: 4px;">
-                            <span>adapters × $<span id="adapter-price">24.00</span></span>
+                            <span>adapters × $<span id="adapter-price">17.99</span></span>
                         </div>
                     </div>
                     
@@ -59,7 +59,7 @@
                         <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Grip Installation (Bring Your Grips)</label>
                         <div style="display: flex; gap: 0.5rem; align-items: center;">
                             <input type="number" id="grip-bring-count" min="0" value="0" style="width: 80px; padding: 0.5rem; border: 1px solid #ddd; border-radius: 4px;">
-                            <span>clubs × $<span id="grip-bring-price">4.00</span></span>
+                            <span>clubs × $<span id="grip-bring-price">3.99</span></span>
                         </div>
                     </div>
                     
@@ -67,7 +67,7 @@
                         <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Grip Installation (With Grip Purchase)</label>
                         <div style="display: flex; gap: 0.5rem; align-items: center;">
                             <input type="number" id="grip-with-count" min="0" value="0" style="width: 80px; padding: 0.5rem; border: 1px solid #ddd; border-radius: 4px;">
-                            <span>clubs × $<span id="grip-with-price">4.00</span> + grip cost</span>
+                            <span>clubs × $<span id="grip-with-price">3.99</span> + grip cost</span>
                         </div>
                     </div>
                     
@@ -75,7 +75,7 @@
                         <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Save & Reinstall Old Grip</label>
                         <div style="display: flex; gap: 0.5rem; align-items: center;">
                             <input type="number" id="grip-save-count" min="0" value="0" style="width: 80px; padding: 0.5rem; border: 1px solid #ddd; border-radius: 4px;">
-                            <span>clubs × $<span id="grip-save-price">9.00</span></span>
+                            <span>clubs × $<span id="grip-save-price">7.99</span></span>
                         </div>
                     </div>
                 </div>
