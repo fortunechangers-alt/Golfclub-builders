@@ -301,8 +301,6 @@
                 <img src="<?= base_url('images/girl boy.jpg') ?>" alt="Nate and Ellen - Club Weight Fitting Story" style="max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
             </div>
 
-            <h2 style="color: var(--deep-green); font-size: 2rem; margin: 3rem 0 1.5rem 0; border-bottom: 2px solid var(--light); padding-bottom: 0.5rem;">Nate and Ellen, two sides of the weight story.</h2>
-            
             <p style="margin-bottom: 2rem;">
                 By the time Nate came in, his tempo had a tremor in it. Not nerves, fatigue. He'd been swinging a set that looked fast on paper, feather-light shafts, heads shaved of every gram, grips that felt like air. "I thought lighter meant easier," he said. And then he showed me the flight, a thin that climbed and stalled, a block that held onto the right edge like a ledge. Then, one perfect ball that only showed up when he swung harder than he wanted to.
             </p>
