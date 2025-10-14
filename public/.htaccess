@@ -2,6 +2,49 @@
 Options -Indexes
 
 # ----------------------------------------------------------------------
+# Browser Caching & Performance
+# ----------------------------------------------------------------------
+<IfModule mod_headers.c>
+    # Audio/Video files - 1 week cache + byte-range support
+    <FilesMatch "\.(mp3|mp4|m4a|ogg|webm|wav)$">
+        Header set Accept-Ranges bytes
+        Header set Cache-Control "public, max-age=604800"
+    </FilesMatch>
+    
+    # Images - 1 month cache
+    <FilesMatch "\.(jpg|jpeg|png|gif|webp|svg|ico)$">
+        Header set Cache-Control "public, max-age=2592000, immutable"
+    </FilesMatch>
+    
+    # CSS and JavaScript - 1 week cache
+    <FilesMatch "\.(css|js)$">
+        Header set Cache-Control "public, max-age=604800"
+    </FilesMatch>
+    
+    # JSON files - 1 day cache
+    <FilesMatch "\.json$">
+        Header set Cache-Control "public, max-age=86400"
+    </FilesMatch>
+</IfModule>
+
+# ----------------------------------------------------------------------
+# Gzip Compression
+# ----------------------------------------------------------------------
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+    AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# Ensure proper MIME types for audio
+<IfModule mod_mime.c>
+    AddType audio/mpeg mp3
+    AddType audio/mp4 m4a
+    AddType audio/ogg ogg
+    AddType audio/webm webm
+    AddType audio/wav wav
+</IfModule>
+
+# ----------------------------------------------------------------------
 # Rewrite engine
 # ----------------------------------------------------------------------
 

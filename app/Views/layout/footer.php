@@ -108,7 +108,7 @@
     </footer>
     
     <!-- Main JavaScript -->
-    <script src="<?= base_url('js/main.js') ?>"></script>
+    <script src="<?= base_url('js/main.min.js') ?>"></script>
     
     <!-- Additional page-specific scripts -->
     <?php if (isset($additionalScripts)): ?>
