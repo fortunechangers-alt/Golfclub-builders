@@ -17,7 +17,7 @@
         <div class="hero-animation-container">
             <img id="heroAnimation" src="<?= base_url('Stills for Hero shot/1.webp') ?>" alt="Golf ball animation">
             <audio id="ballDropSound" preload="auto" muted="false">
-                <source src="<?= base_url('audio/ball-drop-sound.mp3') ?>" type="audio/mpeg">
+                <source src="<?= base_url('audio/ball-drop-sound_A01.mp3') ?>" type="audio/mpeg">
             </audio>
         </div>
     </div>
