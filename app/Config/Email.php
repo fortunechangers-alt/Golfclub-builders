@@ -36,7 +36,7 @@ class Email extends BaseConfig
     public string $SMTPUser = 'daniel@golfclub-builders.com';
 
     /**
-     * SMTP Password
+w     * SMTP Password
      */
     public string $SMTPPass = 'lcvnriuuzpvtrrvd';
 
