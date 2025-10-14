@@ -10,6 +10,85 @@
             <p class="section-subtitle">Professional shaft and grip fitting services</p>
         </div>
         
+        <!-- Fitting Calculator -->
+        <div class="card" style="margin-bottom: 3rem; background: var(--light);">
+            <h3 style="margin-bottom: 1.5rem; color: var(--deep-green);">Service Calculator</h3>
+            <p style="margin-bottom: 2rem; color: #666;">Calculate your fitting and repair costs. All prices are labour only unless noted.</p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <div>
+                    <h4 style="margin-bottom: 1rem;">Repairs & Adjustments</h4>
+                    
+                    <div style="margin-bottom: 1rem;">
+                        <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Loft/Lie Adjustment</label>
+                        <div style="display: flex; gap: 0.5rem; align-items: center;">
+                            <input type="number" id="loft-lie-count" min="0" value="0" style="width: 80px; padding: 0.5rem; border: 1px solid #ddd; border-radius: 4px;">
+                            <span>clubs × $<span id="loft-lie-price">5.00</span></span>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-bottom: 1rem;">
+                        <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Swing Weight - Standard</label>
+                        <div style="display: flex; gap: 0.5rem; align-items: center;">
+                            <input type="number" id="swing-weight-std-count" min="0" value="0" style="width: 80px; padding: 0.5rem; border: 1px solid #ddd; border-radius: 4px;">
+                            <span>clubs × $<span id="swing-weight-std-price">10.00</span></span>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-bottom: 1rem;">
+                        <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Shaft Pull (Adapter Only)</label>
+                        <div style="display: flex; gap: 0.5rem; align-items: center;">
+                            <input type="number" id="shaft-pull-count" min="0" value="0" style="width: 80px; padding: 0.5rem; border: 1px solid #ddd; border-radius: 4px;">
+                            <span>clubs × $<span id="shaft-pull-price">9.99</span></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 style="margin-bottom: 1rem;">Shaft Modifications</h4>
+                    
+                    <div style="margin-bottom: 1rem;">
+                        <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Shorten Shaft</label>
+                        <div style="display: flex; gap: 0.5rem; align-items: center;">
+                            <input type="number" id="shorten-count" min="0" value="0" style="width: 80px; padding: 0.5rem; border: 1px solid #ddd; border-radius: 4px;">
+                            <span>clubs × $<span id="shorten-price">6.00</span></span>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-bottom: 1rem;">
+                        <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Lengthen Shaft (Labour)</label>
+                        <div style="display: flex; gap: 0.5rem; align-items: center;">
+                            <input type="number" id="lengthen-count" min="0" value="0" style="width: 80px; padding: 0.5rem; border: 1px solid #ddd; border-radius: 4px;">
+                            <span>clubs × $<span id="lengthen-price">6.00</span></span>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-bottom: 1rem;">
+                        <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Reinstall Shaft</label>
+                        <div style="display: flex; gap: 0.5rem; align-items: center;">
+                            <input type="number" id="reinstall-count" min="0" value="0" style="width: 80px; padding: 0.5rem; border: 1px solid #ddd; border-radius: 4px;">
+                            <span>clubs × $<span id="reinstall-price">15.00</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="margin-top: 2rem; padding-top: 2rem; border-top: 2px solid var(--deep-green);">
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                    <input type="checkbox" id="rush-toggle" style="transform: scale(1.2);">
+                    <label for="rush-toggle" style="font-weight: 600; color: var(--deep-green);">Emergency/Rush Service (+50% on labour)</label>
+                </div>
+                
+                <div style="background: white; padding: 1.5rem; border-radius: 8px; border: 2px solid var(--deep-green);">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <h3 style="margin: 0; color: var(--deep-green);">Total Labour Cost:</h3>
+                        <h2 style="margin: 0; color: var(--deep-green);" id="total-cost">$0.00</h2>
+                    </div>
+                    <p style="margin: 0.5rem 0 0 0; color: #666; font-size: 0.9rem;">Extensions and grips not included in total</p>
+                </div>
+            </div>
+        </div>
+        
         <!-- Fitting Scope -->
         <div class="card" style="margin-bottom: 3rem; background: var(--light);">
             <h3 style="margin-bottom: 1.5rem; color: var(--deep-green);">What We Do</h3>
@@ -149,3 +228,49 @@
         </div>
     </div>
 </section>
+
+<script>
+// Fitting Service Calculator JavaScript
+const rushMultiplier = 1.5;
+
+function updatePrices() {
+    const isRush = document.getElementById('rush-toggle').checked;
+    const multiplier = isRush ? rushMultiplier : 1;
+    
+    // Update displayed prices
+    document.getElementById('loft-lie-price').textContent = (5.00 * multiplier).toFixed(2);
+    document.getElementById('swing-weight-std-price').textContent = (10.00 * multiplier).toFixed(2);
+    document.getElementById('shaft-pull-price').textContent = (9.99 * multiplier).toFixed(2);
+    document.getElementById('shorten-price').textContent = (6.00 * multiplier).toFixed(2);
+    document.getElementById('lengthen-price').textContent = (6.00 * multiplier).toFixed(2);
+    document.getElementById('reinstall-price').textContent = (15.00 * multiplier).toFixed(2);
+    
+    calculateTotal();
+}
+
+function calculateTotal() {
+    const isRush = document.getElementById('rush-toggle').checked;
+    const multiplier = isRush ? rushMultiplier : 1;
+    
+    const loftLieCount = parseInt(document.getElementById('loft-lie-count').value) || 0;
+    const swingWeightCount = parseInt(document.getElementById('swing-weight-std-count').value) || 0;
+    const shaftPullCount = parseInt(document.getElementById('shaft-pull-count').value) || 0;
+    const shortenCount = parseInt(document.getElementById('shorten-count').value) || 0;
+    const lengthenCount = parseInt(document.getElementById('lengthen-count').value) || 0;
+    const reinstallCount = parseInt(document.getElementById('reinstall-count').value) || 0;
+    
+    const total = (loftLieCount * 5.00 + swingWeightCount * 10.00 + shaftPullCount * 9.99 + 
+                  shortenCount * 6.00 + lengthenCount * 6.00 + reinstallCount * 15.00) * multiplier;
+    
+    document.getElementById('total-cost').textContent = '$' + total.toFixed(2);
+}
+
+// Add event listeners
+document.getElementById('rush-toggle').addEventListener('change', updatePrices);
+document.querySelectorAll('input[type="number"]').forEach(input => {
+    input.addEventListener('input', calculateTotal);
+});
+
+// Initialize
+updatePrices();
+</script>
