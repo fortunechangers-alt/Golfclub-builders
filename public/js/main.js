@@ -440,4 +440,120 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
+// Hero Image Sequence Scroll Animation
+(function() {
+    const animationImage = document.getElementById('heroAnimation');
+    const sound = document.getElementById('ballDropSound');
+    const totalFrames = 29; // 1.webp through 29.webp
+    const basePath = '/Stills for Hero shot/';
+    let soundPlayed = false;
+    let imagesPreloaded = false;
+    let audioEnabled = false;
+    
+    console.log('Hero animation element found:', animationImage);
+    console.log('Audio element found:', sound);
+    
+    if (!animationImage) {
+        console.error('Hero animation element not found!');
+        return;
+    }
+    
+    // Enable audio on first user interaction
+    function enableAudio() {
+        if (!audioEnabled && sound) {
+            sound.play().then(() => {
+                sound.pause();
+                sound.currentTime = 0;
+                audioEnabled = true;
+                console.log('Audio enabled after user interaction');
+            }).catch(e => console.log('Audio enable failed:', e));
+        }
+    }
+    
+    // Listen for any user interaction to enable audio
+    document.addEventListener('click', enableAudio, { once: true });
+    document.addEventListener('touchstart', enableAudio, { once: true });
+    document.addEventListener('scroll', enableAudio, { once: true });
+    
+    // Preload all images
+    const images = [];
+    for (let i = 1; i <= totalFrames; i++) {
+        const img = new Image();
+        img.src = basePath + i + '.webp';
+        images.push(img);
+    }
+    console.log('Preloading', totalFrames, 'frames...');
+    
+    // Wait for first few images to load before starting
+    Promise.all([images[0].decode(), images[Math.floor(totalFrames/2)].decode(), images[totalFrames-1].decode()])
+        .then(() => {
+            imagesPreloaded = true;
+            console.log('Key frames loaded, starting animation');
+            initScrollAnimation();
+        })
+        .catch(err => {
+            console.warn('Some images failed to preload, continuing anyway:', err);
+            imagesPreloaded = true;
+            initScrollAnimation();
+        });
+    
+    // Function to initialize the scroll animation
+    function initScrollAnimation() {
+        
+        function updateAnimation() {
+            if (!imagesPreloaded) return;
+            
+            // Calculate scroll progress based on page scroll
+            // Complete animation over just 0.5 screen heights (super fast!)
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const animationDistance = window.innerHeight * 0.5;
+            const scrollProgress = Math.max(0, Math.min(1, scrollTop / animationDistance));
+            
+            // Calculate which frame to show (1-29)
+            const frameIndex = Math.floor(scrollProgress * (totalFrames - 1)) + 1;
+            const framePath = basePath + frameIndex + '.webp';
+            
+            // Update image if frame changed
+            if (animationImage.src.indexOf(frameIndex + '.webp') === -1) {
+                animationImage.src = framePath;
+                console.log('Frame:', frameIndex, 'Progress:', scrollProgress.toFixed(2));
+            }
+            
+            // Play sound when reaching frame 21
+            if (frameIndex >= 21 && !soundPlayed && sound) {
+                console.log('🔊 TRIGGERING SOUND at frame', frameIndex);
+                
+                sound.currentTime = 0;
+                sound.volume = 1.0;
+                
+                sound.play()
+                    .then(() => console.log('✅ SOUND PLAYED!'))
+                    .catch(e => console.error('❌ Audio blocked:', e.message));
+                
+                soundPlayed = true;
+            }
+            
+            // Reset when scrolling back before frame 21
+            if (frameIndex < 21) {
+                soundPlayed = false;
+            }
+        }
+        
+        // Throttle scroll events for performance
+        let ticking = false;
+        window.addEventListener('scroll', function() {
+            if (!ticking) {
+                window.requestAnimationFrame(function() {
+                    updateAnimation();
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        });
+        
+        // Initial call
+        updateAnimation();
+    }
+})();
+
 
