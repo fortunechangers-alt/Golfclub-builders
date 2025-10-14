@@ -5,32 +5,51 @@
 
 <section class="section" style="margin-top: 120px;">
     <div class="container" style="max-width: 900px;">
-        <!-- Back to Blog -->
-        <div style="margin-bottom: 2rem;">
-            <a href="<?= base_url('/blog') ?>" style="color: var(--deep-green); text-decoration: none; font-weight: 600;">← Back to Blog</a>
-        </div>
-        
         <!-- Audio Player - Fixed Below Header -->
-        <div id="audioPlayerSticky" style="position: fixed; top: 80px; left: 0; right: 0; z-index: 500; background: linear-gradient(135deg, var(--deep-green), #0a5a42); padding: 0.75rem; box-shadow: 0 4px 15px rgba(0,0,0,0.3); max-width: 100vw;">
-            <div style="max-width: 900px; margin: 0 auto;">
-                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
-                    <span style="font-size: 1.2rem;">🎧</span>
-                    <h3 style="color: white; margin: 0; font-size: 0.9rem;">Listen to Article</h3>
-                </div>
-                <audio id="blogAudio" controls preload="auto" style="width: 100%; margin-bottom: 0.5rem; max-width: 100%;">
-                    <source src="<?= base_url('serve-audio.php?file=Finding the Right Shaft Flex.mp3') ?>" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
-                <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                    <button onclick="setPlaybackSpeed(1)" style="background: white; color: var(--deep-green); border: none; padding: 0.3rem 0.7rem; border-radius: 5px; cursor: pointer; font-weight: 600; font-size: 0.85rem;">1x</button>
-                    <button onclick="setPlaybackSpeed(1.5)" style="background: white; color: var(--deep-green); border: none; padding: 0.3rem 0.7rem; border-radius: 5px; cursor: pointer; font-weight: 600; font-size: 0.85rem;">1.5x</button>
-                    <button onclick="setPlaybackSpeed(2)" style="background: white; color: var(--deep-green); border: none; padding: 0.3rem 0.7rem; border-radius: 5px; cursor: pointer; font-weight: 600; font-size: 0.85rem;">2x</button>
-                </div>
+        <div id="audioPlayerSticky" style="position: fixed; top: 152px; left: 50%; transform: translateX(-50%); z-index: 999; background: linear-gradient(135deg, var(--deep-green), #0a5a42); padding: 1rem 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.3); max-width: 900px; width: calc(100% - 2rem); border-radius: 12px;">
+            <!-- Back to Blog - Part of Player -->
+            <div style="margin-bottom: 0.75rem;">
+                <a href="<?= base_url('/blog') ?>" style="color: white; text-decoration: none; font-weight: 600; font-size: 0.9rem; opacity: 0.9; transition: opacity 0.2s;">← Back to Blog</a>
+            </div>
+            
+            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem;">
+                <span style="font-size: 1.5rem;">🎧</span>
+                <h3 style="color: white; margin: 0; font-size: 1.1rem; font-weight: 600; letter-spacing: 0.5px;">Listen to Article</h3>
+            </div>
+            <audio id="blogAudio" controls preload="auto" style="width: 100%; margin-bottom: 0.75rem; border-radius: 8px;">
+                <source src="<?= base_url('serve-audio.php?file=Finding the Right Shaft Flex.mp3') ?>" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                <button onclick="setPlaybackSpeed(1)" style="background: white; color: var(--deep-green); border: none; padding: 0.4rem 0.9rem; border-radius: 6px; cursor: pointer; font-weight: 600; font-size: 0.9rem; transition: all 0.2s;">1x</button>
+                <button onclick="setPlaybackSpeed(1.5)" style="background: white; color: var(--deep-green); border: none; padding: 0.4rem 0.9rem; border-radius: 6px; cursor: pointer; font-weight: 600; font-size: 0.9rem; transition: all 0.2s;">1.5x</button>
+                <button onclick="setPlaybackSpeed(2)" style="background: white; color: var(--deep-green); border: none; padding: 0.4rem 0.9rem; border-radius: 6px; cursor: pointer; font-weight: 600; font-size: 0.9rem; transition: all 0.2s;">2x</button>
             </div>
         </div>
         
+        <style>
+        @media (max-width: 768px) {
+            #audioPlayerSticky {
+                top: 100px !important;
+                left: 0 !important;
+                right: 0 !important;
+                transform: none !important;
+                max-width: 100% !important;
+                width: 100% !important;
+                border-radius: 0 !important;
+                padding: 0.75rem 1rem !important;
+            }
+            #audioPlayerSticky h3 {
+                font-size: 0.95rem !important;
+            }
+            #audioPlayerSticky span {
+                font-size: 1.2rem !important;
+            }
+        }
+        </style>
+        
         <!-- Spacer to prevent content from hiding under fixed player -->
-        <div style="height: 140px;"></div>
+        <div style="height: 180px;"></div>
         
         <!-- Article Meta (not in audio) -->
         <div style="color: #666; font-size: 1.1rem; margin-bottom: 2rem; text-align: center;">
