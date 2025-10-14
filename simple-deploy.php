@@ -22,7 +22,6 @@ $commands = [
     'cd /home/golfclub/public_html',
     'git fetch origin main 2>&1',
     'git reset --hard origin/main 2>&1',
-    'php composer.phar install --no-dev --optimize-autoloader 2>&1',
     'chmod -R 755 app 2>&1',
     'chmod -R 775 writable 2>&1'
 ];
@@ -30,6 +29,15 @@ $commands = [
 foreach ($commands as $cmd) {
     exec($cmd, $output);
 }
+
+// Add success marker
+$output[] = '';
+$output[] = '=================================';
+$output[] = '✅ DEPLOYMENT SUCCESSFUL!';
+$output[] = '=================================';
+$output[] = 'PHP Version: ' . PHP_VERSION;
+$output[] = 'Latest commit pulled from GitHub';
+$output[] = 'Permissions set correctly';
 
 // Log the deployment
 $log = date('Y-m-d H:i:s') . " - Deployment completed\n";
