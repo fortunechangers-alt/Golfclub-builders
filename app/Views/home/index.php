@@ -1,5 +1,5 @@
 <!-- Policy Banner -->
-<div style="background: var(--deep-green); color: white; text-align: center; padding: 0.75rem; font-weight: 600;">
+<div class="policy-banner" style="background: var(--deep-green); color: white; text-align: center; padding: 0.75rem; font-weight: 600;">
     In-home workshop — No walk-ins. Call to book: <a href="tel:7173871643" style="color: white; text-decoration: underline;">(717) 387-1643</a>
 </div>
 
