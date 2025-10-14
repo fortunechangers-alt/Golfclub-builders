@@ -15,8 +15,8 @@
             </div>
         </div>
         <div class="hero-animation-container">
-            <img id="heroAnimation" src="<?= base_url('Stills for Hero shot/1.webp') ?>" alt="Golf ball animation">
-            <audio id="ballDropSound" preload="auto">
+            <img id="heroAnimation" src="<?= base_url('Stills for Hero shot/1.webp') ?>" alt="Golf ball animation" fetchpriority="high">
+            <audio id="ballDropSound" preload="metadata">
                 <source src="<?= base_url('audio/ball-drop-sound_A01.mp3') ?>" type="audio/mpeg">
             </audio>
         </div>
@@ -34,7 +34,7 @@
         <div class="services-grid">
             <div class="card service-card">
                 <div class="service-icon" style="background: linear-gradient(135deg, var(--deep-green), #0d2a5c); display: flex; align-items: center; justify-content: center; overflow: hidden;">
-                    <img src="<?= base_url('images/club builders icon.png') ?>" alt="Custom Club Building" style="width: 100%; height: 100%; object-fit: cover;">
+                    <img src="<?= base_url('images/club builders icon.png') ?>" alt="Custom Club Building" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
                 <h3>Custom Club Building</h3>
                 <p>Complete custom club building service from shaft selection to final assembly. Each club meticulously crafted to your exact specifications.</p>
@@ -44,7 +44,7 @@
             
             <div class="card service-card">
                 <div class="service-icon" style="background: linear-gradient(135deg, var(--gold), #e6c45c); display: flex; align-items: center; justify-content: center; overflow: hidden;">
-                    <img src="<?= base_url('images/for golf sim icon.png') ?>" alt="Simulator Rental" style="width: 100%; height: 100%; object-fit: cover;">
+                    <img src="<?= base_url('images/for golf sim icon.png') ?>" alt="Simulator Rental" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
                 <h3>Simulator Rental</h3>
                 <p>GC3 Foresight simulator rental with professional analysis. Accommodates up to 8 guests (6 comfortably). Perfect for winter practice, club testing, and swing improvement.</p>
@@ -54,7 +54,7 @@
             
             <div class="card service-card">
                 <div class="service-icon" style="display: flex; align-items: center; justify-content: center; overflow: hidden;">
-                    <img src="<?= base_url('images/AI CLUB AND SHAFT FITTING.png') ?>" alt="AI Club & Shaft Fitting" style="width: 100%; height: 100%; object-fit: contain;">
+                    <img src="<?= base_url('images/AI CLUB AND SHAFT FITTING.png') ?>" alt="AI Club & Shaft Fitting" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: contain;">
                 </div>
                 <h3>AI Club & Shaft Fitting</h3>
                 <p>Revolutionary AI technology analyzes your swing in real-time, providing data-driven recommendations for optimal club selection and customization.</p>
