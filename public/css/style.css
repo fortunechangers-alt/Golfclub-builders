@@ -1360,12 +1360,22 @@ textarea.form-control {
         font-size: 0.9rem !important;
     }
     
-    /* Grid layout for club building page */
-    div[style*="grid-template-columns: 2fr 1fr"] {
+    /* Grid layout for club building page - collapse to single column on mobile */
+    .club-building-grid[style] {
         grid-template-columns: 1fr !important;
     }
     
-    /* Move cart sidebar to top on mobile */
+    /* Force services section to appear first using grid row */
+    .club-building-grid[style] > div:first-child {
+        grid-row: 1 !important;
+    }
+    
+    /* Force cart/emergency sidebar to appear second (bottom) using grid row */
+    .club-building-grid[style] > div:last-child {
+        grid-row: 2 !important;
+    }
+    
+    /* Remove sticky positioning from cart on mobile */
     .card[style*="position: sticky"] {
         position: relative !important;
         top: auto !important;

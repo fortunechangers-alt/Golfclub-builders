@@ -114,18 +114,18 @@
                         <tbody>
                             <tr>
                                 <td style="padding: 1rem; border-bottom: 1px solid #eee;">Install head on new shaft — Iron</td>
-                                <td style="padding: 1rem; text-align: center; border-bottom: 1px solid #eee;">$24.00</td>
-                                <td style="padding: 1rem; text-align: center; border-bottom: 1px solid #eee;">$36.00</td>
+                                <td style="padding: 1rem; text-align: center; border-bottom: 1px solid #eee;">$21.99</td>
+                                <td style="padding: 1rem; text-align: center; border-bottom: 1px solid #eee;">$32.99</td>
                             </tr>
                             <tr>
                                 <td style="padding: 1rem; border-bottom: 1px solid #eee;">Install head on new shaft — Metalwood/Hybrid</td>
-                                <td style="padding: 1rem; text-align: center; border-bottom: 1px solid #eee;">$28.00</td>
-                                <td style="padding: 1rem; text-align: center; border-bottom: 1px solid #eee;">$42.00</td>
+                                <td style="padding: 1rem; text-align: center; border-bottom: 1px solid #eee;">$24.99</td>
+                                <td style="padding: 1rem; text-align: center; border-bottom: 1px solid #eee;">$37.49</td>
                             </tr>
                             <tr>
                                 <td style="padding: 1rem; border-bottom: 1px solid #eee;">Install new shaft adapter — Labour</td>
-                                <td style="padding: 1rem; text-align: center; border-bottom: 1px solid #eee;">$24.00</td>
-                                <td style="padding: 1rem; text-align: center; border-bottom: 1px solid #eee;">$36.00</td>
+                                <td style="padding: 1rem; text-align: center; border-bottom: 1px solid #eee;">$17.99</td>
+                                <td style="padding: 1rem; text-align: center; border-bottom: 1px solid #eee;">$26.99</td>
                             </tr>
                             <tr>
                                 <td style="padding: 1rem;">Old club polishing</td>

@@ -27,7 +27,7 @@ class CustomClubBuilding extends BaseController
                     'id' => 'iron_install',
                     'name' => 'Iron Shaft Installation',
                     'description' => 'Install head on new shaft for iron clubs',
-                    'price' => 24.00,
+                    'price' => 21.99,
                     'unit' => 'per club',
                     'category' => 'club_builds'
                 ],
@@ -35,7 +35,7 @@ class CustomClubBuilding extends BaseController
                     'id' => 'metalwood_install',
                     'name' => 'Metalwood/Hybrid Installation',
                     'description' => 'Install head on new shaft for metalwoods and hybrids',
-                    'price' => 28.00,
+                    'price' => 24.99,
                     'unit' => 'per club',
                     'category' => 'club_builds'
                 ],
@@ -43,7 +43,7 @@ class CustomClubBuilding extends BaseController
                     'id' => 'adapter_install',
                     'name' => 'Shaft Adapter Installation',
                     'description' => 'Install new shaft adapter (adapter cost extra)',
-                    'price' => 24.00,
+                    'price' => 17.99,
                     'unit' => 'per adapter',
                     'category' => 'club_builds'
                 ],
@@ -61,7 +61,7 @@ class CustomClubBuilding extends BaseController
                     'id' => 'grip_install_bring',
                     'name' => 'Grip Installation (Bring Your Grips)',
                     'description' => 'Install grips you provide',
-                    'price' => 4.00,
+                    'price' => 3.99,
                     'unit' => 'per club',
                     'category' => 'regrips'
                 ],
@@ -69,7 +69,7 @@ class CustomClubBuilding extends BaseController
                     'id' => 'grip_install_with',
                     'name' => 'Grip Installation (With Grip Purchase)',
                     'description' => 'Install grips with grip purchase (grip cost extra)',
-                    'price' => 4.00,
+                    'price' => 3.99,
                     'unit' => 'per club + grip cost',
                     'category' => 'regrips'
                 ],
@@ -77,7 +77,7 @@ class CustomClubBuilding extends BaseController
                     'id' => 'grip_save_reinstall',
                     'name' => 'Save & Reinstall Old Grip',
                     'description' => 'Remove and reinstall existing grip when salvageable',
-                    'price' => 9.00,
+                    'price' => 7.99,
                     'unit' => 'per club',
                     'category' => 'regrips'
                 ]

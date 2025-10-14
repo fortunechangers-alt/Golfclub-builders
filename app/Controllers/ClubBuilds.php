@@ -22,15 +22,15 @@ class ClubBuilds extends BaseController
     {
         return [
             'club_builds' => [
-                'iron_install' => ['standard' => 24.00, 'rush' => 36.00],
-                'metalwood_install' => ['standard' => 28.00, 'rush' => 42.00],
-                'adapter_install' => ['standard' => 24.00, 'rush' => 36.00],
+                'iron_install' => ['standard' => 21.99, 'rush' => 32.99],
+                'metalwood_install' => ['standard' => 24.99, 'rush' => 37.49],
+                'adapter_install' => ['standard' => 17.99, 'rush' => 26.99],
                 'polishing' => ['standard' => 20.00, 'rush' => 30.00]
             ],
             'regrips' => [
-                'grip_install_bring' => ['standard' => 4.00, 'rush' => 6.00],
-                'grip_install_with' => ['standard' => 4.00, 'rush' => 6.00],
-                'save_reinstall' => ['standard' => 9.00, 'rush' => 13.50]
+                'grip_install_bring' => ['standard' => 3.99, 'rush' => 5.99],
+                'grip_install_with' => ['standard' => 3.99, 'rush' => 5.99],
+                'save_reinstall' => ['standard' => 7.99, 'rush' => 11.99]
             ],
             'grip_tiers' => [
                 'basic' => ['min' => 8, 'max' => 12, 'name' => 'Basic (Tour Velvet-style)'],

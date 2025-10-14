@@ -21,7 +21,7 @@
             </div>
         </div>
         
-        <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 3rem;">
+        <div class="club-building-grid" style="display: grid; grid-template-columns: 2fr 1fr; gap: 3rem;">
             <!-- Services Selection -->
             <div>
                 <!-- Club Builds -->
