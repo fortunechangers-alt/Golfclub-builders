@@ -49,6 +49,10 @@ These are ACTUAL issues found in blog posts that caused highlighting to drift:
 - **Wrong:** "ninety seven" → **Right:** "97" (audio said the number)
 - **Wrong:** "ten" → **Right:** "10" (audio said the number)
 
+### Special Characters in Filenames ❌
+- **Wrong:** `file=Loft & Lie.mp3` → **Right:** `file=Loft %26 Lie.mp3` (URL-encode ampersand)
+- Ampersands (&) must be encoded as `%26` in URLs
+
 **GOLDEN RULE:** Extract the transcript FIRST. Copy it word-for-word. Don't fix "errors" - match exactly!
 
 ---
