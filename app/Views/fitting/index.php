@@ -3,7 +3,7 @@
     In-home workshop — No walk-ins. Call to book: <a href="tel:7173871643" style="color: white; text-decoration: underline;">(717) 387-1643</a>
 </div>
 
-<section class="section">
+<section class="section" style="margin-top: 30px;">
     <div class="container">
         <div class="section-header">
             <h1 class="section-title">Fitting</h1>
