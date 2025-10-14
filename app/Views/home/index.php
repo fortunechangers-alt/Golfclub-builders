@@ -17,8 +17,16 @@
         <div class="hero-animation-container">
             <img id="heroAnimation" src="<?= base_url('Stills for Hero shot/1.webp') ?>" alt="Golf ball animation">
             <audio id="ballDropSound" preload="auto">
-                <source src="<?= base_url('audio/ball-drop-sound_A01.mp3?v=14k') ?>" type="audio/mpeg">
+                <source src="<?= base_url('audio/ball-drop-sound_A01.mp3') ?>" type="audio/mpeg">
             </audio>
+            
+            <!-- Sound Enable Overlay (auto-hides after click) -->
+            <div id="soundEnableOverlay" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 10; text-align: center; background: rgba(11, 110, 79, 0.95); padding: 1.5rem 2.5rem; border-radius: 50px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
+                <div style="color: white; font-size: 1.1rem; font-weight: 600; display: flex; align-items: center; gap: 0.75rem;">
+                    <span style="font-size: 1.5rem;">🔊</span>
+                    <span>Tap for sound</span>
+                </div>
+            </div>
         </div>
     </div>
 </section>
