@@ -1447,8 +1447,13 @@ textarea.form-control {
         text-align: center !important;
     }
     
+    .service-item * {
+        text-align: center !important;
+    }
+    
     .service-item > div:first-child {
         text-align: center !important;
+        width: 100% !important;
     }
     
     .service-item > div:last-child {
@@ -1459,11 +1464,15 @@ textarea.form-control {
         text-align: center !important;
     }
     
-    /* Center price and duration on fitting page mobile */
-    .service-item > div:first-child > div[style*="text-align: right"] {
+    /* Force center all content inside service items on mobile */
+    .service-item div,
+    .service-item p,
+    .service-item h4,
+    .service-item ul,
+    .service-item li {
         text-align: center !important;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
     }
     
     /* Smaller +/- buttons */
