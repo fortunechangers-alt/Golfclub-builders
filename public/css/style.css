@@ -1889,6 +1889,20 @@ textarea.form-control {
     }
     
     /* ============================================
+       CONTACT PAGE MOBILE FIXES
+       ============================================ */
+    
+    .contact-grid {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+    }
+    
+    .contact-info-card,
+    .contact-grid .card {
+        margin-bottom: 0 !important;
+    }
+    
+    /* ============================================
        BLOG PAGE MOBILE FIXES
        ============================================ */
     

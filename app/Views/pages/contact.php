@@ -10,9 +10,9 @@
             <p class="section-subtitle">Get in touch to discuss your club building and fitting needs</p>
         </div>
         
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 3rem; margin-bottom: 3rem;">
+        <div class="contact-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 3rem; margin-bottom: 3rem;">
             <!-- Contact Info -->
-            <div class="card">
+            <div class="card contact-info-card">
                 <h3 style="margin-bottom: 1.5rem; color: var(--deep-green);">Get In Touch</h3>
                 <p style="margin-bottom: 2rem; color: #666;">Ready to transform your golf game? Call us to discuss your project and schedule your appointment.</p>
                 
