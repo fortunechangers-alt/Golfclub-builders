@@ -1446,23 +1446,18 @@ textarea.form-control {
         gap: 1rem !important;
     }
     
-    .service-item > div:first-child > div {
-        text-align: center !important;
-        margin-left: 0 !important;
-    }
-    
     .service-item > div:last-child {
         width: 100% !important;
         flex-direction: column !important;
-        align-items: center !important;
+        align-items: stretch !important;
         gap: 0.75rem !important;
-        text-align: center !important;
     }
     
-    /* Center pricing on fitting page mobile */
+    /* Center only price and duration on fitting page mobile */
     .service-item > div:first-child > div[style*="text-align: right"] {
         text-align: center !important;
         margin-left: 0 !important;
+        margin-right: 0 !important;
     }
     
     /* Smaller +/- buttons */
