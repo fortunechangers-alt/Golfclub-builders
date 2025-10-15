@@ -54,7 +54,7 @@
             
             <div class="card service-card">
                 <div class="service-icon" style="display: flex; align-items: center; justify-content: center; overflow: hidden;">
-                    <img src="<?= base_url('images/AI CLUB AND SHAFT FITTING.png') ?>" alt="AI Club & Shaft Fitting" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: contain;">
+                    <img src="<?= base_url('images/ai-fitting-icon.png') ?>" alt="AI Club & Shaft Fitting" loading="lazy" decoding="async" style="width: 80%; height: 80%; object-fit: contain;">
                 </div>
                 <h3>AI Club & Shaft Fitting</h3>
                 <p>Revolutionary AI technology analyzes your swing in real-time, providing data-driven recommendations for optimal club selection and customization.</p>
