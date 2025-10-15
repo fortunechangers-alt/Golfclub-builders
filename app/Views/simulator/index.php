@@ -1,5 +1,5 @@
 <!-- Parallax Background Section -->
-<section class="parallax-section" style="position: relative; height: 60vh; min-height: 400px; overflow: hidden; margin-top: 120px;">
+<section class="parallax-section" style="position: relative; height: 60vh; min-height: 400px; overflow: hidden;">
     <!-- Parallax Background Image -->
     <div class="parallax-bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 120%; background-image: url('<?= base_url('images/golf-course-parallax.jpg') ?>'); background-size: cover; background-position: 0% 80%; background-attachment: fixed; will-change: transform;"></div>
     
@@ -10,16 +10,16 @@
     <div class="container" style="position: relative; z-index: 2; height: 100%; display: flex; align-items: center; justify-content: center;">
         <div class="section-header" style="text-align: center; color: white;">
             <h1 class="section-title" style="color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); font-size: 3.5rem; margin-bottom: 1rem;">Simulator</h1>
-            <p class="section-subtitle" style="color: rgba(255,255,255,0.9); text-shadow: 1px 1px 2px rgba(0,0,0,0.5); font-size: 1.3rem; max-width: 600px; margin: 0 auto;">GC3 Foresight simulator rental with professional analysis</p>
+            <p class="section-subtitle" style="color: rgba(255,255,255,0.9); text-shadow: 1px 1px 2px rgba(0,0,0,0.5); font-size: 1.3rem; max-width: 600px; margin: 0 auto;">GC3 Foresight simulator rental<br>with professional analysis</p>
         </div>
     </div>
 </section>
 
-<section class="section" style="margin-top: 0;">
+<section class="section simulator-content" style="margin-top: 0;">
     <div class="container">
         
         <!-- Call to Schedule Notice -->
-        <div class="card" style="margin-bottom: 3rem; background: linear-gradient(135deg, var(--gold), #e6c45c); border: none; color: var(--graphite);">
+        <div class="card" style="margin-bottom: 2rem; background: linear-gradient(135deg, var(--gold), #e6c45c); border: none; color: var(--graphite);">
             <div style="display: flex; align-items: center; gap: 1rem;">
                 <div style="font-size: 3rem;">📞</div>
                 <div>
@@ -120,12 +120,13 @@
         </div>
         
         <!-- Simulator Room Showcase -->
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+        <div class="simulator-showcase" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
             <div style="position: relative; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.15);">
                 <img src="<?= base_url('images/True strike mat.JPG') ?>" 
                      alt="Professional Golf Simulator Room" 
                      loading="lazy"
-                     style="width: 100%; height: 100%; object-fit: contain; display: block; background: #f0f0f0;">
+                     class="launch-monitor-img"
+                     style="width: 100%; height: auto; min-height: 300px; object-fit: cover; display: block; background: #f0f0f0;">
                 <div style="position: absolute; top: 1rem; right: 1rem; background: var(--deep-green); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-weight: 700; font-size: 0.9rem;">
                     Professional Grade
                 </div>
@@ -134,7 +135,7 @@
                 <img src="<?= base_url('images/crazy kid.JPG') ?>" 
                      alt="Golf Simulator Room Setup" 
                      loading="lazy"
-                     style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                     style="width: 100%; height: auto; min-height: 300px; object-fit: cover; object-position: center; display: block;">
                 <div style="position: absolute; top: 1rem; right: 1rem; background: var(--gold); color: var(--graphite); padding: 0.5rem 1rem; border-radius: 20px; font-weight: 700; font-size: 0.9rem;">
                     Youth Friendly
                 </div>

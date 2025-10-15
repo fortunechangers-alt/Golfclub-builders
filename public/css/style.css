@@ -1833,14 +1833,19 @@ textarea.form-control {
         font-size: 1rem;
     }
     
-    /* Policy Banner - clear spacing from header on mobile */
+    /* Policy Banner - pull up close to header on mobile */
     .policy-banner {
-        margin-top: 10px !important;
+        margin-top: -50px !important;
     }
     
     /* Reduce section margin after policy banner on mobile */
     .policy-banner + .section {
-        margin-top: 20px !important;
+        margin-top: 5px !important;
+    }
+    
+    /* Reduce section margin after policy banner on mobile for hero */
+    .policy-banner + .hero {
+        margin-top: 0px !important;
     }
     
     /* Hero section */
@@ -1848,6 +1853,37 @@ textarea.form-control {
         min-height: 60vh;
         padding: 2rem 1rem;
         margin-top: 0 !important;
+    }
+    
+    /* Simulator Page Mobile Fixes */
+    .parallax-section {
+        margin-top: 0px !important;
+        height: 40vh !important;
+        min-height: 300px !important;
+    }
+    
+    .simulator-content {
+        margin-top: -20px !important;
+    }
+    
+    .simulator-showcase {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+    
+    .simulator-showcase img {
+        min-height: 250px !important;
+        object-fit: cover !important;
+    }
+    
+    /* Shift launch monitor image to show the monitor on mobile */
+    img.launch-monitor-img {
+        transform: translateX(-25%) !important;
+        width: 140% !important;
+        max-width: none !important;
+        object-fit: cover !important;
+        object-position: left center !important;
     }
     
     .hero-container {

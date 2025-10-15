@@ -1,9 +1,9 @@
 <!-- Policy Banner -->
-<div style="background: var(--deep-green); color: white; text-align: center; padding: 0.75rem; font-weight: 600;">
+<div class="policy-banner" style="background: var(--deep-green); color: white; text-align: center; padding: 0.75rem; font-weight: 600;">
     In-home workshop — No walk-ins. Call to book: <a href="tel:7173871643" style="color: white; text-decoration: underline;">(717) 387-1643</a>
 </div>
 
-<section class="section" style="margin-top: 120px;">
+<section class="section">
     <div class="container">
         <div class="section-header">
             <h1 class="section-title">AI Club & Shaft Fitting</h1>
@@ -21,7 +21,7 @@
             </div>
         </div>
         
-        <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 3rem;">
+        <div class="club-building-grid" style="display: grid; grid-template-columns: 2fr 1fr; gap: 3rem;">
             <!-- Services Selection -->
             <div>
                 <!-- Fitting Services -->
@@ -120,7 +120,7 @@
             
             <!-- Cart Sidebar -->
             <div>
-                <div class="card" style="position: sticky; top: 140px;">
+                <div class="card" style="position: sticky; top: 140px; z-index: 10;">
                     <h3 style="margin-bottom: 1.5rem; color: var(--deep-green);">Your Cart</h3>
                     <div id="cart-items" style="margin-bottom: 2rem;">
                         <p style="color: #666; text-align: center; margin: 2rem 0;">Your cart is empty</p>
@@ -130,6 +130,12 @@
                         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
                             <span style="font-weight: 600; color: var(--deep-green);">Subtotal:</span>
                             <span id="subtotal" style="font-weight: 700; color: var(--deep-green);">$0.00</span>
+                        </div>
+                        <div id="emergency-fee" style="display: none; margin-bottom: 1rem;">
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <span style="color: #ff6b6b; font-weight: 600;">Emergency Fee (+50%):</span>
+                                <span id="emergency-fee-amount" style="color: #ff6b6b; font-weight: 700;">$0.00</span>
+                            </div>
                         </div>
                         <div style="display: flex; justify-content: space-between; align-items: center; font-size: 1.2rem; font-weight: 700; color: var(--deep-green);">
                             <span>Total:</span>
@@ -142,6 +148,19 @@
                         <a href="<?= base_url('/cart') ?>" class="btn btn-primary" style="width: 100%; text-align: center; display: none;" id="checkout-btn">View Cart & Checkout</a>
                     </div>
                 </div>
+                
+                <!-- Same-Day Service Notice Sidebar -->
+                <div class="card" id="emergency-card" style="position: sticky; top: 140px; margin-top: 2rem; background: linear-gradient(135deg, #ff6b6b, #ee5a52); color: white; border: none; z-index: 5; padding: 1.5rem;">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 0.75rem;">
+                        <input type="checkbox" id="emergency-service" style="transform: scale(1.3); cursor: pointer; flex-shrink: 0;">
+                        <label for="emergency-service" style="font-weight: 700; color: white; cursor: pointer; flex: 1; font-size: 1rem; margin: 0;">
+                            🚨 Same-Day Service (+50%)
+                        </label>
+                    </div>
+                    <p style="margin: 0; color: rgba(255,255,255,0.9); font-size: 0.8rem; line-height: 1.4;">
+                        ASAP same-day/next-day service. Call <a href="tel:7173871643" style="color: white; text-decoration: underline; font-weight: 600;">(717) 387-1643</a> to confirm.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
@@ -150,6 +169,17 @@
 <script>
 // Cart functionality
 let cart = JSON.parse(localStorage.getItem('golf_cart')) || [];
+let emergencyMode = localStorage.getItem('emergency_mode') === 'true' || false;
+
+// Set checkbox state from localStorage
+document.getElementById('emergency-service').checked = emergencyMode;
+
+// Update emergency mode
+document.getElementById('emergency-service').addEventListener('change', function() {
+    emergencyMode = this.checked;
+    localStorage.setItem('emergency_mode', emergencyMode);
+    updateCartDisplay();
+});
 
 function changeRepairQuantity(serviceId, change) {
     const input = document.getElementById('qty-' + serviceId);
@@ -261,9 +291,26 @@ function updateCartDisplay() {
     
     cartItems.innerHTML = html;
     
+    // Calculate emergency fee
+    let emergencyFee = 0;
+    if (emergencyMode) {
+        emergencyFee = subtotal * 0.5;
+    }
+    
+    const total = subtotal + emergencyFee;
+    
     // Update totals
     document.getElementById('subtotal').textContent = '$' + subtotal.toFixed(2);
-    document.getElementById('total').textContent = '$' + subtotal.toFixed(2);
+    document.getElementById('emergency-fee-amount').textContent = '$' + emergencyFee.toFixed(2);
+    document.getElementById('total').textContent = '$' + total.toFixed(2);
+    
+    // Show/hide emergency fee
+    const emergencyFeeDiv = document.getElementById('emergency-fee');
+    if (emergencyMode && emergencyFee > 0) {
+        emergencyFeeDiv.style.display = 'block';
+    } else {
+        emergencyFeeDiv.style.display = 'none';
+    }
     
     // Show buttons
     cartTotal.style.display = 'block';
@@ -304,6 +351,30 @@ function removeFromCart(index) {
 
 // Initialize display
 updateCartDisplay();
+
+// Dynamic sticky positioning for emergency card
+function updateEmergencyCardPosition() {
+    const cartCard = document.querySelector('.card[style*="position: sticky"]');
+    const emergencyCard = document.getElementById('emergency-card');
+    
+    if (cartCard && emergencyCard) {
+        const cartHeight = cartCard.offsetHeight;
+        emergencyCard.style.top = `${140 + cartHeight + 32}px`; // 140px base + cart height + 2rem gap (32px)
+    }
+}
+
+// Update position on load and when cart changes
+updateEmergencyCardPosition();
+
+// Override updateCartDisplay to also update emergency card position
+const originalUpdateCartDisplay = updateCartDisplay;
+updateCartDisplay = function() {
+    originalUpdateCartDisplay();
+    setTimeout(updateEmergencyCardPosition, 50); // Small delay to let DOM update
+};
+
+// Update on window resize
+window.addEventListener('resize', updateEmergencyCardPosition);
 
 // No calendar functionality needed - appointments scheduled by phone after checkout
 </script>

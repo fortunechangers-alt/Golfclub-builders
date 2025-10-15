@@ -3,7 +3,7 @@
     In-home workshop — No walk-ins. Call to book: <a href="tel:7173871643" style="color: white; text-decoration: underline;">(717) 387-1643</a>
 </div>
 
-<section class="section" style="margin-top: 30px;">
+<section class="section">
     <div class="container">
         <div class="section-header">
             <h1 class="section-title">Fitting</h1>
@@ -11,13 +11,15 @@
         </div>
         
         <!-- Fitting Calculator -->
-        <div class="card" style="margin-bottom: 3rem; background: var(--light);">
-            <h3 style="margin-bottom: 1.5rem; color: var(--deep-green);">Service Calculator</h3>
-            <p style="margin-bottom: 2rem; color: #666;">Calculate your fitting and repair costs. All prices are labour only unless noted.</p>
-            
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
-                <div>
-                    <h4 style="margin-bottom: 1rem;">Repairs & Adjustments</h4>
+        <div class="club-building-grid" style="display: grid; grid-template-columns: 2fr 1fr; gap: 3rem;">
+            <div>
+                <div class="card" style="margin-bottom: 3rem; background: var(--light);">
+                    <h3 style="margin-bottom: 1.5rem; color: var(--deep-green);">Service Calculator</h3>
+                    <p style="margin-bottom: 2rem; color: #666;">Calculate your fitting and repair costs. All prices are labour only unless noted.</p>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                        <div>
+                            <h4 style="margin-bottom: 1rem;">Repairs & Adjustments</h4>
                     
                     <div style="margin-bottom: 1rem;">
                         <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Loft/Lie Adjustment</label>
@@ -72,19 +74,34 @@
                     </div>
                 </div>
             </div>
+                </div>
+            </div>
             
-            <div style="margin-top: 2rem; padding-top: 2rem; border-top: 2px solid var(--deep-green);">
-                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-                    <input type="checkbox" id="rush-toggle" style="transform: scale(1.2);">
-                    <label for="rush-toggle" style="font-weight: 600; color: var(--deep-green);">Emergency/Rush Service (+50% on labour)</label>
+            <!-- Cart/Total Sidebar -->
+            <div>
+                <div class="card" style="position: sticky; top: 140px; z-index: 10;">
+                    <h3 style="margin-bottom: 1.5rem; color: var(--deep-green);">Total Labour Cost</h3>
+                    
+                    <div style="background: white; padding: 1.5rem; border-radius: 8px; border: 2px solid var(--deep-green);">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <h3 style="margin: 0; color: var(--deep-green);">Total:</h3>
+                            <h2 style="margin: 0; color: var(--deep-green);" id="total-cost">$0.00</h2>
+                        </div>
+                        <p style="margin: 0.5rem 0 0 0; color: #666; font-size: 0.9rem;">Extensions and grips not included in total</p>
+                    </div>
                 </div>
                 
-                <div style="background: white; padding: 1.5rem; border-radius: 8px; border: 2px solid var(--deep-green);">
-                    <div style="display: flex; justify-content: space-between; align-items: center;">
-                        <h3 style="margin: 0; color: var(--deep-green);">Total Labour Cost:</h3>
-                        <h2 style="margin: 0; color: var(--deep-green);" id="total-cost">$0.00</h2>
+                <!-- Same-Day Service Notice Sidebar -->
+                <div class="card" id="emergency-card" style="position: sticky; top: 140px; margin-top: 2rem; background: linear-gradient(135deg, #ff6b6b, #ee5a52); color: white; border: none; z-index: 5; padding: 1.5rem;">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 0.75rem;">
+                        <input type="checkbox" id="rush-toggle" style="transform: scale(1.3); cursor: pointer; flex-shrink: 0;">
+                        <label for="rush-toggle" style="font-weight: 700; color: white; cursor: pointer; flex: 1; font-size: 1rem; margin: 0;">
+                            🚨 Same-Day Service (+50%)
+                        </label>
                     </div>
-                    <p style="margin: 0.5rem 0 0 0; color: #666; font-size: 0.9rem;">Extensions and grips not included in total</p>
+                    <p style="margin: 0; color: rgba(255,255,255,0.9); font-size: 0.8rem; line-height: 1.4;">
+                        ASAP same-day/next-day service. Call <a href="tel:7173871643" style="color: white; text-decoration: underline; font-weight: 600;">(717) 387-1643</a> to confirm.
+                    </p>
                 </div>
             </div>
         </div>
@@ -273,4 +290,26 @@ document.querySelectorAll('input[type="number"]').forEach(input => {
 
 // Initialize
 updatePrices();
+
+// Dynamic sticky positioning for emergency card
+function updateEmergencyCardPosition() {
+    const cartCard = document.querySelector('.card[style*="position: sticky"]');
+    const emergencyCard = document.getElementById('emergency-card');
+    
+    if (cartCard && emergencyCard) {
+        const cartHeight = cartCard.offsetHeight;
+        emergencyCard.style.top = `${140 + cartHeight + 32}px`; // 140px base + cart height + 2rem gap (32px)
+    }
+}
+
+// Update position on load and when window resizes
+updateEmergencyCardPosition();
+window.addEventListener('resize', updateEmergencyCardPosition);
+
+// Also update position when calculator values change
+const originalUpdatePrices = updatePrices;
+updatePrices = function() {
+    originalUpdatePrices();
+    setTimeout(updateEmergencyCardPosition, 50); // Small delay to let DOM update
+};
 </script>
