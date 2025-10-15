@@ -1,9 +1,9 @@
 <!-- Policy Banner -->
-<div style="background: var(--deep-green); color: white; text-align: center; padding: 0.75rem; font-weight: 600;">
+<div class="policy-banner" style="background: var(--deep-green); color: white; text-align: center; padding: 0.75rem; font-weight: 600;">
     In-home workshop — No walk-ins. Call to book: <a href="tel:7173871643" style="color: white; text-decoration: underline;">(717) 387-1643</a>
 </div>
 
-<section class="section" style="margin-top: 120px;">
+<section class="section blog-section">
     <div class="container">
         <div class="section-header">
             <h1 class="section-title">Golf Education Blog</h1>
@@ -15,8 +15,8 @@
         <?php $featured = array_filter($posts, function($post) { return $post['featured']; }); ?>
         <?php if (!empty($featured)): ?>
         <?php $featured = array_values($featured)[0]; ?>
-        <div class="card" style="margin-bottom: 3rem; background: linear-gradient(135deg, var(--deep-green) 0%, #0d2a5c 100%); color: white; overflow: hidden;">
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+        <div class="card featured-post-card" style="margin-bottom: 3rem; background: linear-gradient(135deg, var(--deep-green) 0%, #0d2a5c 100%); color: white; overflow: hidden;">
+            <div class="featured-post-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
                 <div>
                     <div style="background: rgba(255,255,255,0.2); padding: 0.5rem 1rem; border-radius: 20px; display: inline-block; margin-bottom: 1rem; font-size: 0.9rem; font-weight: 600;">
                         FEATURED POST
