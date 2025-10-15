@@ -1833,14 +1833,16 @@ textarea.form-control {
         font-size: 1rem;
     }
     
-    /* Policy Banner - pull up close to header on mobile */
+    /* Policy Banner - sit just below header on mobile */
     .policy-banner {
-        margin-top: -50px !important;
+        margin-top: 10px !important;
+        position: relative !important;
+        z-index: 999 !important;
     }
     
     /* Reduce section margin after policy banner on mobile */
     .policy-banner + .section {
-        margin-top: 5px !important;
+        margin-top: 10px !important;
     }
     
     /* Reduce section margin after policy banner on mobile for hero */
