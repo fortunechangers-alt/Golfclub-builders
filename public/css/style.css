@@ -1442,18 +1442,24 @@ textarea.form-control {
     /* Service items - make them stack on mobile */
     .service-item {
         flex-direction: column !important;
-        align-items: flex-start !important;
+        align-items: center !important;
         gap: 1rem !important;
+        text-align: center !important;
+    }
+    
+    .service-item > div:first-child {
+        text-align: center !important;
     }
     
     .service-item > div:last-child {
         width: 100% !important;
         flex-direction: column !important;
-        align-items: stretch !important;
+        align-items: center !important;
         gap: 0.75rem !important;
+        text-align: center !important;
     }
     
-    /* Center only price and duration on fitting page mobile */
+    /* Center price and duration on fitting page mobile */
     .service-item > div:first-child > div[style*="text-align: right"] {
         text-align: center !important;
         margin-left: 0 !important;
