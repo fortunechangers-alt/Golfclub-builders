@@ -37,8 +37,27 @@
                     <img src="<?= base_url('images/club builders icon.png') ?>" alt="Custom Club Building" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
                 <h3>Custom Club Building</h3>
-                <p>Complete custom club building service from shaft selection to final assembly. Each club meticulously crafted to your exact specifications.</p>
-                <p><strong>Starting at $21.99</strong> | Emergency +50%</p>
+                <p>Hand-built, precision-crafted clubs tailored exactly to your swing. No assembly line mass production—each club is built individually with meticulous attention to every detail.</p>
+                
+                <div style="text-align: left; margin: 1rem 0; font-size: 0.95rem;">
+                    <strong>YOUR BUILD INCLUDES:</strong>
+                    <ul style="margin: 0.5rem 0; padding-left: 1.25rem;">
+                        <li>Expert shaft selection & installation</li>
+                        <li>Precision length, lie, and loft adjustments</li>
+                        <li>Professional grip installation</li>
+                        <li>Swingweight optimization</li>
+                        <li>Quality inspection & simulator testing</li>
+                    </ul>
+                    
+                    <strong style="display: block; margin-top: 0.75rem;">WHY BUILD CUSTOM?</strong>
+                    <ul style="margin: 0.5rem 0; padding-left: 1.25rem;">
+                        <li>Perfect specifications for YOUR swing</li>
+                        <li>Premium components at fair prices</li>
+                        <li>Quality craftsmanship you can feel</li>
+                    </ul>
+                </div>
+                
+                <p><strong>Starting at $21.99</strong> per club | Rush service: +50%</p>
                 <a href="<?= base_url('/custom-club-building') ?>" class="btn btn-primary">Build & Order</a>
             </div>
             
@@ -46,9 +65,27 @@
                 <div class="service-icon" style="background: linear-gradient(135deg, var(--gold), #e6c45c); display: flex; align-items: center; justify-content: center; overflow: hidden;">
                     <img src="<?= base_url('images/for golf sim icon.png') ?>" alt="Simulator Rental" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
-                <h3>Simulator Rental</h3>
-                <p>GC3 Foresight simulator rental with professional analysis. Accommodates up to 8 guests (6 comfortably). Perfect for winter practice, club testing, and swing improvement.</p>
-                <p><strong>From $20/hour</strong> | Half/Full day rates available</p>
+                <h3>GC3 Foresight Simulator Rental</h3>
+                <p>Play world-famous courses, practice your swing, or host an unforgettable golf event—all from our comfortable in-home setup. The GC3 Foresight is the same professional technology used on PGA Tour broadcasts.</p>
+                
+                <div style="text-align: left; margin: 1rem 0; font-size: 0.95rem;">
+                    <strong>PERFECT FOR:</strong>
+                    <ul style="margin: 0.5rem 0; padding-left: 1.25rem;">
+                        <li>Year-round practice (escape PA winters!)</li>
+                        <li>Golf parties & events (up to 8 players)</li>
+                        <li>Club testing before you buy</li>
+                        <li>Playing legendary courses (Pebble Beach, St. Andrews)</li>
+                    </ul>
+                    
+                    <strong style="display: block; margin-top: 0.75rem;">WHAT YOU GET:</strong>
+                    <ul style="margin: 0.5rem 0; padding-left: 1.25rem;">
+                        <li>Accurate ball flight tracking & shot analysis</li>
+                        <li>Real-time data (distance, spin, launch angle)</li>
+                        <li>Comfortable, private environment</li>
+                    </ul>
+                </div>
+                
+                <p><strong>$20/hour</strong> (2-hour minimum) | Half Day: $75 | Full Day: $140</p>
                 <a href="<?= base_url('/simulator') ?>" class="btn btn-primary">Rent Simulator</a>
             </div>
             
@@ -57,8 +94,27 @@
                     <img src="<?= base_url('images/ai-fitting-icon.png') ?>" alt="AI Club & Shaft Fitting" loading="lazy" decoding="async" style="width: 80%; height: 80%; object-fit: contain;">
                 </div>
                 <h3>AI Club & Shaft Fitting</h3>
-                <p>Revolutionary AI technology analyzes your swing in real-time, providing data-driven recommendations for optimal club selection and customization.</p>
-                <p><strong>Starting at $75</strong> | 90 minutes</p>
+                <p>Get fitted like a pro with AI-powered precision. Our advanced system captures over 100 data points from your swing, then recommends the perfect clubs matched to YOUR unique swing characteristics.</p>
+                
+                <div style="text-align: left; margin: 1rem 0; font-size: 0.95rem;">
+                    <strong>WHAT YOU'LL GET:</strong>
+                    <ul style="margin: 0.5rem 0; padding-left: 1.25rem;">
+                        <li>Comprehensive swing analysis (speed, path, face angle)</li>
+                        <li>Test multiple club options on our GC3 simulator</li>
+                        <li>Data-driven shaft recommendations</li>
+                        <li>Personalized specifications report</li>
+                        <li>No-pressure environment - you decide what to order</li>
+                    </ul>
+                    
+                    <strong style="display: block; margin-top: 0.75rem;">AVERAGE RESULTS:</strong>
+                    <ul style="margin: 0.5rem 0; padding-left: 1.25rem;">
+                        <li>10-30 yards added distance</li>
+                        <li>20%+ improvement in accuracy</li>
+                        <li>Consistent ball flight & trajectory</li>
+                    </ul>
+                </div>
+                
+                <p><strong>Starting at $75</strong> | 90 minutes | Try clubs before you buy</p>
                 <a href="<?= base_url('/ai-fitting') ?>" class="btn btn-primary">Book Fitting</a>
             </div>
         </div>
